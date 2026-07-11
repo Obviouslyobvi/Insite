@@ -24,7 +24,7 @@ The document package is complete and verified. Every page that could be built wi
 
 **Missing: a minimum deal size policy.** The intake form says "determined during feasibility screening" because no honest number exists yet. Nothing is blocked today, but before the program advertises eligibility, Dennis either publishes a floor or deliberately publishes none. The build's recommendation: none until the pilot proves the economics.
 
-**Missing: the go-ahead to fix the analysis spreadsheet.** Two formula errors are confirmed and precisely mapped: the hard-cost row points at the wrong assumption cell and silently zeroes construction costs out of the model, which overstates every value it produces, and the soft-cost row is off by one. The corrected formulas are staged and take minutes to apply to a copy. Until the word comes, the workbook cannot be trusted for any real underwriting.
+**Resolved, July 11: the analysis spreadsheet.** Palmer gave the go-ahead and both formula errors are fixed in a corrected copy (v1.1_corrected), with the original untouched. The fix was proven the honest way: the same test project was fed to both files, and the original dropped construction costs entirely while the corrected copy spreads them month by month exactly as designed. Use the corrected copy for every analysis from now on.
 
 **Resolved, July 11: the quarantined drafts.** Authorship was identified (Dennis Lanni wrote the five operations manuals) and Palmer directed the fix: retired name removed, the builder reference removed, the standard disclaimer added, and every factual claim verified into the register. The corrected manuals now sit in the program library; the originals stay archived as received.
 

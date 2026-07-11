@@ -32,6 +32,7 @@ Prepared for Dennis Lanni | HGF Management Company | July 2026
 9. Marketing pieces carry a securities-offer sentence in addition to the standard disclaimer; the capital brief leads with what is unproven.
 10. Verification posture during the image-viewer outage: mechanical audits (schema validators, token sweeps, unit tests, pixel and structure analysis) plus packaged screenshots and thumbnails for human eyes; nothing shipped on trust.
 11. Operations manuals adopted from quarantine at Palmer's direction (July 11): authorship resolved as Dennis Lanni, which reframed the thirteen draft service levels as founder policy pending his confirmation; corrections applied (name, builder reference, disclaimers) with claims verified into the register's new G-series; the project's em dash rule was lifted by Palmer the same day.
+12. Workbook corrected on Palmer's go-ahead (July 11), resolving question 8: both defects fixed in v1.1_corrected with the v1 original preserved; 120 cells changed and nothing else (diff-guarded), full recalculation clean, and the fix demonstrated by injecting identical test inputs into both files: the original zeroes hard costs, the corrected copy spreads them over the Development Cost Period and stops.
 
 ## Part 3: Corrections log (what was caught, by whom, and what changed)
 
