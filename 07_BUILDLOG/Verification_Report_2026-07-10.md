@@ -45,6 +45,16 @@ Visual pass: every page of every PDF rasterized into labeled contact sheets (pla
 2. Quarantined documents: Q7 decision required.
 3. Final skeptic re-pass (checklist 1.12) still gates the end-of-run handoff, as planned.
 
+## Second full-package pass, July 11 (post-completion loop)
+
+All agents re-run against the finished 69-file package. Content findings: **zero**. The loop instead caught and fixed three items in the verification infrastructure itself:
+
+1. **Agent W false negative.** The workbook-defect detector matched relative references (!B9) while the actual formulas use absolute notation (!$B$9), so it reported zero known defects. Pattern corrected; it now detects all 120 defect-bearing cells (2 rows across 60 month columns). The defects themselves are confirmed present and precisely recorded: DCF Model row 5 (Remaining Hard Costs) conditions on and divides by Market Assumptions B9, "Builder Incentives" (value 0), which silently zeroes hard costs instead of spreading them over the 12-month Development Cost Period in B10; row 6 (Remaining Soft Costs) uses B10 where the Soft Cost Period in B11 belongs. Corrected formulas are staged, gated on question 8. Hash comparison proves the carried workbook is bit-identical to the original, so package integrity holds.
+2. **Stale quality-control screenshots.** The packaged website captures predated the number-formatting fix and showed uncommaed figures. Both recaptured from the shipped page; the rendered text layer again proves the calculator executes and now reads $2,298.
+3. **Human-review pack refreshed.** The image viewer remained unavailable this session (two failed attempts on known-good files), so fresh contact sheets of every current document (plan set, program set, marketing set) were regenerated and packaged at 07_BUILDLOG/qc alongside the deck thumbnails and site screenshots. The one-look human pass before printing remains the standing recommendation.
+
+Re-verified this pass: calculator ($2,298 / $250,000 / zero-rate edge), deck schema (All validations PASSED), structure map audit (PASS), Census recompute from primary files (match), outputs hash sync (zero stale), quarantine still excluded from deliverables. Links: 51 checked, 48 clean; the three failures are the same bot-blocked pages (Elk Grove program page, one law-blog explainer, Vacaville program page), each previously verified readable through a second route; no citation rests on a dead source.
+
 **Status: final sweep CLEAN. Package integrity confirmed. The user-visible outputs tree was never contaminated by the quarantined files.**
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal quality-control record. Not an offer of financing, legal advice, or investment advice.*

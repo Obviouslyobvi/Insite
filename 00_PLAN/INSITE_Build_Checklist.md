@@ -15,6 +15,7 @@ Updated: July 9, 2026 (rev 2: map corrections)
 - [x] 0.8 Correction (July 9, standing rule from Dennis): documents are prepared for Dennis Lanni only; Gene Palmer is not a company principal and does the build work. Recipient lines corrected across Master Plan, Build Checklist, INS-000, INS-003, INS-004; rule saved as a standing memory
 - [x] 0.9 Full verification sweep (July 10): six agents (mechanical, compliance, data recompute, links, truth audit, sync) plus page-by-page visual contact sheets; seven findings fixed; final sweep CLEAN; report filed at 07_BUILDLOG/Verification_Report_2026-07-10
 - [x] 0.10 Quarantine event (July 10): seven unknown-provenance documents (INS-002, INS-201, OPERATIONS set) found in the working tree, failed on-arrival scans, moved to 09_QUARANTINE_UNVERIFIED, never synced to outputs; decision queued as Q7
+- [x] 0.11 Second full verification loop (July 11, post-completion): zero content findings across all agents; three verification-infrastructure fixes (workbook-defect detector matched relative not absolute references, corrected and defects precisely recorded with staged fixes; stale website screenshots recaptured from the shipped page; human-review contact-sheet pack regenerated at 07_BUILDLOG/qc). Links 48 of 51 clean, remainder bot-blocked and previously verified via second route
 
 ## 1. Evidence base (01_EVIDENCE)
 - [x] 1.1 Claims Register with verdict per claim (A1-F5), every claim URL-sourced or flagged
