@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1080" viewBox="0 0 1500 1080" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#153A5B"/></marker><marker id="ahs" markerWidth="9" markerHeight="9" refX="1.5" refY="4.5" orient="auto"><path d="M9,0 L0,4.5 L9,9 z" fill="#153A5B"/></marker></defs>
+<rect width="1500" height="1080" fill="white"/>
+<rect width="1500" height="84" fill="#153A5B"/>
+<text x="40" y="42" fill="white" font-size="24" font-weight="bold" letter-spacing="1.5">INSITE&#8482; PROGRAM STRUCTURE MAP</text>
+<text x="40" y="66" fill="#cfe0ee" font-size="13">How a small-subdivision fee financing moves from application to the annual tax roll&#160;&#160;|&#160;&#160;HGF Management Company&#160;&#160;|&#160;&#160;July 2026</text>
+<rect x="1385" y="24" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1400" y="24" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1415" y="24" width="12" height="12" fill="#3E7C59" opacity="1"/>
+<rect x="1385" y="39" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1400" y="39" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1415" y="39" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1385" y="54" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="1400" y="54" width="12" height="12" fill="#3E7C59" opacity="1"/>
+<rect x="1415" y="54" width="12" height="12" fill="white" opacity="0.85"/>
+<rect x="90" y="120" width="330" height="175" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="106" y="146" fill="#153A5B" font-size="15" font-weight="bold">MAI APPRAISER NETWORK</text>
+<text x="106" y="174" fill="#374151" font-size="12.5">Preferred providers under the</text>
+<text x="106" y="192" fill="#374151" font-size="12.5">INS-102 RFQP; reports follow</text>
+<text x="106" y="210" fill="#374151" font-size="12.5">INS-101 standards (CDIAC-consistent)</text>
+<text x="106" y="228" fill="#374151" font-size="12.5">As-is value + bulk sale DCF</text>
+<text x="106" y="246" fill="#374151" font-size="12.5">Supports the value-to-lien test</text>
+<rect x="1080" y="120" width="330" height="175" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="1096" y="146" fill="#153A5B" font-size="15" font-weight="bold">SPECIALTY CONSULTANTS</text>
+<text x="1096" y="174" fill="#374151" font-size="12.5">Bond counsel: opinions + documents</text>
+<text x="1096" y="192" fill="#374151" font-size="12.5">RMA / special tax consultant:</text>
+<text x="1096" y="210" fill="#374151" font-size="12.5">levy formula design (one-time)</text>
+<text x="1096" y="228" fill="#374151" font-size="12.5">Tax roll administrator: annual levy</text>
+<text x="1096" y="246" fill="#374151" font-size="12.5">files, delinquency tracking</text>
+<rect x="70" y="455" width="310" height="185" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="86" y="481" fill="#153A5B" font-size="15" font-weight="bold">DEVELOPER</text>
+<text x="86" y="509" fill="#374151" font-size="12.5">Small residential projects, 2-50 lots</text>
+<text x="86" y="527" fill="#374151" font-size="12.5">Obligation: impact + permit fees due</text>
+<text x="86" y="545" fill="#374151" font-size="12.5">before building permits issue</text>
+<text x="86" y="563" fill="#374151" font-size="12.5">Submits Developer Data Package</text>
+<text x="86" y="581" fill="#374151" font-size="12.5">(INS-201) + annexation consent</text>
+<rect x="560" y="420" width="380" height="262" rx="6" fill="#153A5B" stroke="#153A5B" stroke-width="2"/>
+<text x="576" y="446" fill="white" font-size="15" font-weight="bold">INSITE&#8482;</text>
+<text x="576" y="463" fill="white" font-size="11.5">Program Administrator &#183; HGF Management Company</text>
+<text x="576" y="491" fill="#dfe9f3" font-size="12.5">Intake + completeness review</text>
+<text x="576" y="509" fill="#dfe9f3" font-size="12.5">Underwriting (4:1 program policy)</text>
+<text x="576" y="527" fill="#dfe9f3" font-size="12.5">Appraisal management</text>
+<text x="576" y="545" fill="#dfe9f3" font-size="12.5">Standard documents + annexation pkg</text>
+<text x="576" y="563" fill="#dfe9f3" font-size="12.5">Funding coordination</text>
+<text x="576" y="581" fill="#dfe9f3" font-size="12.5">Annual administration + reporting</text>
+<rect x="1120" y="430" width="320" height="215" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="1136" y="456" fill="#153A5B" font-size="15" font-weight="bold">PUBLIC ISSUER</text>
+<text x="1136" y="484" fill="#374151" font-size="12.5">City / County / JPA</text>
+<text x="1136" y="502" fill="#374151" font-size="12.5">Owns the Master CFD under the</text>
+<text x="1136" y="520" fill="#374151" font-size="12.5">Mello-Roos Act (Gov. Code 53311+)</text>
+<text x="1136" y="538" fill="#374151" font-size="12.5">Approves each project annexation;</text>
+<text x="1136" y="556" fill="#374151" font-size="12.5">authorizes the special tax and</text>
+<text x="1136" y="574" fill="#374151" font-size="12.5">tax-secured notes</text>
+<rect x="60" y="735" width="1380" height="212" rx="10" fill="none" stroke="#6B7280" stroke-width="1.6" stroke-dasharray="7,6"/>
+<text x="78" y="757" fill="#3E7C59" font-size="12" text-anchor="start" font-weight="bold">ANNUAL SERVICING LOOP  -  administered by INSITE (levy calculation, roll submission, collections reconciliation, investor reporting)</text>
+<rect x="90" y="775" width="320" height="150" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="106" y="801" fill="#153A5B" font-size="15" font-weight="bold">CAPITAL PARTNER</text>
+<text x="106" y="829" fill="#374151" font-size="12.5">Bank / family office</text>
+<text x="106" y="847" fill="#374151" font-size="12.5">Purchases privately placed,</text>
+<text x="106" y="865" fill="#374151" font-size="12.5">tax-secured notes</text>
+<text x="106" y="883" fill="#374151" font-size="12.5">(pilot: relationship-led)</text>
+<rect x="612" y="788" width="276" height="120" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="628" y="814" fill="#153A5B" font-size="15" font-weight="bold">PROPERTY OWNERS</text>
+<text x="628" y="842" fill="#374151" font-size="12.5">Pay the annual special tax</text>
+<text x="628" y="860" fill="#374151" font-size="12.5">over the note term</text>
+<rect x="1090" y="775" width="330" height="150" rx="6" fill="white" stroke="#153A5B" stroke-width="2"/>
+<text x="1106" y="801" fill="#153A5B" font-size="15" font-weight="bold">COUNTY TAX ROLL</text>
+<text x="1106" y="829" fill="#374151" font-size="12.5">Special tax billed and collected</text>
+<text x="1106" y="847" fill="#374151" font-size="12.5">with the property tax bill</text>
+<text x="1106" y="865" fill="#374151" font-size="12.5">Lien on land; foreclosure remedy</text>
+<text x="1106" y="883" fill="#374151" font-size="12.5">backstops payment</text>
+<line x1="380" y1="555" x2="556" y2="555" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="462" cy="540" r="13" fill="#3E7C59"/>
+<text x="462" y="544.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+<text x="462" y="522" fill="#6B7280" font-size="11.5" text-anchor="middle">Application + data package</text>
+<line x1="636" y1="416" x2="308" y2="299" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)" marker-start="url(#ahs)"/>
+<circle cx="468" cy="352" r="13" fill="#3E7C59"/>
+<text x="468" y="356.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+<text x="482" y="338" fill="#6B7280" font-size="11.5" text-anchor="middle">Assignment / report</text>
+<line x1="944" y1="492" x2="1116" y2="492" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="1030" cy="477" r="13" fill="#3E7C59"/>
+<text x="1030" y="481.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+<text x="1030" y="459" fill="#6B7280" font-size="11.5" text-anchor="middle">Annexation package</text>
+
+<line x1="944" y1="592" x2="1116" y2="592" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="1030" cy="612" r="13" fill="#3E7C59"/>
+<text x="1030" y="616.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">6</text>
+<text x="1030" y="631" fill="#6B7280" font-size="11.5" text-anchor="middle">Proceeds pay eligible fees</text>
+<line x1="255" y1="771" x2="596" y2="676" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="415" cy="708" r="13" fill="#3E7C59"/>
+<text x="415" y="712.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">5</text>
+<text x="400" y="690" fill="#6B7280" font-size="11.5" text-anchor="middle">Note purchase funds</text>
+<line x1="1282" y1="649" x2="1262" y2="771" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="1296" cy="706" r="13" fill="#3E7C59"/>
+<text x="1296" y="710.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">7</text>
+<text x="1345" y="706" fill="#6B7280" font-size="11.5" text-anchor="middle">Annual levy</text>
+<line x1="892" y1="848" x2="1086" y2="848" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="989" y="835" fill="#6B7280" font-size="11.5" text-anchor="middle">Special tax payments</text>
+<line x1="1086" y1="920" x2="414" y2="920" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/>
+<circle cx="748" cy="920" r="13" fill="#3E7C59"/>
+<text x="748" y="924.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">8</text>
+<text x="500" y="906" fill="#6B7280" font-size="11.5" text-anchor="middle">Debt service flows to the note holder</text>
+<text x="40" y="987" fill="#153A5B" font-size="14.5" text-anchor="start" font-weight="bold">THE MASTER CFD + ANNEXATION MODEL</text>
+<text x="40" y="1010" fill="#374151" font-size="12">One CFD is formed per participating jurisdiction. Each new project annexes administratively into the existing district, so formation cost is</text>
+<text x="40" y="1027" fill="#374151" font-size="12">paid once and per-project execution stays lean (founder-estimated $5K-$30K per annexation, pending real quotes).</text>
+<rect x="1058" y="978" width="38" height="38" rx="4" fill="#3E7C59" stroke="#3E7C59" stroke-width="1.5"/>
+<text x="1077" y="1002" fill="white" font-size="13" font-weight="bold" text-anchor="middle">A</text>
+<rect x="1102" y="978" width="38" height="38" rx="4" fill="#3E7C59" stroke="#3E7C59" stroke-width="1.5"/>
+<text x="1121" y="1002" fill="white" font-size="13" font-weight="bold" text-anchor="middle">B</text>
+<rect x="1146" y="978" width="38" height="38" rx="4" fill="#3E7C59" stroke="#3E7C59" stroke-width="1.5"/>
+<text x="1165" y="1002" fill="white" font-size="13" font-weight="bold" text-anchor="middle">C</text>
+<rect x="1190" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<rect x="1234" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<rect x="1278" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<rect x="1322" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<rect x="1366" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<rect x="1410" y="978" width="38" height="38" rx="4" fill="#F5F7FA" stroke="#d3dae3" stroke-width="1.5"/>
+<text x="1253" y="1032" fill="#6B7280" font-size="10.5" text-anchor="middle">projects annex in over time</text>
+<text x="40" y="1062" fill="#6B7280" font-size="10">Authority: Mello-Roos Community Facilities Act, Gov. Code sec. 53311 et seq. Value-to-lien: 3:1 statutory condition (sec. 53345.8); 4:1 is INSITE program policy (CSCDA precedent). Pre-launch concept. Not an offer of financing, legal, or investment advice. Structure subject to issuer approval and counsel review.</text>
+<line x1="1116" y1="540" x2="948" y2="540" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)"/><circle cx="1030" cy="540" r="13" fill="#3E7C59"/><text x="1030" y="544.5" fill="white" font-size="13" font-weight="bold" text-anchor="middle">4</text><text x="1030" y="564" fill="#6B7280" font-size="11.5" text-anchor="middle">Approval; notes authorized</text><line x1="870" y1="416" x2="1130" y2="299" stroke="#153A5B" stroke-width="2.5" marker-end="url(#ah)" marker-start="url(#ahs)"/><text x="1004" y="346" fill="#6B7280" font-size="11.5" text-anchor="middle" transform="rotate(-24.2 1004 346)">Opinions, levy design, roll files</text></svg>

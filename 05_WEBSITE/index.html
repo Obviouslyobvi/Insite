@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INSITE | Development Impact Fee Financing Program</title>
+<style>
+:root{--navy:#153A5B;--green:#3E7C59;--slate:#6B7280;--light:#F5F7FA;--ink:#26303a;--line:#d3dae3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink);font-size:16px;line-height:1.55;background:#fff}
+.prelaunch{background:#7a4a12;color:#fff;text-align:center;font-size:13px;padding:7px 14px;letter-spacing:.3px}
+header{background:var(--navy);position:sticky;top:0;z-index:20;box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.nav{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;flex-wrap:wrap;gap:10px}
+.nav a{color:#cfe0ee;text-decoration:none;font-size:14px;letter-spacing:.4px;margin-left:20px}
+.nav a:hover{color:#fff}
+.navlinks{display:flex;flex-wrap:wrap}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:58px 0}
+h1{font-size:clamp(28px,4.6vw,44px);line-height:1.14;color:var(--navy);margin:0 0 14px 0}
+h2{font-size:clamp(21px,3vw,28px);color:var(--navy);margin:0 0 6px 0}
+h3{font-size:17px;color:var(--navy);margin:0 0 6px 0}
+.kicker{color:var(--green);font-weight:bold;letter-spacing:2.4px;font-size:12.5px;text-transform:uppercase;margin-bottom:10px}
+.lede{font-family:Georgia,'Times New Roman',serif;font-size:clamp(16px,2vw,19px);color:#3b4653;max-width:62ch}
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:820px){.g3,.g2{grid-template-columns:1fr}.statnum{font-size:26px}}
+.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:12px 20px;font-size:15px;letter-spacing:.4px;border:0;cursor:pointer}
+.btn.alt{background:var(--green)}
+.btn:hover{filter:brightness(1.12)}
+.hero{background:linear-gradient(180deg,#fff 0%,var(--light) 100%);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+@media(max-width:820px){.stats{grid-template-columns:1fr}}
+.stat{background:#fff;border:1px solid var(--line);border-top:4px solid var(--green);padding:16px 18px}
+.statnum{font-size:30px;font-weight:bold;color:var(--navy)}
+.statlab{font-size:13.5px;color:var(--slate);margin-top:4px}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);padding:20px}
+.card ul{margin:8px 0 0 18px;padding:0}
+.card li{margin:7px 0;font-size:14.5px}
+.steps{counter-reset:s;display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);padding:16px}
+.step:before{counter-increment:s;content:counter(s);display:inline-block;background:var(--green);color:#fff;width:28px;height:28px;border-radius:50%;text-align:center;line-height:28px;font-weight:bold;margin-bottom:8px}
+.band{background:var(--navy);color:#e8eef5}
+.band h2,.band h3{color:#fff}
+.band .kicker{color:#9fd0b4}
+.note{background:var(--light);border:1px solid var(--line);border-left:4px solid var(--green);padding:12px 14px;font-size:14px;margin:14px 0}
+.warn{border-left-color:#b45309}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th{background:var(--navy);color:#fff;text-align:left;padding:9px 10px}
+td{border:1px solid var(--line);padding:9px 10px;vertical-align:top}
+tr:nth-child(even) td{background:var(--light)}
+.calc{background:var(--light);border:1px solid var(--line);padding:22px}
+.calc .grid{gap:14px}
+.field label{display:block;font-size:13px;color:var(--navy);font-weight:bold;margin-bottom:4px}
+.field input{width:100%;padding:9px;border:1px solid var(--line);font-size:15px}
+.field small{display:block;color:var(--slate);font-size:11.5px;margin-top:3px}
+.res{background:#fff;border:1px solid var(--line);padding:16px}
+.res h3{border-bottom:2px solid var(--green);padding-bottom:4px}
+.res .big{font-size:24px;font-weight:bold;color:var(--navy)}
+.res .sub{font-size:12.5px;color:var(--slate)}
+.res ul{margin:8px 0 0 16px;padding:0;font-size:13.5px}
+.src{color:var(--slate);font-size:12px}
+footer{background:var(--navy);color:#b9c9d8;font-size:12.5px;padding:34px 0}
+footer a{color:#cfe0ee}
+.faq details{border:1px solid var(--line);background:#fff;padding:12px 16px;margin:8px 0}
+.faq summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+.faq p{font-size:14.5px}
+.evi td:first-child{width:58%}
+.anx{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}
+.anx .cell{width:34px;height:34px;background:var(--light);border:1.5px dashed var(--line)}
+.anx .cell.on{background:var(--green);border:1.5px solid var(--green)}
+.anx .cap{font-size:12.5px;color:var(--slate);margin-left:6px}
+</style>
+</head>
+<body>
+<div class="prelaunch">Pre-launch program concept. Not an offer of financing, legal advice, or investment advice. Subject to issuer approval and counsel review.</div>
+<header>
+  <div class="nav">
+    <a href="#top" style="margin-left:0;display:flex;align-items:center;gap:12px">
+      <svg width="212" height="44" viewBox="0 0 1560 360" xmlns="http://www.w3.org/2000/svg" aria-label="INSITE">
+        <g>
+          <rect x="54" y="45" width="58" height="58" fill="#ffffff"/><rect x="123" y="45" width="58" height="58" fill="#ffffff"/><rect x="192" y="45" width="58" height="58" fill="#ffffff"/><rect x="261" y="45" width="58" height="58" fill="#ffffff"/>
+          <rect x="54" y="114" width="58" height="58" fill="#ffffff"/><rect x="123" y="114" width="58" height="58" fill="#ffffff"/><rect x="192" y="114" width="58" height="58" fill="#ffffff"/><rect x="261" y="114" width="58" height="58" fill="#3E7C59"/>
+          <rect x="54" y="183" width="58" height="58" fill="#ffffff"/><rect x="123" y="183" width="58" height="58" fill="#ffffff"/><rect x="192" y="183" width="58" height="58" fill="#3E7C59"/><rect x="261" y="183" width="58" height="58" fill="#3E7C59"/>
+          <rect x="54" y="252" width="58" height="58" fill="#ffffff"/><rect x="123" y="252" width="58" height="58" fill="#3E7C59"/><rect x="192" y="252" width="58" height="58" fill="#3E7C59"/><rect x="261" y="252" width="58" height="58" fill="#ffffff"/>
+          <text x="360" y="212" fill="#ffffff" font-size="132" font-weight="bold" letter-spacing="6" font-family="Helvetica,Arial,sans-serif">INSITE</text>
+          <text x="852" y="128" fill="#ffffff" font-size="34" font-family="Helvetica,Arial,sans-serif">&#8482;</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="navlinks">
+      <a href="#how">How it works</a>
+      <a href="#who">Who it serves</a>
+      <a href="#calc">Calculator</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#faq">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Development Impact Fee Financing Program</div>
+    <h1>California's impact fees are due before the first home sells.<br/>The check doesn't have to come from the builder's cash.</h1>
+    <p class="lede">INSITE is a proposed program that lets small residential subdivisions, 2 to 50 lots, finance eligible development impact fees and public improvements through a voluntary special tax on the project's own land, collected with the county property tax bill. The legal tool has existed since 1982. INSITE's contribution is an operating model that makes it economical at small scale.</p>
+    <p style="margin-top:20px">
+      <a class="btn" href="#calc">Run the numbers</a>
+      <a class="btn alt" href="#how" style="margin-left:8px">See how it works</a>
+    </p>
+    <div class="stats">
+      <div class="stat"><div class="statnum">$23,455</div><div class="statlab">Average California impact fee per single-family home in 2015, nearly 3x the national average (Terner Center, UC Berkeley)</div></div>
+      <div class="stat"><div class="statnum">62,372</div><div class="statlab">California housing units permitted in 1-to-4-unit structures in 2025 (U.S. Census Building Permits Survey, primary data)</div></div>
+      <div class="stat"><div class="statnum">9.5% to 15%</div><div class="statlab">Typical private "hard money" pricing in 2025-2026 rate guides, the small builder's current alternative</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="kicker">How it works</div>
+    <h2>One district per city. One signature per project.</h2>
+    <p class="lede">Under the Mello-Roos Community Facilities Act (Government Code section 53311 and following), a public agency forms a Community Facilities District once, with a recorded future annexation area. Each small project then joins by administrative annexation as its own tax zone, with its own note and no connection to any other project's debt.</p>
+    <div class="steps" style="margin-top:26px">
+      <div class="step"><h3>Submit the package</h3>Title, maps, budgets, and fee schedules on the standard checklist (form INS-201).</div>
+      <div class="step"><h3>Independent appraisal</h3>An MAI appraiser confirms the lots are worth at least four times the financing. The statute requires three; program policy requires four.</div>
+      <div class="step"><h3>Administrative annexation</h3>The landowner signs a one-page approval and the project joins the district as its own zone. No election, no hearing.</div>
+      <div class="step"><h3>Funding</h3>A privately placed, tax-secured note pays the eligible fees. Repayment rides the county tax roll over the note term.</div>
+    </div>
+    <div class="anx" aria-hidden="true">
+      <div class="cell on"></div><div class="cell on"></div><div class="cell on"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      <span class="cap">Projects annex into the existing district over time. Formation cost is paid once per jurisdiction.</span>
+    </div>
+    <div class="note">Built-in protections: the tax is approved by the landowner on their own undeveloped land; an occupied home's tax cannot rise more than 10 percent because a neighbor went delinquent (section 53321(d)); every owner holds a defined prepayment right; and each zone repays only its own note (section 53339.3(d)). This architecture operates today in Escondido, Chula Vista, and Roseville.</div>
+  </div>
+</section>
+
+<section class="band" id="who">
+  <div class="wrap">
+    <div class="kicker">Who it serves</div>
+    <h2>Three audiences, one structure.</h2>
+    <div class="grid g3" style="margin-top:22px">
+      <div class="card"><h3>Developers</h3>
+        <ul>
+          <li>Finance eligible fees instead of writing the check at the permit counter</li>
+          <li>The obligation belongs to the land: it transfers at sale, is disclosed to buyers, and is prepayable</li>
+          <li>Eligibility: 2 to 50 lots, participating California jurisdictions, appraised value of four times the financing; minimum size set at feasibility screening</li>
+          <li>School fees are excluded at launch</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Cities and public agencies</h3>
+        <ul>
+          <li>Adopt policies and form one district, once; approve each annexation afterward</li>
+          <li>Repayment comes only from special taxes on participating parcels, never the general fund</li>
+          <li>Elk Grove's staff report on the existing statewide programs: the city "incurs no financial liability or risk by participating"</li>
+          <li>Supports the small-lot pipeline that Senate Bills 684 and 1123 now approve on a 60-day ministerial clock</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Capital partners</h3>
+        <ul>
+          <li>Recorded special-tax lien, billed and collected with property taxes, foreclosure remedy behind it</li>
+          <li>Four-to-one appraised cushion by independent MAI appraisers to State Treasurer (CDIAC) standards</li>
+          <li>Zone isolation: each note is secured only by its own project's special taxes</li>
+          <li>Honesty first: pre-launch, no note closed, no purchaser committed, pricing set at term sheet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="calc">
+  <div class="wrap">
+    <div class="kicker">The calculator</div>
+    <h2>Compare three ways to cover the fee bill.</h2>
+    <p class="lede">Every input is editable and every default is labeled with where it comes from. This is arithmetic for orientation, not a quote: no rate is promised, and final terms are set at a signed term sheet.</p>
+    <div class="calc" style="margin-top:20px">
+      <div class="grid g3">
+        <div class="field"><label for="lots">Number of lots</label><input id="lots" type="number" value="10" min="2" max="50"/><small>Program range: 2 to 50</small></div>
+        <div class="field"><label for="fees">Financeable public fees per unit ($)</label><input id="fees" type="number" value="25000" step="1000"/><small>Assumption used in program materials; California averages ran $19,806 to $23,455 in cited studies and can exceed $150,000</small></div>
+        <div class="field"><label for="hold">Months you hold lots before homes sell</label><input id="hold" type="number" value="18" min="1"/><small>Your build and absorption estimate</small></div>
+        <div class="field"><label for="prate">Private money rate (% per year)</label><input id="prate" type="number" value="12" step="0.25"/><small>2025-2026 guides: roughly 9.5 to 15</small></div>
+        <div class="field"><label for="irate">Land-secured note rate (% per year)</label><input id="irate" type="number" value="6" step="0.25"/><small>Founder target for orientation only; set at term sheet</small></div>
+        <div class="field"><label for="term">Note term (years)</label><input id="term" type="number" value="30" min="5" max="40"/><small>Typical land-secured range 20 to 40</small></div>
+        <div class="field"><label for="exec">Per-project execution cost ($)</label><input id="exec" type="number" value="17500" step="500"/><small>Founder estimate: $5,000 to $30,000, pending vendor quotes</small></div>
+        <div class="field"><label for="admin">Annual zone administration ($)</label><input id="admin" type="number" value="3000" step="250"/><small>Illustrative; recoverable through the levy under section 53317(d)</small></div>
+        <div class="field"><label for="cov">Coverage cushion (%)</label><input id="cov" type="number" value="10" step="5" min="0"/><small>Extra margin levied above debt service, standard in land-secured practice; matches the whitepaper example</small></div>
+        <div class="field" style="display:flex;align-items:flex-end"><button class="btn" id="go" type="button" style="width:100%">Recalculate</button></div>
+      </div>
+      <div class="grid g3" style="margin-top:18px">
+        <div class="res"><h3>Pay cash</h3>
+          <div class="big" id="r_cash_day1">$0</div><div class="sub">Developer cash out on day one</div>
+          <ul>
+            <li>Cost during your hold: <b id="r_cash_hold">$0</b></li>
+            <li>Who pays long term: you paid it all up front</li>
+          </ul>
+        </div>
+        <div class="res"><h3>Private loan</h3>
+          <div class="big" id="r_priv_day1">$0</div><div class="sub">Developer cash out on day one (fees borrowed)</div>
+          <ul>
+            <li>Interest during your hold: <b id="r_priv_hold">$0</b></li>
+            <li>Who pays long term: you, at sale (principal plus interest)</li>
+          </ul>
+        </div>
+        <div class="res"><h3>INSITE land-secured</h3>
+          <div class="big" id="r_ins_day1">$0</div><div class="sub">Developer cash out on day one (execution cost estimate)</div>
+          <ul>
+            <li>Special taxes you pay on unsold lots during your hold: <b id="r_ins_hold">$0</b></li>
+            <li>Estimated annual special tax per home: <b id="r_ins_annual">$0</b></li>
+            <li>Who pays long term: future owners, on the tax bill, disclosed before purchase and prepayable at any time</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note warn" style="margin-top:16px"><b>Read the fine print you'd want us to read to you.</b> The land-secured path is not free money: it shifts the fee cost into an annual special tax that the project's future homeowners pay over the note term, and you pay it yourself on any lot you still own each year. The comparison above shows exactly that. Values marked as targets or founder estimates are not commitments.</div>
+      <p class="src" id="formula"></p>
+    </div>
+  </div>
+</section>
+
+<section id="evidence" style="background:var(--light);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="kicker">Evidence</div>
+    <h2>Every number on this page has a source.</h2>
+    <table class="evi" style="margin-top:16px">
+      <tr><th>Claim</th><th>Source</th></tr>
+      <tr><td>Mello-Roos districts, special taxes, liens, landowner elections, formation timeline</td><td><a href="https://debtguide-api.treasurer.ca.gov/guide-pages/chapter-3-types-of-debt-obligations-issued-by-public-agencies/3-3-types-of-debt-obligations-organized-by-security-and-source-of-payment/3-3-7-special-assessments-special-taxes-and-tax-increments/3-3-7-2-mello-roos-bonds-community-facilities-districts">California Debt Financing Guide (State Treasurer)</a></td></tr>
+      <tr><td>Three-to-one statutory value condition and state appraisal standards (section 53345.8)</td><td><a href="https://www.treasurer.ca.gov/sites/default/files/cdiac/recmndPracticeR-E.pdf">CDIAC appraisal standards</a></td></tr>
+      <tr><td>Four-to-one policy precedent and 2 percent total-burden cap</td><td><a href="https://cscda.org/policies-fees/">CSCDA goals and policies</a></td></tr>
+      <tr><td>Average fees $23,455 per single-family home (2015), about 3x national; charges can exceed $150,000 per unit; affordable projects averaged $19,806 (2020-2023)</td><td><a href="https://ternercenter.berkeley.edu/research-and-policy/the-cost-of-building-housing-series/">Terner Center, UC Berkeley</a></td></tr>
+      <tr><td>103,856 units permitted in California in 2025; 62,372 in 1-to-4-unit structures</td><td><a href="https://www.census.gov/construction/bps/">U.S. Census Building Permits Survey (primary files, recomputed)</a></td></tr>
+      <tr><td>Private lending at roughly 9.5 to 15 percent</td><td><a href="https://www.northcoastfinancialinc.com/hard-money-loan-interest-rates/">Published 2025-2026 rate guides</a></td></tr>
+      <tr><td>Existing statewide programs: SCIP (typically from $500,000, pooled sales) and BOLD (~$550 million, 65+ projects, 12,000+ units since 2020)</td><td><a href="https://cscda.org/infrastructure-finance-programs/">CSCDA</a>, <a href="https://www.cmfa-ca.com/bold/">CMFA</a></td></tr>
+      <tr><td>Cities act as intermediaries with "no financial liability or risk"</td><td><a href="https://elkgrove.gov/sites/default/files/city-files/cityclerk/citycouncil/2021/Attachments/10-27-21_8.3.pdf">Elk Grove staff report</a></td></tr>
+      <tr><td>Ministerial 60-day approval of ten-lot subdivisions (SB 684, SB 1123)</td><td><a href="https://abag.ca.gov/technical-assistance/sb-684-2023-and-sb-1123-2024-small-lot-subdivision-and-housing-development">Association of Bay Area Governments</a></td></tr>
+      <tr><td>Annexation architecture in live districts</td><td><a href="https://escondido.gov/DocumentCenter/View/2034/Unanimous-Approval-Form-PDF">Escondido</a>, <a href="https://pub-chulavista.escribemeetings.com/filestream.ashx?DocumentId=25426">Chula Vista</a>, <a href="https://roseville.novusagenda.com/AgendaPublic/AttachmentViewer.ashx?AttachmentID=11768&amp;ItemID=4859">Roseville</a></td></tr>
+    </table>
+    <p class="src">Full register with fetch dates and verdicts: INSITE Claims Register, part of the program document library. INSITE is not the first program in this space and does not claim to be; it is a small-balance operating model on a proven mechanism.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">Questions people actually ask</div>
+    <h2>Straight answers.</h2>
+    <div class="faq" style="margin-top:14px">
+      <details><summary>Is this a new tax on homeowners?</summary><p>It is a voluntary special tax the landowner approves on their own undeveloped land before any homes exist. Buyers see it disclosed before purchase, it can be paid off early, and no one who owns a home today gets a new tax.</p></details>
+      <details><summary>Is the city on the hook?</summary><p>No. Notes are repaid only from the special taxes on the participating parcels. Neither the city's general fund nor its credit stands behind them, which is the same posture cities already take in the existing statewide programs.</p></details>
+      <details><summary>How is this different from SCIP or BOLD?</summary><p>Same body of law, different segment and operating model. SCIP's published materials describe financings from about $500,000 with pooled bond sales a few times a year; BOLD's track record averages roughly 185 units per project. INSITE is built for the 2-to-50-lot project: one district per city, administrative annexation, and one small note per project.</p></details>
+      <details><summary>What's your track record?</summary><p>Zero closed deals, and the structure assumes that. The security is the land, the county tax roll, and a four-to-one appraised cushion, verified by independent professionals under state standards. BOLD started from zero in 2020 and reached roughly $550 million in six years; in this market, structure and partners are the currency, not birthdays.</p></details>
+      <details><summary>Can it cover school fees?</summary><p>Not at launch. School fees are excluded from initial eligibility; the fee schedule is still collected during underwriting because it is part of the total tax-burden analysis.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Administered by HGF Management Company.</h2>
+    <p style="max-width:64ch">INSITE is a program administrator, not a lender. To request a developer feasibility screening, a briefing for public agency staff, or the capital diligence package, contact HGF Management Company. Contact details will be published at program launch.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>INSITE&#8482; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. Nothing on this page is an offer to sell, or a solicitation of an offer to buy, any security.</p>
+    <p>Sources current as of July 2026. This page is self-contained: it loads no external assets, sets no cookies, and runs no trackers or analytics.</p>
+  </div>
+</footer>
+
+<script>
+function money(x){x=Math.round(x);return '$'+String(x).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function pmt(P,annualRate,years){var r=annualRate/100; if(r<=0) return P/years; return P*r/(1-Math.pow(1+r,-years));}
+function calc(v){
+  var total=v.lots*v.fees;
+  var cash={day1:total,hold:0};
+  var priv={day1:0,hold:total*(v.prate/100)*(v.hold/12)};
+  var debtService=pmt(total,v.irate,v.term);
+  var annualReq=debtService*(1+v.cov/100)+v.admin;
+  var perHome=annualReq/v.lots;
+  var ins={day1:v.exec,hold:perHome*v.lots*(v.hold/12),annual:perHome};
+  return {cash:cash,priv:priv,ins:ins,total:total,debtService:debtService};
+}
+function read(){
+  return {lots:+document.getElementById('lots').value||0,
+    fees:+document.getElementById('fees').value||0,
+    hold:+document.getElementById('hold').value||0,
+    prate:+document.getElementById('prate').value||0,
+    irate:+document.getElementById('irate').value||0,
+    term:+document.getElementById('term').value||1,
+    cov:+document.getElementById('cov').value||0,
+    exec:+document.getElementById('exec').value||0,
+    admin:+document.getElementById('admin').value||0};
+}
+function render(){
+  var v=read(), r=calc(v);
+  document.getElementById('r_cash_day1').textContent=money(r.cash.day1);
+  document.getElementById('r_cash_hold').textContent=money(0);
+  document.getElementById('r_priv_day1').textContent=money(0);
+  document.getElementById('r_priv_hold').textContent=money(r.priv.hold);
+  document.getElementById('r_ins_day1').textContent=money(r.ins.day1);
+  document.getElementById('r_ins_hold').textContent=money(r.ins.hold);
+  document.getElementById('r_ins_annual').textContent=money(r.ins.annual);
+  document.getElementById('formula').textContent='Formulas in plain sight: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on total fees at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
+}
+document.getElementById('go').addEventListener('click',render);
+['lots','fees','hold','prate','irate','term','exec','admin','cov'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
+render();
+</script>
+</body>
+</html>
