@@ -19,6 +19,7 @@ Updated: July 9, 2026 (rev 2: map corrections)
 - [x] 0.12 What's Missing checklist built (md + PDF, 00_PLAN): plain-language gap list in four buckets (Dennis decisions, professional signatures, real-world proof, housekeeping), each entry with the why and what it blocks; swept clean
 - [x] 0.13 Correction (July 11, caught by the builder in a live browser): website card text was near-invisible inside the navy band (CSS color inheritance; headings at 1.00 contrast, bullets at 1.17). Fixed; screenshots recaptured; and the verification gap closed permanently with a WCAG contrast agent (tools/contrast_check.py) that proved 15 failures on the old page and clean on the fixed page plus all four other web artifacts
 - [x] 0.14 Copy correction (July 11, raised by the builder): calculator label "Developer cash out on day one" read like money received rather than money spent (idiom collision). Replaced on all three cards with "Cash you pay on day one" plus a plain parenthetical; contrast agent re-passed, calculator execution re-proven, screenshots recaptured
+- [x] 0.15 Overclaim correction (July 11, raised by the builder): hero and headline copy implied the builder pays nothing, contradicting the calculator's own honest costs. Reworded to "Most of that check/cash" on the website and developer one-pager, added a hero sentence naming the costs the builder still pays, and tightened primer step 6; all three re-rendered and verified
 
 ## 1. Evidence base (01_EVIDENCE)
 - [x] 1.1 Claims Register with verdict per claim (A1-F5), every claim URL-sourced or flagged

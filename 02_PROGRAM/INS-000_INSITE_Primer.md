@@ -174,7 +174,7 @@ This follows the numbered flows on the INSITE Program Structure Map:
 3. **Annexation package.** INSITE prepares the standardized annexation documents and delivers them to the issuer.
 4. **Approval.** The issuer approves the annexation into the Master CFD and authorizes the special tax and the notes.
 5. **Funding.** The capital partner (a bank or family office) purchases the privately placed, tax-secured note.
-6. **Fees get paid.** Note proceeds pay the eligible public fees to the city and districts. The developer's obligation is satisfied without draining the developer's cash.
+6. **Fees get paid.** Note proceeds pay the eligible public fees to the city and districts. The developer still pays the deal's execution costs and the special tax on any lot they hold, but the fee check itself does not come from the developer's pocket.
 7. **The levy.** Each year, the special tax is placed on the county tax roll for the parcels in the project.
 8. **Repayment.** Property owners pay the special tax with their property tax bill. Collections flow through as debt service to the note holder. INSITE administers the whole annual cycle: levy calculation, roll submission, collections reconciliation, delinquency monitoring, and investor reporting.
 
