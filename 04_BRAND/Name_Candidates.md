@@ -14,6 +14,10 @@ The INSITE name carries a live federal trademark registration by another company
 
 Every name below returned "unregistered" from Verisign's authoritative .com registry (the RDAP service) at the moment of checking. That is a snapshot: any name can be registered by anyone at any time, and registrars may price a few as premium. The practical move is for Dennis to register his top two or three immediately (registration is cheap; losing the good one is not) and have the attorney run knockout searches before adopting any of them. Attorney clearance remains mandatory regardless of which name wins, exactly as question 1 already requires.
 
+## The .org companion check (added the same day)
+
+All 158 candidates were rerun against the .org registry of record (Public Interest Registry's RDAP service, validated in both directions before use). 118 of the 158 are unregistered there, and the headline is unusually clean: every one of the 42 names above also has its .org free, all eight tier-one names included, so each finalist can be secured as a matched .com and .org pair for roughly the cost of lunch. Another 76 names are free only on .org because someone else owns the .com; a few are otherwise-strong names (ReadyLot, FirstLot, LotWorks, FeeBridge, LotSpring), but building a brand on an .org while a stranger operates the matching .com invites leaked traffic and confusion, so treat the org-only list as a curiosity rather than a bench. On which address should lead: SCIP's sponsor lives at a .org because it is a public joint powers authority, and HGF is a private administrator, so the honest and conventional play is the .com as the primary address with the .org registered defensively and redirected to it.
+
 ## How they were judged
 
 Five tests, in order of weight: does it sound credible to a city finance director and a bank (institutional weight); does it make sense standing next to "Development Impact Fee Financing Program" (clarity); does it survive being said once over the phone (spelling); does it collide with anyone (screened at the knowledge level, with web checks on the top three); and does it travel beyond California (breadth).
