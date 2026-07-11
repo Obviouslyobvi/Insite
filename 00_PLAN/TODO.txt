@@ -4,12 +4,8 @@ Name decision on record: keeping INSITE as a placeholder pending the trademark a
 
 YOURS (hours)
 [ ] Ten-minute eyeball pass: contact sheets at 07_BUILDLOG/qc, deck thumbnails at 06_DECK/qc, website captures at 05_WEBSITE/qc
-[ ] Push the repository: download insite.bundle from the delivery folder, then on your machine:
-      git clone insite.bundle insite && cd insite
-      git remote set-url origin https://github.com/Obviouslyobvi/Insite.git
-      git push -u origin master
-    (GitHub will ask for your login once. No PR needed: master pushes directly to your own repo.)
-[ ] After the push, these preview links go live immediately (no setup):
+[x] Push the repository: DONE July 11. GitHub confirmed serving commit 9e165e7, identical to the build repository; repo is public.
+[x] Preview links: LIVE and verified (the served page contains the working calculator):
       Website + calculator:  https://raw.githack.com/Obviouslyobvi/Insite/master/05_WEBSITE/index.html
       Developer one-pager:   https://raw.githack.com/Obviouslyobvi/Insite/master/03_MARKETING/src/INSITE_Developer_OnePager.html
       City/agency brief:     https://raw.githack.com/Obviouslyobvi/Insite/master/03_MARKETING/src/INSITE_City_Agency_Brief.html
