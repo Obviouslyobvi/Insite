@@ -9,6 +9,7 @@ Program Administrator: HGF Management Company | July 2026
 | INS-000 | The INSITE Primer (plain-language education) | Built v1.0, verified | Refresh after pilot closes |
 | INS-001 | Brand Standards and Publication Manual | Legacy draft in project files; superseded in practice by the one-page Brand Kit and SVG logo masters (04_BRAND) | Consolidate draft + kit into v1.0 when the name decision lands |
 | INS-002 | Program Whitepaper | Built v1.0, verified (PDF, editable Word, source) | v1.1 after counsel review, consultant names, and pilot specifics |
+| INS-002 v1.1 | Program Whitepaper, placeholder edition | Released July 11: version 1.0 with launch-dependent blanks bracketed as explicit placeholders, contact and website added (insite-ca.org), change log appended; v1.0 retained unchanged | Bond counsel review before any external release |
 | INS-003 | RMA Design and Issuer Strategy | Built, verified | Counsel review of the five flagged questions |
 | INS-004 | Sourcing Strategy | Built, verified | Populate with selected firms |
 | INS-005 | Credibility Plan | Built, verified | Add advisor bios when confirmed |

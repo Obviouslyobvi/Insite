@@ -1,0 +1,42 @@
+INSITE TO-DO LIST  (July 11, 2026)
+This plain checklist supersedes the What's Missing document.
+Name decision on record: keeping INSITE as a placeholder pending the trademark attorney's yes-or-no. Website: insite-ca.org.
+
+YOURS (hours)
+[ ] Ten-minute eyeball pass: contact sheets at 07_BUILDLOG/qc, deck thumbnails at 06_DECK/qc, website captures at 05_WEBSITE/qc
+[ ] Push the repository: download insite.bundle from the delivery folder, then on your machine:
+      git clone insite.bundle insite && cd insite
+      git remote set-url origin https://github.com/Obviouslyobvi/Insite.git
+      git push -u origin master
+    (GitHub will ask for your login once. No PR needed: master pushes directly to your own repo.)
+[ ] After the push, these preview links go live immediately (no setup):
+      Website + calculator:  https://raw.githack.com/Obviouslyobvi/Insite/master/05_WEBSITE/index.html
+      Developer one-pager:   https://raw.githack.com/Obviouslyobvi/Insite/master/03_MARKETING/src/INSITE_Developer_OnePager.html
+      City/agency brief:     https://raw.githack.com/Obviouslyobvi/Insite/master/03_MARKETING/src/INSITE_City_Agency_Brief.html
+      Capital brief:         https://raw.githack.com/Obviouslyobvi/Insite/master/03_MARKETING/src/INSITE_Capital_Partner_Brief.html
+      Brand kit:             https://raw.githack.com/Obviouslyobvi/Insite/master/04_BRAND/INSITE_Brand_Kit.html
+    Optional nicer URLs: repo Settings > Pages > deploy from master root, then
+      https://obviouslyobvi.github.io/Insite/05_WEBSITE/
+[ ] Hand Dennis the stack in the order given in Delivery_Order_for_Dennis.txt; collect his answers
+
+DENNIS (one sitting plus follow-ups)
+[ ] Trademark attorney yes-or-no on INSITE (name kept until this answer)
+[ ] Pilot-description rule: stay generic or name the project (his call, possibly the landowner's too)
+[ ] Final company entity: confirm HGF Management Company is the permanent entity
+[ ] Minimum deal size: publish a floor or deliberately publish none
+[ ] County timing: open the Sacramento conversation now, or after the pilot closes
+
+PROFESSIONALS (weeks)
+[ ] Engage the bond attorney (gates the whitepaper going external and every closing)
+[ ] Select the special tax consultant (drafts the reusable tax formula template)
+[ ] Contract the tax roll administrator
+[ ] Confirm the named advisor and get the one-page bio
+
+BUILD (unblocked, mine on request)
+[ ] Consolidate the brand manual into v1.0 (legacy draft + Brand Kit; unblocked now that the name stays)
+
+REALITY (months)
+[ ] Win a city: policies adopted, master financing district formed (roughly six months)
+[ ] Sign a capital term sheet (turns every target rate into a real one)
+[ ] Close the pilot (turns founder estimates into facts)
+[ ] Run the first annual levy cycle (proves the recurring-revenue machine)

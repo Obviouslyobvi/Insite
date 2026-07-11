@@ -1,5 +1,7 @@
 # What's Missing, and Why It Matters
 
+**Superseded, July 11, 2026.** The live successor to this document is the plain checklist at 00_PLAN/TODO.txt, per Palmer's direction. This version is retained for the record.
+
 **The honest gap list: everything the finished package still needs before INSITE can do a real deal, in plain language.**
 
 Prepared for Dennis Lanni | HGF Management Company | July 2026

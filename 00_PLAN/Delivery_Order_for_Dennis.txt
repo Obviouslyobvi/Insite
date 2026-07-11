@@ -1,0 +1,21 @@
+DELIVERY ORDER FOR DENNIS  (July 11, 2026)
+Rule: hand these over and review them in this order. The stack is sequenced by dependency,
+so a change Dennis makes at any step only ripples FORWARD into later items, never backward.
+If he edits step N, only steps N+1 onward need touching.
+
+ 1. Master Plan (00_PLAN)  -  the frame; strategy changes here inherit everywhere downstream
+ 2. Build Log (07_BUILDLOG)  -  every decision and correction, plus his eight open questions; answers ripple forward
+ 3. Claims Register (01_EVIDENCE)  -  the evidence base every later document stands on
+ 4. Quarantine Audits 1 and 2 (07_BUILDLOG)  -  his manuals' provenance story, arrival to sealed archive
+ 5. Primer INS-000 (02_PROGRAM)  -  the plain-language education layer
+ 6. Whitepaper v1.1 (02_PROGRAM)  -  the core document; the bracketed placeholders show exactly where his engagements land
+ 7. Strategy memos INS-003, INS-004, INS-005 (02_PROGRAM)  -  policy, sourcing, credibility, built on the whitepaper
+ 8. Operations manuals INS-010, 202, 401, 501, 601 (02_PROGRAM/OPERATIONS)  -  his own five, corrected; the thirteen numbers to confirm live here
+ 9. Tools: INS-201 data checklist and the analysis workbook v1.1_corrected (02_PROGRAM)  -  the instruments the manuals invoke
+10. Kill Memo (08_REDTEAM)  -  the red team; best read once he knows the program, before anything external
+11. Document Library Register (02_PROGRAM)  -  the index proving the set is complete
+12. Brand layer: Brand Kit, logo masters, Name Candidates bench (04_BRAND)  -  identity; the 42-name bench is insurance he hopefully never needs
+13. One-pagers: developer, city, capital (03_MARKETING)  -  the first derived externals
+14. Website and calculator (05_WEBSITE, or the preview link once pushed)  -  derived from brand, marketing, and whitepaper numbers
+15. Stakeholder deck (06_DECK)  -  the top of the funnel, derived from everything above it
+16. TODO list (00_PLAN/TODO.txt)  -  the go-forward
