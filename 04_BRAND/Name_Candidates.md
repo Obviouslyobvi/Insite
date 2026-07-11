@@ -8,7 +8,7 @@ Prepared for Dennis Lanni | HGF Management Company | July 2026
 
 ## Why this list exists
 
-The INSITE name carries a live federal trademark conflict (registration 6610415, financial services) and the exact-match domain is held by others. Question 1 already sends the current name to a trademark attorney; this memo gives Dennis the fallback bench so a rename, if needed, costs a decision instead of a scramble. Names echoing "site" were excluded by design, since anything in that family inherits the exact conflict this list exists to escape.
+The INSITE name carries a live federal trademark registration by another company (Reg. 6610415, a Class 42 software mark held by Insite Software Solutions, Inc.) and the exact-match domain is held by others. The class differs from financial services, which softens but does not remove the risk, and the field of INSITE marks across classes is crowded. Question 1 already sends the current name to a trademark attorney; this memo gives Dennis the fallback bench so a rename, if needed, costs a decision instead of a scramble. Names echoing "site" were excluded by design, since anything in that family inherits the exact conflict this list exists to escape.
 
 ## What "available" means here
 
