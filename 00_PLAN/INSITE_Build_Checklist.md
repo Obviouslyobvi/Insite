@@ -17,6 +17,7 @@ Updated: July 9, 2026 (rev 2: map corrections)
 - [x] 0.10 Quarantine event (July 10): seven unknown-provenance documents (INS-002, INS-201, OPERATIONS set) found in the working tree, failed on-arrival scans, moved to 09_QUARANTINE_UNVERIFIED, never synced to outputs; decision queued as Q7
 - [x] 0.11 Second full verification loop (July 11, post-completion): zero content findings across all agents; three verification-infrastructure fixes (workbook-defect detector matched relative not absolute references, corrected and defects precisely recorded with staged fixes; stale website screenshots recaptured from the shipped page; human-review contact-sheet pack regenerated at 07_BUILDLOG/qc). Links 48 of 51 clean, remainder bot-blocked and previously verified via second route
 - [x] 0.12 What's Missing checklist built (md + PDF, 00_PLAN): plain-language gap list in four buckets (Dennis decisions, professional signatures, real-world proof, housekeeping), each entry with the why and what it blocks; swept clean
+- [x] 0.13 Correction (July 11, caught by the builder in a live browser): website card text was near-invisible inside the navy band (CSS color inheritance; headings at 1.00 contrast, bullets at 1.17). Fixed; screenshots recaptured; and the verification gap closed permanently with a WCAG contrast agent (tools/contrast_check.py) that proved 15 failures on the old page and clean on the fixed page plus all four other web artifacts
 
 ## 1. Evidence base (01_EVIDENCE)
 - [x] 1.1 Claims Register with verdict per claim (A1-F5), every claim URL-sourced or flagged

@@ -55,6 +55,11 @@ All agents re-run against the finished 69-file package. Content findings: **zero
 
 Re-verified this pass: calculator ($2,298 / $250,000 / zero-rate edge), deck schema (All validations PASSED), structure map audit (PASS), Census recompute from primary files (match), outputs hash sync (zero stale), quarantine still excluded from deliverables. Links: 51 checked, 48 clean; the three failures are the same bot-blocked pages (Elk Grove program page, one law-blog explainer, Vacaville program page), each previously verified readable through a second route; no citation rests on a dead source.
 
+## Third pass, July 11: a defect the loop missed, and the agent that now exists because of it
+
+A human browser caught what two automated loops did not: inside the navy who-it-serves band of the website, the white audience cards inherited the band's light text colors, rendering headings white-on-white (contrast ratio 1.00) and bullets at 1.17. Why every prior check was blind to it: the text-layer sweeps verify that words exist regardless of color; the token checks matched every string; and the ink-density audit classified the pale text as background (the text color sums to 715 on a 0-765 scale against a threshold of 650). Presence, structure, and execution were all verified; legibility never was.
+
+The fix is three CSS rules. The lasting fix is tools/contrast_check.py, a contrast agent that injects a script computing the WCAG contrast ratio of every text-bearing element against its effective background and reports through the proven render pipeline. On the pre-fix page it flags all 15 failures; the fixed page and all four other web artifacts pass at 3.0:1 or better. Screenshots recaptured; card-band dark-ink measurement confirms visible text where there was none.
 **Status: final sweep CLEAN. Package integrity confirmed. The user-visible outputs tree was never contaminated by the quarantined files.**
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal quality-control record. Not an offer of financing, legal advice, or investment advice.*

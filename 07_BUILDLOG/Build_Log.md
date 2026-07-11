@@ -43,6 +43,7 @@ Prepared for Dennis Lanni | HGF Management Company | July 2026
 7. The rendering engine drops thousands-separators from locale formatting (caught by the JavaScript execution proof); the calculator formats numbers manually.
 8. The em dash ban is enforced mechanically across every artifact.
 9. The CSCDA policy citation appeared dead to direct fetch; re-verified live through a second route, and the chase yielded two new verified claims (the 2 percent burden cap and the Elk Grove no-liability language).
+10. Website contrast defect (caught by the builder's own browser, July 11): the navy who-it-serves band's light text colors cascaded into the white cards, leaving headings white-on-white and bullets at a 1.17 contrast ratio. Root cause of the verification miss: every automated check verified text presence and structure, never rendered legibility, and the ink threshold classified the pale text as background. Fixed with explicit card color rules, and a permanent WCAG contrast agent (tools/contrast_check.py) now runs on every web artifact; it detects all 15 pre-fix failures and passes the fixed set.
 
 ## Part 4: Cut list and 80 percent notes
 
