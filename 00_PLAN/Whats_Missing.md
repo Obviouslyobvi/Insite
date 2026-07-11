@@ -28,6 +28,8 @@ The document package is complete and verified. Every page that could be built wi
 
 **Missing: a verdict on the quarantined drafts.** Seven documents of unknown origin (including five operations manuals) sit in a labeled quarantine folder. They failed quality scans as found. Dennis picks: scrub and adopt them, or discard and write the operations manuals fresh. The operations manual series stays parked until he does.
 
+**Missing: thirteen operational policy calls.** The quarantine audit surfaced thirteen service levels, thresholds, and targets that an unknown author invented and wrote down as settled policy: screening turnaround times, payoff-quote speed, a credit-score gate, cycle-time and accuracy targets, and the launch org design. These are real decisions the program needs, but Dennis has to be the one who makes them. The itemized list sits in the Quarantine Audit, sized to walk through in the same sitting as the ten questions.
+
 **Missing: the county timing call.** Whether to open the Sacramento County conversation now or after the city pilot closes. Nothing is blocked; this is purely calendar strategy. The build's read: one informal coffee now, the formal ask after the pilot.
 
 ## Bucket 2: Signatures only outside professionals can supply
@@ -62,8 +64,10 @@ The document package is complete and verified. Every page that could be built wi
 
 **Missing: whitepaper version 1.1.** Version 1.0 is done and verified, but the releasable version needs the bond attorney's review, the consultant names filled in, and the pilot-description decision. It is the same document with the blanks answered.
 
+**Missing: the operations manual series, rebuilt.** Five manuals (program operations, developer intake, transaction execution, annual administration, agency onboarding) now have a defined path out of quarantine: keep the audited drafts' solid skeletons, rebuild every page through the verified pipeline, and fold in Dennis's thirteen policy answers. This is the one substantial writing task left in the whole project, and it can start the day question 9 is answered.
+
 ## The order that unlocks the most, fastest
 
-Answer the ten questions (a single sitting), engage the bond attorney and special tax consultant (they gate everything legal), book the city briefing (the six-month clock starts only when they say yes), and let the pilot answer the rest. The package was built to stop exactly at the line where guessing would have replaced verifying; everything on this list is on the far side of that line on purpose.
+Answer the ten questions and the thirteen policy calls from the quarantine audit (still a single sitting), engage the bond attorney and special tax consultant (they gate everything legal), book the city briefing (the six-month clock starts only when they say yes), and let the pilot answer the rest. The package was built to stop exactly at the line where guessing would have replaced verifying; everything on this list is on the far side of that line on purpose.
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal planning material. Not an offer of financing, legal advice, or investment advice.*
