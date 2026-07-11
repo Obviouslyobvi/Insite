@@ -77,3 +77,13 @@ Compiled July 9, 2026 by direct fetch of each URL listed. Verdicts: **VERIFIED**
 4. Market size always shows its arithmetic and its $25,000/unit assumption (D3).
 5. School fees are out of initial eligibility (F2).
 6. Every external document carries the pre-launch disclaimer.
+
+## G-series: Operations manual verification (added July 11, 2026, per Palmer's directive; author of the manuals: Dennis Lanni)
+
+**G1. The Mitigation Fee Act spans Government Code sections 66000 to 66025.** Source: California Department of Housing and Community Development, "Fees and Exactions" (hcd.ca.gov/housing-element/building-blocks/constraints-fees): "the Mitigation Fee Act (Section 66000-66025)". Corroborated by City of Oakland, City of San Leandro, and City of Clayton fee pages using the identical range. VERIFIED. (Supports INS-202 section 2.2.)
+
+**G2. Government Code 8855 reporting duties for note issuance.** Source: California Debt Financing Guide sections 7.1.1 and 7.1.3 (debtguide-api.treasurer.ca.gov) and CDIAC reporting page (treasurer.ca.gov/cdiac/reporting.asp): Report of Proposed Debt Issuance due 30 days before sale (8855(i)(1)); Report of Final Sale within 21 days (8855(j)); Annual Debt Transparency Report due within seven months of the July 1 to June 30 reporting period, effectively January 31 (8855(k)); and, for Mello-Roos debt specifically, the Yearly Fiscal Status Report due each October 30. VERIFIED. (Supports INS-401 section 4.2 and resolves INS-010's chapter 7 confirm-before-first-levy note.)
+
+**G3. The July 1 to June 30 fiscal and reporting calendar.** Source: the same CDIAC materials (statutory reporting period) and county tax roll cycle documents. VERIFIED. (Supports INS-010 chapter 7.)
+
+**G4. County direct-charge submission mechanics and calendar.** Source: Sacramento County Department of Finance, "Direct Levy Instructions" (finance.saccounty.gov, FY 2025-26 edition): agencies file the county's signature-of-agreement and data submission forms by a stated deadline (July 28, 2025 for that roll year); the county FAQ confirms the Auditor-Controller places roughly 1.8 million direct charges from more than 220 districts as agent and cites Government Code 53356.2 procedures for delinquency removal. VERIFIED. (Supports INS-010 chapter 7 and INS-501 throughout; each county's own instruction letter still governs, exactly as the manuals instruct.)

@@ -26,9 +26,9 @@ The document package is complete and verified. Every page that could be built wi
 
 **Missing: the go-ahead to fix the analysis spreadsheet.** Two formula errors are confirmed and precisely mapped: the hard-cost row points at the wrong assumption cell and silently zeroes construction costs out of the model, which overstates every value it produces, and the soft-cost row is off by one. The corrected formulas are staged and take minutes to apply to a copy. Until the word comes, the workbook cannot be trusted for any real underwriting.
 
-**Missing: a verdict on the quarantined drafts.** Seven documents of unknown origin (including five operations manuals) sit in a labeled quarantine folder. They failed quality scans as found. Dennis picks: scrub and adopt them, or discard and write the operations manuals fresh. The operations manual series stays parked until he does.
+**Resolved, July 11: the quarantined drafts.** Authorship was identified (Dennis Lanni wrote the five operations manuals) and Palmer directed the fix: retired name removed, the builder reference removed, the standard disclaimer added, and every factual claim verified into the register. The corrected manuals now sit in the program library; the originals stay archived as received.
 
-**Missing: thirteen operational policy calls.** The quarantine audit surfaced thirteen service levels, thresholds, and targets that an unknown author invented and wrote down as settled policy: screening turnaround times, payoff-quote speed, a credit-score gate, cycle-time and accuracy targets, and the launch org design. These are real decisions the program needs, but Dennis has to be the one who makes them. The itemized list sits in the Quarantine Audit, sized to walk through in the same sitting as the ten questions.
+**Missing: confirmation of thirteen draft policy numbers.** Dennis's manuals set thirteen service levels, thresholds, and targets (screening turnaround, payoff-quote speed, a credit-score gate, cycle-time and accuracy targets, the launch org design). Since he wrote them, the ask is light: confirm they still reflect his thinking, or update them. The itemized list is in the Quarantine Audit, sized for the same sitting as the ten questions.
 
 **Missing: the county timing call.** Whether to open the Sacramento County conversation now or after the city pilot closes. Nothing is blocked; this is purely calendar strategy. The build's read: one informal coffee now, the formal ask after the pilot.
 
@@ -64,10 +64,10 @@ The document package is complete and verified. Every page that could be built wi
 
 **Missing: whitepaper version 1.1.** Version 1.0 is done and verified, but the releasable version needs the bond attorney's review, the consultant names filled in, and the pilot-description decision. It is the same document with the blanks answered.
 
-**Missing: the operations manual series, rebuilt.** Five manuals (program operations, developer intake, transaction execution, annual administration, agency onboarding) now have a defined path out of quarantine: keep the audited drafts' solid skeletons, rebuild every page through the verified pipeline, and fold in Dennis's thirteen policy answers. This is the one substantial writing task left in the whole project, and it can start the day question 9 is answered.
+**Resolved, July 11: the operations manual series.** Adopted with corrections instead of rebuilt, once the author turned out to be Dennis. Five verified manuals now cover program operations, intake, execution, annual administration, and agency onboarding. The only open thread is his confirmation of the thirteen draft numbers above.
 
 ## The order that unlocks the most, fastest
 
-Answer the ten questions and the thirteen policy calls from the quarantine audit (still a single sitting), engage the bond attorney and special tax consultant (they gate everything legal), book the city briefing (the six-month clock starts only when they say yes), and let the pilot answer the rest. The package was built to stop exactly at the line where guessing would have replaced verifying; everything on this list is on the far side of that line on purpose.
+Answer the ten questions and confirm the thirteen draft policy numbers (still a single sitting), engage the bond attorney and special tax consultant (they gate everything legal), book the city briefing (the six-month clock starts only when they say yes), and let the pilot answer the rest. The package was built to stop exactly at the line where guessing would have replaced verifying; everything on this list is on the far side of that line on purpose.
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal planning material. Not an offer of financing, legal advice, or investment advice.*

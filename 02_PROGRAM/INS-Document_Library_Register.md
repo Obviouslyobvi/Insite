@@ -17,7 +17,7 @@ Program Administrator: HGF Management Company | July 2026
 | INS-102A | Standard DCF / Bulk Sale Analysis Workbook | Existing, carried into package | Two known formula defects await the go-ahead (question 8) |
 | INS-201 | Developer Data Package Checklist | Built fresh v1.0 from the Appendix E source (E.1 to E.10), verified | None until program launch |
 | INS-301 | Appraisal Review and Quality Control | Outline exists in project files | Draft after pilot appraisal cycle |
-| INS-400/500/600 series | Transaction, administration, and agency onboarding manuals | Unverified drafts exist in quarantine (question 9) | Adopt-or-rebuild decision, then full verification |
+| INS-010, 202, 401, 501, 601 | Operations manual set (program operations, developer intake, transaction execution, annual administration and tax roll, public agency onboarding) | Authored by Dennis Lanni; adopted from quarantine July 11 with corrections: retired name removed, builder reference removed, standard disclaimer added, factual claims verified (Claims Register G-series); em dashes retained per project decision | Dennis confirms his thirteen draft service levels and thresholds at the question sitting |
 | Brand Kit | One-page working identity standard | Built, verified | Fold into INS-001 v1.0 |
 | Structure Map | Program structure, flows 1-8 | Built, mechanically audited (verify_map.py) | Reuse across surfaces |
 | Claims Register | Evidence base, every claim sourced | Built, maintained | Re-sweep at every release |
