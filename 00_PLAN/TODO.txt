@@ -38,3 +38,10 @@ REALITY (months)
 [ ] Sign a capital term sheet (turns every target rate into a real one)
 [ ] Close the pilot (turns founder estimates into facts)
 [ ] Run the first annual levy cycle (proves the recurring-revenue machine)
+
+DENNIS'S NEW FOCUS AREAS (received July 12; roadmap discussion pending)
+[ ] Developer Guide/Manual: consolidate eligibility, application, underwriting, funding, construction, FAQ into one guide (raw material exists in INS-202, INS-201, INS-101/102, INS-401, the one-pager)
+[ ] Online Fee Estimator: upgrade the live website calculator from financing-math to fee-estimation by project details (depends on the fee database)
+[ ] Statewide fee database with Airtable automation: not started; state fee-posting law to be verified into the register as the enabler
+[ ] Investor Guide/Manual per his capital-markets notes doc: add warehouse facility, private placement program, bond take-out, credit enhancements, cash-flow waterfall, investor reporting, bank FAQ to the existing whitepaper spine
+[ ] Investor portal: public-versus-secure content split (his notes say the manual outline decides this first); register his Lovable tax-equivalent-yield calculator once he shares the link
