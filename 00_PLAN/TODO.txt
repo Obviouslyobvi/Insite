@@ -16,7 +16,9 @@ YOURS (hours)
 [ ] Hand Dennis the stack in the order given in Delivery_Order_for_Dennis.txt; collect his answers
 
 DENNIS (one sitting plus follow-ups)
-[ ] Trademark attorney yes-or-no on INSITE (name kept until this answer)
+[!] NAME: the July 11 knockout screen tripped the conflict rule twice (live Class 36 marks: INSITE sn98837494, insurance administration, published for opposition; INSIGHT CAPITAL SOLUTIONS sn99761274, financing services). Per the rule: stop, take Option A. Findings memo: 04_BRAND/Trademark_Knockout_Class36.pdf
+[ ] Confirm what Option A is and, if it means adopting a bench name now, pick one (clean Tier 1: FeeRoll, TractRoll; both .com and .org free at last check)
+[ ] Trademark attorney clearance on the chosen name (still the formal gate)
 [ ] Pilot-description rule: stay generic or name the project (his call, possibly the landowner's too)
 [ ] Final company entity: confirm HGF Management Company is the permanent entity
 [ ] Minimum deal size: publish a floor or deliberately publish none
