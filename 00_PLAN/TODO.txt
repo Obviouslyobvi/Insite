@@ -40,8 +40,8 @@ REALITY (months)
 [ ] Run the first annual levy cycle (proves the recurring-revenue machine)
 
 DENNIS'S NEW FOCUS AREAS (received July 12; roadmap discussion pending)
-[ ] Developer Guide/Manual: consolidate eligibility, application, underwriting, funding, construction, FAQ into one guide (raw material exists in INS-202, INS-201, INS-101/102, INS-401, the one-pager)
-[ ] Online Fee Estimator: upgrade the live website calculator from financing-math to fee-estimation by project details (depends on the fee database)
-[ ] Statewide fee database with Airtable automation: not started; state fee-posting law to be verified into the register as the enabler
-[ ] Investor Guide/Manual per his capital-markets notes doc: add warehouse facility, private placement program, bond take-out, credit enhancements, cash-flow waterfall, investor reporting, bank FAQ to the existing whitepaper spine
-[ ] Investor portal: public-versus-secure content split (his notes say the manual outline decides this first); register his Lovable tax-equivalent-yield calculator once he shares the link
+[x] Developer Guide: INS-302 v1.0 built July 12 (eligibility, application, underwriting, approval, funding, construction, FAQ); deepen after Dennis's answers
+[x] Online Fee Estimator: v1 built July 12 (05_WEBSITE/fee_estimator.html); jurisdiction auto-fill arrives as the database populates
+[~] Statewide fee database: kit built July 12 (02_PROGRAM/DATA), legal basis verified as register G6 (Gov Code 65940.1); population remains, pilot jurisdiction first
+[~] Investor Guide: INS-303 outline v0.1 built July 12, sources mapped per chapter; full manual gated on Dennis's chapter edits, question 10, and bond counsel for chapters 4 and 5
+[~] Investor portal: split decided chapter by chapter inside INS-303; tax-equivalent yield calculator built July 12 (05_WEBSITE/tey_calculator.html) after the Lovable link proved unfindable in Drive; secure portal awaits outline approval

@@ -1,0 +1,2 @@
+jurisdiction,county,agency_type,fee_category,fee_name,amount,unit_basis,housing_type,effective_date,source_url,source_title,verified_date,verified_by,notes
+EXAMPLE ROW (delete me),Sacramento,city,Transportation,Roadway Impact Fee,0,per unit,single-family detached,2026-07-01,https://example.gov/fee-schedule,Master Fee Schedule FY26,2026-07-12,initials,Replace with a real row; no row ships without a source_url

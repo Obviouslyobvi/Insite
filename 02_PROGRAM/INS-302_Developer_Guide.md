@@ -1,0 +1,34 @@
+# INS-302: The INSITE Developer Guide
+**Version 1.0, July 12, 2026. One document for the builder: eligibility, the application, underwriting, approval, funding, construction, and the questions everyone asks. This guide consolidates the intake manual (INS-202), the data package checklist (INS-201), the appraisal manual (INS-101), and the transaction execution manual (INS-401); those remain the controlling documents where detail matters.**
+
+## 1. What INSITE is, in one paragraph
+INSITE finances development impact fees for small residential subdivisions, 2 to 50 lots, in participating California jurisdictions. Instead of writing a six-figure check at the permit counter or borrowing private money at 9.5 to 15 percent, the project's fees are paid from a note secured by a voluntary special tax on the project's own lots, collected with the property tax bill under the Mello-Roos Community Facilities Act (Government Code 53311 and following). Large master-planned communities have used this structure for decades; INSITE's job is making it work at small-project scale.
+
+## 2. Are you eligible
+Residential subdivisions of 2 to 50 lots in a participating jurisdiction; finished or near-finished lots; an appraised value of at least four times the financing (program policy, stricter than the statute's three-to-one in Government Code 53345.8); and a minimum financing size set at feasibility screening. School fees are excluded at launch. Full eligibility rules live in INS-202.
+
+## 3. The application: one data package, one answer
+Everything needed for a yes-or-no lives in one submission, form INS-201: title report, tract or parcel maps, project budget, the jurisdiction's fee schedule for your parcels (your agency is required to post its current schedule online under Government Code 65940.1), entitlement status, and your entity documents. A complete package gets a feasibility screening answer; an incomplete package gets a list of what's missing, once.
+
+## 4. Underwriting: what gets checked
+Two questions decide it. First, value: an independent MAI appraiser, engaged under the program's appraisal manual (INS-101) to State Treasurer (CDIAC) standards, must find your lots worth at least four times the financing. Second, capacity: the total projected tax burden on a finished home is benchmarked against the two-percent-of-value policy used by the state's largest issuer. If the numbers work, the deal proceeds; if they don't, you hear it plainly and early, before you have spent meaningful money.
+
+## 5. Approval and annexation: your signature, not an election
+Participating jurisdictions maintain one master financing district with a recorded future annexation area. On undeveloped land the landowner is the elector, so your project joins by your written consent as landowner; there is no public election and no protest hearing, and the city council approves each annexation on its regular calendar (Government Code 53339.3(d) keeps each project's security separate). Timing therefore depends on the council calendar, not on a campaign.
+
+## 6. Funding: what gets paid and what it costs
+At closing, note proceeds pay the eligible impact fees for your project. You pay the deal's execution costs, targeted at $5,000 to $30,000 per project (a founder estimate, pending vendor quotes): appraisal, document preparation, title, recording, origination, and the annexation itself. Program fees are set at term sheet, not in marketing. The arithmetic of cash saved versus tax carried is in the calculator on the program website, insite-ca.org.
+
+## 7. During construction
+Once fees are funded, you build. The special tax lien is recorded against the project's parcels and has the same standing as other property-tax obligations, so tell your construction lender early; the annual levy simply appears on the county tax bill for each parcel, and while you hold lots, you pay their tax like any other carrying cost. The tax year runs July 1 through June 30, and whether your project catches the next roll depends on your closing date; the program administrator gives you the exact first-levy date at closing.
+
+## 8. Selling homes: disclosure and the buyer's protections
+The obligation belongs to the land and transfers automatically at sale. California law requires disclosure of the special tax to buyers, and the program's recorded rate-and-method fixes the formula in advance: an occupied home's tax cannot rise more than 10 percent because of anyone else's delinquency (Government Code 53321(d)), and every owner holds a defined prepayment right to pay the obligation off entirely. Your escrow handles it like any other Mello-Roos disclosure, because that is what it is.
+
+## 9. What it is not
+It is not free money: you still pay execution costs and the tax on lots you hold. It is not a personal loan: no personal guarantee, the security is the land. It is not available everywhere: your jurisdiction must have adopted the program and formed its master district first. And it is not final until a term sheet: every rate in marketing materials is a target.
+
+## 10. Questions developers actually ask
+**Can I pay it off early?** Yes; every owner holds a defined prepayment right under the recorded rate-and-method. **What happens to lots I still own?** You pay their annual special tax until they sell, like any carrying cost. **Will this complicate my construction loan?** The lien has property-tax standing, so raise it with your lender at application, not at closing. **Are school fees included?** No, excluded at launch. **How long does approval take?** A complete data package gets a screening answer quickly; annexation then rides your council's calendar. **What if my project is 55 lots?** Outside the 2-to-50 launch box; ask anyway, the box is policy, not statute. **Who is behind this?** HGF Management Company, program administrator: Dennis Lanni, Founder, insite-ca.org. **Is my project's tax at risk from other projects?** No; each note is secured only by its own project's special taxes, with no cross-collateralization.
+
+*INSITE(TM) is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments.*

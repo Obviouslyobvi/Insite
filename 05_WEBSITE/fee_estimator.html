@@ -1,0 +1,60 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>INSITE Fee Estimator</title><style>
+*{box-sizing:border-box}body{font-family:Helvetica,Arial,sans-serif;color:#1f2937;margin:0;font-size:15px;line-height:1.5;background:#fff}
+.band{background:#153A5B;color:#fff;padding:18px 4%}.band img{height:44px;display:block}.band .sub{color:#cfe0ee;letter-spacing:2px;font-size:12px;margin-top:8px}
+.wrap{max-width:900px;margin:0 auto;padding:22px 4% 40px}
+h1{color:#153A5B;font-size:26px;margin:6px 0 4px}h2{color:#153A5B;font-size:17px;border-bottom:2px solid #3E7C59;padding-bottom:3px;margin:26px 0 10px}
+.note{color:#4b5563;font-size:13px}
+table{border-collapse:collapse;width:100%;margin:10px 0}th{background:#153A5B;color:#fff;text-align:left;padding:8px;font-size:13px}
+td{border-bottom:1px solid #e5e7eb;padding:7px 8px;font-size:14px}tr:nth-child(even) td{background:#F5F7FA}
+input[type=number],select{padding:7px;border:1px solid #9aa4b2;border-radius:4px;font-size:14px;width:140px}
+select{width:auto;max-width:100%}
+.big{background:#F5F7FA;border-left:4px solid #3E7C59;padding:14px 16px;margin:14px 0}
+.big b{color:#153A5B;font-size:22px}
+.tag{color:#6B7280;font-size:12px}
+.dis{color:#6B7280;font-size:11.5px;border-top:1px solid #e5e7eb;margin-top:30px;padding-top:10px}
+a{color:#153A5B}
+.row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin:8px 0}
+.f label{display:block;font-weight:bold;font-size:13px;color:#153A5B;margin-bottom:3px}
+</style></head><body>
+<div class='band'><img src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU2MCIgaGVpZ2h0PSIzNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE1NjAgMzYwIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWYiPjxyZWN0IHdpZHRoPSIxNTYwIiBoZWlnaHQ9IjM2MCIgZmlsbD0iIzE1M0E1QiIvPjxyZWN0IHg9IjU0IiB5PSI0NSIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjEyMyIgeT0iNDUiIHdpZHRoPSI1OCIgaGVpZ2h0PSI1OCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIxOTIiIHk9IjQ1IiB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMjYxIiB5PSI0NSIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjU0IiB5PSIxMTQiIHdpZHRoPSI1OCIgaGVpZ2h0PSI1OCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIxMjMiIHk9IjExNCIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjE5MiIgeT0iMTE0IiB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIGZpbGw9IndoaXRlIi8+PHJlY3QgeD0iMjYxIiB5PSIxMTQiIHdpZHRoPSI1OCIgaGVpZ2h0PSI1OCIgZmlsbD0iIzNFN0M1OSIvPjxyZWN0IHg9IjU0IiB5PSIxODMiIHdpZHRoPSI1OCIgaGVpZ2h0PSI1OCIgZmlsbD0id2hpdGUiLz48cmVjdCB4PSIxMjMiIHk9IjE4MyIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjE5MiIgeT0iMTgzIiB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIGZpbGw9IiMzRTdDNTkiLz48cmVjdCB4PSIyNjEiIHk9IjE4MyIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSIjM0U3QzU5Ii8+PHJlY3QgeD0iNTQiIHk9IjI1MiIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSJ3aGl0ZSIvPjxyZWN0IHg9IjEyMyIgeT0iMjUyIiB3aWR0aD0iNTgiIGhlaWdodD0iNTgiIGZpbGw9IiMzRTdDNTkiLz48cmVjdCB4PSIxOTIiIHk9IjI1MiIgd2lkdGg9IjU4IiBoZWlnaHQ9IjU4IiBmaWxsPSIjM0U3QzU5Ii8+PHJlY3QgeD0iMjYxIiB5PSIyNTIiIHdpZHRoPSI1OCIgaGVpZ2h0PSI1OCIgZmlsbD0id2hpdGUiLz48dGV4dCB4PSIzNjAiIHk9IjIxMiIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMTMyIiBmb250LXdlaWdodD0iYm9sZCIgbGV0dGVyLXNwYWNpbmc9IjYiPklOU0lURTwvdGV4dD48dGV4dCB4PSI4NTIiIHk9IjEyOCIgZmlsbD0id2hpdGUiIGZvbnQtc2l6ZT0iMzQiPiYjODQ4Mjs8L3RleHQ+PGxpbmUgeDE9IjkzMCIgeTE9IjgwIiB4Mj0iOTMwIiB5Mj0iMjg0IiBzdHJva2U9IiM1YzdkOWMiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IHg9Ijk3NSIgeT0iMTYwIiBmaWxsPSIjOWZkMGI0IiBmb250LXNpemU9IjQyIiBsZXR0ZXItc3BhY2luZz0iMyIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHRMZW5ndGg9IjU1MCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIj5ERVZFTE9QTUVOVCBJTVBBQ1QgRkVFPC90ZXh0Pjx0ZXh0IHg9Ijk3NSIgeT0iMjIyIiBmaWxsPSIjOWZkMGI0IiBmb250LXNpemU9IjQyIiBsZXR0ZXItc3BhY2luZz0iMyIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHRMZW5ndGg9IjQ3NSIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIj5GSU5BTkNJTkcgUFJPR1JBTTwvdGV4dD48L3N2Zz4=' alt='INSITE'/><div class='sub'>FEE ESTIMATOR &nbsp;&#183;&nbsp; FOR RESIDENTIAL DEVELOPERS &nbsp;&#183;&nbsp; PRELIMINARY, PRE-LAUNCH</div></div>
+<div class='wrap'>
+<h1>Estimate your project's impact fees, then see the financing.</h1>
+<p class='note'>Every California city, county, and special district with a website must post its current fee schedule online and keep it updated within 30 days of changes (Government Code 65940.1). Pull your jurisdiction's posted schedule, enter the per-unit amounts below, and this page totals the bill and shows the day-one difference INSITE targets. Nothing here is a quote.</p>
+<h2>Step 1: Start from</h2>
+<div class='row'>
+<div class='f'><label for='juris'>Starting numbers</label><select id='juris' onchange='seed()'>
+<option value='custom'>My jurisdiction's posted schedule (enter below)</option>
+<option value='statewide'>Statewide program assumption ($25,000 per unit)</option>
+</select></div>
+<div class='f'><label for='units'>Homes / lots in project</label><input type='number' id='units' value='10' min='2' max='50' oninput='calc()'/></div>
+</div>
+<p class='note'>Context for the statewide figure: cited studies put the California average impact fee near $23,455 per single-family home (2015 data) and totals can exceed $150,000 per unit in some cities; the program's working assumption is $25,000 of financeable fees per unit. Sources: INSITE Claims Register.</p>
+<h2>Step 2: Fees per unit, from the posted schedule</h2>
+<table id='ftab'><tr><th>Fee category</th><th>$ per unit</th><th></th></tr></table>
+<p class='note'>School fees are shown for completeness and excluded from financing at launch (Education Code 17620 authorizes them; Government Code 65995 caps them; the exclusion is program policy).</p>
+<h2>Step 3: The total, and the day-one difference</h2>
+<div class='big' id='out'></div>
+<div class='row'>
+<div class='f'><label for='exec'>Per-project execution cost, paid by the builder ($)</label><input type='number' id='exec' value='17500' step='500' oninput='calc()'/></div>
+</div>
+<p class='note'>Execution cost is a founder estimate: $5,000 to $30,000 pending vendor quotes; $17,500 is the midpoint. For rate scenarios, carry math, and the full comparison against private money, use the <a href='index.html#how'>program calculator</a>.</p>
+<div class='dis'>INSITE&trade; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. Fee amounts you enter are your jurisdiction's, not INSITE's; verify against the posted schedule before relying on them.</div>
+</div>
+<script>
+const CATS=[["Transportation",0],["Parks and recreation",0],["Water",0],["Sewer",0],["Storm drainage",0],["Public safety",0],["General government",0],["Other impact fees",0],["School fees (excluded at launch)",0]];
+function build(){const t=document.getElementById('ftab');CATS.forEach((c,i)=>{const r=t.insertRow(-1);const s=c[0].startsWith('School');
+r.innerHTML=`<td>${c[0]}</td><td><input type='number' id='f${i}' value='0' min='0' step='100' oninput='calc()' ${s?"style='border-color:#b45309'":''}/></td><td class='tag'>${s?'not financeable at launch':''}</td>`;});}
+function seed(){const sw=document.getElementById('juris').value==='statewide';CATS.forEach((c,i)=>{document.getElementById('f'+i).value=0;});
+if(sw){document.getElementById('f7').value=25000;}calc();}
+function n(id){return Math.max(0,Number(document.getElementById(id).value)||0)}
+function fmt(x){return '$'+Math.round(x).toLocaleString()}
+function calc(){let per=0,school=n('f8');for(let i=0;i<8;i++)per+=n('f'+i);
+const u=Math.max(1,n('units')),ex=n('exec');const proj=per*u;
+document.getElementById('out').innerHTML=
+`Financeable fees: <b>${fmt(per)}</b> per unit &nbsp;&#183;&nbsp; <b>${fmt(proj)}</b> project total`+
+(school?` <span class='tag'>(plus ${fmt(school*u)} of school fees outside the program)</span>`:'')+
+`<br><span class='tag'>Day-one cash, paying fees yourself: </span><b>${fmt(proj)}</b>`+
+`<br><span class='tag'>Day-one cash with INSITE (execution cost, a founder estimate): </span><b>${fmt(ex)}</b>`+
+`<br><span class='tag'>The fees move onto a voluntary special tax on your own lots, collected with the property tax bill; rates are set at term sheet.</span>`;}
+build();seed();
+</script></body></html>
