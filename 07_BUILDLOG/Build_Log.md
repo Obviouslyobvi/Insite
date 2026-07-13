@@ -52,7 +52,7 @@ Prepared for Dennis Lanni | HGF Management Company | July 2026
 
 Professional bench intel from the same intake, recorded for the sitting: bond counsel is identified as Brad Neill at Stradling, already in conversation with the founder; Webb Municipal Finance is the special tax consultant candidate; the founder-side memo recommends meeting Brad first and arriving at Webb with his endorsement, and sketches the consultant's role across years one through three. The memo also proposes a "Public Agency Implementation Guide" numbered INS-302; that number belongs to the Developer Guide, so the library reserves INS-304 for it.
 
-10. INS-301 describes a revolving warehouse credit facility with per-project advances and optional pooled bond refinancing; the external materials say privately placed notes, one note per project. Same structure at different altitudes, or a change the whitepaper and capital brief must inherit?
+10. INS-301 describes a revolving warehouse credit facility with per-project advances and optional pooled bond refinancing; the external materials say privately placed notes, one note per project. Same structure at different altitudes, or a change the whitepaper and capital brief must inherit? ANSWERED July 13, by the builder's clarification: each project or annexation gets its own note; the warehouse line and the credit facility are one and the same instrument; and that facility funds everything until the optional bond take-out occurs once the properties have stabilized. The pipeline reading stands confirmed; the external documents describing one note per project were true descriptions of the origination layer all along.
 
 ## Part 4: Cut list and 80 percent notes
 

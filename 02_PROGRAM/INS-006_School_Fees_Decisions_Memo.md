@@ -19,7 +19,7 @@
 
 **The reading your own notes support.** These are one machine at different altitudes: origination writes the notes one project at a time, the warehouse facility carries the growing portfolio, and the bond take-out is the eventual exit. On that reading the shipped documents are true descriptions of the origination layer, and the new layers stack on top rather than replacing anything. Confirming it unlocks the investor guide's chapters two through five as written in the INS-303 outline, adds one section to the whitepaper, and leaves the capital brief standing. If instead the facility replaces the note-per-project structure, the whitepaper, capital brief, primer, deck, and website hero all need substantive rewrites before anything goes external.
 
-**The decision.** One word: is the pipeline reading right?
+**The decision.** One word: is the pipeline reading right? **Answered, July 13: yes, with one sharpening.** Each project or annexation carries its own note; the warehouse line and the credit facility are one instrument; and that facility funds everything until the bond take-out occurs once the properties have stabilized. The whitepaper carries the new platform section and the investor outline's gated chapters are unlocked. One decision remains in this memo: school fees.
 
 ## What happens after you answer
 

@@ -104,11 +104,15 @@ INSITE is an administrator, not a lender, and never holds the notes. Revenue has
 
 A serious reader should weigh these, and the program does: (1) per-project execution costs are a founder estimate until real quotes exist, and the model fails if small-deal costs stay high; (2) no capital purchaser is committed, and appetite for small tax-secured notes is exactly what the pilot must prove; (3) city adoption speed is uncertain, and formation takes six-plus months per jurisdiction until any joint powers structure exists; (4) special taxes are repaid by property owners, and delinquencies, though remedied by the lien and foreclosure process, take time to cure; (5) the program name requires trademark clearance before public launch; (6) school fees, a meaningful share of total fee burdens, are excluded at launch; and (7) the incumbent statewide programs could move down-market, competing directly for the same projects.
 
-## 11. Program status and what comes next
+## 11. The financing platform, three altitudes
+
+Confirmed in the founder's structure on July 13, 2026: the program is one pipeline viewed at three altitudes. At origination, each project's annexation carries its own privately placed, tax-secured note, sized to that project alone and secured only by that project's special taxes, with no cross-collateralization. One revolving warehouse credit facility, and it is one instrument, the warehouse line and the credit facility being the same thing, funds every origination as projects are approved: draw request, funding approval, advance, payment of eligible costs, repayment through the annual special taxes. And pooled tax-exempt bonds stand as the optional permanent take-out once the portfolio of properties has stabilized. The take-out is never required for the program to operate; annexations continue regardless of what the capital stack above them does. This is the same architecture at which the statewide programs arrived by a different road: local obligations, one per project, pooled upward into program-level financing.
+
+## 12. Program status and what comes next
 
 Proven today: the legal mechanism, the annexation architecture in live districts, the market arithmetic from primary data, and a documented operating library (appraisal manual, request-for-qualifications, data package standards, structure map, and the strategy memos INS-003 through INS-005). Pending: consultant and counsel selection, issuer adoption, a signed term sheet, and the pilot closing. This paper is versioned; version 1.1 brackets those blanks as explicit placeholders, and version 1.2 follows the engagements themselves.
 
-## 12. Sources
+## 13. Sources
 
 - Mello-Roos mechanics, elections, liens, formation timeline: California Debt Financing Guide (State Treasurer / CDIAC), https://debtguide-api.treasurer.ca.gov/guide-pages/chapter-3-types-of-debt-obligations-issued-by-public-agencies/3-3-types-of-debt-obligations-organized-by-security-and-source-of-payment/3-3-7-special-assessments-special-taxes-and-tax-increments/3-3-7-2-mello-roos-bonds-community-facilities-districts
 - Three-to-one statutory condition and state appraisal standards: https://www.treasurer.ca.gov/sites/default/files/cdiac/recmndPracticeR-E.pdf

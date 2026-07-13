@@ -29,7 +29,7 @@ Method: each attack below was argued as if by an opponent whose only job is to e
 
 **The case against.** The whole thesis rests on a founder estimate of $5,000 to $30,000 per annexation. If real quotes come back at $60,000, the model is dead at small sizes.
 
-**What survived, and why.** The estimate is labeled a founder estimate on every surface, the pilot is explicitly designed to prove or kill it, and the architecture (template documents, zone exhibits generated from the workbook, one formation per city) is the cost-control mechanism itself. **Casualties:** the earlier sub-$10,000 execution claim and the $50,000 minimum (removed in the first red-team loop and kept out); any published minimum deal size (question 10). **Residual risk:** the central one; it is the pilot's job.
+**What survived, and why.** The estimate is labeled a founder estimate on every surface, the pilot is explicitly designed to prove or kill it, and the architecture (template documents, zone exhibits generated from the workbook, one formation per city) is the cost-control mechanism itself. **Casualties:** the earlier sub-$10,000 execution claim and the $50,000 minimum (removed in the first red-team loop and kept out); any published minimum deal size (an open founder item in the Build Log batch). **Residual risk:** the central one; it is the pilot's job.
 
 ## Attack 5: Reputational
 
