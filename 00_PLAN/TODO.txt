@@ -45,3 +45,4 @@ DENNIS'S NEW FOCUS AREAS (received July 12; roadmap discussion pending)
 [~] Statewide fee database: kit built July 12 (02_PROGRAM/DATA), legal basis verified as register G6 (Gov Code 65940.1); population remains, pilot jurisdiction first
 [~] Investor Guide: INS-303 outline v0.1 built July 12, sources mapped per chapter; full manual gated on Dennis's chapter edits, question 10 (ANSWERED July 13: one note per project; warehouse line and facility are one instrument until the take-out), and bond counsel for chapters 4 and 5
 [~] Investor portal: split decided chapter by chapter inside INS-303; tax-equivalent yield calculator built July 12 (05_WEBSITE/tey_calculator.html) after the Lovable link proved unfindable in Drive; secure portal awaits outline approval
+[ ] Founder research: does pay-then-reimburse avoid the school joint agreement entirely? Register G7 Riverside reading says a thin agreement survives; bond counsel resolves if reopened.

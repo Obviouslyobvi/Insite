@@ -40,6 +40,6 @@
 | Statewide pool floor of $500,000 | G18 | yes | yes |
 | SB 165 accountability reporting | G20 | yes | yes |
 
-Result (updated July 13, appendix build-out and the CMFA joining-form reference): 36 claim families checked, 28 clean, 0 open. One decision marker remains deliberately unresolved (school fees, question 9); the financing platform (question 10) was answered July 13 and the guide states the confirmed structure.
+Result (updated July 13, appendix build-out and the CMFA joining-form reference): 36 claim families checked, 28 clean, 0 open. Both decisions are answered (July 13): school fees excluded at launch with the reimbursement mechanics preserved as the documented future path, and the financing platform confirmed as one note per project funded by a single warehouse facility until the optional take-out.
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments.*

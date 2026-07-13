@@ -21,7 +21,7 @@ Start with `00_PLAN/INSITE_Master_Plan.pdf` (the contract for the build) and `02
 | 06_DECK | 14-slide stakeholder overview (pptx + pdf + generator script) |
 | 07_BUILDLOG | Build log (decisions, corrections, cuts, question batch), verification report |
 | 08_REDTEAM | Kill Memo with the completeness audit |
-| 09_QUARANTINE_UNVERIFIED | Unknown-provenance drafts found mid-build; excluded from deliverables; decision pending (question 9) |
+| 09_QUARANTINE_UNVERIFIED | Unknown-provenance drafts found mid-build; excluded from deliverables; decision pending (question 9) | (answered July 13: excluded at launch; question 10 answered the same day: one note per project, one warehouse facility, optional take-out at stabilization).
 | tools | md2pdf.py, the shared branded converter |
 
 ## Standing rules baked into every artifact
