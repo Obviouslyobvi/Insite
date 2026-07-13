@@ -73,7 +73,17 @@ hr {{ border:none; border-top:1px solid #d3dae3; margin:14px 0; }}
 <div class='wrap'>{body}</div></body></html>"""
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False) as f:
         f.write(page); tmp=f.name
-    subprocess.run(['wkhtmltopdf','-q','--enable-local-file-access','--margin-top','0','--margin-bottom','13mm','--margin-left','0','--margin-right','0',tmp,dst],check=True)
+    subprocess.run(['wkhtmltopdf','-q','--enable-local-file-access','--margin-top','12mm','--margin-bottom','13mm','--margin-left','0','--margin-right','0',tmp,dst],check=True)
+    # margin gate: the top of every page must be blank paper (builder's rule, July 13, 2026)
+    import glob as _g
+    with tempfile.TemporaryDirectory() as td:
+        subprocess.run(['pdftoppm','-r','80','-l','2','-png',dst,td+'/m'],check=True)
+        from PIL import Image
+        for pg in sorted(_g.glob(td+'/m*.png')):
+            import numpy as _np
+            a=_np.array(Image.open(pg).convert('L'))
+            ink=(a[:28,:]<128).sum()
+            if ink>0: raise SystemExit(f'MARGIN GATE FAILED: ink in top strip of {pg} ({ink} px)')
     os.unlink(tmp)
     print('wrote', dst)
 
