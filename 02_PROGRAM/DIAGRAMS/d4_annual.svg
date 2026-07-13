@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 330" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#3E7C59"/></marker></defs>
+<rect x="24" y="90" width="267" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="158" y="141" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">CALCULATE</text>
+<text x="158" y="167" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">PER FORMULA</text>
+<line x1="295" y1="145" x2="329" y2="145" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="335" y="90" width="267" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="469" y="141" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">RECONCILE</text>
+<text x="469" y="167" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">COLLECTIONS</text>
+<line x1="606" y1="145" x2="640" y2="145" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="646" y="90" width="267" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="780" y="141" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">SUBMIT TO</text>
+<text x="780" y="167" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">THE COUNTY</text>
+<line x1="918" y1="145" x2="952" y2="145" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="958" y="90" width="267" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="1091" y="141" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">COLLECT ON</text>
+<text x="1091" y="167" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">THE TAX BILL</text>
+<line x1="1229" y1="145" x2="1263" y2="145" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="1269" y="90" width="267" height="110" rx="10" fill="#3E7C59" stroke="#153A5B" stroke-width="0"/>
+<text x="1402" y="153" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">REPORT</text>
+<path d="M 1402 200 L 1402 252.0 L 158 252.0 L 158 208" fill="none" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<text x="780" y="242" fill="#6B7280" font-size="19" text-anchor="middle">each fiscal year, July 1 through June 30</text>
+</svg>

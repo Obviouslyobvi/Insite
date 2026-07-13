@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 260" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#3E7C59"/></marker></defs>
+<rect x="24" y="75" width="345" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="196" y="126" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">PORTFOLIO</text>
+<text x="196" y="152" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">STABILIZES</text>
+<line x1="373" y1="130" x2="407" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="413" y="75" width="345" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="586" y="126" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">EVALUATE</text>
+<text x="586" y="152" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">THE MARKET</text>
+<line x1="762" y1="130" x2="796" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="802" y="75" width="345" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="974" y="126" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">REFINANCE</text>
+<text x="974" y="152" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">OR HOLD</text>
+<line x1="1151" y1="130" x2="1185" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="1191" y="75" width="345" height="110" rx="10" fill="#3E7C59" stroke="#153A5B" stroke-width="0"/>
+<text x="1364" y="126" fill="#ffffff" font-size="22" font-weight="bold" text-anchor="middle">ANNEXATIONS</text>
+<text x="1364" y="152" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">CONTINUE</text>
+</svg>

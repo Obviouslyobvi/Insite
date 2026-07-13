@@ -1,5 +1,5 @@
 # INS-301: Participating Public Agency Guide
-**City, County, Joint Powers Authority. Draft version 0.9, July 13, 2026, prepared for the founder's review. This full draft builds out the founder's outline of July 11 and 12. Two program decisions remain his and are marked in place: school-fee eligibility (question 9) and the financing platform's relationship to the note-per-project structure (question 10). The outline's mechanical defects are corrected here per the comparison memo; every factual claim traces to the INSITE Claims Register, entries listed in the Sources section; and the sample legal instruments in the appendices are presented as term maps for bond counsel to draft, not as legal documents. The founder's Google Doc remains the source of truth until he adopts this draft.**
+**City, County, Joint Powers Authority. Draft version 0.95, July 13, 2026, prepared for the founder's review. This full draft builds out the founder's outline of July 11 and 12. Two program decisions remain his and are marked in place: school-fee eligibility (question 9) and the financing platform's relationship to the note-per-project structure (question 10). The outline's mechanical defects are corrected here per the comparison memo; every factual claim traces to the INSITE Claims Register, entries listed in the Sources section; and the appendices carry full sample instruments and rendered diagrams, every sample bannered on its face for bond counsel review and marked not for execution. The founder's Google Doc remains the source of truth until he adopts this draft.**
 
 ## Part I: Introduction and Program Overview
 
@@ -163,19 +163,121 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 ## Appendices
 
-**Appendix A: Participation Agreement, term map for bond counsel.** Parties: the participating agency and the program administrator. Term: evergreen with exit provisions. Covers: the agency's formation undertakings and approval rights; the administrator's duties and standards of care; document standards; fees and cost recovery; indemnity architecture; records and audit; assignment limits; termination and wind-down. Status: TO BE DRAFTED BY BOND COUNSEL.
+### Appendix A: Sample Participation Agreement
 
-**Appendix B: Program flow, six sequences.** One, the lifecycle: form once, annex per project, fund, administer annually, refinance optionally, continue. Two, formation: goals and policies, resolution of intention, hearing, landowner election, formation and recording. Three, developer annexation: application, screening, appraisal, underwriting, unanimous approval, council consent item, recording, funding. Four, the annual cycle: calculate, reconcile, submit to county, collect on the bill, report. Five, facility cash flow: draw request, approval, advance, payment of eligible costs, special-tax repayment. Six, optional refinancing: stabilize, evaluate, refinance or hold, continue annexing. Rendered diagrams follow at adoption.
+**SAMPLE FOR DISCUSSION ONLY. SUBJECT TO BOND COUNSEL REVIEW AND REVISION. NOT FOR EXECUTION.**
 
-**Appendix C: Responsibility matrix.** The table in Chapter 5.4 is the controlling matrix.
+**Participation Agreement between [Participating Agency] and HGF Management Company.** Recitals: the Agency is authorized under the Mello-Roos Community Facilities Act of 1982, Government Code 53311 and following, to form community facilities districts; the Agency desires a standing program financing eligible development fees for qualifying small subdivisions; and HGF Management Company (the Administrator) operates the INSITE program for that purpose. The parties therefore agree:
 
-**Appendix D: The program document suite.** Participation Agreement (Appendix A); Funding Agreement; Acquisition Agreement; Reimbursement Agreement; Indemnity Agreement; joint community facilities agreement where Government Code 53316.2 requires one; and the Developer Application Package, which is the existing INS-201. Each agreement: TO BE DRAFTED BY BOND COUNSEL from the Chapter 6.7 descriptions.
+**Article 1, Definitions.** "Act" means the Mello-Roos Community Facilities Act of 1982. "District" means the community facilities district the Agency forms under this Agreement, together with its recorded future annexation area under Government Code 53339.3(b). "Rate-and-Method" means the recorded rate-and-method of apportionment, including its prepayment provisions resting on Government Code 53344. "Eligible Costs" means the development fees and other costs the Agency's formation documents authorize. "Qualifying Project" means a residential subdivision of 2 to 50 lots meeting the program's underwriting standards.
 
-**Appendix E: Resolutions, purpose maps for bond counsel.** Resolution adopting local goals and policies (satisfies Government Code 53312.7). Resolution of intention (names the district, facilities and fees, rate-and-method, future annexation area, hearing date). Resolution of formation and annexation resolutions (the per-project consent items). Annual levy resolution or ordinance. Status: TO BE DRAFTED BY BOND COUNSEL.
+**Article 2, The Program.** The Agency will consider and adopt local goals and policies as Government Code 53312.7 requires, form one District with a future annexation area, and thereafter consider each Qualifying Project's annexation on its regular calendar. Nothing in this Agreement obligates the Agency to approve any annexation; every approval remains in the Agency's sole legislative discretion.
 
-**Appendix F: Glossary.** Annexation: a parcel joining the existing district by its owner's unanimous written approval. Backup special tax: the rate-and-method's protective floor mechanics. CDIAC: the California Debt and Investment Advisory Commission, whose appraisal standards the program adopts. CFD: a community facilities district under the Mello-Roos Act. Future annexation area: territory identified at formation from which parcels may later annex, Government Code 53339.3(b). JCFA: joint community facilities agreement, Government Code 53316.2. Maximum special tax: the recorded ceiling per land-use class. MAI: the Appraisal Institute's senior designation, required of program appraisers. Notice of Special Tax: the statutory disclosure delivered to buyers. Notice of Special Tax Lien: the recorded instrument that makes the obligation run with the land. Prepayment: full satisfaction of the obligation under Government Code 53344 and the rate-and-method. Rate-and-method of apportionment: the recorded tax formula. Resolution of intention: the council act that begins formation. Special tax: the Act's non-ad-valorem levy, collected with property taxes.
+**Article 3, Agency undertakings.** The Agency will calendar the resolution of intention, the public hearing within the Act's 30-to-60-day window, and the formation documents; consider annexation resolutions for projects the Administrator certifies as qualifying; and levy the annual special tax by ordinance or resolution from the roll the Administrator prepares.
 
-**Appendix G: Checklists.** For the city or county: goals and policies adopted; participation agreement executed; resolution of intention; hearing held in the 30-to-60-day window; formation documents recorded; first annexation calendared. For a JPA: joint agreement in place; member approvals mapped; the same formation sequence. For INSITE: data package standard current; appraisal panel engaged under INS-101; rate-and-method template adopted; levy submission format confirmed with the county. For bond counsel: the Appendix D suite drafted; the school-fee joint-agreement question answered if opened; reimbursement look-back confirmed. For the special tax consultant: rate-and-method drafted as the program standard; escalation, backup, and prepayment mechanics fixed; annexation inheritance confirmed.
+**Article 4, Administrator duties.** The Administrator will prepare every formation, annexation, and levy document for the Agency's counsel to review; engage and manage independent MAI appraisers under the program appraisal manual to State Treasurer standards, requiring appraised value of at least four times any financing; run underwriting, including the program's total-tax-burden benchmark near 2 percent of home value; prepare the annual levy submission to the county's specifications; administer delinquency management, buyer notices, and reporting; and maintain the District's records for the Agency.
+
+**Article 5, No Agency obligation.** All obligations funded through the program are payable solely from the special taxes levied on participating parcels. The Agency's general fund is never pledged, obligated, or exposed, and no deficiency of any kind is recoverable from the Agency.
+
+**Article 6, Costs and fees.** Developers pay each project's execution costs; program fees are fixed at term sheet; and the Agency's own costs of formation and administration are recoverable from program proceeds as the formation documents provide.
+
+**Article 7, Records and audit.** The Administrator maintains complete program records, delivers an annual file to the Agency, and makes records available for the Agency's inspection and audit on reasonable notice.
+
+**Article 8, Term, termination, and wind-down.** This Agreement continues until terminated by either party on written notice. Termination does not affect the District, the recorded liens, or the levies, which continue under the Agency's ordinary Mello-Roos administration using the program's standardized documents.
+
+**Article 9, Indemnity and standard of care.** Developer indemnities running to the Agency are delivered under the program's Indemnity Agreement at each annexation. The Administrator performs its duties with the care of a professional program administrator and maintains the insurance the Agency reasonably requires.
+
+**Article 10, General.** No assignment without the Agency's consent; California law governs; notices in writing to the addresses on the signature page. Signature blocks follow for the Agency and the Administrator, each with counsel approval lines.
+
+### Appendix B: Program Flow Diagrams
+
+**B-1, the lifecycle.** Form the district once; annex each project; fund eligible fees; administer annually; and the program continues, project after project.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d1_lifecycle.svg 96%
+
+**B-2, formation.** From goals and policies to a live program in five council-calendar steps.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d2_formation.svg 96%
+
+**B-3, developer annexation.** One data package through screening, appraisal, underwriting, the owner's consent, and one council consent item.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d3_annexation.svg 96%
+
+**B-4, the annual cycle.** Calculate under the recorded formula, reconcile, submit, collect on the ordinary tax bill, report; then again each July 1.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d4_annual.svg 96%
+
+**B-5, facility cash flow.** Draw, approve, advance, pay eligible costs, and the special taxes repay the revolving facility (pending question 10).
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d5_cashflow.svg 96%
+
+**B-6, optional refinancing.** Stabilize, evaluate, refinance or hold; annexations continue either way.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d6_refi.svg 96%
+
+### Appendix C: Full Responsibility Matrix
+
+| Function | Agency | County | Administrator | Professionals |
+|---|---|---|---|---|
+| Local goals and policies (53312.7) | Adopts | | Drafts for counsel review | Counsel reviews |
+| District formation and future annexation area | Approves and records | | Prepares all documents | Counsel, tax consultant |
+| Rate-and-method | Approves at formation | | Manages the standard | Special tax consultant drafts |
+| Project screening and data package | | | Runs INS-201 intake | |
+| Appraisal (four-to-one policy) | | | Engages and manages panel | Independent MAI appraiser |
+| Underwriting decision | | | Decides per program standards | |
+| Annexation approval | Council consent item | | Prepares packet and recordings | Counsel form-checks |
+| Funding of eligible costs | | | Administers per agreements | Capital provider advances |
+| Annual levy | Levies by ordinance | Collects on the roll | Calculates and submits | Tax roll administration firm |
+| Delinquency management | Authorizes remedies | Standard tax process | Tracks, notices, pursues | Foreclosure counsel if needed |
+| Buyer disclosure | | | Maintains the notice | Escrow delivers |
+| Annual state filings and reporting | Receives the file | | Prepares and files | |
+| Repayment obligation | None | None | None | None; the land pays |
+
+### Appendix D: The Program Document Suite
+
+**Participation Agreement.** Purpose: the master relationship. Parties: agency and administrator. Key terms: program undertakings, sole-discretion approvals, no general fund obligation, cost recovery, wind-down continuity. Trigger: agency joins. Sample at Appendix A.
+
+**Funding Agreement.** Purpose: controls how proceeds pay eligible costs. Parties: district, administrator, capital provider. Key terms: conditions to funding, requisition and certification procedure, eligible-cost definitions, flow of funds, events of default. Trigger: first funding. TO BE DRAFTED BY BOND COUNSEL.
+
+**Acquisition Agreement.** Purpose: where constructed improvements are financed, the terms for accepting completed public improvements. Key terms: plans and standards, inspection, purchase price and payment, warranties, public-works requirements as counsel directs. Trigger: only if the founder opens the improvements category. TO BE DRAFTED BY BOND COUNSEL.
+
+**Reimbursement Agreement.** Purpose: the pay-then-reimburse instrument. Key terms: proof standards (paid invoices, and the district clearance certificate on the school path), reimbursement caps, the look-back window counsel confirms, no reimbursement without a recorded annexation. Trigger: each funded project. TO BE DRAFTED BY BOND COUNSEL.
+
+**Indemnity Agreement.** Purpose: the developer's indemnity running to the agency. Key terms: scope, defense obligations, survival, insurance. Trigger: each annexation. TO BE DRAFTED BY BOND COUNSEL.
+
+**Joint Community Facilities Agreement.** Purpose: required by Government Code 53316.2 whenever another agency's facilities or fees are financed; on the school path, the thin master form per city-and-district pair. Key terms: the financed fees, requisition mechanics on the Riverside pattern, no obligations beyond receipt. Trigger: the founder's question 9 answer. TO BE DRAFTED BY BOND COUNSEL.
+
+**Developer Application Package.** The existing INS-201 checklist is the controlling intake instrument.
+
+### Appendix E: Sample Resolutions
+
+**SAMPLES FOR DISCUSSION ONLY. SUBJECT TO BOND COUNSEL REVIEW AND REVISION. NOT FOR EXECUTION.**
+
+**E-1, Resolution to join the INSITE program.** Patterned on the form joining resolutions the statewide authorities distribute; the California Municipal Finance Authority's form is on file in the program's evidence library. WHEREAS, the [City Council / Board of Supervisors] has reviewed the INSITE Participation Agreement and this Guide, and has determined that participation is in the public interest, facilitating housing production and the timely payment of development fees with no obligation of the [City's/County's] general fund; NOW, THEREFORE, the Council resolves: Section 1, the Participation Agreement is approved, and the [Mayor / City Manager / Chair] or designee is authorized and directed to execute it, with the Clerk attesting. Section 2, the proper officers are authorized to execute such other documents and perform such other acts as are necessary or convenient to the purposes of this Resolution. Section 3, the Clerk shall forward a certified copy of this Resolution and the executed Agreement to the program administrator. Section 4, this Resolution takes effect immediately. Adoption and vote block follow. (Agencies choosing the joint-powers path adopt the authority's own form joining resolution instead, approving the joint exercise of powers agreement.)
+
+**E-2, Resolution adopting local goals and policies.** WHEREAS, Government Code 53312.7 requires the adoption of local goals and policies before community facilities district proceedings; and WHEREAS, the attached policies establish appraisal standards to State Treasurer criteria with value of at least four times any financing, a total-tax-burden benchmark near 2 percent of home value, and delinquency management standards; NOW, THEREFORE, the Council resolves: the attached Local Goals and Policies are adopted; the Clerk shall keep them on file; this resolution takes effect immediately.
+
+**E-3, Resolution of intention.** WHEREAS, the Council is authorized under the Mello-Roos Community Facilities Act of 1982; NOW, THEREFORE, the Council resolves: it intends to form "[Agency] Community Facilities District No. [__] (INSITE Program)"; the district's boundaries and its future annexation area are as shown on the map on file, with parcels in the future annexation area annexed only by the unanimous approval of their owners at the time of annexation as Government Code 53339.3(b) provides; the facilities and eligible development fees to be financed are described in Exhibit A; the rate-and-method of apportionment, including prepayment provisions under Government Code 53344, is attached as Exhibit B; a public hearing is set for [date], within the Act's 30-to-60-day window; and the Clerk shall give notice as the Act requires.
+
+**E-4, Annexation resolution (per project).** WHEREAS, the district was formed with a future annexation area; and WHEREAS, the owner of the parcels described in Exhibit A has delivered unanimous written approval of annexation, the special tax, and the rate-and-method; NOW, THEREFORE, the Council resolves: the parcels in Exhibit A are annexed to the district; the annexation map and notice of special tax lien shall be recorded; and the Council finds the maximum special tax in the existing district is not increased by this annexation, consistent with Government Code 53339.3(e).
+
+**E-5, Annual levy resolution.** WHEREAS, the rate-and-method fixes each parcel's maximum special tax; NOW, THEREFORE, the Council resolves: the special tax for fiscal year [____], July 1 through June 30, is levied on each parcel as shown on the roll on file with the Clerk, prepared under the rate-and-method; and staff shall submit the roll to the County for collection with the ordinary property taxes.
+
+### Appendix F: Glossary
+
+**The Act:** the Mello-Roos Community Facilities Act of 1982, Government Code 53311 and following. **Administrator:** HGF Management Company, the program administrator. **Annexation:** a parcel joining the existing district by its owner's unanimous written approval. **Annexation map:** the recorded map adding parcels to the district. **Backup special tax:** the rate-and-method's protective floor mechanics. **CDIAC:** the California Debt and Investment Advisory Commission, whose appraisal standards the program adopts. **CFD:** a community facilities district. **Clearance certificate:** the school district's proof of fee payment, the reimbursement trigger on the school path. **Consent calendar:** the council's routine-items calendar where annexations sit. **Continuing disclosure:** the reporting obligations that attach once bonds exist. **Data package:** the INS-201 submission. **Delinquency:** an unpaid installment, handled through the ordinary property tax process. **Direct levy:** a district charge submitted to the county for collection on the secured roll. **Eligible costs:** the fees and costs the formation documents authorize. **Escalation:** the annual adjustment, if any, the rate-and-method fixes. **Execution costs:** the per-deal costs the developer pays, targeted at $5,000 to $30,000, a founder estimate. **Fiscal year:** July 1 through June 30. **Future annexation area:** territory identified at formation from which parcels may later annex, Government Code 53339.3(b). **JCFA:** joint community facilities agreement, Government Code 53316.2. **Landowner election:** the formation vote where landowners are the electors on undeveloped land. **MAI:** the Appraisal Institute's senior designation, required of program appraisers. **Maximum special tax:** the recorded ceiling per land-use class. **Notice of Special Tax:** the statutory disclosure delivered to buyers in escrow. **Notice of Special Tax Lien:** the recorded instrument that makes the obligation run with the land. **Prepayment:** full satisfaction of the obligation under Government Code 53344 and the rate-and-method. **Program fees:** the administrator's fees, set at term sheet. **Rate-and-method of apportionment:** the recorded tax formula. **Resolution of intention:** the council act that begins formation. **Special tax:** the Act's non-ad-valorem levy, collected with property taxes. **Term sheet:** the document where every rate becomes real. **Underwriting:** the value and burden tests every project passes before funding. **Unanimous approval:** the owner's written consent that annexes a parcel. **Warehouse facility:** the revolving credit line described in Chapter 6.6, pending question 10.
+
+### Appendix G: Checklists
+
+**G-1, the city or county.** - [ ] Local goals and policies adopted (53312.7) - [ ] Participation Agreement reviewed by counsel and executed - [ ] Resolution of intention adopted with the future annexation area - [ ] Public hearing held inside the 30-to-60-day window - [ ] Landowner election conducted and canvassed - [ ] Formation documents, boundary map, and notice of special tax lien recorded - [ ] First annexation calendared as a consent item - [ ] Annual levy item calendared each year
+
+**G-2, a joint powers authority.** - [ ] Joint agreement executed among member agencies - [ ] Member approval rights mapped and documented - [ ] The same formation sequence as G-1, run by the authority - [ ] Reporting lines to member agencies established
+
+**G-3, INSITE administration.** - [ ] INS-201 data package standard current - [ ] Appraisal panel engaged under INS-101 to State Treasurer standards - [ ] Rate-and-method program standard adopted with the special tax consultant - [ ] County levy submission format and calendar confirmed - [ ] Delinquency policy adopted and noticed - [ ] Annual reporting calendar built, including the state filings - [ ] Records system live: annexation register, lien notices, levy rolls
+
+**G-4, bond counsel.** - [ ] The Appendix D suite drafted from the term descriptions - [ ] The Appendix A and E samples reviewed and revised for execution - [ ] Question 9, if opened: the joint agreement confirmed for fee reimbursement, and the look-back window confirmed - [ ] Formation and annexation forms conformed to the agency's practice
+
+**G-5, the special tax consultant.** - [ ] Rate-and-method drafted as the program standard - [ ] Maximum tax, escalation, and backup mechanics fixed - [ ] Prepayment methodology fixed under Government Code 53344 - [ ] Annexation inheritance confirmed so every project adopts the standard - [ ] The 2 percent burden test embedded in the levy model
 
 ## Sources
 

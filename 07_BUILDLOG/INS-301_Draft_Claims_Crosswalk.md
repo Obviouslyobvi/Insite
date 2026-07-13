@@ -31,7 +31,8 @@
 | Treasurer annual filings | G2 | yes | yes |
 | Six-month traditional formation | G13 | yes | yes |
 | Buyer notice at resale | G15 | yes | yes |
+| Joining resolution form (CMFA) | G16 | yes | yes |
 
-Result: 28 claim families checked, 28 clean, 0 open. The two decision markers (school fees, question 9; financing platform, question 10) are deliberately unresolved in the draft and carry their Build Log references in place.
+Result (updated July 13, appendix build-out and the CMFA joining-form reference): 29 claim families checked, 28 clean, 0 open. The two decision markers (school fees, question 9; financing platform, question 10) are deliberately unresolved in the draft and carry their Build Log references in place.
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments.*

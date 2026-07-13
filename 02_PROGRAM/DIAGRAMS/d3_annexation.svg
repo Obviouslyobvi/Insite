@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 260" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#3E7C59"/></marker></defs>
+<rect x="24" y="75" width="178" height="110" rx="10" fill="#F5F7FA" stroke="#153A5B" stroke-width="2"/>
+<text x="113" y="126" fill="#153A5B" font-size="19" font-weight="bold" text-anchor="middle">DATA</text>
+<text x="113" y="152" fill="#153A5B" font-size="17" font-weight="bold" text-anchor="middle">PACKAGE</text>
+<line x1="206" y1="130" x2="240" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="246" y="75" width="178" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="335" y="138" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">SCREENING</text>
+<line x1="429" y1="130" x2="463" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="469" y="75" width="178" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="558" y="126" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">APPRAISAL,</text>
+<text x="558" y="152" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">FOUR TO ONE</text>
+<line x1="651" y1="130" x2="685" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="691" y="75" width="178" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="780" y="126" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">UNDER-</text>
+<text x="780" y="152" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">WRITING</text>
+<line x1="873" y1="130" x2="907" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="913" y="75" width="178" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="1002" y="126" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">OWNER</text>
+<text x="1002" y="152" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">CONSENT</text>
+<line x1="1095" y1="130" x2="1129" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="1135" y="75" width="178" height="110" rx="10" fill="#153A5B" stroke="#153A5B" stroke-width="0"/>
+<text x="1225" y="126" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">COUNCIL</text>
+<text x="1225" y="152" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">CONSENT ITEM</text>
+<line x1="1318" y1="130" x2="1352" y2="130" stroke="#3E7C59" stroke-width="5" marker-end="url(#a)"/>
+<rect x="1358" y="75" width="178" height="110" rx="10" fill="#3E7C59" stroke="#153A5B" stroke-width="0"/>
+<text x="1447" y="126" fill="#ffffff" font-size="19" font-weight="bold" text-anchor="middle">RECORD</text>
+<text x="1447" y="152" fill="#ffffff" font-size="17" font-weight="bold" text-anchor="middle">AND FUND</text>
+</svg>
