@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 700" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#3E7C59"/></marker></defs>
+<rect x="580" y="280" width="400" height="110" rx="10" fill="#3E7C59" stroke="none" stroke-width="2"/><text x="780.0" y="332.0" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">THE DISTRICT</text><text x="780.0" y="356.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">one per agency, recorded liens</text>
+<rect x="70" y="60" width="430" height="120" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="285.0" y="117.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">THE AGENCY</text><text x="285.0" y="141.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">forms, approves, levies</text>
+<rect x="1060" y="60" width="430" height="120" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="1275.0" y="117.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">THE COUNTY</text><text x="1275.0" y="141.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">collects on the tax bill</text>
+<rect x="70" y="500" width="430" height="120" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="285.0" y="557.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">THE ADMINISTRATOR</text><text x="285.0" y="581.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">prepares everything between</text>
+<rect x="1060" y="500" width="430" height="120" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="1275.0" y="557.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">DEVELOPERS</text><text x="1275.0" y="581.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">apply, consent, build</text>
+<rect x="580" y="40" width="400" height="100" rx="10" fill="#F5F7FA" stroke="#153A5B" stroke-width="2"/><text x="780.0" y="87.0" fill="#153A5B" font-size="20" font-weight="bold" text-anchor="middle">CAPITAL PROVIDER</text><text x="780.0" y="111.0" fill="#153A5B" font-size="18" font-weight="bold" text-anchor="middle">advances against special taxes</text>
+<rect x="580" y="560" width="400" height="100" rx="10" fill="#F5F7FA" stroke="#153A5B" stroke-width="2"/><text x="780.0" y="607.0" fill="#153A5B" font-size="20" font-weight="bold" text-anchor="middle">HOMEOWNERS</text><text x="780.0" y="631.0" fill="#153A5B" font-size="18" font-weight="bold" text-anchor="middle">fixed formula, capped, prepayable</text>
+<line x1="285" y1="180" x2="620" y2="290" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<line x1="1275" y1="180" x2="940" y2="290" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<line x1="285" y1="500" x2="620" y2="382" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<line x1="1275" y1="500" x2="940" y2="382" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<line x1="780" y1="140" x2="780" y2="278" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<line x1="780" y1="392" x2="780" y2="558" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 760" font-family="Helvetica,Arial,sans-serif">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#3E7C59"/></marker></defs>
+<rect x="555" y="20" width="450" height="86" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="780.0" y="60.0" fill="#fff" font-size="22" font-weight="bold" text-anchor="middle">PARTICIPATING</text><text x="780.0" y="84.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">CITY OR COUNTY</text>
+<line x1="780" y1="106" x2="780" y2="150" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="430" y="150" width="700" height="96" rx="10" fill="#3E7C59" stroke="none" stroke-width="2"/><text x="780.0" y="195.0" fill="#fff" font-size="21" font-weight="bold" text-anchor="middle">THE INSITE DISTRICT, FORMED ONCE</text><text x="780.0" y="219.0" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">WITH A FUTURE ANNEXATION AREA</text>
+<line x1="620" y1="246" x2="295" y2="300" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="155" y="300" width="280" height="80" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="295.0" y="337.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">PROJECT A</text><text x="295.0" y="361.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">annexes and funds</text>
+<line x1="780" y1="246" x2="625" y2="300" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="485" y="300" width="280" height="80" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="625.0" y="337.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">PROJECT B</text><text x="625.0" y="361.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">annexes and funds</text>
+<line x1="780" y1="246" x2="955" y2="300" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="815" y="300" width="280" height="80" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="955.0" y="337.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">PROJECT C</text><text x="955.0" y="361.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">annexes and funds</text>
+<line x1="940" y1="246" x2="1285" y2="300" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="1145" y="300" width="280" height="80" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="1285.0" y="337.0" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">PROJECT D</text><text x="1285.0" y="361.0" fill="#fff" font-size="18" font-weight="bold" text-anchor="middle">annexes and funds</text>
+<line x1="780" y1="380" x2="780" y2="430" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="430" y="430" width="700" height="86" rx="10" fill="#153A5B" stroke="none" stroke-width="2"/><text x="780.0" y="470.0" fill="#fff" font-size="21" font-weight="bold" text-anchor="middle">ANNUAL SPECIAL TAX ADMINISTRATION</text><text x="780.0" y="494.0" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle">every annexed parcel, every year</text>
+<line x1="780" y1="516" x2="780" y2="560" stroke="#3E7C59" stroke-width="4" marker-end="url(#a)"/>
+<rect x="430" y="560" width="700" height="86" rx="10" fill="#F5F7FA" stroke="#153A5B" stroke-width="2" stroke-dasharray="8,7"/><text x="780.0" y="600.0" fill="#153A5B" font-size="21" font-weight="bold" text-anchor="middle">OPTIONAL PORTFOLIO REFINANCING</text><text x="780.0" y="624.0" fill="#153A5B" font-size="19" font-weight="bold" text-anchor="middle">never required; the program continues</text>
+<text x="780" y="710" fill="#6B7280" font-size="20" text-anchor="middle">new projects keep annexing regardless of what the capital stack above them does</text>
+</svg>

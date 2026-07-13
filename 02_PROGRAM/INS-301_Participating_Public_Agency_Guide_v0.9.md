@@ -1,5 +1,5 @@
 # INS-301: Participating Public Agency Guide
-**City, County, Joint Powers Authority. Draft version 0.95, July 13, 2026, prepared for the founder's review. This full draft builds out the founder's outline of July 11 and 12. Two program decisions remain his and are marked in place: school-fee eligibility (question 9) and the financing platform's relationship to the note-per-project structure (question 10). The outline's mechanical defects are corrected here per the comparison memo; every factual claim traces to the INSITE Claims Register, entries listed in the Sources section; and the appendices carry full sample instruments and rendered diagrams, every sample bannered on its face for bond counsel review and marked not for execution. The founder's Google Doc remains the source of truth until he adopts this draft.**
+**City, County, Joint Powers Authority. Draft version 0.97, July 13, 2026, prepared for the founder's review. This full draft builds out the founder's outline of July 11 and 12. Two program decisions remain his and are marked in place: school-fee eligibility (question 9) and the financing platform's relationship to the note-per-project structure (question 10). The outline's mechanical defects are corrected here per the comparison memo; every factual claim traces to the INSITE Claims Register, entries listed in the Sources section; and the appendices carry full sample instruments and rendered diagrams, every sample bannered on its face for bond counsel review and marked not for execution. The founder's Google Doc remains the source of truth until he adopts this draft.**
 
 ## Part I: Introduction and Program Overview
 
@@ -21,7 +21,7 @@
 
 **2.2 Eligible public agencies.** Any city or county may participate by forming its master district; a joint powers authority path exists for agencies that prefer a shared issuer, and the founder's structural preference between direct-agency and JPA participation is an open program decision addressed in Chapter 5. Special districts and school districts appear in this guide as coordinating agencies, not as forming agencies, at launch.
 
-**2.3 Eligible development projects.** Residential subdivisions of 2 to 50 lots within a participating jurisdiction; finished or near-finished lots; appraised value of at least four times the proposed financing, program policy stricter than the statute's three-to-one floor in Government Code 53345.8; and a minimum financing size set at feasibility screening.
+**2.3 Eligible development projects.** Residential subdivisions of 2 to 50 lots within a participating jurisdiction; finished or near-finished lots; appraised value of at least four times the proposed financing, program policy stricter than the statute's three-to-one floor in Government Code 53345.8; and a minimum financing size set at feasibility screening (the statewide pool's own floor is $500,000 per agency; the founder sets INSITE's at screening).
 
 **2.4 Eligible public improvements.** The founder's outline contemplates financing constructed public improvements in addition to fees. Improvements are a recognized use of the Act; their inclusion in this program's launch scope is a founder decision that has not yet been made, and no improvement category enters underwriting until bond counsel confirms it deal by deal.
 
@@ -29,7 +29,7 @@
 
 **2.6 Program participants.** The participating agency, which forms the district and approves each annexation; the county, which collects the special tax on the property tax roll; the program administrator, HGF Management Company, which runs everything between; the developer, who applies, consents as landowner, and builds; the capital provider, whose facility funds the fees; and the professional bench: bond counsel, the special tax consultant, the independent MAI appraiser, and the tax roll administration firm.
 
-**2.7 Program requirements.** The agency adopts local goals and policies as Government Code 53312.7 requires, forms the master district with its future annexation area, and thereafter approves annexations; the developer delivers one complete data package (form INS-201) and pays the deal's execution costs; and every project passes the appraisal and burden tests in Chapter 4 before any funding occurs.
+**2.7 Program requirements.** The agency adopts local goals and policies as Government Code 53312.7 requires, forms the master district with its future annexation area, and thereafter approves annexations; the developer delivers one complete data package (form INS-201) and pays the deal's execution costs; every project passes the appraisal and burden tests in Chapter 4 before any funding occurs; and the project's California Environmental Quality Act compliance is confirmed at screening, as the statewide programs require. The agency's verification role mirrors the statewide manual's: confirm the fee amounts and the entitlements, nothing more.
 
 ### Chapter 3: Benefits to Participating Agencies
 
@@ -90,7 +90,7 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 **6.3 Future annexations.** The district stays open. Each later project joins by the unanimous written approval of its owner or owners at the time of annexation, exactly as Government Code 53339.3(b) provides and as Roseville's and Escondido's standing forms implement; the council approves; the annexation map and notice of special tax lien record against the new parcels; and the statute forbids any increase in the existing district's maximum tax rate as a consequence.
 
-**6.4 The rate-and-method of apportionment.** The recorded formula fixes, in advance and for everyone: the maximum special tax by land-use class, any annual escalation, the backup tax mechanics, the prepayment methodology resting on Government Code 53344, the treatment of each annexed zone, and the administrator's operating flexibility. The special tax consultant drafts it once as the program standard; every annexation then inherits it.
+**6.4 The rate-and-method of apportionment.** The recorded formula fixes, in advance and for everyone: the maximum special tax by land-use class, any annual escalation, the backup tax mechanics, the prepayment methodology resting on Government Code 53344, the treatment of each annexed zone, and the administrator's operating flexibility. Program policy follows the statewide authorities' own norms: escalation capped at 2 percent per year and terms not exceeding thirty years. The special tax consultant drafts it once as the program standard; every annexation then inherits it.
 
 **6.5 Eligible financing costs.** The core is the participating agency's own development impact fees, plus the formation and financing costs the Act allows. School fees are marked pending question 9, with the joint-agreement mechanism and the pay-then-reimburse mechanics described in Chapter 2.5. The outline's further categories, utility connection fees, capacity charges, public improvements, capitalized interest, and reserves, are listed for the founder's scope decision and enter only with bond counsel's confirmation per category.
 
@@ -112,11 +112,11 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 **7.4 County coordination.** The special tax is submitted to the county as a direct levy on the secured roll, the same process counties such as Sacramento operate today for thousands of district charges, to the county's format, on the county's calendar.
 
-**7.5 The annual levy.** Each fiscal year, July 1 through June 30, the administrator calculates each parcel's tax under the recorded rate-and-method, reconciles prior collections, prepares the submission, and delivers it inside the county's deadlines; the tax then appears on the parcel's ordinary property tax bill.
+**7.5 The annual levy.** Each fiscal year, July 1 through June 30, the administrator calculates each parcel's tax under the recorded rate-and-method, reconciles prior collections, prepares the submission, and delivers it inside the county's deadlines, with the certified parcel list due to the county auditor by August 10 under Government Code 53340(b); the tax then appears on the parcel's ordinary property tax bill.
 
-**7.6 Disclosure.** Sellers deliver the statutory Notice of Special Tax to buyers in escrow; the administrator maintains the notice; and once bonds exist, the program carries the continuing disclosure and state reporting obligations that come with them, including the annual filings the Treasurer's office requires of Mello-Roos issuers.
+**7.6 Disclosure.** Sellers deliver the statutory Notice of Special Tax to buyers in escrow; the administrator maintains the notice; and once bonds exist, the program carries the continuing disclosure and state reporting obligations that come with them, including the annual accountability report under Government Code 50075.3 and 53411 (Senate Bill 165) and the filings the Treasurer's office requires of Mello-Roos issuers.
 
-**7.7 Delinquencies and foreclosure.** The special tax carries property-tax standing: same bill, same penalties, same lien priority, with judicial foreclosure as the ultimate remedy. Occupied homes are protected by the 10 percent limitation of Government Code 53321(d), and the program's adopted delinquency policy governs reminders, demand, and escalation.
+**7.7 Delinquencies and foreclosure.** The special tax carries property-tax standing: same bill, same penalties, same lien priority, with judicial foreclosure as the ultimate remedy. Occupied homes are protected by the 10 percent limitation of Government Code 53321(d), the program's adopted delinquency policy governs reminders, demand, and escalation; and in counties operating a Teeter Plan, districts may receive the full levy each year regardless of delinquency, as many of the statewide programs' districts do today.
 
 **7.8 Continuing compliance.** The administrator maintains the district's records, the annexation register, the lien notices, and the reporting calendar, and hands the agency a clean annual file.
 
@@ -140,7 +140,7 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 |---|---|---|---|---|---|
 | Sponsor | The agency, per project | The agency | CSCDA, statewide | CMFA, statewide | The agency, once |
 | Formed per project | Yes | Yes | No; pooled | No; pooled | No; one master district |
-| Built for | Master-planned scale | Improvements | Fees and improvements | Fees and improvements | 2-to-50-lot subdivisions |
+| Built for | Master-planned scale | Improvements | Fees and improvements; pool typically 50 to 250 units | Fees and improvements | 2-to-50-lot subdivisions |
 | Local approval of each project | Yes | Yes | Through the pool | Through the pool | Yes, the council |
 | Funding timing | Bond sale | Bond sale | Pooled bond cycles | Bond cycles | Advance at approval, pending question 10 |
 | Status | Decades of practice | Decades of practice | Operating since 2002 | Operating | Pre-launch |
@@ -215,6 +215,14 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 !IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d6_refi.svg 96%
 
+**B-7, the district architecture (the founder's Figure 6-1, drawn).** One agency, one district formed once with its future annexation area; projects A through D annex and fund as they qualify; the annual administration covers every annexed parcel; and the optional refinancing sits at the end of the pipeline while the program simply continues.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d7_figure61.svg 92%
+
+**B-8, the parties.** Who touches the district and how: the agency forms, approves, and levies; the county collects; the administrator prepares everything between; developers apply, consent, and build; capital advances against the special taxes; homeowners hold a fixed, capped, prepayable obligation.
+
+!IMG /home/claude/insite/02_PROGRAM/DIAGRAMS/d8_parties.svg 92%
+
 ### Appendix C: Full Responsibility Matrix
 
 | Function | Agency | County | Administrator | Professionals |
@@ -261,7 +269,9 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 **E-4, Annexation resolution (per project).** WHEREAS, the district was formed with a future annexation area; and WHEREAS, the owner of the parcels described in Exhibit A has delivered unanimous written approval of annexation, the special tax, and the rate-and-method; NOW, THEREFORE, the Council resolves: the parcels in Exhibit A are annexed to the district; the annexation map and notice of special tax lien shall be recorded; and the Council finds the maximum special tax in the existing district is not increased by this annexation, consistent with Government Code 53339.3(e).
 
-**E-5, Annual levy resolution.** WHEREAS, the rate-and-method fixes each parcel's maximum special tax; NOW, THEREFORE, the Council resolves: the special tax for fiscal year [____], July 1 through June 30, is levied on each parcel as shown on the roll on file with the Clerk, prepared under the rate-and-method; and staff shall submit the roll to the County for collection with the ordinary property taxes.
+**E-5, Resolution of formation.** WHEREAS, the Council adopted its resolution of intention and held the noticed public hearing within the Act's 30-to-60-day window, and no majority protest was made; and WHEREAS, the qualified electors, being the landowners of the territory, approved the special tax at the election called for that purpose, and the canvass is complete; NOW, THEREFORE, the Council resolves: "[Agency] Community Facilities District No. [__] (INSITE Program)" is established; the rate-and-method of apportionment attached as Exhibit A is approved and the special tax authorized; the future annexation area shown on the recorded boundary map is confirmed, with parcels annexed only by the unanimous approval of their owners under Government Code 53339.3(b); the Clerk shall record the notice of special tax lien; and the district is authorized to finance the eligible fees and costs described in Exhibit B.
+
+**E-6, Annual levy resolution.** WHEREAS, the rate-and-method fixes each parcel's maximum special tax; NOW, THEREFORE, the Council resolves: the special tax for fiscal year [____], July 1 through June 30, is levied on each parcel as shown on the roll on file with the Clerk, prepared under the rate-and-method; and staff shall submit the roll to the County for collection with the ordinary property taxes.
 
 ### Appendix F: Glossary
 
@@ -277,7 +287,37 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 **G-4, bond counsel.** - [ ] The Appendix D suite drafted from the term descriptions - [ ] The Appendix A and E samples reviewed and revised for execution - [ ] Question 9, if opened: the joint agreement confirmed for fee reimbursement, and the look-back window confirmed - [ ] Formation and annexation forms conformed to the agency's practice
 
-**G-5, the special tax consultant.** - [ ] Rate-and-method drafted as the program standard - [ ] Maximum tax, escalation, and backup mechanics fixed - [ ] Prepayment methodology fixed under Government Code 53344 - [ ] Annexation inheritance confirmed so every project adopts the standard - [ ] The 2 percent burden test embedded in the levy model
+**G-5, the county.** - [ ] Direct-levy submission format and file specifications confirmed with the auditor-controller - [ ] Certified parcel list received by August 10 (Government Code 53340(b)) - [ ] Special tax placed on the secured roll as a separate line item - [ ] Collections through the ordinary December and April installments - [ ] Remittances and delinquency data delivered to the administrator - [ ] Teeter Plan treatment of the district confirmed under county policy
+
+**G-6, the special tax consultant.** - [ ] Rate-and-method drafted as the program standard - [ ] Maximum tax, escalation, and backup mechanics fixed - [ ] Prepayment methodology fixed under Government Code 53344 - [ ] Annexation inheritance confirmed so every project adopts the standard - [ ] The 2 percent burden test embedded in the levy model
+
+
+### Appendix H: A Worked Example
+
+**ILLUSTRATION ONLY. Every figure below is the founder's working number for demonstration; actual fees come from the jurisdiction's posted schedule, actual rates are set at term sheet, and nothing here is a quote or commitment.**
+
+Take a 20-lot subdivision in a participating city. The posted fee schedule totals $25,000 per home (for scale: the statewide average in cited studies is $23,455), so the program finances $500,000 of fees for the project; the developer's day-one cash drops to the deal's execution costs, targeted at $5,000 to $30,000. The appraisal test: $500,000 of financing requires appraised value of at least $2,000,000 under the program's four-to-one policy; twenty finished lots at an illustrative $150,000 each appraise at $3,000,000, a six-to-one cushion, comfortably past both the program floor and the statute's three-to-one minimum. The burden test, on an illustrative $700,000 finished home: at an illustrative 7 percent for thirty years, the project's special tax runs about $2,015 per home per year, roughly 0.29 percent of home value; stacked on the 1 percent basic levy ($7,000) and an assumed $1,750 of other charges, the total bill is about $10,765, or 1.54 percent of value, leaving real headroom under the program's 2 percent ceiling (the ceiling permits about $5,250 of special tax on this home; the program uses $2,015 of it). The homeowner's protections ride along: the formula is recorded before the first sale, neighbors' delinquencies cannot raise an occupied home's tax more than 10 percent, and the owner can prepay and clear the lien at any time.
+
+| The tests, at a glance | Requirement | This example | Result |
+|---|---|---|---|
+| Appraised value to financing | At least 4 to 1 (statute floor 3 to 1) | $3,000,000 to $500,000, or 6 to 1 | Passes |
+| Total tax burden | Near 2 percent of home value | 1.54 percent | Passes |
+| Special tax share | Fixed by recorded formula | $2,015 per year, about 0.29 percent | Fixed |
+| Owner protections | 10 percent cap, prepayment | Both apply by statute and formula | In place |
+
+### Appendix I: The Annual Administration Calendar
+
+| When | What happens | Who |
+|---|---|---|
+| July 1 | Fiscal year opens | Everyone |
+| July | Levy roll finalized under the recorded formula; prior-year collections reconciled | Administrator |
+| By August 10 | Certified parcel list filed with the county auditor (Government Code 53340(b)) | Administrator to county |
+| Summer council calendar | Annual levy item, one consent entry, from the prepared packet | Agency |
+| October to April | Special tax collected on the ordinary property tax bill, December and April installments | County |
+| December to January | First-installment delinquency review; reminders per the adopted policy | Administrator |
+| April to May | Second-installment review; escalation per policy where needed | Administrator |
+| Spring | Annual accountability report (Government Code 50075.3 and 53411) and state filings prepared | Administrator |
+| Year-round | Applications, annexations, and prepayment processing continue | Administrator and agency |
 
 ## Sources
 
