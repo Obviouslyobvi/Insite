@@ -13,7 +13,7 @@ Program Administrator: HGF Management Company | July 2026
 | INS-003 | RMA Design and Issuer Strategy | Built, verified | Counsel review of the five flagged questions |
 | INS-004 | Sourcing Strategy | Built, verified | Populate with selected firms |
 | INS-005 | Credibility Plan | Built, verified | Add advisor bios when confirmed |
-| INS-006 | Two Decisions Memo | Released July 12: questions 9 and 10 (school fees; capital structure) each presented with the worked answer, mechanics, counsel checks, and the cascade that follows either choice | Dennis decides both in one sitting |
+| INS-006 | School Fees Decisions Memo | Released July 12: questions 9 and 10 (school fees; capital structure) each presented with the worked answer, mechanics, counsel checks, and the cascade that follows either choice | Dennis decides both in one sitting |
 | INS-101 | Appraisal Manual | Existing (July 2026 edition in project files) | Fix list: cover reads "TABLE OF CONSENTS"; align citations to Claims Register in next edition |
 | INS-102 | Appraisal Panel Request for Qualifications | Existing | Fix list: footer mislabels the document as INS-101 |
 | INS-102A | Standard DCF / Bulk Sale Analysis Workbook | Both formula defects fixed in v1.1_corrected (July 11, on Palmer's go-ahead): hard-cost row repointed from Builder Incentives to the Development Cost Period, soft-cost row repointed to the Soft Cost Period; 120 cells corrected, zero collateral changes, 1,019 formulas recalculate clean, fix proven with injected test inputs; v1 original preserved untouched at 02_PROGRAM/ARCHIVE_ORIGINALS; retired program name also removed from the cover and the internal version label updated (July 11) | Use v1.1_corrected for all analysis |

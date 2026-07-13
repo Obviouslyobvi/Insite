@@ -1,4 +1,4 @@
-# INS-006: Two Decisions Memo
+# INS-006: School Fees Decisions Memo
 **For Dennis Lanni. July 12, 2026. The two open questions that move the most documents, each presented with the full worked answer, so both can be decided in one sitting. These are questions 9 and 10 in the Build Log; everything below is sourced to the claims register.**
 
 ## Decision one: school fees, in or out

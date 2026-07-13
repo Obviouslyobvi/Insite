@@ -4,7 +4,7 @@ so a change Dennis makes at any step only ripples FORWARD into later items, neve
 If he edits step N, only steps N+1 onward need touching.
 
  1. Master Plan (00_PLAN)  -  the frame; strategy changes here inherit everywhere downstream
- 2. Build Log (07_BUILDLOG)  -  every decision and correction, plus his ten open questions with the two-decisions memo INS-006 attached; answers ripple forward
+ 2. Build Log (07_BUILDLOG)  -  every decision and correction, plus his ten open questions with the school fees decisions memo INS-006 attached; answers ripple forward
  3. Claims Register (01_EVIDENCE)  -  the evidence base every later document stands on
  4. Audits and screens (07_BUILDLOG, 04_BRAND)  -  Quarantine Audits 1 and 2, the Trademark Knockout memo (Class 36 conflicts, the name decision input), and the INS-301 comparison memo (his new agency guide against the package)
  5. Primer INS-000 (02_PROGRAM)  -  the plain-language education layer
