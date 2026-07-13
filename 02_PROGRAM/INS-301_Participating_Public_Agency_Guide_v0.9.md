@@ -128,7 +128,7 @@ The lifecycle runs in three phases and sixteen steps; this structure supersedes 
 
 **8.2 Assessment districts.** Benefit-apportioned and improvement-focused, with a narrower menu than the Act's; a fine tool that is not shaped for fee financing at small scale.
 
-**8.3 SCIP.** The Statewide Community Infrastructure Program, run by the California Statewide Communities Development Authority since 2002, finances fees and improvements through pooled statewide issuance; hundreds of agencies are members, and it is the proof that fee financing works as a program.
+**8.3 SCIP.** The Statewide Community Infrastructure Program, run by the California Statewide Communities Development Authority since 2002, finances fees and improvements through pooled statewide issuance; hundreds of agencies are members, and it is the proof that fee financing works as a program. Its own 2026 overview describes typical pool projects of 50 to 250 units, which is precisely the ceiling INSITE builds under.
 
 **8.4 BOLD.** The California Municipal Finance Authority's Bond Opportunities for Land Development program does the same work through community facilities districts, statewide.
 
