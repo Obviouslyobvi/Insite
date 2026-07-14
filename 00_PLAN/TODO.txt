@@ -17,7 +17,7 @@ YOURS (hours)
 
 DENNIS (one sitting plus follow-ups)
 [!] NAME: the July 11 knockout screen tripped the conflict rule twice (live Class 36 marks: INSITE sn98837494, insurance administration, published for opposition; INSIGHT CAPITAL SOLUTIONS sn99761274, financing services). Per the rule: stop, take Option A. Findings memo: 04_BRAND/Trademark_Knockout_Class36.pdf
-[ ] Confirm what Option A is and, if it means adopting a bench name now, pick one (clean Tier 1: FeeRoll, TractRoll; both .com and .org free at last check)
+[x] NAME: Palmer's call, July 13: roll with INSITE as is for now. No Option A memo, no bench-name switch. The trademark attorney's clearance remains the formal gate before public launch, and the TSDR recheck on serial 98837494 stays calendared for about July 26.
 [ ] Trademark attorney clearance on the chosen name (still the formal gate)
 [ ] Pilot-description rule: stay generic or name the project (his call, possibly the landowner's too)
 [ ] Final company entity: confirm HGF Management Company is the permanent entity
@@ -43,6 +43,15 @@ DENNIS'S NEW FOCUS AREAS (received July 12; roadmap discussion pending)
 [x] Developer Guide: INS-302 v1.0 built July 12 (eligibility, application, underwriting, approval, funding, construction, FAQ); deepen after Dennis's answers
 [x] Online Fee Estimator: v1 built July 12 (05_WEBSITE/fee_estimator.html); jurisdiction auto-fill arrives as the database populates
 [~] Statewide fee database: kit built July 12 (02_PROGRAM/DATA), legal basis verified as register G6 (Gov Code 65940.1); population remains, pilot jurisdiction first
-[~] Investor Guide: INS-303 outline v0.1 built July 12, sources mapped per chapter; full manual gated on Dennis's chapter edits, question 10 (ANSWERED July 13: one note per project; warehouse line and facility are one instrument until the take-out), and bond counsel for chapters 4 and 5
+[x] Investor Guide: INS-303 v1.0 BUILT July 13. Ten chapters, four appendices, PUBLIC/PORTAL marked per chapter, question 10's answer carried throughout, five diagrams, PDF and Word verified. Chapter 4 (credit enhancement) and section 5.5 (the waterfall) are bannered bond-counsel gates and stay placeholders on purpose. Dennis's chapter-plan edits still wanted.
 [~] Investor portal: split decided chapter by chapter inside INS-303; tax-equivalent yield calculator built July 12 (05_WEBSITE/tey_calculator.html) after the Lovable link proved unfindable in Drive; secure portal awaits outline approval
 [ ] Founder research: does pay-then-reimburse avoid the school joint agreement entirely? Register G7 Riverside reading says a thin agreement survives; bond counsel resolves if reopened.
+
+JULY 13 SESSION, LATE (builder)
+[x] DCF workbook: verified already fixed. Both defects were corrected July 11 in v1.1_corrected; the handoff's "awaiting go-ahead" was stale. Row 5 (hard costs) now points at Market Assumptions B10, the Development Cost Period, across all 60 month columns; row 6 (soft costs) at B11, the Soft Cost Period; zero references to B9 remain anywhere in the workbook; the v1 original is preserved untouched in ARCHIVE_ORIGINALS.
+[x] md2pdf defect FOUND and FIXED: the converter never handled level-3 headings, so every "### " line printed as literal body text. The shipped INS-301 PDF carried 19 of them, one for each chapter and appendix. Tool patched (h3 branch plus CSS), INS-301 PDF rebuilt, margin gate passed, 12 pages held, page rasterized and inspected. Swept all repo PDFs: INS-301 was the only casualty; the Word edition was clean.
+[x] Build Log defect FOUND and FIXED: question 11's entry carried question 9's answer, pasted by error, which is why the handoff read as though 11 were settled. Question 9's answer restored to its own entry; question 11 recorded as open with its memo.
+[x] Question 11 worked: INS-007 Agreement Structure Decision Memo written (one instrument or two), with the case each way, the document impact list, and a recommendation of two instruments. PDF and Word rendered.
+[ ] DENNIS: decide question 11 (INS-007). Two instruments, or one.
+[ ] BOND COUNSEL (Brad Neill), one question to carry with the rest: which administrator duties must appear in the council-approved Participation Agreement for the agency's authorization to hold, and which may be carried by reference to a separate Administration Agreement.
+[ ] DENNIS: edits to the INS-303 chapter plan and the public-versus-portal split.

@@ -25,6 +25,7 @@ def convert(md):
             out.append('</tbody></table>'); continue
         if ln.startswith('# PART'): out.append(f'<h1 class="part">{inline(ln[2:])}</h1>')
         elif ln.startswith('# '): pass
+        elif ln.startswith('### '): out.append(f'<h3>{inline(ln[4:])}</h3>')
         elif ln.startswith('## '): out.append(f'<h2>{inline(ln[3:])}</h2>')
         elif NUM.match(ln):
             out.append('<ol>')
@@ -60,9 +61,11 @@ body {{ font-family: {font}; color:#26303a; font-size:{fs}; line-height:1.58; ma
 .wrap {{ padding:20px 52px 44px 52px; }}
 h1.part {{ font-family:Helvetica,Arial,sans-serif; color:#fff; background:#153A5B; font-size:13pt; letter-spacing:1px; padding:8px 14px; margin:26px 0 10px 0; page-break-after:avoid; }}
 h2 {{ font-family:Helvetica,Arial,sans-serif; color:#153A5B; font-size:12pt; margin:18px 0 6px 0; border-bottom:2px solid #3E7C59; padding-bottom:2px; page-break-after:avoid; }}
+h3 {{ font-family:Helvetica,Arial,sans-serif; color:#3E7C59; font-size:10.6pt; letter-spacing:0.3px; margin:14px 0 5px 0; page-break-after:avoid; }}
 p {{ margin:7px 0; }} b {{ color:#153A5B; }}
 table {{ border-collapse:collapse; width:100%; margin:9px 0 13px 0; font-size:9.6pt; font-family:Helvetica,Arial,sans-serif; page-break-inside:avoid; }}
 th {{ background:#153A5B; color:#fff; text-align:left; padding:5px 8px; }}
+tr {{ page-break-inside:avoid; }}
 td {{ border:1px solid #d3dae3; padding:5px 8px; vertical-align:top; }}
 tr:nth-child(even) td {{ background:#F5F7FA; }}
 ul,ol {{ margin:6px 0 11px 26px; padding:0; }} li {{ margin-bottom:5px; }}

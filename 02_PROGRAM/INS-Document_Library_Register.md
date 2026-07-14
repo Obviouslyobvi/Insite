@@ -14,14 +14,25 @@ Program Administrator: HGF Management Company | July 2026
 | INS-004 | Sourcing Strategy | Built, verified | Populate with selected firms |
 | INS-005 | Credibility Plan | Built, verified | Add advisor bios when confirmed |
 | INS-006 | School Fees Decisions Memo | Released July 12: questions 9 and 10 (school fees; capital structure) each presented with the worked answer, mechanics, counsel checks, and the cascade that follows either choice | Both decisions answered July 13; memo stands as the record |
+| INS-007 | Agreement Structure Decision Memo | Released July 13: program question 11 (one instrument or two), the case each way, the document impact list, and a recommendation of two instruments with the Administration Agreement incorporated by reference | Open. Founder decides; one question goes to bond counsel |
+
+## Manuals and Working Documents
+
+| Number | Title | Status | Next action |
+|---|---|---|---|
 | INS-101 | Appraisal Manual | Existing (July 2026 edition in project files) | Fix list: cover reads "TABLE OF CONSENTS"; align citations to Claims Register in next edition |
 | INS-102 | Appraisal Panel Request for Qualifications | Existing | Fix list: footer mislabels the document as INS-101 |
 | INS-102A | Standard DCF / Bulk Sale Analysis Workbook | Both formula defects fixed in v1.1_corrected (July 11, on Palmer's go-ahead): hard-cost row repointed from Builder Incentives to the Development Cost Period, soft-cost row repointed to the Soft Cost Period; 120 cells corrected, zero collateral changes, 1,019 formulas recalculate clean, fix proven with injected test inputs; v1 original preserved untouched at 02_PROGRAM/ARCHIVE_ORIGINALS; retired program name also removed from the cover and the internal version label updated (July 11) | Use v1.1_corrected for all analysis |
 | INS-201 | Developer Data Package Checklist | Built fresh v1.0 from the Appendix E source (E.1 to E.10), verified | None until program launch |
 | INS-301 | Participating Public Agency Guide (City, County, JPA) | Full draft v0.98 built July 13; questions 9 and 10 both answered and flipped through the guide July 13 (school fees excluded at launch; platform confirmed) from the founder's outline: all ten chapters, appendices built out in full: sample participation agreement and six sample resolutions, a worked example, and the annual administration calendar bannered for counsel, six rendered diagrams, full matrix, glossary, and checklists, with the CMFA joining form filed as the E-1 model, the two decisions marked in place (questions 9 and 10), defects corrected, 36 claim families crosswalked to the register (07_BUILDLOG/INS-301_Draft_Claims_Crosswalk), page-by-page visual verification passed | Founder merges or edits the draft; his two answers unlock final |
 | INS-302 | Developer Guide | Version 1.0 released July 12: consolidated eligibility, application, underwriting, approval, funding, construction phase, and FAQ from INS-202, INS-201, INS-101, and INS-401; those manuals remain controlling for detail | Founder read-through; deepen after his ten answers |
-| INS-303 | Investor Guide | Outline v0.1 released July 12 with the public-versus-portal split decided chapter by chapter; built from the founder's capital-markets notes | Founder edits the chapter plan and confirms question 10; bond counsel gates chapters 4 and 5 |
+| INS-303 | Investor Guide | Version 1.0 released July 13: ten chapters in four parts plus four appendices, every chapter marked PUBLIC or PORTAL, question 10's answer carried throughout, five diagrams embedded; PDF and Word rendered and visually verified | Chapter 4 and section 5.5 are bannered bond-counsel gates until Brad Neill opines; founder's chapter-plan edits still wanted |
 | INS-304 | Public Agency Implementation Guide (planned) | Proposed in the founder-side July 13 intake as a practical manual for city staff (annual calendar, approvals, county timeline, staff duties, administration agreement, finance-director FAQ); the memo numbered it INS-302, which belongs to the Developer Guide, so the library reserves INS-304 | Founder confirms scope; draws on INS-301 chapters 4, 5, and 7 |
+
+## Data, Brand, and Evidence
+
+| Number | Title | Status | Next action |
+|---|---|---|---|
 | DATA | Statewide fee database kit | Started July 12: Airtable-ready schema, workflow, and legal basis (Government Code 65940.1, register G6); template carries one example row and a no-source-no-row rule | Populate the pilot jurisdiction first |
 | INS-103 | Appraisal Review and Quality Control | Outline exists in project files | Draft after pilot appraisal cycle |
 | INS-010, 202, 401, 501, 601 | Operations manual set (program operations, developer intake, transaction execution, annual administration and tax roll, public agency onboarding) | Authored by Dennis Lanni; adopted from quarantine July 11 with corrections: retired name removed, builder reference removed, standard disclaimer added, factual claims verified (Claims Register G-series); em dashes retained per project decision | Dennis confirms his thirteen draft service levels and thresholds at the question sitting |
