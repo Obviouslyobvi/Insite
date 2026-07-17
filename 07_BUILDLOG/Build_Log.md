@@ -68,4 +68,11 @@ Professional bench intel from the same intake, recorded for the sitting: bond co
 5. Contact details, domain, and any public deployment are deliberately absent pending questions 1, 2, and 5.
 6. Human eyeball passes on the website screenshots, deck thumbnails, and marketing pages are recommended before printing, because the session's image viewer failed and mechanical audits stood in.
 
+## Part 5: Contract record
+
+1. July 16, 2026: the Professional Services Agreement between HGF Management Company and the builder side went out as a redline and was executed the same day. Milestone 1, execution of the agreement, is complete, and the $400 Milestone 1 payment was received July 16. Total contract value is $3,500 across six milestones, with substantial completion due Monday, August 10, 2026.
+2. Same day: the Delivery Memorandum dated July 16, 2026 (00_PLAN/Delivery_Memo_2026-07-16.md and .pdf, rev 44) transmits the Milestone 2 and Milestone 3 deliverables. Under the executed agreement each deliverable is deemed accepted absent a written response within five calendar days of delivery, with payment due within ten business days after acceptance. The acceptance period for Milestones 2 and 3 begins when the package reaches Dennis, not before; the delivery date gets recorded here when the send is confirmed.
+3. Open contract questions carried in the memo: written acceptance of INS-303 with Chapter 4 and section 5.5 reserved as bond counsel gates; the Tax-Equivalent Yield Calculator provenance (the Lovable build was never located, so the delivered calculator is an original build and written acceptance is requested); Airtable account creation by HGF for the fee database migration.
+4. Scope note for the record: INS-301 authorship sits with HGF under the agreement, with the builder on review and comment only. The existing INS-301 v0.99 draft predates the agreement and travels with the delivery package as reference material, labeled as such in the memo.
+
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal record. Not an offer of financing, legal advice, or investment advice.*
