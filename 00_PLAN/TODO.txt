@@ -9,7 +9,7 @@ CONTRACT (Professional Services Agreement, executed July 16, 2026; due Aug 10; $
 [ ] M4 General website redesign, $500: prototype verified; needs deployment to insite-ca.org (Dennis's hosting access)
 [ ] M5 Developer website features, $700: estimator done; forms, workflows, guide-support pages remain
 [ ] M6 Investor website features, $500: TEY calculator done; investor pages and resources remain
-[ ] Send delivery package to Dennis, dated, and record the send date in the Build Log (starts the 5-day clocks)
+[x] Delivery package sent July 22; deemed accepted July 27 absent written response; $1,400 due by Aug 10
 
 YOURS (hours)
 [ ] Ten-minute eyeball pass: contact sheets at 07_BUILDLOG/qc, deck thumbnails at 06_DECK/qc, website captures at 05_WEBSITE/qc
