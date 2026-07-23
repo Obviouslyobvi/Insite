@@ -2,13 +2,41 @@
 
 **Prepared for Dennis Lanni, HGF Management Company**
 
-**July 23, 2026, second revision. Three parts. Part one is the public-versus-portal split in one named document, INS-303, for your approval. Part two is every edit from your July 20 markup, numbered, each entry naming its document, its section, its PDF page, the old wording, and the new wording, so review runs edit by edit with nothing to hunt for. Part three is the three items waiting on your input. Page numbers refer to the current editions: INS-302 Developer Guide v1.2 (two pages), INS-303 Investor Guide v1.2 (seven pages), and the Capital Partner Brief revised July 20 (one page).**
+**July 23, 2026, second revision. Three parts. Part one is the public-versus-portal split in one named document, INS-303, as fifteen one-line decisions, each with an approval checkbox. Part two is every edit from your July 20 markup, numbered, each entry naming its document, its section, its PDF page, the old wording, and the new wording, so review runs edit by edit with nothing to hunt for. Part three is the three items waiting on your input. Page numbers refer to the current editions: INS-302 Developer Guide v1.2 (two pages), INS-303 Investor Guide v1.2 (seven pages), and the Capital Partner Brief revised July 20 (one page).**
 
 ## Part one: the public-versus-portal split in INS-303, the Investor Guide, v1.2
 
-This part concerns one document only: INS-303. Each line gives the chapter and its tag. Reply "approved" to take the split as marked, or name sections to move.
+This part concerns one document only: INS-303. Fifteen decision lines. Check the box to approve the line as marked, or write the change on the line.
 
-INS-303 Chapter 1, the offer, sections 1.1 through 1.5: all PUBLIC. INS-303 Chapter 2, capital structure: PUBLIC, except section 2.4 (commercial terms set at term sheet), which is PORTAL. INS-303 Chapter 3, funding flow: PUBLIC, except section 3.3 (closing and advance mechanics), which is PORTAL. INS-303 Chapter 4, credit enhancement: sections 4.1 and 4.4 (the bond counsel placeholders) PORTAL; sections 4.2 and 4.3 (statutory protections and the burden ceiling) PUBLIC. INS-303 Chapter 5, security: PUBLIC, except section 5.5 (the waterfall, counsel-gated), which is PORTAL. INS-303 Chapter 6, underwriting and risk: all PUBLIC. INS-303 Chapter 7, administration: PUBLIC, except section 7.3 (maker-and-checker detail) PORTAL, and section 7.4, which states the delinquency principle publicly and keeps reporting detail PORTAL. INS-303 Chapter 8, reporting: PORTAL, except section 8.2 (statutory reporting), which is PUBLIC.
+Decision 1. Chapter 1, the offer, sections 1.1 through 1.5: PUBLIC. .......... APPROVED: [    ]
+
+Decision 2. Chapter 2, sections 2.1 through 2.3 (the instrument, the facility, the take-out): PUBLIC. .......... APPROVED: [    ]
+
+Decision 3. Chapter 2, section 2.4 (commercial terms set at term sheet): PORTAL. .......... APPROVED: [    ]
+
+Decision 4. Chapter 3, sections 3.1, 3.2, 3.4, 3.5 (pipeline, origination, repayment, take-out): PUBLIC. .......... APPROVED: [    ]
+
+Decision 5. Chapter 3, section 3.3 (closing and advance mechanics): PORTAL. .......... APPROVED: [    ]
+
+Decision 6. Chapter 4, sections 4.1 and 4.4 (bond counsel placeholders): PORTAL. .......... APPROVED: [    ]
+
+Decision 7. Chapter 4, sections 4.2 and 4.3 (statutory protections, 2 percent burden ceiling): PUBLIC. .......... APPROVED: [    ]
+
+Decision 8. Chapter 5, sections 5.1 through 5.4 (lien standing, rate stability, the 25 percent test, illustrative sizing): PUBLIC. .......... APPROVED: [    ]
+
+Decision 9. Chapter 5, section 5.5 (the waterfall, counsel-gated): PORTAL. .......... APPROVED: [    ]
+
+Decision 10. Chapter 6, all sections (underwriting and risk, including the plainly stated risks): PUBLIC. .......... APPROVED: [    ]
+
+Decision 11. Chapter 7, sections 7.1, 7.2, 7.5 (who does what, the annual cycle, prepayment): PUBLIC. .......... APPROVED: [    ]
+
+Decision 12. Chapter 7, section 7.3 (maker-and-checker service detail): PORTAL. .......... APPROVED: [    ]
+
+Decision 13. Chapter 7, section 7.4 (delinquency): principle PUBLIC, reporting detail PORTAL. .......... APPROVED: [    ]
+
+Decision 14. Chapter 8, sections 8.1, 8.3, 8.4 (reporting package, portfolio tape, continuing disclosure): PORTAL. .......... APPROVED: [    ]
+
+Decision 15. Chapter 8, section 8.2 (statutory reporting that happens regardless): PUBLIC. .......... APPROVED: [    ]
 
 ## Part two: the edits, one by one
 
