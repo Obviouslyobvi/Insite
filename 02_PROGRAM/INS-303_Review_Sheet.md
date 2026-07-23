@@ -1,8 +1,8 @@
-# INS-303 Review Sheet
+# Markup Review Sheet: INS-303 Split and the July 20 Edits
 
 **Prepared for Dennis Lanni, HGF Management Company**
 
-**July 23, 2026. Two things on one sheet: the public-versus-portal split for your approval, and a map of exactly where your July 20 edits landed, so nothing has to be hunted for.**
+**July 23, 2026, revised same day. Two things on one sheet: the public-versus-portal split in the Investor Guide for your approval, and a map of where every July 20 edit landed. The edits touched three documents, the Developer Guide (INS-302), the Investor Guide (INS-303), and the Capital Partner Brief, so each entry below names its document.**
 
 ## Part one: the split, chapter by chapter
 
@@ -26,9 +26,9 @@ The question to answer per line is simply: does this belong on the open website,
 
 The pattern in one sentence: what the program is and why it is safe is public; the numbers, mechanics, and terms a counterparty negotiates are behind the login.
 
-## Part two: where your July 20 edits landed
+## Part two: where your July 20 edits landed, across all three documents
 
-**"Say 25 percent debt-to-value instead of four-to-one."** Done in three places. Developer Guide section 2 now reads "financing capped at 25 percent of the lots' appraised value"; section 4 reads "the financing cannot exceed 25 percent of that appraised value"; and the Capital Partner Brief is retitled "Small notes. County-collected liens. 25 percent debt-to-value." with the matching bullet beneath it.
+**"Say 25 percent debt-to-value instead of four-to-one."** Done everywhere a developer or investor reads. Developer Guide section 2 now reads "financing capped at 25 percent of the lots' appraised value" and section 4 "the financing cannot exceed 25 percent of that appraised value." The Capital Partner Brief is retitled "Small notes. County-collected liens. 25 percent debt-to-value." with the matching bullet. And as of July 23 the Investor Guide itself matches: sections 3.2, 4.2, 5.3, 6.1, and 6.2 all lead with the 25 percent framing (INS-303 is now v1.2), along with the website, the developer one-pager, and the city brief, so no reader meets one framing on one page and the other framing on the next.
 
 **"Word the costs as a percentage of the amount financed plus hard fees."** Done. Developer Guide section 6 now reads "an origination fee set as a percentage of the amount financed, stated on your term sheet, plus the hard costs of execution... targeted at $5,000 to $30,000."
 
