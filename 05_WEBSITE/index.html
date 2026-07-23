@@ -209,8 +209,9 @@ footer a{color:#cfe0ee}
           </ul>
         </div>
         <div class="res"><h3>INSITE land-secured</h3>
-          <div class="big" id="r_ins_day1">$0</div><div class="sub">Cash you pay on day one (the deal's paperwork cost, a founder estimate)</div>
+          <div class="big" id="r_ins_day1">$0</div><div class="sub">Cash you pay on day one (the deal's paperwork cost, a founder estimate; the fees themselves are paid by the note, not by you)</div>
           <ul>
+            <li>Fees financed for you at closing: <b id="r_ins_financed">$0</b></li>
             <li>Special taxes you pay on unsold lots during your hold: <b id="r_ins_hold">$0</b></li>
             <li>Estimated annual special tax per home: <b id="r_ins_annual">$0</b></li>
             <li>Who pays long term: future owners, on the tax bill, disclosed before purchase and prepayable at any time</li>
@@ -304,6 +305,7 @@ function render(){
   document.getElementById('r_priv_day1').textContent=money(0);
   document.getElementById('r_priv_hold').textContent=money(r.priv.hold);
   document.getElementById('r_ins_day1').textContent=money(r.ins.day1);
+  document.getElementById('r_ins_financed').textContent=money(r.total);
   document.getElementById('r_ins_hold').textContent=money(r.ins.hold);
   document.getElementById('r_ins_annual').textContent=money(r.ins.annual);
   document.getElementById('formula').textContent='Formulas in plain sight: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on total fees at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
