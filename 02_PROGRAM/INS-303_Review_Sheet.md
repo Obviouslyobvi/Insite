@@ -172,10 +172,10 @@ APPROVED: [    ]
 
 ## Part three: the three items waiting on your input
 
-Item 1. The 19 percent stabilized debt-to-value figure from your markup: state the basis (where the number comes from) so it can ship on marketing. ANSWERED: [    ]
+Item 1. The 19 percent stabilized debt-to-value figure from your markup on the Capital Partner Brief: state the basis (where the number comes from). Once answered it ships in three places: the Capital Partner Brief debt-to-value line, INS-303 section 5.3 (page 3), and the investors page security stack. ANSWERED: [    ]
 
-Item 2. The replacement housing permit data you mentioned: send the source file or link. ANSWERED: [    ]
+Item 2. The replacement housing permit data from your notes on INS-303 section 1.3 and the Capital Partner Brief pipeline bullet: send the source file or link. Once verified it replaces the current unit figures and the $1.56 billion derived figure in INS-303 section 1.3 (page 1), the Capital Partner Brief, and the claims register entries behind them. ANSWERED: [    ]
 
-Item 3. Single-lot eligibility: confirm in writing that the minimum drops from 2 lots to 1, and it gets propagated through the whitepaper, both guides, the site, and the brief in one pass. CONFIRMED: [    ]
+Item 3. Single-lot eligibility: confirm in writing that the minimum drops from 2 lots to 1. The 2-to-50 range appears in twelve places across eight documents, and one confirmation changes all of them in one pass: INS-302 sections 1 and 2 plus the FAQ, INS-303 sections 1.1 and 6.4, the INS-301 reference draft section 2.3, the INS-201 checklist, the website index in four spots, the developers page, the Developer One-Pager, and the City Agency Brief. CONFIRMED: [    ]
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments.*
