@@ -25,7 +25,7 @@ Provide each document as a separate PDF named by its item number and the project
 
 ## Eligibility snapshot
 
-Residential subdivisions of 2 to 50 lots in participating California jurisdictions. Financing supports eligible development impact fees and public improvement obligations. Program underwriting caps the financing at 25 percent of appraised value. Minimum financing size is determined during feasibility screening. School fees are excluded from program financing at launch; the school fee schedule is still collected below because it is part of the total tax-burden analysis.
+Residential subdivisions of 1 to 50 lots in participating California jurisdictions. Financing supports eligible development impact fees and public improvement obligations. Program underwriting caps the financing at 25 percent of appraised value. Minimum financing size is determined during feasibility screening. School fees are excluded from program financing at launch; the school fee schedule is still collected below because it is part of the total tax-burden analysis.
 
 ## Why each section exists
 

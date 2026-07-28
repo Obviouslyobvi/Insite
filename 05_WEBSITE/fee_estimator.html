@@ -26,7 +26,7 @@ a{color:#153A5B}
 <option value='custom'>My jurisdiction's posted schedule (enter below)</option>
 <option value='statewide'>Statewide program assumption ($25,000 per unit)</option>
 </select></div>
-<div class='f'><label for='units'>Homes / lots in project</label><input type='number' id='units' value='10' min='2' max='50' oninput='calc()'/></div>
+<div class='f'><label for='units'>Homes / lots in project</label><input type='number' id='units' value='10' min='1' max='50' oninput='calc()'/></div>
 </div>
 <p class='note'>Context for the statewide figure: cited studies put the California average impact fee near $23,455 per single-family home (2015 data) and totals can exceed $150,000 per unit in some cities; the program's working assumption is $25,000 of financeable fees per unit. Sources: INSITE Claims Register.</p>
 <h2>Step 2: Fees per unit, from the posted schedule</h2>
@@ -35,7 +35,7 @@ a{color:#153A5B}
 <h2>Step 3: The total, and the day-one difference</h2>
 <div class='big' id='out'></div>
 <div class='row'>
-<div class='f'><label for='exec'>Per-project execution cost, paid by the builder ($)</label><input type='number' id='exec' value='17500' step='500' oninput='calc()'/></div>
+<div class='f'><label for='exec'>Per-project deal costs, financed into the note ($)</label><input type='number' id='exec' value='17500' step='500' oninput='calc()'/></div>
 </div>
 <p class='note'>Execution cost is a founder estimate: $5,000 to $30,000 pending vendor quotes; $17,500 is the midpoint. For rate scenarios, carry math, and the full comparison against private money, use the <a href='index.html#how'>program calculator</a>.</p>
 <div class='dis'>INSITE&trade; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. Fee amounts you enter are your jurisdiction's, not INSITE's; verify against the posted schedule before relying on them.</div>
@@ -54,7 +54,7 @@ document.getElementById('out').innerHTML=
 `Financeable fees: <b>${fmt(per)}</b> per unit &nbsp;&#183;&nbsp; <b>${fmt(proj)}</b> project total`+
 (school?` <span class='tag'>(plus ${fmt(school*u)} of school fees outside the program)</span>`:'')+
 `<br><span class='tag'>Day-one cash, paying fees yourself: </span><b>${fmt(proj)}</b>`+
-`<br><span class='tag'>Day-one cash with INSITE (execution cost, a founder estimate): </span><b>${fmt(ex)}</b>`+
+`<br><span class='tag'>Financed deal costs (a founder estimate; your day-one cash is zero): </span><b>${fmt(ex)}</b>`+
 `<br><span class='tag'>The fees move onto a voluntary special tax on your own lots, collected with the property tax bill; rates are set at term sheet.</span>`;}
 build();seed();
 </script></body></html>

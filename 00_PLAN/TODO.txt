@@ -5,7 +5,7 @@ Name decision on record: keeping INSITE as a placeholder pending the trademark a
 CONTRACT (Professional Services Agreement, executed July 16, 2026; due Aug 10; $3,500)
 [x] M1 Execute agreement, $400: PAID July 16
 [ ] M2 Developer platform + guide, $700: INS-302 v1.0 + fee estimator DELIVERED (memo 7/16); pending = Airtable migration only (HGF opens account); v1.2 delivered, Sacramento database populated July 22
-[ ] M3 Capital markets + investor guide, $700: INS-303 v1.0 + TEY calculator + capital brief DELIVERED (memo 7/16); pending = portal build (after Dennis approves split), written acceptance of counsel-gate reservations and TEY provenance
+[ ] M3 Capital markets + investor guide, $700: delivered; SPLIT APPROVED 7/24 (Ch 2 all portal) -> PORTAL BUILD UNLOCKED, next build; TEY decision still open
 [ ] M4 General website redesign, $500: prototype verified; needs deployment to insite-ca.org (Dennis's hosting access)
 [ ] M5 Developer website features, $700: DELIVERED July 22 (Drive folder); deemed accepted July 27 absent response
 [ ] M6 Investor website features, $500: DELIVERED July 22 except portal; portal awaits Dennis split approval

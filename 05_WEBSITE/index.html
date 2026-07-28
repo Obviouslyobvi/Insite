@@ -110,7 +110,7 @@ footer a{color:#cfe0ee}
   <div class="wrap">
     <div class="kicker">Development Impact Fee Financing Program</div>
     <h1>California's impact fees are due before the first home sells.<br/>Most of that check doesn't have to be the builder's cash.</h1>
-    <p class="lede">INSITE is a proposed program that lets small residential subdivisions, 2 to 50 lots, finance eligible development impact fees and public improvements through a voluntary special tax on the project's own land, collected with the county property tax bill. The legal tool has existed since 1982. INSITE's contribution is an operating model that makes it economical at small scale. It is not free money: the builder still pays the deal's execution costs and the special tax on any lot they hold, and the calculator below shows every one of those costs in plain arithmetic.</p>
+    <p class="lede">INSITE is a proposed program that lets small residential subdivisions, 1 to 50 lots, finance eligible development impact fees and public improvements through a voluntary special tax on the project's own land, collected with the county property tax bill. The legal tool has existed since 1982. INSITE's contribution is an operating model that makes it economical at small scale. It is not free money: the deal's costs are financed into the note (raising the annual tax slightly) and the builder pays the special tax on any lot they hold, and the calculator below shows every one of those costs in plain arithmetic.</p>
     <p style="margin-top:20px">
       <a class="btn" href="#calc">Run the numbers</a>
       <a class="btn alt" href="#how" style="margin-left:8px">See how it works</a>
@@ -151,7 +151,7 @@ footer a{color:#cfe0ee}
         <ul>
           <li>Finance eligible fees instead of writing the check at the permit counter</li>
           <li>The obligation belongs to the land: it transfers at sale, is disclosed to buyers, and is prepayable</li>
-          <li>Eligibility: 2 to 50 lots, participating California jurisdictions, financing capped at 25 percent of the financing; minimum size set at feasibility screening</li>
+          <li>Eligibility: 1 to 50 lots, participating California jurisdictions, financing capped at 25 percent of the financing; minimum size set at feasibility screening</li>
           <li>School fees are excluded at launch</li>
         </ul>
       </div>
@@ -182,13 +182,13 @@ footer a{color:#cfe0ee}
     <p class="lede">Every input is editable and every default is labeled with where it comes from. This is arithmetic for orientation, not a quote: no rate is promised, and final terms are set at a signed term sheet.</p>
     <div class="calc" style="margin-top:20px">
       <div class="grid g3">
-        <div class="field"><label for="lots">Number of lots</label><input id="lots" type="number" value="10" min="2" max="50"/><small>Program range: 2 to 50</small></div>
+        <div class="field"><label for="lots">Number of lots</label><input id="lots" type="number" value="10" min="1" max="50"/><small>Program range: 1 to 50</small></div>
         <div class="field"><label for="fees">Financeable public fees per unit ($)</label><input id="fees" type="number" value="25000" step="1000"/><small>Assumption used in program materials; California averages ran $19,806 to $23,455 in cited studies and can exceed $150,000</small></div>
         <div class="field"><label for="hold">Months you hold lots before homes sell</label><input id="hold" type="number" value="18" min="1"/><small>Your build and absorption estimate</small></div>
         <div class="field"><label for="prate">Private money rate (% per year)</label><input id="prate" type="number" value="12" step="0.25"/><small>2025-2026 guides: roughly 9.5 to 15</small></div>
         <div class="field"><label for="irate">Land-secured note rate (% per year)</label><input id="irate" type="number" value="6" step="0.25"/><small>Founder target for orientation only; set at term sheet</small></div>
         <div class="field"><label for="term">Note term (years)</label><input id="term" type="number" value="30" min="5" max="40"/><small>Typical land-secured range 20 to 40</small></div>
-        <div class="field"><label for="exec">Per-project execution cost, paid by the builder ($)</label><input id="exec" type="number" value="17500" step="500"/><small>Targeted range: $5,000 to $30,000 (the founder's working estimate, pending vendor quotes). The $17,500 default is the midpoint.</small></div>
+        <div class="field"><label for="exec">Per-project deal costs, financed into the note ($)</label><input id="exec" type="number" value="17500" step="500"/><small>Targeted range: $5,000 to $30,000 (the founder's working estimate, pending vendor quotes). The $17,500 default is the midpoint.</small></div>
         <div class="field"><label for="admin">Annual zone administration ($)</label><input id="admin" type="number" value="3000" step="250"/><small>Illustrative; recoverable through the levy under section 53317(d)</small></div>
         <div class="field"><label for="cov">Coverage cushion (%)</label><input id="cov" type="number" value="10" step="5" min="0"/><small>Extra margin levied above debt service, standard in land-secured practice; matches the whitepaper example</small></div>
         <div class="field" style="display:flex;align-items:flex-end"><button class="btn" id="go" type="button" style="width:100%">Recalculate</button></div>
@@ -209,9 +209,9 @@ footer a{color:#cfe0ee}
           </ul>
         </div>
         <div class="res"><h3>INSITE land-secured</h3>
-          <div class="big" id="r_ins_day1">$0</div><div class="sub">Cash you pay on day one (the deal's paperwork cost, a founder estimate; the fees themselves are paid by the note, not by you)</div>
+          <div class="big" id="r_ins_day1">$0</div><div class="sub">Cash you pay on day one: the deal's costs are financed into the note along with your fees, so your out-of-pocket is zero</div>
           <ul>
-            <li>Fees financed for you at closing: <b id="r_ins_financed">$0</b></li>
+            <li>Financed at closing (your fees plus the deal's costs): <b id="r_ins_financed">$0</b></li>
             <li>Special taxes you pay on unsold lots during your hold: <b id="r_ins_hold">$0</b></li>
             <li>Estimated annual special tax per home: <b id="r_ins_annual">$0</b></li>
             <li>Who pays long term: future owners, on the tax bill, disclosed before purchase and prepayable at any time</li>
@@ -252,7 +252,7 @@ footer a{color:#cfe0ee}
     <div class="faq" style="margin-top:14px">
       <details><summary>Is this a new tax on homeowners?</summary><p>It is a voluntary special tax the landowner approves on their own undeveloped land before any homes exist. Buyers see it disclosed before purchase, it can be paid off early, and no one who owns a home today gets a new tax.</p></details>
       <details><summary>Is the city on the hook?</summary><p>No. Notes are repaid only from the special taxes on the participating parcels. Neither the city's general fund nor its credit stands behind them, which is the same posture cities already take in the existing statewide programs.</p></details>
-      <details><summary>How is this different from SCIP or BOLD?</summary><p>Same body of law, different segment and operating model. SCIP's published materials describe financings from about $500,000 with pooled bond sales a few times a year; BOLD's track record averages roughly 185 units per project. INSITE is built for the 2-to-50-lot project: one district per city, administrative annexation, and one small note per project.</p></details>
+      <details><summary>How is this different from SCIP or BOLD?</summary><p>Same body of law, different segment and operating model. SCIP's published materials describe financings from about $500,000 with pooled bond sales a few times a year; BOLD's track record averages roughly 185 units per project. INSITE is built for the 1-to-50-lot project: one district per city, administrative annexation, and one small note per project.</p></details>
       <details><summary>What's your track record?</summary><p>Zero closed deals, and the structure assumes that. The security is the land, the county tax roll, and debt capped at 25 percent of appraised value, verified by independent professionals under state standards. BOLD started from zero in 2020 and reached roughly $550 million in six years; in this market, structure and partners are the currency, not birthdays.</p></details>
       <details><summary>Can it cover school fees?</summary><p>Not at launch. School fees are excluded from initial eligibility; the fee schedule is still collected during underwriting because it is part of the total tax-burden analysis.</p></details>
     </div>
@@ -279,13 +279,14 @@ function money(x){x=Math.round(x);return '$'+String(x).replace(/\B(?=(\d{3})+(?!
 function pmt(P,annualRate,years){var r=annualRate/100; if(r<=0) return P/years; return P*r/(1-Math.pow(1+r,-years));}
 function calc(v){
   var total=v.lots*v.fees;
+  var principal=total+v.exec;
   var cash={day1:total,hold:0};
   var priv={day1:0,hold:total*(v.prate/100)*(v.hold/12)};
-  var debtService=pmt(total,v.irate,v.term);
+  var debtService=pmt(principal,v.irate,v.term);
   var annualReq=debtService*(1+v.cov/100)+v.admin;
   var perHome=annualReq/v.lots;
-  var ins={day1:v.exec,hold:perHome*v.lots*(v.hold/12),annual:perHome};
-  return {cash:cash,priv:priv,ins:ins,total:total,debtService:debtService};
+  var ins={day1:0,hold:perHome*v.lots*(v.hold/12),annual:perHome};
+  return {cash:cash,priv:priv,ins:ins,total:total,principal:principal,debtService:debtService};
 }
 function read(){
   return {lots:+document.getElementById('lots').value||0,
@@ -305,10 +306,10 @@ function render(){
   document.getElementById('r_priv_day1').textContent=money(0);
   document.getElementById('r_priv_hold').textContent=money(r.priv.hold);
   document.getElementById('r_ins_day1').textContent=money(r.ins.day1);
-  document.getElementById('r_ins_financed').textContent=money(r.total);
+  document.getElementById('r_ins_financed').textContent=money(r.principal);
   document.getElementById('r_ins_hold').textContent=money(r.ins.hold);
   document.getElementById('r_ins_annual').textContent=money(r.ins.annual);
-  document.getElementById('formula').textContent='Formulas in plain sight: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on total fees at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
+  document.getElementById('formula').textContent='Formulas in plain sight: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on the financed amount (fees plus deal costs) at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
 }
 document.getElementById('go').addEventListener('click',render);
 ['lots','fees','hold','prate','irate','term','exec','admin','cov'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
