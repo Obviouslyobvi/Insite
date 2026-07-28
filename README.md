@@ -6,7 +6,7 @@ This repository is the complete working package for INSITE, a proposed Californi
 
 ## How to read this package
 
-Start with `00_PLAN/INSITE_Master_Plan.pdf` (the contract for the build) and `02_PROGRAM/INS-000_INSITE_Primer.pdf` (the plain-language education). The flagship is `02_PROGRAM/INS-002_Program_Whitepaper.pdf`. The evidence discipline lives in `01_EVIDENCE/Claims_Register.md`. The honest self-attack is `08_REDTEAM/Kill_Memo.pdf`. Open questions for the founder are consolidated in `07_BUILDLOG/Build_Log.pdf`, Part 1.
+Start with `00_PLAN/INSITE_Master_Plan.pdf` (the contract for the build) and `02_PROGRAM/INS-000_INSITE_Primer.pdf` (the plain-language education). The flagship is `02_PROGRAM/INS-008_Program_Whitepaper.pdf`. The evidence discipline lives in `01_EVIDENCE/Claims_Register.md`. The honest self-attack is `08_REDTEAM/Kill_Memo.pdf`. Open questions for the founder are consolidated in `07_BUILDLOG/Build_Log.pdf`, Part 1.
 
 ## Directory map
 
@@ -14,7 +14,7 @@ Start with `00_PLAN/INSITE_Master_Plan.pdf` (the contract for the build) and `02
 |---|---|
 | 00_PLAN | Master Plan, Build Checklist (live tracker), Program Structure Map (SVG master + PDF), verify_map.py mechanical audit |
 | 01_EVIDENCE | Claims Register: every load-bearing claim, its URL, and its verdict |
-| 02_PROGRAM | INS-000 Primer, INS-002 Whitepaper (+pre-build brief), INS-003/004/005 strategy memos, INS-201 developer checklist, document library register, DCF workbook v1.1_corrected (both defects fixed July 11, verified July 13; v1 original preserved) |
+| 02_PROGRAM | INS-000 Primer, INS-008 Whitepaper (+INS-011 pre-build brief), INS-003/004/005 strategy memos, INS-201 developer checklist, document library register, DCF workbook v1.1_corrected (both defects fixed July 11, verified July 13; v1 original preserved) |
 | 03_MARKETING | One-pagers for developers, public agencies, and capital partners (+ html sources) |
 | 04_BRAND | Logo SVG masters, brand kit, standard disclaimer block, icon assets |
 | 05_WEBSITE | Self-contained index.html with the fee-financing calculator (+ qc screenshots) |

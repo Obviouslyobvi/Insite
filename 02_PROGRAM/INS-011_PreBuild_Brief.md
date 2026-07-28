@@ -1,4 +1,4 @@
-# INS-002 Pre-Build Brief
+# INS-011 Pre-Build Brief
 
 **Read this first: the defaults, caveats, and needs behind the Program Whitepaper.**
 
@@ -8,7 +8,7 @@ Prepared for Dennis Lanni | HGF Management Company | July 10, 2026
 
 ## What is being built
 
-INS-002, the Program Whitepaper: the flagship document that explains the entire program to a serious reader (a city finance director, a banker, a bond attorney, a sophisticated developer). Three files: a formatted PDF for presenting, an editable Word copy for Dennis's redlines, and the markdown source the build maintains.
+INS-011, the Program Whitepaper: the flagship document that explains the entire program to a serious reader (a city finance director, a banker, a bond attorney, a sophisticated developer). Three files: a formatted PDF for presenting, an editable Word copy for Dennis's redlines, and the markdown source the build maintains.
 
 ## Defaults applied, because the question batch is still open
 

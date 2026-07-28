@@ -8,8 +8,8 @@ Program Administrator: HGF Management Company | July 2026
 |---|---|---|---|
 | INS-000 | The INSITE Primer (plain-language education) | Built v1.0, verified | Refresh after pilot closes |
 | INS-001 | Brand Standards and Publication Manual | Legacy draft in project files; superseded in practice by the one-page Brand Kit and SVG logo masters (04_BRAND) | Consolidate draft + kit into v1.0 when the name decision lands |
-| INS-002 | Program Whitepaper | Built v1.0, verified (PDF, editable Word, source); v1.1 gained section 11, the confirmed three-altitude financing platform (July 13) | v1.1 after counsel review, consultant names, and pilot specifics |
-| INS-002 v1.1 | Program Whitepaper, placeholder edition | Released July 11: version 1.0 with launch-dependent blanks bracketed as explicit placeholders, contact and website added (insite-ca.org), change log appended; v1.0 retained unchanged | Bond counsel review before any external release |
+| INS-008 (formerly INS-002; renumbered July 26, 2026, note below) | Program Whitepaper | Built v1.0, verified (PDF, editable Word, source); v1.1 gained section 11, the confirmed three-altitude financing platform (July 13) | v1.1 after counsel review, consultant names, and pilot specifics |
+| INS-008 v1.1 (formerly INS-002 v1.1) | Program Whitepaper, placeholder edition | Released July 11: version 1.0 with launch-dependent blanks bracketed as explicit placeholders, contact and website added (insite-ca.org), change log appended; v1.0 retained unchanged | Bond counsel review before any external release |
 | INS-003 | RMA Design and Issuer Strategy | Built, verified | Counsel review of the five flagged questions |
 | INS-004 | Sourcing Strategy | Built, verified | Populate with selected firms |
 | INS-005 | Credibility Plan | Built, verified | Add advisor bios when confirmed |
@@ -41,3 +41,5 @@ Program Administrator: HGF Management Company | July 2026
 | Claims Register | Evidence base, every claim sourced | Built, maintained | Re-sweep at every release |
 
 *INSITE(TM) is a pre-launch program concept administered by HGF Management Company. Internal registry. Not an offer of financing, legal advice, or investment advice.*
+
+Renumbering note, July 26, 2026: the founder authors and circulates his own publication titled INS-002, Participation Public Agency INSITE (transmitted by email July 18, 2026, and cited in his July 20 markup as PUBLICATION INS-002). To give that publication sole ownership of the INS-002 designation, the library's Program Whitepaper (v1.0 and v1.1) is renumbered INS-008 and the Pre-Build Brief is renumbered INS-011. Per the register label rule, INS-002 is never reused for any library document; references to INS-002 in build records dated before July 26 mean the whitepaper or the pre-build brief per their context, and references after mean the founder's publication.
