@@ -42,7 +42,7 @@ def md_to_html(md):
 
 
 def lockup(h=38):
-    NAVY='#0F315E'; GREEN='#74AE77'; OUTLINE='#5B789A'
+    NAVY='#153A5B'; GREEN='#3E7C59'; OUTLINE='#153A5B'
     GRID=[['N','N','N','N','N'],['N','N','N','G','N'],['N','N','G','G','N'],['N','N','N','O','O']]
     cell=40; gap=8; pitch=cell+gap
     rects=[]
