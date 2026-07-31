@@ -63,6 +63,7 @@ def lockup(h=38):
 NAVROW=("<div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:8px 24px 10px 24px;background:#153A5B'>"
      "<a href='index.html' style='color:#fff;text-decoration:none;font-size:14px'>Home</a>"
      "<a href='developers.html' style='color:#fff;text-decoration:none;font-size:14px'>Developers</a>"
+     "<a href='qualify.html' style='color:#fff;text-decoration:none;font-size:14px'>Do I Qualify?</a>"
      "<a href='developer_application.html' style='color:#fff;text-decoration:none;font-size:14px'>Apply</a>"
      "<a href='fee_estimator.html' style='color:#fff;text-decoration:none;font-size:14px'>Fee Estimator</a>"
      "<a href='investors.html' style='color:#fff;text-decoration:none;font-size:14px'>Investors</a>"
