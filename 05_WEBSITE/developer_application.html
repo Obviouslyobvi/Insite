@@ -94,48 +94,9 @@ input[type=text],input[type=email],select,textarea{width:100%;max-width:520px;pa
 <h1>Start your application.</h1>
 <p class='lede'>Fill in the project basics, check off the documents you have, and this page builds your submission summary. Nothing is sent or stored anywhere: the summary is generated in your browser, and you email it with your documents to the program administrator.</p>
 </div></div>
-<div class='wrap' style='padding:44px 22px'>
-<h2>Project information</h2>
-<label for='f_name'>Your name</label><input type='text' id='f_name'>
-<label for='f_entity'>Development entity (LLC, LP, corporation)</label><input type='text' id='f_entity'>
-<label for='f_email'>Email</label><input type='email' id='f_email'>
-<label for='f_proj'>Project name</label><input type='text' id='f_proj'>
-<label for='f_city'>Jurisdiction &mdash; name the city OR the county (example: Sacramento City, or Sacramento County unincorporated)</label><input type='text' id='f_city' placeholder='Sacramento City / Sacramento County'>
-<label for='f_lots'>Number of lots</label><input type='text' id='f_lots'>
-<label for='f_status'>Lot status</label><select id='f_status'><option>Finished lots</option><option>Near-finished lots</option><option>Entitled, not yet improved</option><option>Other</option></select>
-<label for='f_fees'>Estimated impact fees for the project (if known)</label><input type='text' id='f_fees'>
-<h2 style='margin-top:34px'>Data package checklist</h2>
-<p>Check what you can attach today. Missing items don't stop the application; we'll collect the rest during underwriting.</p>
-<div class='chk'><input type='checkbox' id='c1'><label for='c1' style='margin:0;font-weight:normal'>Preliminary title report</label></div>
-<div class='chk'><input type='checkbox' id='c2'><label for='c2' style='margin:0;font-weight:normal'>Tract or parcel map</label></div>
-<div class='chk'><input type='checkbox' id='c3'><label for='c3' style='margin:0;font-weight:normal'>Project budget</label></div>
-<div class='chk'><input type='checkbox' id='c4'><label for='c4' style='margin:0;font-weight:normal'>Jurisdiction fee schedule for your parcels (your agency posts it online under Government Code 65940.1)</label></div>
-<div class='chk'><input type='checkbox' id='c5'><label for='c5' style='margin:0;font-weight:normal'>Entitlement status documentation</label></div>
-<div class='chk'><input type='checkbox' id='c6'><label for='c6' style='margin:0;font-weight:normal'>Entity formation documents</label></div>
-<p style='margin-top:26px'><button class='btn' onclick='makeSummary()'>Build my submission summary</button></p>
-<div class='out' id='out'></div>
-<p id='mailp' style='display:none'><a class='btn alt' id='maillink' href='#'>Open email to the program administrator</a></p>
-<script>
-function makeSummary(){
- var g=function(i){return document.getElementById(i).value||'(blank)'};
- var c=function(i,lab){return (document.getElementById(i).checked?'[x] ':'[ ] ')+lab};
- var s='INSITE DEVELOPER APPLICATION (INS-201 pre-screening)\n'
- +'Date: '+new Date().toLocaleDateString()+'\n\n'
- +'Name: '+g('f_name')+'\nEntity: '+g('f_entity')+'\nEmail: '+g('f_email')
- +'\nProject: '+g('f_proj')+'\nJurisdiction: '+g('f_city')+'\nLots: '+g('f_lots')
- +'\nLot status: '+g('f_status')+'\nEstimated fees: '+g('f_fees')+'\n\nDATA PACKAGE\n'
- +c('c1','Preliminary title report')+'\n'+c('c2','Tract or parcel map')+'\n'+c('c3','Project budget')+'\n'
- +c('c4','Jurisdiction fee schedule')+'\n'+c('c5','Entitlement status')+'\n'+c('c6','Entity documents')+'\n\n'
- +'Submitted for feasibility screening under the INSITE program. Pre-launch; no offer of financing.';
- var o=document.getElementById('out'); o.textContent=s; o.style.display='block';
- var m=document.getElementById('maillink');
- m.href='mailto:info@insite-ca.org?subject='+encodeURIComponent('INSITE application: '+g('f_proj'))+'&body='+encodeURIComponent(s);
- document.getElementById('mailp').style.display='block';
-}
-</script>
-</div><footer>
-  <div class="wrap">
-    <p>INSITE&#8482; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. Nothing on this page is an offer to sell, or a solicitation of an offer to buy, any security.</p>
-    <p>Sources current as of July 2026. This page is self-contained: it loads no external assets, sets no cookies, and runs no trackers or analytics.</p>
-  </div>
-</footer></body></html>
+<section><div class='wrap'>
+<h2>Start your application</h2>
+<p>Ten minutes, one form. Check what you can attach today; missing items don't stop the application, we'll collect the rest during underwriting. Submissions go straight to the program team.</p>
+<iframe class='airtable-embed' src='https://airtable.com/embed/appVwwLQvMkhsebB1/pagZn2Nzm5ouvnuqW/form' frameborder='0' onmousewheel='' width='100%' height='1400' style='background:transparent;border:1px solid #d3dae3'></iframe>
+<p style='font-size:13.5px;color:#6B7280'>Form not loading? <a href='https://airtable.com/appVwwLQvMkhsebB1/pagZn2Nzm5ouvnuqW/form' target='_blank' rel='noopener'>Open the application in a new tab</a>.</p>
+</div></section>

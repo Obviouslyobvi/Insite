@@ -106,7 +106,7 @@ footer a{color:#cfe0ee}
       <a class="btn alt" href="#how" style="margin-left:8px">See how it works</a>
     </p>
     <div class="stats">
-      <div class="stat"><div class="statnum">$23,455</div><div class="statlab">Average California impact fee per single-family home in 2015, nearly 3x the national average (Terner Center, UC Berkeley)</div></div>
+      <div class="stat"><div class="statnum">~$40,000</div><div class="statlab">Average California development impact fees per new single-family home: the Franchise Tax Board estimated $33,500 in 2019, roughly $40,000 in today's dollars.</div></div>
       
       <div class="stat"><div class="statnum">9.5% to 15%</div><div class="statlab">Typical private "hard money" pricing in 2025-2026 rate guides, the small builder's current alternative</div></div>
     </div>
@@ -119,7 +119,7 @@ footer a{color:#cfe0ee}
     <h2>One district per city. One signature per project.</h2>
     <p class="lede">Under the Mello-Roos Community Facilities Act (Government Code section 53311 and following), a public agency forms a Community Facilities District once, with a recorded future annexation area. Each small project then joins by administrative annexation as its own tax zone, with its own note and no connection to any other project's debt.</p>
     <div class="steps" style="margin-top:26px">
-      <div class="step"><h3>Submit the package</h3>Title, maps, budgets, and fee schedules on the standard checklist (form INS-201).</div>
+      <div class="step"><h3>Submit the package</h3>Title, maps, budgets, and fee schedules on the standard checklist.</div>
       <div class="step"><h3>Independent appraisal</h3>An MAI appraiser values the lots, and financing is capped at 25 percent of that value, confirmed by the appraisal.</div>
       <div class="step"><h3>Voluntary annexation</h3>The property owner executes a voluntary annexation and unanimous approval form, consenting to annexation into the Community Facilities District (CFD) and the levy of the Special Tax.</div>
       <div class="step"><h3>Funding</h3>Following annexation, eligible project costs are funded through an institutional financing facility. Repayment is secured by the Special Tax and collected through the county property tax roll over the financing term.</div>
@@ -142,7 +142,7 @@ footer a{color:#cfe0ee}
     <div class="calc" style="margin-top:20px">
       <div class="grid g3">
         <div class="field"><label for="lots">Number of lots</label><input id="lots" type="number" value="10" min="1" max="50"/><small>Program range: 1 to 50</small></div>
-        <div class="field"><label for="fees">Financeable public fees per unit ($)</label><input id="fees" type="number" value="25000" step="1000"/><small>Assumption used in program materials; California averages ran $19,806 to $23,455 in cited studies and can exceed $150,000</small></div>
+        <div class="field"><label for="fees">Financeable public fees per unit ($)</label><input id="fees" type="number" value="25000" step="1000"/><small>Assumption used in program materials; the FTB estimated the California average near $33,500 in 2019, roughly $40,000 today, and totals can exceed $150,000 in some jurisdictions</small></div>
         <div class="field"><label for="hold">Months you hold lots before homes sell</label><input id="hold" type="number" value="18" min="1"/><small>Your build and absorption estimate</small></div>
         <div class="field"><label for="prate">Private money rate (% per year)</label><input id="prate" type="number" value="12" step="0.25"/><small>2025-2026 guides: roughly 9.5 to 15</small></div>
         <div class="field"><label for="irate">Land-secured note rate (% per year)</label><input id="irate" type="number" value="6" step="0.25"/><small>Founder target for orientation only; set at term sheet</small></div>
@@ -184,6 +184,21 @@ footer a{color:#cfe0ee}
 </section>
 
 <section style="padding:34px 0;text-align:center"><div class="wrap"><a class="cta" href="developer_application.html" style="display:inline-block;background:#3E7C59;color:#fff;text-decoration:none;padding:14px 26px;font-size:16px;letter-spacing:.4px">Apply Now</a></div></section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">Questions people actually ask</div>
+    <h2>Straight answers.</h2>
+    <div class="faq" style="margin-top:14px">
+      <details><summary>Is this a new tax on homeowners?</summary><p>It is a voluntary special tax the landowner approves on their own undeveloped land before any homes exist. Buyers see it disclosed before purchase, it can be paid off early, and no one who owns a home today gets a new tax.</p></details>
+      <details><summary>Is the city on the hook?</summary><p>No. Notes are repaid only from the special taxes on the participating parcels. Neither the city's general fund nor its credit stands behind them, which is the same posture cities already take in the existing statewide programs.</p></details>
+      <details><summary>How is this different from traditional land-secured financing programs?</summary><p>Same body of law, different segment and operating model. Traditional statewide programs typically pool larger projects and issue on their own calendars. INSITE is built for the 1-to-50-lot project: a standing district, one signature to join, per-project funding, and the county tax roll doing the collection. A side-by-side comparison is available on request.</p></details>
+      <details><summary>Can it cover school fees?</summary><p>Not at launch. School facilities fees are excluded from INSITE financing at program launch as a matter of program policy. The founder is evaluating a pay-then-reimburse structure for school fees; any change runs through bond counsel first.</p></details>
+      <details><summary>What's your track record?</summary><p>Zero closed deals, and the structure assumes that. The security is the land, the county tax roll, and debt capped at 25 percent of appraised value, verified by independent professionals under state standards. BOLD started from zero in 2020 and reached roughly $550 million in six years; in this market, structure and partners are the currency, not birthdays.</p></details>
+      <details><summary>Can it cover school fees?</summary><p>Not at launch. School fees are excluded from initial eligibility; the fee schedule is still collected during underwriting because it is part of the total tax-burden analysis.</p></details>
+    </div>
+  </div>
+</section>
 <section id="evidence" style="background:var(--light);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
     <div class="kicker">Evidence</div>
@@ -193,28 +208,13 @@ footer a{color:#cfe0ee}
       <tr><td>Mello-Roos districts, special taxes, liens, landowner elections, formation timeline</td><td><a href="https://debtguide-api.treasurer.ca.gov/guide-pages/chapter-3-types-of-debt-obligations-issued-by-public-agencies/3-3-types-of-debt-obligations-organized-by-security-and-source-of-payment/3-3-7-special-assessments-special-taxes-and-tax-increments/3-3-7-2-mello-roos-bonds-community-facilities-districts">California Debt Financing Guide (State Treasurer)</a></td></tr>
       <tr><td>Three-to-one statutory value condition and state appraisal standards (section 53345.8)</td><td><a href="https://www.treasurer.ca.gov/sites/default/files/cdiac/recmndPracticeR-E.pdf">CDIAC appraisal standards</a></td></tr>
       <tr><td>Value-to-lien policy precedent and 2 percent total-burden cap</td><td><a href="https://cscda.org/policies-fees/">CSCDA goals and policies</a></td></tr>
-      <tr><td>Average fees $23,455 per single-family home (2015), about 3x national; charges can exceed $150,000 per unit; affordable projects averaged $19,806 (2020-2023)</td><td><a href="https://ternercenter.berkeley.edu/research-and-policy/the-cost-of-building-housing-series/">Terner Center, UC Berkeley</a></td></tr>
+      <tr><td>Average development impact fee for a new California single-family home: ~$33,500 (FTB, January 2019), roughly $40,000 in 2025 dollars</td><td><a href="https://www.ftb.ca.gov/">California Franchise Tax Board report, Jan 2019; inflation adjustment per program founder, Aug 2, 2026</a></td></tr>
       <tr><td>Private lending at roughly 9.5 to 15 percent</td><td><a href="https://www.northcoastfinancialinc.com/hard-money-loan-interest-rates/">Published 2025-2026 rate guides</a></td></tr>
       <tr><td>Existing statewide programs: SCIP (typically from $500,000, pooled sales) and BOLD (~$550 million, 65+ projects, 12,000+ units since 2020)</td><td><a href="https://cscda.org/infrastructure-finance-programs/">CSCDA</a>, <a href="https://www.cmfa-ca.com/bold/">CMFA</a></td></tr>
       <tr><td>Cities act as intermediaries with "no financial liability or risk"</td><td><a href="https://elkgrove.gov/sites/default/files/city-files/cityclerk/citycouncil/2021/Attachments/10-27-21_8.3.pdf">Elk Grove staff report</a></td></tr>
       <tr><td>Ministerial 60-day approval of ten-lot subdivisions (SB 684, SB 1123)</td><td><a href="https://abag.ca.gov/technical-assistance/sb-684-2023-and-sb-1123-2024-small-lot-subdivision-and-housing-development">Association of Bay Area Governments</a></td></tr>
-      <tr><td>Annexation architecture in live districts</td><td><a href="https://escondido.gov/DocumentCenter/View/2034/Unanimous-Approval-Form-PDF">Escondido</a>, <a href="https://pub-chulavista.escribemeetings.com/filestream.ashx?DocumentId=25426">Chula Vista</a>, <a href="https://roseville.novusagenda.com/AgendaPublic/AttachmentViewer.ashx?AttachmentID=11768&amp;ItemID=4859">Roseville</a></td></tr>
     </table>
     <p class="src">Full register with fetch dates and verdicts: INSITE Claims Register, part of the program document library. INSITE is not the first program in this space and does not claim to be; it is a small-balance operating model on a proven mechanism.</p>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="kicker">Questions people actually ask</div>
-    <h2>Straight answers.</h2>
-    <div class="faq" style="margin-top:14px">
-      <details><summary>Is this a new tax on homeowners?</summary><p>It is a voluntary special tax the landowner approves on their own undeveloped land before any homes exist. Buyers see it disclosed before purchase, it can be paid off early, and no one who owns a home today gets a new tax.</p></details>
-      <details><summary>Is the city on the hook?</summary><p>No. Notes are repaid only from the special taxes on the participating parcels. Neither the city's general fund nor its credit stands behind them, which is the same posture cities already take in the existing statewide programs.</p></details>
-      <details><summary>How is this different from SCIP or BOLD?</summary><p>Same body of law, different segment and operating model. SCIP's published materials describe financings from about $500,000 with pooled bond sales a few times a year; BOLD's track record averages roughly 185 units per project. INSITE is built for the 1-to-50-lot project: one district per city, administrative annexation, and one small note per project.</p></details>
-      <details><summary>What's your track record?</summary><p>Zero closed deals, and the structure assumes that. The security is the land, the county tax roll, and debt capped at 25 percent of appraised value, verified by independent professionals under state standards. BOLD started from zero in 2020 and reached roughly $550 million in six years; in this market, structure and partners are the currency, not birthdays.</p></details>
-      <details><summary>Can it cover school fees?</summary><p>Not at launch. School fees are excluded from initial eligibility; the fee schedule is still collected during underwriting because it is part of the total tax-burden analysis.</p></details>
-    </div>
   </div>
 </section>
 
@@ -268,7 +268,7 @@ function render(){
   document.getElementById('r_ins_financed').textContent=money(r.principal);
   document.getElementById('r_ins_hold').textContent=money(r.ins.hold);
   document.getElementById('r_ins_annual').textContent=money(r.ins.annual);
-  document.getElementById('formula').textContent='Formulas in plain sight: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on the financed amount (fees plus deal costs) at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
+  document.getElementById('formula').textContent='Run the numbers: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on the financed amount (fees plus deal costs) at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
 }
 document.getElementById('go').addEventListener('click',render);
 ['lots','fees','hold','prate','irate','term','exec','admin','cov'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
