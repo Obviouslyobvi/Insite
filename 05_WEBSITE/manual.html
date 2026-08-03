@@ -1,0 +1,187 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>INSITE Developer Manual</title><style>
+:root{--navy:#153A5B;--green:#3E7C59;--line:#d3dae3;--light:#F5F7FA;--slate:#6B7280;--ink:#26303a}
+*{box-sizing:border-box}body{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55}
+.mhead{background:var(--navy);color:#fff;padding:26px 22px}
+.mhead .in{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.mwrap{max-width:900px;margin:0 auto;padding:10px 22px 60px}
+h1{font-size:30px;color:var(--navy)}h2{color:var(--navy)}h3{color:var(--navy)}
+.wrap{max-width:900px;margin:0 auto;padding:0 0}
+section{padding:26px 0;border-bottom:1px solid var(--line)}
+.printbar{text-align:right;padding:14px 22px;max-width:900px;margin:0 auto}
+.printbtn{background:var(--green);color:#fff;border:0;padding:10px 18px;font-size:15px;cursor:pointer}
+img{max-width:100%;height:auto}
+a{color:var(--green)}
+.partcap{background:var(--light);border-left:5px solid var(--green);padding:10px 16px;margin:34px 0 8px;font-weight:bold;color:var(--navy);letter-spacing:1px}
+@media print{.printbar{display:none} .partcap{page-break-before:always} a{color:var(--ink);text-decoration:none} .mhead{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body>
+<div class='mhead'><div class='in'><div style='font-weight:bold;font-size:22px;letter-spacing:2px'>INSITE&#8482; DEVELOPER MANUAL</div><div style='font-size:13px;color:#9fb6cd'>Compiled from the program website &middot; August 03, 2026</div></div></div>
+<div class='printbar'><button class='printbtn' onclick='window.print()'>Print / Save as PDF</button></div>
+<div class='mwrap'>
+<div class='partcap'>PART 1 &middot; THE PROGRAM IN THREE QUESTIONS</div>
+
+
+
+
+<section class="hero"><div class="wrap inner">
+ <h1>Build the houses. We'll handle the impact fees.</h1>
+ <p>California residential projects, 1 to 50 lots. Three answers, then the application.</p>
+ <a class="btn" href="developer_application.html">Start your application</a>
+</div></section>
+
+<section class="qa"><div class="wrap">
+ <div class="num">QUESTION 1</div>
+ <h2>How do I get the money?</h2>
+ <p class="ans">You don't get a check. You don't need one. When your permits are pulled, INSITE pays the eligible impact fees straight to the city. No draw schedule, no monthly payment, and deal costs are financed into the note. Your day-one cash on fees: zero.</p>
+</div></section>
+
+<section class="qa"><div class="wrap">
+ <div class="num">QUESTION 2</div>
+ <h2>How does it get paid back?</h2>
+ <p class="ans">It attaches to the dirt, not to you. Each lot carries one line on its property tax bill. While you hold a lot, you pay that line on that lot. When the lot sells, the line goes with it. You never write a payoff check.</p>
+ <div class="side">
+  <div class="bill" role="img" aria-label="Illustration of a property tax bill with the INSITE special tax as one line item">
+   <div class="bh">PROPERTY TAX BILL &middot; ONE LOT &middot; ILLUSTRATION</div>
+   <table>
+    <tr><td>County general levy</td><td>as assessed</td></tr>
+    <tr class="this"><td>INSITE special tax</td><td>set at formation</td></tr>
+    <tr><td>Other district charges</td><td>as assessed</td></tr>
+   </table>
+   <div class="cap">The special tax travels with the lot. New owner, same line, until the note is retired.</div>
+  </div>
+ </div>
+</div></section>
+
+<section class="qa"><div class="wrap">
+ <div class="num">QUESTION 3</div>
+ <h2>What's the process?</h2>
+ <div class="steps side">
+  <div class="step">
+   <div class="sn">STEP 1</div>
+   <h3>Tell us about your project</h3>
+   <p>The short application: who you are, where the lots are, what the city charges. Ten minutes with your fee schedule in hand.</p>
+  </div>
+  <div class="step">
+   <div class="sn">STEP 2</div>
+   <h3>Sign and build</h3>
+   <p>We underwrite, you sign, and the fees are paid when permits are pulled.</p>
+  </div>
+ </div>
+</div></section>
+
+<section class="example"><div class="wrap">
+ <h2>Example: 10-lot residential subdivision</h2>
+ <p class="sub">A developer constructing a 10-lot subdivision with approximately $250,000 of eligible public fees can finance those costs through INSITE rather than paying them upfront.</p>
+ <div class="exgrid">
+  <div class="ex"><div class="n">10</div><div class="l">Residential lots</div></div>
+  <div class="ex"><div class="n">$25,000</div><div class="l">Eligible public fees per lot</div></div>
+  <div class="ex"><div class="n">~$2,400</div><div class="l">Estimated annual Special Tax per lot</div></div>
+ </div>
+ <p class="foot">Repayment occurs through the county property tax roll and generally transfers with the property upon sale. The financing is secured by the property's Special Tax and repaid over the financing term. This preserves working capital for land development and home construction while reducing reliance on higher-cost construction financing. School fees are excluded at launch.</p>
+</div></section>
+
+<section class="effort"><div class="wrap">
+ <h2>Your effort, our effort</h2>
+ <div class="cols">
+  <div class="col you">
+   <h3>YOU</h3>
+   <ul>
+    <li>Complete the short application</li>
+    <li>Send the city's fee estimate</li>
+    <li>Sign the participation agreement</li>
+   </ul>
+  </div>
+  <div class="col us">
+   <h3>INSITE</h3>
+   <ul>
+    <li>Underwrite the project and the collateral</li>
+    <li>Handle the district paperwork</li>
+    <li>Pay the fees at the permit counter</li>
+    <li>Administer the tax roll each year</li>
+   </ul>
+  </div>
+ </div>
+</div></section>
+
+<section class="close"><div class="wrap">
+ <h2>Ready when your fee schedule is.</h2>
+ <p>Pull your city's posted fee schedule, then start the application. Want your numbers first? The estimator takes two minutes.</p>
+ <a class="btn" href="developer_application.html">Start your application</a>
+ <p class="also">Or <a href="fee_estimator.html">estimate your project's fees</a> first.</p>
+</div></section>
+
+<div class="dis"><div class="wrap">INSITE&trade; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments.</div></div>
+
+<div class='partcap'>PART 2 &middot; QUALIFICATION</div>
+
+
+
+
+<section class='hero'><div class='wrap'>
+<div class='kicker'>For residential developers</div>
+<h1>Do you qualify? Three numbers tell you.</h1>
+<p class='lede'>If your project clears the three numbers below and fits one of the project types, it is worth fifteen minutes to apply. Qualification is the program's review before your project goes to the public agency.</p>
+<div class='stats'>
+<div class='stat'><div class='statnum' style='white-space:nowrap'>1&ndash;50 Lots or Units</div><div class='statlab'>Small projects are the point, not the exception.</div></div>
+<div class='stat'><div class='statnum' style='white-space:nowrap'>$40,000 of Fees</div><div class='statlab'>That's the whole entry bar &mdash; roughly the average impact fee bill for one new California home (the Franchise Tax Board estimated $33,500 in 2019; about $40,000 in today's dollars). One house can clear it. Your agency may set its own floor.</div></div>
+
+</div>
+<p style='margin-top:26px'><a class='btn alt' href='developer_application.html'>Start the application</a> &nbsp; <a class='btn' href='fee_estimator.html'>Estimate your fees first</a></p>
+</div></section>
+
+<section><div class='wrap'>
+<div class='kicker'>Project types</div>
+<h2>If you're building housing, you probably fit.</h2>
+<img src='assets_ins002_types.jpg' alt='Eligible residential development projects: small residential subdivisions, infill housing developments, small-lot projects, townhomes and condominiums, accessory dwelling units, urban lot splits, missing-middle housing, mixed-use projects with a residential component, and other projects approved by the public agency. Projects must be located within the Future Annexation Area or otherwise be eligible for inclusion in the Community Facilities District.' style='width:100%;height:auto;border:1px solid var(--line);margin-top:18px'/>
+</div>
+<div class='note'>Location requirement: the project must sit within the Future Annexation Area of a participating agency's Community Facilities District, or otherwise be eligible for inclusion. Not sure? Apply anyway; that check is our job, not yours.</div>
+</div></section>
+
+<section class='band'><div class='wrap'>
+<div class='kicker'>What we look at</div>
+<h2>Five things, and you already know all five.</h2>
+<p style='max-width:62ch'>No new paperwork exists here. Every item is something your lender or your building department has already asked you for.</p>
+<img src='assets_ins002_factors.jpg' alt='Five developer capacity factors: 1 development experience, 2 contractor licensing and standing, 3 project budget, 4 construction financing, 5 entitlement and permit status. These factors help ensure the developer has the capability, resources, and approvals necessary to successfully complete the project.' style='width:100%;max-width:900px;height:auto;display:block;margin:18px auto 0;border:1px solid var(--line);background:#fff'/>
+</div></section>
+
+<section><div class='wrap'>
+<div class='kicker'>The fine print, in plain words</div>
+<h2>Two things to know before you apply.</h2>
+<div class='honest'><b>Ownership.</b> You need legal title, contractual authority, or the written consent of every required property owner. If you're in escrow, that can work; tell us where you stand.</div>
+<div class='honest'><b>Qualification is not a commitment.</b> Qualifying means your project passes the program's review and goes to the public agency. Final participation depends on agency approval, completion of the required legal proceedings, satisfaction of financing requirements, and availability of capital. Nobody can promise you the money before those happen, and anyone who does is selling you something.</div>
+<div class='note warn'>What can be financed: eligible public development impact fees, plus certain acquisition and incidental financing costs where the CFD formation documents, the public agency, and applicable law allow it. School facilities fees are excluded at program launch.</div>
+<p class='punch'>Clear the three numbers, fit a project type, own your dirt. That's qualification.</p>
+<p><a class='btn alt' href='developer_application.html'>Apply now</a> &nbsp; <a class='btn' href='developers.html'>Back to the developer page</a></p>
+</div></section>
+
+
+
+<div class='partcap'>PART 3 &middot; YOUR FEES, THE COMPARISON</div>
+
+
+
+<div class='wrap'>
+<h1>What your fees look like through INSITE</h1>
+<p class='lede'>No calculator needed. Here is the whole comparison, in the founder's own example.</p>
+
+<h2>Example: 10-lot residential subdivision</h2>
+<p>A developer constructing a 10-lot subdivision with approximately <b>$250,000</b> of eligible public fees can finance those costs through INSITE rather than paying them upfront.</p>
+<ul>
+<li><b>10 residential lots</b></li>
+<li><b>$25,000 in eligible public fees per lot</b></li>
+<li><b>Estimated annual Special Tax:</b> approximately <b>$2,400 per lot</b></li>
+<li><b>Repayment occurs through the county property tax roll and generally transfers with the property upon sale.</b></li>
+</ul>
+<p>The financing is secured by the property's Special Tax and repaid through the county property tax roll over the financing term. This preserves working capital for land development and home construction while reducing reliance on higher-cost construction financing.</p>
+
+<h2>The day-one difference</h2>
+<p>Paying fees yourself on that project: <b>$250,000 in cash at permit</b>, roughly 18 months before your first closing. Through INSITE: <b>fees we pay on your behalf at the permit counter</b>, and your day-one cash into fees is zero. Deal costs are financed into the note.</p>
+
+<p style='margin-top:22px'><a class='btn' href='developer_application.html'>Apply Now</a> &nbsp; <a class='btn alt' href='qualify.html'>Do I Qualify?</a></p>
+
+<p class='note'>Your project runs on your jurisdiction's posted fee schedule, not the example. School fees are excluded from financing at launch. Figures shown are founder estimates for illustration; rates and final numbers are set at term sheet.</p>
+<div class='dis'>INSITE&trade; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting.</div>
+</div>
+
+<p style='color:var(--slate);font-size:12.5px;margin-top:40px'>INSITE&#8482; is a pre-launch program concept administered by HGF Management Company. This manual is compiled from the program website for reference and is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting.</p>
+</div></body></html>

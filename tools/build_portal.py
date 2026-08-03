@@ -42,7 +42,7 @@ def md_to_html(md):
 
 
 def lockup(h=38):
-    NAVY='#153A5B'; GREEN='#3E7C59'; OUTLINE='#153A5B'
+    NAVY='#FFFFFF'; GREEN='#9FD0B4'; OUTLINE='#FFFFFF'  # reversed-on-navy masthead per Aug 2 call
     GRID=[['N','N','N','N','N'],['N','N','N','G','N'],['N','N','G','G','N'],['N','N','N','O','O']]
     cell=40; gap=8; pitch=cell+gap
     rects=[]
@@ -64,10 +64,9 @@ NAVROW=("<div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:8px 24px 1
      "<a href='index.html' style='color:#fff;text-decoration:none;font-size:14px'>Home</a>"
      "<a href='developers.html' style='color:#fff;text-decoration:none;font-size:14px'>Developers</a>"
      "<a href='qualify.html' style='color:#fff;text-decoration:none;font-size:14px'>Do I Qualify?</a>"
+     "<a href='manual.html' style='color:#fff;text-decoration:none;font-size:14px'>Manual</a>"
      "<a href='developer_application.html' style='color:#fff;text-decoration:none;font-size:14px'>Apply</a>"
-     "<a href='fee_estimator.html' style='color:#fff;text-decoration:none;font-size:14px'>Fee Estimator</a>"
-     "<a href='investors.html' style='color:#fff;text-decoration:none;font-size:14px'>Investors</a>"
-     "<a href='tey_calculator.html' style='color:#fff;text-decoration:none;font-size:14px'>Yield Calculator</a></div>")
+     "<a href='fee_estimator.html' style='color:#fff;text-decoration:none;font-size:14px'>Fee Estimator</a>")
 
 def main():
     pw=sys.argv[1]
