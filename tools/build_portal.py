@@ -42,7 +42,7 @@ def md_to_html(md):
 
 
 def lockup(h=38):
-    NAVY='#FFFFFF'; GREEN='#9FD0B4'; OUTLINE='#FFFFFF'  # reversed-on-navy masthead per Aug 2 call
+    NAVY='#153A5B'; GREEN='#3E7C59'; OUTLINE='#153A5B'  # navy-on-white masthead; no navy bands per Palmer Aug 4
     GRID=[['N','N','N','N','N'],['N','N','N','G','N'],['N','N','G','G','N'],['N','N','N','O','O']]
     cell=40; gap=8; pitch=cell+gap
     rects=[]
@@ -60,7 +60,7 @@ def lockup(h=38):
     return (f"<svg width='{int(h*(W+52)/(H+36))}' height='{h}' viewBox='-26 -18 {W+52} {H+36}' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'>"
             f"<rect x='-26' y='-18' width='{W+52}' height='{H+36}' fill='#ffffff'/>{inner}</svg>")
 
-NAVROW=("<div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:8px 24px 10px 24px;background:#153A5B'>"
+NAVROW=("<div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:8px 24px 10px 24px;background:#fff;border-bottom:1px solid #d3dae3'>"
      "<a href='index.html' style='color:#fff;text-decoration:none;font-size:14px'>Home</a>"
      "<a href='developers.html' style='color:#fff;text-decoration:none;font-size:14px'>Developers</a>"
      "<a href='qualify.html' style='color:#fff;text-decoration:none;font-size:14px'>Do I Qualify?</a>"
@@ -123,7 +123,7 @@ def main():
 <title>INSITE Investor Portal</title><style>
 :root{{--navy:#153A5B;--green:#2E7D4F;--light:#f4f7f9;--line:#d9e2e8;--ink:#26303a}}
 body{{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink);background:var(--light)}}
-.top{{background:var(--navy);color:#fff;padding:20px 24px;font-size:18px;letter-spacing:1px;font-weight:bold}}
+.top{{background:#fff;color:var(--navy);border-bottom:2px solid var(--navy);padding:20px 24px;font-size:18px;letter-spacing:1px;font-weight:bold}}
 .gate{{max-width:420px;margin:9vh auto;background:#fff;border:1px solid var(--line);padding:30px}}
 .gate h1{{color:var(--navy);font-size:22px;margin:0 0 6px}}
 .gate p{{font-size:14px;line-height:1.5}}
