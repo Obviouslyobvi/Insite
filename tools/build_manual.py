@@ -20,6 +20,26 @@ def body_of(name):
     b=re.sub(r"<a href=['\"][^'\"]*['\"][^>]*>(.*?)</a>",r"\1",b,flags=re.S)
     return b
 
+
+def title_logo_svg():
+    """Stacked primary logo per INS-001: 20-cell mark over INSITE over tagline. Navy/green on white."""
+    cells=[]
+    for r in range(4):
+        for c in range(5):
+            x,y=c*58,r*58
+            if (r,c) in ((3,3),(3,4)):
+                cells.append(f"<rect x='{x+3}' y='{y+3}' width='44' height='44' fill='none' stroke='#153A5B' stroke-width='6'/>")
+            else:
+                fill='#3E7C59' if (r,c) in ((1,3),(2,2),(2,3)) else '#153A5B'
+                cells.append(f"<rect x='{x}' y='{y}' width='50' height='50' fill='{fill}'/>")
+    return ("<svg width='230' height='300' viewBox='0 0 282 372' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'>"
+            +"".join(cells)
+            +"<text x='141' y='300' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='64' letter-spacing='6' fill='#153A5B'>INSITE</text>"
+            +"<text x='266' y='252' font-family='Helvetica,Arial,sans-serif' font-size='18' fill='#153A5B'>&#8482;</text>"
+            +"<text x='141' y='334' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='#3E7C59'>DEVELOPMENT IMPACT FEE</text>"
+            +"<text x='141' y='356' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='#3E7C59'>FINANCING PROGRAM</text>"
+            +"</svg>")
+
 def field(label, note=""):
     n=f"<div class='fnote'>{note}</div>" if note else ""
     return f"<div class='pf'><div class='flabel'>{label}</div>{n}<div class='fline'></div></div>"
@@ -58,8 +78,10 @@ page=f"""<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='
 <title>INSITE Developer Manual</title><style>
 :root{{--navy:#153A5B;--green:#3E7C59;--line:#d3dae3;--light:#F5F7FA;--slate:#6B7280;--ink:#26303a}}
 *{{box-sizing:border-box}}body{{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.5}}
-.mhead{{background:var(--navy);color:#fff;padding:26px 22px}}
-.mhead .in{{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}}
+.titlepage{{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;background:#fff}}
+.ttitle{{font-size:34px;font-weight:bold;color:var(--navy);letter-spacing:6px;margin-top:26px}}
+.tsub{{font-size:14px;color:var(--slate)}}
+.tdate{{font-size:13px;color:var(--slate)}}
 .mwrap{{max-width:900px;margin:0 auto;padding:10px 22px 60px}}
 h1{{font-size:28px;color:var(--navy)}}h2,h3{{color:var(--navy)}}
 .wrap{{max-width:900px;margin:0 auto;padding:0}}
@@ -79,15 +101,20 @@ img{{max-width:100%;height:auto}} a{{color:var(--green)}}
 @page{{size:Letter;margin:14mm 14mm 16mm}}
 @media print{{
  .printbar{{display:none}}
- .mhead{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+ .titlepage{{height:8.6in;min-height:0;page-break-after:always;break-after:page}}
  .partcap{{page-break-before:always;break-before:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
  section,.pf,.pchk,img,.stat,.honest,.note,.ex,.exgrid{{page-break-inside:avoid;break-inside:avoid}}
  h1,h2,h3{{page-break-after:avoid;break-after:avoid}}
  a{{color:var(--ink);text-decoration:none}}
 }}
 </style></head><body>
-<div class='mhead'><div class='in'><div style='font-weight:bold;font-size:22px;letter-spacing:2px'>INSITE&#8482; DEVELOPER MANUAL</div><div style='font-size:13px;color:#9fb6cd'>Compiled from the program website &middot; {datetime.date.today().strftime('%B %d, %Y')}</div></div></div>
 <div class='printbar'><button class='printbtn' onclick='window.print()'>Print / Save as PDF</button></div>
+<div class='titlepage'>
+{title_logo_svg()}
+<div class='ttitle'>DEVELOPER MANUAL</div>
+<div class='tsub'>Prepared by HGF Management Company, Program Administrator</div>
+<div class='tdate'>{datetime.date.today().strftime('%B %d, %Y')}</div>
+</div>
 <div class='mwrap'>
 <div class='partcap'>PART 1 &middot; THE PROGRAM IN THREE QUESTIONS</div>
 {body_of('builders.html')}
