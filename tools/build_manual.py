@@ -13,12 +13,21 @@ def body_of(name):
     b=re.sub(r"<header.*?</header>","",b,flags=re.S)
     b=re.sub(r"<footer.*?</footer>","",b,flags=re.S)
     b=re.sub(r"<script.*?</script>","",b,flags=re.S)
+    i=b.find("<div class='dis'")
+    if i<0: i=b.find('<div class="dis"')
+    if i>=0:
+        tail=b[i:]; opens=0; j=None; k=0
+        for m in re.finditer(r"</?div", tail):
+            opens += 1 if m.group(0)=="<div" else -1
+            if opens==0: j=tail.index(">",m.start())+1; break
+        b=b[:i]+(tail[j:] if j else "")
+    # page-local disclaimer removed; the manual carries its own
     b=re.sub(r"<iframe.*?</iframe>","",b,flags=re.S)
     # a printable manual carries the form itself; strip every button/link to forms or pages
     b=re.sub(r"<a class=['\"]btn[^>]*>.*?</a>","",b,flags=re.S)
-    b=re.sub(r"<p[^>]*>\\s*</p>","",b)
+    b=re.sub(r"<p[^>]*>[ \n\t]*</p>","",b)
     # self-balance: strip surplus closing divs, add missing ones, so no body can break the page container
-    surplus=len(re.findall(r"</div>",b))-len(re.findall(r"<div\\b",b))
+    surplus=len(re.findall(r"</div>",b))-len(re.findall(r"<div[ >]",b))
     while surplus>0 and b.rstrip().endswith("</div>"):
         b=b.rstrip()[:-6]; surplus-=1
     if surplus>0:
