@@ -16,7 +16,15 @@ def body_of(name):
     b=re.sub(r"<iframe.*?</iframe>","",b,flags=re.S)
     # a printable manual carries the form itself; strip every button/link to forms or pages
     b=re.sub(r"<a class=['\"]btn[^>]*>.*?</a>","",b,flags=re.S)
-    b=re.sub(r"<p[^>]*>\s*</p>","",b)
+    b=re.sub(r"<p[^>]*>\\s*</p>","",b)
+    # self-balance: strip surplus closing divs, add missing ones, so no body can break the page container
+    surplus=len(re.findall(r"</div>",b))-len(re.findall(r"<div\\b",b))
+    while surplus>0 and b.rstrip().endswith("</div>"):
+        b=b.rstrip()[:-6]; surplus-=1
+    if surplus>0:
+        parts=b.rsplit("</div>",surplus); b="".join(parts)
+    elif surplus<0:
+        b=b+"</div>"*(-surplus)
     b=re.sub(r"<a href=['\"][^'\"]*['\"][^>]*>(.*?)</a>",r"\1",b,flags=re.S)
     return b
 
