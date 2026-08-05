@@ -68,8 +68,12 @@ def check(label):
 
 NAV_SVG = """<svg width='179' height='46' viewBox='-26 -18 858 220' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'><rect x='0' y='0' width='40' height='40' fill='#153A5B'/><rect x='48' y='0' width='40' height='40' fill='#153A5B'/><rect x='96' y='0' width='40' height='40' fill='#153A5B'/><rect x='144' y='0' width='40' height='40' fill='#153A5B'/><rect x='192' y='0' width='40' height='40' fill='#153A5B'/><rect x='0' y='48' width='40' height='40' fill='#153A5B'/><rect x='48' y='48' width='40' height='40' fill='#153A5B'/><rect x='96' y='48' width='40' height='40' fill='#153A5B'/><rect x='144' y='48' width='40' height='40' fill='#3E7C59'/><rect x='192' y='48' width='40' height='40' fill='#153A5B'/><rect x='0' y='96' width='40' height='40' fill='#153A5B'/><rect x='48' y='96' width='40' height='40' fill='#153A5B'/><rect x='96' y='96' width='40' height='40' fill='#3E7C59'/><rect x='144' y='96' width='40' height='40' fill='#3E7C59'/><rect x='192' y='96' width='40' height='40' fill='#153A5B'/><rect x='0' y='144' width='40' height='40' fill='#153A5B'/><rect x='48' y='144' width='40' height='40' fill='#153A5B'/><rect x='96' y='144' width='40' height='40' fill='#153A5B'/><rect x='146' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><rect x='194' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><text x='266' y='138' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='120' letter-spacing='8' fill='#153A5B'>INSITE</text><text x='734' y='44' font-family='Helvetica,Arial,sans-serif' font-size='36' fill='#153A5B'>&#8482;</text></svg>"""
 
-NAV_LINKS=[("index.html","Home"),("developers.html","Developers"),("qualify.html","Do I Qualify?"),
-           ("manual.html","Manual"),("developer_application.html","Apply"),("fee_estimator.html","Fee Estimator")]
+NAV_LINKS=[("index.html","Home"),
+           ("developers.html","Developers"),
+           ("qualify.html","Do I Qualify?"),
+           ("fee_estimator.html","Fee Estimator"),
+           ("developer_application.html","Apply"),
+           ("manual.html","Manual")]
 
 def site_nav():
     """On-screen navigation back to the site. Hidden in print: see @media print .mnav."""

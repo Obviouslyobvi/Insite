@@ -61,12 +61,12 @@ def lockup(h=38):
             f"<rect x='-26' y='-18' width='{W+52}' height='{H+36}' fill='#ffffff'/>{inner}</svg>")
 
 NAVROW=("<div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:8px 24px 10px 24px;background:#fff;border-bottom:1px solid #d3dae3'>"
-     "<a href='index.html' style='color:#fff;text-decoration:none;font-size:14px'>Home</a>"
-     "<a href='developers.html' style='color:#fff;text-decoration:none;font-size:14px'>Developers</a>"
-     "<a href='qualify.html' style='color:#fff;text-decoration:none;font-size:14px'>Do I Qualify?</a>"
-     "<a href='manual.html' style='color:#fff;text-decoration:none;font-size:14px'>Manual</a>"
-     "<a href='developer_application.html' style='color:#fff;text-decoration:none;font-size:14px'>Apply</a>"
-     "<a href='fee_estimator.html' style='color:#fff;text-decoration:none;font-size:14px'>Fee Estimator</a>")
+     "<a href='index.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Home</a>"
+     "<a href='developers.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Developers</a>"
+     "<a href='qualify.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Do I Qualify?</a>"
+     "<a href='fee_estimator.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Fee Estimator</a>"
+     "<a href='developer_application.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Apply</a>"
+     "<a href='manual.html' style='color:#153A5B;text-decoration:none;font-size:14px'>Manual</a>")
 
 def main():
     pw=sys.argv[1]
