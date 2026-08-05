@@ -3,6 +3,7 @@
 Paginated for print (Letter), with the application form printed on the page itself.
 Run after ANY edit to builders/qualify/fee_estimator. Never edit manual.html by hand."""
 import re, datetime, os
+from zoneinfo import ZoneInfo
 HERE=os.path.dirname(os.path.abspath(__file__))
 SITE=os.path.join(os.path.dirname(HERE),'05_WEBSITE')
 
@@ -64,6 +65,22 @@ def field(label, note=""):
 def check(label):
     return f"<div class='pchk'><span class='box'></span>{label}</div>"
 
+
+NAV_SVG = """<svg width='179' height='46' viewBox='-26 -18 858 220' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'><rect x='0' y='0' width='40' height='40' fill='#153A5B'/><rect x='48' y='0' width='40' height='40' fill='#153A5B'/><rect x='96' y='0' width='40' height='40' fill='#153A5B'/><rect x='144' y='0' width='40' height='40' fill='#153A5B'/><rect x='192' y='0' width='40' height='40' fill='#153A5B'/><rect x='0' y='48' width='40' height='40' fill='#153A5B'/><rect x='48' y='48' width='40' height='40' fill='#153A5B'/><rect x='96' y='48' width='40' height='40' fill='#153A5B'/><rect x='144' y='48' width='40' height='40' fill='#3E7C59'/><rect x='192' y='48' width='40' height='40' fill='#153A5B'/><rect x='0' y='96' width='40' height='40' fill='#153A5B'/><rect x='48' y='96' width='40' height='40' fill='#153A5B'/><rect x='96' y='96' width='40' height='40' fill='#3E7C59'/><rect x='144' y='96' width='40' height='40' fill='#3E7C59'/><rect x='192' y='96' width='40' height='40' fill='#153A5B'/><rect x='0' y='144' width='40' height='40' fill='#153A5B'/><rect x='48' y='144' width='40' height='40' fill='#153A5B'/><rect x='96' y='144' width='40' height='40' fill='#153A5B'/><rect x='146' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><rect x='194' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><text x='266' y='138' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='120' letter-spacing='8' fill='#153A5B'>INSITE</text><text x='734' y='44' font-family='Helvetica,Arial,sans-serif' font-size='36' fill='#153A5B'>&#8482;</text></svg>"""
+
+NAV_LINKS=[("index.html","Home"),("developers.html","Developers"),("qualify.html","Do I Qualify?"),
+           ("manual.html","Manual"),("developer_application.html","Apply"),("fee_estimator.html","Fee Estimator")]
+
+def site_nav():
+    """On-screen navigation back to the site. Hidden in print: see @media print .mnav."""
+    links="".join(
+        (f"<a href='{h}' style='color:#3E7C59;font-weight:bold'>{x}</a>" if h=="manual.html"
+         else f"<a href='{h}'>{x}</a>")
+        for h,x in NAV_LINKS)
+    return ("<div class='mnav'><div class='mnavin'>"
+            f"<a href='index.html' style='display:flex;align-items:center;gap:12px'>{NAV_SVG}</a>"
+            f"<div class='mnavlinks'>{links}</div></div></div>")
+
 FORM = f"""
 <p>Complete and return to HGF Management Company, or apply online through the program website.</p>
 <div class='pfgrid'>
@@ -103,6 +120,11 @@ page=f"""<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='
 h1{{font-size:28px;color:var(--navy)}}h2,h3{{color:var(--navy)}}
 .wrap{{max-width:900px;margin:0 auto;padding:0}}
 section{{padding:22px 0;border-bottom:1px solid var(--line)}}
+.mnav{{background:#fff;border-bottom:2px solid var(--navy);position:sticky;top:0;z-index:20}}
+.mnavin{{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;flex-wrap:wrap;gap:10px}}
+.mnavlinks{{display:flex;flex-wrap:wrap;gap:4px 18px;padding:14px 0}}
+.mnavlinks a{{color:var(--navy);text-decoration:none;font-size:14px;letter-spacing:.3px}}
+.mnavlinks a:hover{{color:var(--green)}}
 .printbar{{text-align:right;padding:14px 22px;max-width:900px;margin:0 auto}}
 .printbtn{{background:var(--green);color:#fff;border:0;padding:10px 18px;font-size:15px;cursor:pointer}}
 img{{max-width:100%;height:auto}} a{{color:var(--green)}}
@@ -117,6 +139,7 @@ img{{max-width:100%;height:auto}} a{{color:var(--green)}}
 @media(max-width:640px){{.pfgrid{{grid-template-columns:1fr}}}}
 @page{{size:Letter;margin:14mm 14mm 16mm}}
 @media print{{
+ .mnav{{display:none}}
  .printbar{{display:none}}
  .titlepage{{height:8.6in;min-height:0;page-break-after:always;break-after:page}}
  .partcap{{page-break-before:always;break-before:page;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -125,12 +148,13 @@ img{{max-width:100%;height:auto}} a{{color:var(--green)}}
  a{{color:var(--ink);text-decoration:none}}
 }}
 </style></head><body>
+{site_nav()}
 <div class='printbar'><button class='printbtn' onclick='window.print()'>Print / Save as PDF</button></div>
 <div class='titlepage'>
 {title_logo_svg()}
 <div class='ttitle'>DEVELOPER MANUAL</div>
 <div class='tsub'>Prepared by HGF Management Company, Program Administrator</div>
-<div class='tdate'>{datetime.date.today().strftime('%B %d, %Y')}</div>
+<div class='tdate'>{datetime.datetime.now(ZoneInfo('America/Los_Angeles')).strftime('%B %d, %Y')}</div>
 </div>
 <div class='mwrap'>
 <div class='partcap'>PART 1 &middot; THE PROGRAM IN THREE QUESTIONS</div>
