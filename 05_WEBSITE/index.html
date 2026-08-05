@@ -128,49 +128,64 @@ footer a{color:var(--green)}
 
 <section id="calc">
   <div class="wrap">
-    <div class="kicker">The calculator</div>
-    <h2>Compare three ways to cover the fee bill.</h2>
-    <p class="lede">Every input is editable and every default is labeled with where it comes from. This is arithmetic for orientation, not a quote: no rate is promised, and final terms are set at a signed term sheet.</p>
+    <div class="kicker">Underwriting methodology</div>
+    <h2>How INSITE sizes per-parcel financing.</h2>
+    <p class="lede">Two constraints drive every underwriting decision: the finished lot value of the home being built, and the total annual property tax burden the parcel can carry. Together they cap how much fee financing a parcel can support.</p>
+    <div class="grid g2" style="margin-top:24px">
+      <div class="card">
+        <div class="kicker" style="margin-bottom:6px">Constraint 01</div>
+        <h3 style="margin:0 0 8px 0">Finished lot value</h3>
+        <p style="font-size:14.5px;margin:0 0 10px 0">The finished lot is typically worth <b>20% to 30%</b> of the finished home value. A $1,000,000 home implies a finished lot value between $200,000 and $300,000. That lot value is the collateral floor the financing is sized against.</p>
+        <p style="font-size:14.5px;margin:0">Once the finished lot value is determined, the available financing is sized at <b>one quarter (25%)</b> of that lot value.</p>
+      </div>
+      <div class="card">
+        <div class="kicker" style="margin-bottom:6px">Constraint 02</div>
+        <h3 style="margin:0 0 8px 0">The 2% effective tax ceiling</h3>
+        <p style="font-size:14.5px;margin:0">The combined annual property tax burden, meaning the general 1.125% ad valorem, any existing assessments, and the new INSITE assessment, should not exceed <b>2% of home value</b> per year. INSITE underwrites the new assessment to a rule of thumb of <b>0.50%</b>, leaving headroom under the cap.</p>
+      </div>
+    </div>
+    <p class="src" style="margin-top:14px;text-align:center">After Constraint 01 and Constraint 02 are both calculated, the <b>lesser of the two</b> amounts is the financing available per parcel.</p>
+
+    <div class="kicker" style="margin-top:42px">Per-parcel calculator</div>
+    <h2>Estimate financing capacity per parcel.</h2>
+    <p class="lede">Plug in your project assumptions. The calculator applies both the finished-lot-value collateral floor and the 2% total tax cap to size the supportable per-parcel principal.</p>
     <div class="calc" style="margin-top:20px">
-      <div class="grid g3">
-        <div class="field"><label for="lots">Number of lots</label><input id="lots" type="number" value="10" min="1" max="50"/><small>Program range: 1 to 50</small></div>
-        <div class="field"><label for="fees">Financeable public fees per unit ($)</label><input id="fees" type="number" value="25000" step="1000"/><small>Assumption used in program materials; the FTB estimated the California average near $33,500 in 2019, roughly $40,000 today, and totals can exceed $150,000 in some jurisdictions</small></div>
-        <div class="field"><label for="hold">Months you hold lots before homes sell</label><input id="hold" type="number" value="18" min="1"/><small>Your build and absorption estimate</small></div>
-        <div class="field"><label for="prate">Private money rate (% per year)</label><input id="prate" type="number" value="12" step="0.25"/><small>2025-2026 guides: roughly 9.5 to 15</small></div>
-        <div class="field"><label for="irate">Land-secured note rate (% per year)</label><input id="irate" type="number" value="6" step="0.25"/><small>Founder target for orientation only; set at term sheet</small></div>
-        <div class="field"><label for="term">Note term (years)</label><input id="term" type="number" value="30" min="5" max="40"/><small>Typical land-secured range 20 to 40</small></div>
-        <div class="field"><label for="exec">Per-project deal costs, financed into the note ($)</label><input id="exec" type="number" value="17500" step="500"/><small>Targeted range: $5,000 to $30,000 (the founder's working estimate, pending vendor quotes). The $17,500 default is the midpoint.</small></div>
-        <div class="field"><label for="admin">Annual zone administration ($)</label><input id="admin" type="number" value="3000" step="250"/><small>Illustrative; recoverable through the levy under section 53317(d)</small></div>
-        <div class="field"><label for="cov">Coverage cushion (%)</label><input id="cov" type="number" value="10" step="5" min="0"/><small>Extra margin levied above debt service, standard in land-secured practice; matches the whitepaper example</small></div>
-        <div class="field" style="display:flex;align-items:flex-end"><button class="btn" id="go" type="button" style="width:100%">Recalculate</button></div>
+      <div class="grid g2">
+        <div>
+          <h3 style="margin:0 0 12px 0">Inputs</h3>
+          <div class="grid" style="gap:14px">
+            <div class="field"><label for="c_home">Finished home value ($)</label><input id="c_home" type="number" value="1000000" step="25000" min="1"/></div>
+            <div class="field"><label for="c_parcels">Number of new parcels</label><input id="c_parcels" type="number" value="50" min="1" max="50"/><small>Program range: 1 to 50</small></div>
+            <div class="field"><label for="c_lotpct">Finished lot value (% of home, 20 to 30)</label><input id="c_lotpct" type="number" value="23" step="1" min="1" max="100"/></div>
+          </div>
+          <div class="note" style="margin-top:16px">
+            <b>Assumptions</b><br/>
+            Finished lot value: 20% to 30% of home value.<br/>
+            INSITE new assessment rate: 0.50% of home value per year.<br/>
+            30-year tax assessment basis at 5.75%.
+          </div>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px 0">Results</h3>
+          <div class="res" style="border-top:4px solid var(--green)">
+            <div class="kicker" style="margin-bottom:4px">Financing per parcel</div>
+            <div class="big" id="c_perparcel">$0</div>
+            <div class="sub">Lesser of Constraint 01 and Constraint 02.</div>
+          </div>
+          <div class="res" style="border-top:4px solid var(--navy);margin-top:14px">
+            <div class="kicker" style="margin-bottom:4px">Total project financing</div>
+            <div class="big" id="c_total">$0</div>
+            <div class="sub" id="c_totalsub">Across 0 parcels.</div>
+          </div>
+          <table style="width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px">
+            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Finished lot value</b><br/><span style="color:var(--slate);font-size:12px" id="c_lotnote">23% of finished home value</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_lotvalue">$0</td></tr>
+            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Lot-based financing (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_c1">$0</td></tr>
+            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Tax-supported financing</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_c2">$0</td></tr>
+            <tr><td style="padding:8px 0"><b>Annual assessment per parcel</b><br/><span style="color:var(--slate);font-size:12px" id="c_annualnote">Amortized over 30 years</span></td><td style="padding:8px 0;text-align:right;font-weight:bold" id="c_annual">$0</td></tr>
+          </table>
+          <p class="src" style="margin-top:12px">Illustrative only. Final sizing depends on issuer policy, market conditions, debt-service coverage, and reserve requirements.</p>
+        </div>
       </div>
-      <div class="grid g3" style="margin-top:18px">
-        <div class="res"><h3>Pay cash</h3>
-          <div class="big" id="r_cash_day1">$0</div><div class="sub">Cash you pay on day one</div>
-          <ul>
-            <li>Cost during your hold: <b id="r_cash_hold">$0</b></li>
-            <li>Who pays long term: you paid it all up front</li>
-          </ul>
-        </div>
-        <div class="res"><h3>Private loan</h3>
-          <div class="big" id="r_priv_day1">$0</div><div class="sub">Cash you pay on day one (the fees are borrowed, so nothing is due yet)</div>
-          <ul>
-            <li>Interest during your hold: <b id="r_priv_hold">$0</b></li>
-            <li>Who pays long term: you, at sale (principal plus interest)</li>
-          </ul>
-        </div>
-        <div class="res"><h3>INSITE land-secured</h3>
-          <div class="big" id="r_ins_day1">$0</div><div class="sub">Cash you pay on day one: the deal's costs are financed into the note along with your fees, so your out-of-pocket is zero</div>
-          <ul>
-            <li>Financed at closing (your fees plus the deal's costs): <b id="r_ins_financed">$0</b></li>
-            <li>Special taxes you pay on unsold lots during your hold: <b id="r_ins_hold">$0</b></li>
-            <li>Estimated annual special tax per home: <b id="r_ins_annual">$0</b></li>
-            <li>Who pays long term: future owners, on the tax bill, disclosed before purchase and prepayable at any time</li>
-          </ul>
-        </div>
-      </div>
-      <div class="note warn" style="margin-top:16px"><b>Read the fine print you'd want us to read to you.</b> The land-secured path is not free money: it shifts the fee cost into an annual special tax that the project's future homeowners pay over the note term, and you pay it yourself on any lot you still own each year. The comparison above shows exactly that. Values marked as targets or founder estimates are not commitments.</div>
-      <p class="src" id="formula"></p>
     </div>
   </div>
 </section>
@@ -226,44 +241,34 @@ footer a{color:var(--green)}
 </footer>
 
 <script>
+// Per-parcel sizing, ported from the program's underwriting methodology.
+// Constraint 01: financing = 25% of finished lot value.
+// Constraint 02: financing = present value of a 0.50%-of-home-value annual
+// assessment, amortized at 5.75% over 30 years. The lesser of the two governs.
+var RATE=0.0575, TERM=30, LOT_ADVANCE=0.25, ASSESS=0.005;
+var AF=(1-Math.pow(1+RATE,-TERM))/RATE;
 function money(x){x=Math.round(x);return '$'+String(x).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
-function pmt(P,annualRate,years){var r=annualRate/100; if(r<=0) return P/years; return P*r/(1-Math.pow(1+r,-years));}
-function calc(v){
-  var total=v.lots*v.fees;
-  var principal=total+v.exec;
-  var cash={day1:total,hold:0};
-  var priv={day1:0,hold:total*(v.prate/100)*(v.hold/12)};
-  var debtService=pmt(principal,v.irate,v.term);
-  var annualReq=debtService*(1+v.cov/100)+v.admin;
-  var perHome=annualReq/v.lots;
-  var ins={day1:0,hold:perHome*v.lots*(v.hold/12),annual:perHome};
-  return {cash:cash,priv:priv,ins:ins,total:total,principal:principal,debtService:debtService};
-}
-function read(){
-  return {lots:+document.getElementById('lots').value||0,
-    fees:+document.getElementById('fees').value||0,
-    hold:+document.getElementById('hold').value||0,
-    prate:+document.getElementById('prate').value||0,
-    irate:+document.getElementById('irate').value||0,
-    term:+document.getElementById('term').value||1,
-    cov:+document.getElementById('cov').value||0,
-    exec:+document.getElementById('exec').value||0,
-    admin:+document.getElementById('admin').value||0};
-}
+function num(id){return +document.getElementById(id).value||0;}
 function render(){
-  var v=read(), r=calc(v);
-  document.getElementById('r_cash_day1').textContent=money(r.cash.day1);
-  document.getElementById('r_cash_hold').textContent=money(0);
-  document.getElementById('r_priv_day1').textContent=money(0);
-  document.getElementById('r_priv_hold').textContent=money(r.priv.hold);
-  document.getElementById('r_ins_day1').textContent=money(r.ins.day1);
-  document.getElementById('r_ins_financed').textContent=money(r.principal);
-  document.getElementById('r_ins_hold').textContent=money(r.ins.hold);
-  document.getElementById('r_ins_annual').textContent=money(r.ins.annual);
-  document.getElementById('formula').textContent='Run the numbers: total fees = lots x fees per unit = '+money(r.total)+'. Private interest during hold = total x rate x months/12. Note payment = level annual payment on the financed amount (fees plus deal costs) at the note rate over the term = '+money(r.debtService)+' per year; annual zone requirement = payment x (1 + coverage) + administration; per-home tax = requirement / lots. Rounding to whole dollars.';
+  var home=num('c_home'), parcels=num('c_parcels'), lotpct=num('c_lotpct');
+  var lotValue=home*lotpct/100;
+  var c1=lotValue*LOT_ADVANCE;
+  var c2=home*ASSESS*AF;
+  var per=Math.min(c1,c2);
+  var annual=per/AF;
+  document.getElementById('c_perparcel').textContent=money(per);
+  document.getElementById('c_total').textContent=money(per*parcels);
+  document.getElementById('c_totalsub').textContent='Across '+parcels+' parcel'+(parcels===1?'':'s')+'.';
+  document.getElementById('c_lotvalue').textContent=money(lotValue);
+  document.getElementById('c_lotnote').textContent=lotpct+'% of finished home value';
+  document.getElementById('c_c1').textContent=money(c1);
+  document.getElementById('c_c2').textContent=money(c2);
+  document.getElementById('c_annual').textContent=money(annual);
+  document.getElementById('c_annualnote').textContent=
+    (home>0?(annual/home*100).toFixed(3)+'% of home value, ':'')+'5.75% amortized over 30 years';
 }
-document.getElementById('go').addEventListener('click',render);
-['lots','fees','hold','prate','irate','term','exec','admin','cov'].forEach(function(id){document.getElementById(id).addEventListener('input',render);});
+['c_home','c_parcels','c_lotpct'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',render);});
 render();
 </script>
 </body>
