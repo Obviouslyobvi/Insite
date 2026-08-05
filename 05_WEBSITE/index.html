@@ -177,16 +177,18 @@ footer a{color:var(--green)}
             <div class="big" id="c_total">$0</div>
             <div class="sub" id="c_totalsub">Across 0 parcels.</div>
           </div>
-          <table style="width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px">
-            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Finished lot value</b><br/><span style="color:var(--slate);font-size:12px" id="c_lotnote">23% of finished home value</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_lotvalue">$0</td></tr>
-            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Lot-based financing (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_c1">$0</td></tr>
-            <tr><td style="padding:8px 0;border-bottom:1px solid var(--line)"><b>Tax-supported financing</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:8px 0;border-bottom:1px solid var(--line);text-align:right;font-weight:bold" id="c_c2">$0</td></tr>
-            <tr><td style="padding:8px 0"><b>Annual assessment per parcel</b><br/><span style="color:var(--slate);font-size:12px" id="c_annualnote">Amortized over 30 years</span></td><td style="padding:8px 0;text-align:right;font-weight:bold" id="c_annual">$0</td></tr>
+          <table style="width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px;background:#fff;border:1px solid var(--line)">
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Finished lot value</b><br/><span style="color:var(--slate);font-size:12px" id="c_lotnote">23% of finished home value</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_lotvalue">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Lot-based financing (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c1">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Tax-supported financing</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c2">$0</td></tr>
+            <tr><td style="padding:10px 14px"><b>Annual assessment per parcel</b><br/><span style="color:var(--slate);font-size:12px" id="c_annualnote">Amortized over 30 years</span></td><td style="padding:10px 14px;text-align:right;font-weight:bold;white-space:nowrap" id="c_annual">$0</td></tr>
           </table>
           <p class="src" style="margin-top:12px">Illustrative only. Final sizing depends on issuer policy, market conditions, debt-service coverage, and reserve requirements.</p>
         </div>
       </div>
     </div>
+      <div class="note warn" style="margin-top:16px"><b>Read the fine print you'd want us to read to you.</b> The land-secured path is not free money: it shifts the fee cost into an annual special tax that the project's future homeowners pay over the note term, and you pay it yourself on any lot you still own each year. The sizing above shows exactly what that annual assessment is. Values marked as targets or founder estimates are not commitments.</div>
+      <p class="src" id="formula"></p>
   </div>
 </section>
 
@@ -264,6 +266,14 @@ function render(){
   document.getElementById('c_c1').textContent=money(c1);
   document.getElementById('c_c2').textContent=money(c2);
   document.getElementById('c_annual').textContent=money(annual);
+  document.getElementById('formula').textContent=
+    'Run the numbers: finished lot value = home value x lot percent = '+money(lotValue)+
+    '. Constraint 01 = 25% of that lot value = '+money(c1)+
+    '. Constraint 02 = the present value of an annual assessment set at 0.50% of home value ('+money(home*ASSESS)+
+    ' per year), amortized at 5.75% over 30 years, an annuity factor of '+AF.toFixed(5)+', which is '+money(c2)+
+    '. Financing per parcel is the lesser of the two = '+money(per)+
+    '. Total project = per parcel x parcels. Annual assessment = financing per parcel / the annuity factor = '+money(annual)+
+    '. Rounding to whole dollars.';
   document.getElementById('c_annualnote').textContent=
     (home>0?(annual/home*100).toFixed(3)+'% of home value, ':'')+'5.75% amortized over 30 years';
 }
