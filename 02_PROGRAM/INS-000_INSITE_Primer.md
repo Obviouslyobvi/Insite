@@ -48,7 +48,7 @@ So a small project of 10 homes can easily owe $200,000 to $500,000 in fees befor
 
 ## 1.4 The developer's cash problem
 
-Big homebuilders have big bank lines and can absorb this. Small developers, the ones building 2 to 50 homes, usually cannot. They have three options today:
+Big homebuilders have big bank lines and can absorb this. Small developers, the ones building 1 to 50 homes, usually cannot. They have three options today:
 
 1. **Pay cash.** This drains the working capital they need for construction.
 2. **Borrow from a bank.** Banks are cautious about land that has no houses on it yet, and many will not lend against fees at all.

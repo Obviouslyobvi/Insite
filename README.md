@@ -2,7 +2,7 @@
 
 Administered by HGF Management Company | Prepared for Dennis Lanni | July 2026 | Pre-launch
 
-This repository is the complete working package for INSITE, a proposed California program that finances development impact fees for small residential subdivisions (2 to 50 lots) through Mello-Roos special taxes collected on the county tax roll. Every factual claim in these documents traces to a source URL in the Claims Register or is explicitly labeled an inference or a founder estimate.
+This repository is the complete working package for INSITE, a proposed California program that finances development impact fees for small residential subdivisions (1 to 50 lots) through Mello-Roos special taxes collected on the county tax roll. Every factual claim in these documents traces to a source URL in the Claims Register or is explicitly labeled an inference or a founder estimate.
 
 ## How to read this package
 
