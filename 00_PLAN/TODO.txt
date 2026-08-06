@@ -66,3 +66,12 @@ JULY 13 SESSION, LATE (builder)
 [ ] DENNIS: edits to the INS-303 chapter plan and the public-versus-portal split.
 [x] Visual verification sweep, July 13: all seven browser-rendered artifacts (website, fee estimator, tax-equivalent yield calculator, brand kit, three one-pagers) at 1440 and 390. Zero console errors, zero failed requests, zero horizontal overflow, zero broken images, zero placeholders, zero dead links, contrast clean on all seven, and all three calculators driven live with real and junk inputs (no NaN, no Infinity, arithmetic spot-checked). One real defect found and fixed: the yield calculator had no link back to the site. Thirteen external citation links all resolve (the two CSCDA links return 406 to a script and 200 to a real browser: anti-bot, not dead).
 [ ] TEN-MINUTE EYEBALL PASS, still yours: the image viewer failed again this session, so the screenshots are captured but unseen by me. Contact sheets are at 05_WEBSITE/qc/vv_desktop_1440.png and vv_mobile_390.png. Everything mechanical passes; the aesthetic judgment is the part I cannot make for you.
+
+AUGUST 5 SESSION (Airtable application pipeline)
+[x] Documents field (Attachment, Files format) added to the Applications table and placed on the form above Notes. The form previously had zero file inputs, so the six "Has:" checkboxes collected the word yes and nothing else.
+[x] Phone field added to the table and placed on the form under Email, matching the printed form in the manual.
+[x] Help text on Documents, confirmation message after submit, form published and verified from the public embed.
+[x] Embed remeasured and resized for the taller form: 1880 desktop, 1900 under 820px, 1990 under 520px. Zero inner scrollbar at six viewports.
+[x] Notification automation reviewed and kept. It is the only thing telling anyone an application arrived. Subject line completed, Phone and Base record URL added to the body, renamed "New application notification".
+[ ] BEFORE LAUNCH: remove 1genepalmer@gmail.com from the "New application notification" recipients. Palmer is a contractor on this build, not a member of the company, and developer applications carry names, contact details, project locations, fee figures and uploaded documents. Staying on the notification is deliberate for the build and test period only.
+[ ] WATCH: the six "Has: something" checkboxes now overlap the Documents upload. Once real submissions arrive, see whether people use both or whether the checkboxes are just friction.
