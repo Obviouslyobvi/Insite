@@ -14,6 +14,8 @@ def body_of(name):
     b=re.sub(r"<header.*?</header>","",b,flags=re.S)
     b=re.sub(r"<footer.*?</footer>","",b,flags=re.S)
     b=re.sub(r"<script.*?</script>","",b,flags=re.S)
+    # an interactive calculator is meaningless on paper: drop the whole section
+    b=re.sub(r'<section id="calc">.*?</section>',"",b,flags=re.S)
     i=b.find("<div class='dis'")
     if i<0: i=b.find('<div class="dis"')
     if i>=0:

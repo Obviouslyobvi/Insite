@@ -48,6 +48,19 @@ h3{font-size:17px;color:var(--navy);margin:0 0 6px 0}
 footer{background:#fff;color:#5b6a78;font-size:12.5px;padding:34px 0;border-top:2px solid var(--navy)}
 footer a{color:var(--green)}
 .src{color:var(--slate);font-size:12px}
+
+.grid{display:grid;gap:22px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);padding:20px}
+.calc{background:var(--light);border:1px solid var(--line);padding:22px}
+.field label{display:block;font-size:13px;color:var(--navy);font-weight:bold;margin-bottom:4px}
+.field input{width:100%;padding:9px;border:1px solid var(--line);font-size:15px}
+.field small{display:block;color:var(--slate);font-size:11.5px;margin-top:3px}
+.res{background:#fff;border:1px solid var(--line);padding:16px}
+.res h3{border-bottom:2px solid var(--green);padding-bottom:4px}
+.res .big{font-size:24px;font-weight:bold;color:var(--navy)}
+.res .sub{font-size:12.5px;color:var(--slate)}
+@media(max-width:820px){.g2{grid-template-columns:1fr}}
 </style></head><body id='top'>
 <div class='prelaunch'>PRE-LAUNCH PROGRAM CONCEPT &middot; SUBJECT TO ISSUER APPROVAL, BOND COUNSEL REVIEW, AND PROGRAM UNDERWRITING</div>
 <header>
@@ -86,6 +99,72 @@ footer a{color:var(--green)}
 <img src='assets_ins002_factors.png' alt='Five developer capacity factors: 1 development experience, 2 contractor licensing and standing, 3 project budget, 4 construction financing, 5 entitlement and permit status. These factors help ensure the developer has the capability, resources, and approvals necessary to successfully complete the project.' style='width:100%;max-width:900px;height:auto;display:block;margin:18px auto 0;border:1px solid var(--line);background:#fff'/>
 </div></section>
 
+<section id="calc">
+  <div class="wrap">
+    <div class="kicker">Underwriting methodology</div>
+    <h2>How INSITE sizes per-parcel financing.</h2>
+    <p class="lede">Two constraints drive every underwriting decision: the finished lot value of the home being built, and the total annual property tax burden the parcel can carry. Together they cap how much fee financing a parcel can support.</p>
+    <div class="grid g2" style="margin-top:24px">
+      <div class="card">
+        <div class="kicker" style="margin-bottom:6px">Constraint 01</div>
+        <h3 style="margin:0 0 8px 0">Finished lot value</h3>
+        <p style="font-size:14.5px;margin:0 0 10px 0">The finished lot is typically worth <b>20% to 30%</b> of the finished home value. A $1,000,000 home implies a finished lot value between $200,000 and $300,000. That lot value is the collateral floor the financing is sized against.</p>
+        <p style="font-size:14.5px;margin:0">Once the finished lot value is determined, the available financing is sized at <b>one quarter (25%)</b> of that lot value.</p>
+      </div>
+      <div class="card">
+        <div class="kicker" style="margin-bottom:6px">Constraint 02</div>
+        <h3 style="margin:0 0 8px 0">The 2% effective tax ceiling</h3>
+        <p style="font-size:14.5px;margin:0">The combined annual property tax burden, meaning the general 1.125% ad valorem, any existing assessments, and the new INSITE assessment, should not exceed <b>2% of home value</b> per year. INSITE underwrites the new assessment to a rule of thumb of <b>0.50%</b>, leaving headroom under the cap.</p>
+      </div>
+    </div>
+    <p class="src" style="margin-top:14px;text-align:center">After Constraint 01 and Constraint 02 are both calculated, the <b>lesser of the two</b> amounts is the financing available per parcel.</p>
+
+    <div class="kicker" style="margin-top:42px">Per-parcel calculator</div>
+    <h2>Estimate financing capacity per parcel.</h2>
+    <p class="lede">Plug in your project assumptions. The calculator applies both the finished-lot-value collateral floor and the 2% total tax cap to size the supportable per-parcel principal.</p>
+    <div class="calc" style="margin-top:20px">
+      <div class="grid g2">
+        <div>
+          <h3 style="margin:0 0 12px 0">Inputs</h3>
+          <div class="grid" style="gap:14px">
+            <div class="field"><label for="c_home">Finished home value ($)</label><input id="c_home" type="number" value="1000000" step="25000" min="1"/></div>
+            <div class="field"><label for="c_parcels">Number of new parcels</label><input id="c_parcels" type="number" value="50" min="1" max="50"/><small>Program range: 1 to 50</small></div>
+            <div class="field"><label for="c_lotpct">Finished lot value (% of home, 20 to 30)</label><input id="c_lotpct" type="number" value="23" step="1" min="1" max="100"/></div>
+          </div>
+          <div class="note" style="margin-top:16px">
+            <b>Assumptions</b><br/>
+            Finished lot value: 20% to 30% of home value.<br/>
+            INSITE new assessment rate: 0.50% of home value per year.<br/>
+            30-year tax assessment basis at 5.75%.
+          </div>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px 0">Results</h3>
+          <div class="res" style="border-top:4px solid var(--green)">
+            <div class="kicker" style="margin-bottom:4px">Financing per parcel</div>
+            <div class="big" id="c_perparcel">$0</div>
+            <div class="sub">Lesser of Constraint 01 and Constraint 02.</div>
+          </div>
+          <div class="res" style="border-top:4px solid var(--navy);margin-top:14px">
+            <div class="kicker" style="margin-bottom:4px">Total project financing</div>
+            <div class="big" id="c_total">$0</div>
+            <div class="sub" id="c_totalsub">Across 0 parcels.</div>
+          </div>
+          <table style="width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px;background:#fff;border:1px solid var(--line)">
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Finished lot value</b><br/><span style="color:var(--slate);font-size:12px" id="c_lotnote">23% of finished home value</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_lotvalue">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Lot-based financing (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c1">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Tax-supported financing</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c2">$0</td></tr>
+            <tr><td style="padding:10px 14px"><b>Annual assessment per parcel</b><br/><span style="color:var(--slate);font-size:12px" id="c_annualnote">Amortized over 30 years</span></td><td style="padding:10px 14px;text-align:right;font-weight:bold;white-space:nowrap" id="c_annual">$0</td></tr>
+          </table>
+          <p class="src" style="margin-top:12px">Illustrative only. Final sizing depends on issuer policy, market conditions, debt-service coverage, and reserve requirements.</p>
+        </div>
+      </div>
+    </div>
+      <div class="note warn" style="margin-top:16px"><b>Read the fine print you'd want us to read to you.</b> The land-secured path is not free money: it shifts the fee cost into an annual special tax that the project's future homeowners pay over the note term, and you pay it yourself on any lot you still own each year. The sizing above shows exactly what that annual assessment is. Values marked as targets or founder estimates are not commitments.</div>
+      <p class="src" id="formula"></p>
+  </div>
+</section>
+
 <section><div class='wrap'>
 <div class='kicker'>The fine print, in plain words</div>
 <h2>Two things to know before you apply.</h2>
@@ -100,4 +179,43 @@ footer a{color:var(--green)}
 INSITE&#8482; is a pre-launch program concept administered by HGF Management Company. This page is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Average California impact fee basis: Franchise Tax Board estimate of approximately $33,500 per new single-family home (January 2019 report), inflation-adjusted to approximately $40,000, per program founder direction of August 2, 2026. Qualification standards summarized from Publication INS-002, Program Overview for Participating Public Agencies, sections 4.2 (Project Qualification) and Financial &amp; Underwriting Requirements. Figures identified as targets or estimates are the founder's working numbers, not commitments.<br><br>
 <a href='index.html'>Home</a> &middot; <a href='developers.html'>Developers</a> &middot; <a href='developer_application.html'>Apply</a> &middot; <a href='fee_estimator.html'>Fee Estimator</a> &middot; 
 </div></footer>
+<script>
+// Per-parcel sizing, ported from the program's underwriting methodology.
+// Constraint 01: financing = 25% of finished lot value.
+// Constraint 02: financing = present value of a 0.50%-of-home-value annual
+// assessment, amortized at 5.75% over 30 years. The lesser of the two governs.
+var RATE=0.0575, TERM=30, LOT_ADVANCE=0.25, ASSESS=0.005;
+var AF=(1-Math.pow(1+RATE,-TERM))/RATE;
+function money(x){x=Math.round(x);return '$'+String(x).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+function num(id){return +document.getElementById(id).value||0;}
+function render(){
+  var home=num('c_home'), parcels=num('c_parcels'), lotpct=num('c_lotpct');
+  var lotValue=home*lotpct/100;
+  var c1=lotValue*LOT_ADVANCE;
+  var c2=home*ASSESS*AF;
+  var per=Math.min(c1,c2);
+  var annual=per/AF;
+  document.getElementById('c_perparcel').textContent=money(per);
+  document.getElementById('c_total').textContent=money(per*parcels);
+  document.getElementById('c_totalsub').textContent='Across '+parcels+' parcel'+(parcels===1?'':'s')+'.';
+  document.getElementById('c_lotvalue').textContent=money(lotValue);
+  document.getElementById('c_lotnote').textContent=lotpct+'% of finished home value';
+  document.getElementById('c_c1').textContent=money(c1);
+  document.getElementById('c_c2').textContent=money(c2);
+  document.getElementById('c_annual').textContent=money(annual);
+  document.getElementById('formula').textContent=
+    'Run the numbers: finished lot value = home value x lot percent = '+money(lotValue)+
+    '. Constraint 01 = 25% of that lot value = '+money(c1)+
+    '. Constraint 02 = the present value of an annual assessment set at 0.50% of home value ('+money(home*ASSESS)+
+    ' per year), amortized at 5.75% over 30 years, an annuity factor of '+AF.toFixed(5)+', which is '+money(c2)+
+    '. Financing per parcel is the lesser of the two = '+money(per)+
+    '. Total project = per parcel x parcels. Annual assessment = financing per parcel / the annuity factor = '+money(annual)+
+    '. Rounding to whole dollars.';
+  document.getElementById('c_annualnote').textContent=
+    (home>0?(annual/home*100).toFixed(3)+'% of home value, ':'')+'5.75% amortized over 30 years';
+}
+['c_home','c_parcels','c_lotpct'].forEach(function(id){
+  document.getElementById(id).addEventListener('input',render);});
+render();
+</script>
 </body></html>
