@@ -2,28 +2,34 @@
 """
 build_logo.py - regenerates the INSITE parcel-grid logo assets.
 
-The mark is a 5-column by 4-row parcel grid: 20 cells.
-Source of truth for the layout is Dennis's brand artifact (Header_2), measured
-by pixel analysis July 31, 2026: 20 discrete blocks, three green, two outline-only.
+The mark is a 6-column by 4-row parcel grid: 24 cells.
+Source of truth is the founder's reference artwork supplied August 13, 2026 and
+measured by pixel analysis: 24 discrete blocks, seven green, two outline-only.
 
 Layout, 1-indexed (row, col):
-  green cells   : (2,4) (3,3) (3,4)
-  outline cells : (4,4) (4,5)
+  green cells   : (2,4) (2,5) (2,6) (3,2) (3,5) (3,6)
+  outline cells : (4,5) (4,6)
   every other cell is a filled navy square.
 
-Palette is the canonical brand palette documented in INS-001 Brand Standards
-and in 04_BRAND/INSITE_Brand_Kit.html: navy #153A5B, green #3E7C59.
+Palette is measured from that same artwork: navy #1A3E6C, green #8DB87A. These
+differ from the INS-001 Brand Standards palette (#153A5B, #3E7C59), and the 6x4
+grid differs from the 5x4 grid shown in INS-001 and in Header_2.png. The founder
+directed the change; the discrepancy is recorded in the build log, not resolved.
+The tagline is Slate Gray #6B7280 from INS-001, not the #B3B4B3 measured in the
+reference, which renders at 2.2:1 on white and fails the contrast gate.
 """
 
 import os
 
-NAVY = "#153A5B"
-GREEN = "#3E7C59"
+NAVY = "#1A3E6C"
+GREEN = "#8DB87A"
 GREEN_LIGHT = "#9fd0b4"   # reversed-edition tagline / green cells on navy
+TAGLINE_GRAY = "#6B7280"  # INS-001 Slate Gray
 
-ROWS, COLS = 4, 5
-GREEN_CELLS = {(2, 4), (3, 3), (3, 4)}
-OUTLINE_CELLS = {(4, 4), (4, 5)}
+ROWS, COLS = 4, 6
+GREEN_CELLS = {(2, 4), (2, 5), (2, 6), (3, 2), (3, 5), (3, 6)}
+OUTLINE_CELLS = {(4, 5), (4, 6)}
+OUTLINE_FILL = "#ECF4FC"
 
 
 def grid(x0, y0, cell, gap, fill_navy, fill_green, stroke):
@@ -38,7 +44,7 @@ def grid(x0, y0, cell, gap, fill_navy, fill_green, stroke):
                 out.append(
                     f'<rect x="{x + inset}" y="{y + inset}" '
                     f'width="{cell - 2 * inset}" height="{cell - 2 * inset}" '
-                    f'fill="none" stroke="{stroke}" stroke-width="{inset * 2}"/>'
+                    f'fill="{OUTLINE_FILL}" stroke="{stroke}" stroke-width="{inset * 2}"/>'
                 )
             else:
                 fill = fill_green if (r, c) in GREEN_CELLS else fill_navy
@@ -77,7 +83,7 @@ def lockup_svg(reversed_edition=False):
     else:
         bg = '<rect width="1560" height="360" fill="#ffffff"/>'
         cell_navy, cell_green, stroke = NAVY, GREEN, NAVY
-        word, tag, rule = NAVY, GREEN, NAVY
+        word, tag, rule = NAVY, TAGLINE_GRAY, NAVY
 
     tx = x0 + gw + 41                            # wordmark start, was 360
     return (
@@ -91,11 +97,11 @@ def lockup_svg(reversed_edition=False):
         + f'<text x="{tx + 492}" y="128" fill="{word}" font-size="34">&#8482;</text>'
         + f'<line x1="930" y1="80" x2="930" y2="284" stroke="{rule}" stroke-width="3"/>'
         + f'<text x="975" y="160" fill="{tag}" font-size="42" letter-spacing="3" '
-          f'font-weight="bold" textLength="550" lengthAdjust="spacingAndGlyphs">'
-          f'DEVELOPMENT IMPACT FEE</text>'
+          f'font-weight="bold" textLength="330" lengthAdjust="spacingAndGlyphs">'
+          f'DEVELOPMENT IMPACT &amp;</text>'
         + f'<text x="975" y="222" fill="{tag}" font-size="42" letter-spacing="3" '
-          f'font-weight="bold" textLength="475" lengthAdjust="spacingAndGlyphs">'
-          f'FINANCING PROGRAM</text>'
+          f'font-weight="bold" textLength="560" lengthAdjust="spacingAndGlyphs">'
+          f'SCHOOL FEE FINANCING PROGRAM</text>'
         + "</svg>"
     )
 
@@ -104,10 +110,10 @@ def inline_masthead_svg():
     """The compact inline lockup used in page mastheads and print briefs.
     Transparent background so it sits on the navy header without a white plaque."""
     cell, gap = 40, 8
-    gw = COLS * cell + (COLS - 1) * gap          # 232
+    gw = COLS * cell + (COLS - 1) * gap          # 280 at six columns
     tx = gw + 34
     return (
-        "<svg width='179' height='46' viewBox='-26 -18 858 220' "
+        "<svg width='179' height='46' viewBox='-26 -18 906 220' "
         "xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'>"
         + grid(0, 0, cell, gap, NAVY, GREEN, NAVY)
         + f"<text x='{tx}' y='138' font-family='Helvetica,Arial,sans-serif' "

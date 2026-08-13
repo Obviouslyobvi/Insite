@@ -41,23 +41,33 @@ def body_of(name):
     return b
 
 
+MARK_PATTERN = ["NNNNNN", "NNNGGG", "NGNNGG", "NNNNOO"]
+MARK_NAVY   = "#1A3E6C"
+MARK_GREEN  = "#8DB87A"
+MARK_OUTLINE_STROKE = "#6A727D"
+MARK_OUTLINE_FILL   = "#ECF4FC"
+TAGLINE_GRAY = "#6B7280"
+
+
 def title_logo_svg():
-    """Stacked primary logo per INS-001: 20-cell mark over INSITE over tagline. Navy/green on white."""
+    """Stacked primary logo: 24-cell mark (6 across, 4 down) over INSITE over the
+    two-line tagline. Grid, colours and cell order measured from the founder's
+    reference artwork, August 13, 2026. Tagline is Slate Gray per INS-001."""
     cells=[]
-    for r in range(4):
-        for c in range(5):
+    for r,row in enumerate(MARK_PATTERN):
+        for c,ch in enumerate(row):
             x,y=c*58,r*58
-            if (r,c) in ((3,3),(3,4)):
-                cells.append(f"<rect x='{x+3}' y='{y+3}' width='44' height='44' fill='none' stroke='#153A5B' stroke-width='6'/>")
+            if ch=='O':
+                cells.append(f"<rect x='{x+3}' y='{y+3}' width='44' height='44' fill='{MARK_OUTLINE_FILL}' stroke='{MARK_OUTLINE_STROKE}' stroke-width='6'/>")
             else:
-                fill='#3E7C59' if (r,c) in ((1,3),(2,2),(2,3)) else '#153A5B'
+                fill=MARK_GREEN if ch=='G' else MARK_NAVY
                 cells.append(f"<rect x='{x}' y='{y}' width='50' height='50' fill='{fill}'/>")
-    return ("<svg width='230' height='300' viewBox='0 0 282 372' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'>"
+    return ("<svg width='268' height='300' viewBox='0 0 340 372' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'>"
             +"".join(cells)
-            +"<text x='141' y='300' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='64' letter-spacing='6' fill='#153A5B'>INSITE</text>"
-            +"<text x='266' y='252' font-family='Helvetica,Arial,sans-serif' font-size='18' fill='#153A5B'>&#8482;</text>"
-            +"<text x='141' y='334' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='#3E7C59'>DEVELOPMENT IMPACT FEE</text>"
-            +"<text x='141' y='356' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='#3E7C59'>FINANCING PROGRAM</text>"
+            +f"<text x='170' y='300' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='64' letter-spacing='6' fill='{MARK_NAVY}'>INSITE</text>"
+            +f"<text x='295' y='252' font-family='Helvetica,Arial,sans-serif' font-size='18' fill='{MARK_NAVY}'>&#8482;</text>"
+            +f"<text x='170' y='334' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='{TAGLINE_GRAY}'>DEVELOPMENT IMPACT &amp;</text>"
+            +f"<text x='170' y='356' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='{TAGLINE_GRAY}'>SCHOOL FEE FINANCING PROGRAM</text>"
             +"</svg>")
 
 def field(label, note=""):
@@ -68,7 +78,7 @@ def check(label):
     return f"<div class='pchk'><span class='box'></span>{label}</div>"
 
 
-NAV_SVG = """<svg width='179' height='46' viewBox='-26 -18 858 220' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'><rect x='0' y='0' width='40' height='40' fill='#153A5B'/><rect x='48' y='0' width='40' height='40' fill='#153A5B'/><rect x='96' y='0' width='40' height='40' fill='#153A5B'/><rect x='144' y='0' width='40' height='40' fill='#153A5B'/><rect x='192' y='0' width='40' height='40' fill='#153A5B'/><rect x='0' y='48' width='40' height='40' fill='#153A5B'/><rect x='48' y='48' width='40' height='40' fill='#153A5B'/><rect x='96' y='48' width='40' height='40' fill='#153A5B'/><rect x='144' y='48' width='40' height='40' fill='#3E7C59'/><rect x='192' y='48' width='40' height='40' fill='#153A5B'/><rect x='0' y='96' width='40' height='40' fill='#153A5B'/><rect x='48' y='96' width='40' height='40' fill='#153A5B'/><rect x='96' y='96' width='40' height='40' fill='#3E7C59'/><rect x='144' y='96' width='40' height='40' fill='#3E7C59'/><rect x='192' y='96' width='40' height='40' fill='#153A5B'/><rect x='0' y='144' width='40' height='40' fill='#153A5B'/><rect x='48' y='144' width='40' height='40' fill='#153A5B'/><rect x='96' y='144' width='40' height='40' fill='#153A5B'/><rect x='146' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><rect x='194' y='146' width='36' height='36' fill='none' stroke='#153A5B' stroke-width='4'/><text x='266' y='138' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='120' letter-spacing='8' fill='#153A5B'>INSITE</text><text x='734' y='44' font-family='Helvetica,Arial,sans-serif' font-size='36' fill='#153A5B'>&#8482;</text></svg>"""
+NAV_SVG = """<svg width='179' height='46' viewBox='-26 -18 906 220' xmlns='http://www.w3.org/2000/svg' aria-label='INSITE'><rect x="0" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="48" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="96" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="144" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="192" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="240" y="0" width="40" height="40" fill="#1A3E6C"/><rect x="0" y="48" width="40" height="40" fill="#1A3E6C"/><rect x="48" y="48" width="40" height="40" fill="#1A3E6C"/><rect x="96" y="48" width="40" height="40" fill="#1A3E6C"/><rect x="144" y="48" width="40" height="40" fill="#8DB87A"/><rect x="192" y="48" width="40" height="40" fill="#8DB87A"/><rect x="240" y="48" width="40" height="40" fill="#8DB87A"/><rect x="0" y="96" width="40" height="40" fill="#1A3E6C"/><rect x="48" y="96" width="40" height="40" fill="#8DB87A"/><rect x="96" y="96" width="40" height="40" fill="#1A3E6C"/><rect x="144" y="96" width="40" height="40" fill="#1A3E6C"/><rect x="192" y="96" width="40" height="40" fill="#8DB87A"/><rect x="240" y="96" width="40" height="40" fill="#8DB87A"/><rect x="0" y="144" width="40" height="40" fill="#1A3E6C"/><rect x="48" y="144" width="40" height="40" fill="#1A3E6C"/><rect x="96" y="144" width="40" height="40" fill="#1A3E6C"/><rect x="144" y="144" width="40" height="40" fill="#1A3E6C"/><rect x="194" y="146" width="36" height="36" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="4"/><rect x="242" y="146" width="36" height="36" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="4"/><text x='314' y='138' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='120' letter-spacing='8' fill='#1A3E6C'>INSITE</text><text x='782' y='44' font-family='Helvetica,Arial,sans-serif' font-size='36' fill='#1A3E6C'>&#8482;</text></svg>"""
 
 NAV_LINKS=[("index.html","Home"),
            ("developers.html","Developers"),
