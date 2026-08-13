@@ -97,7 +97,7 @@ FORM = f"""
 {field('Project name')}
 {field('Jurisdiction','Name the city OR the county, e.g. Sacramento City, or Sacramento County unincorporated')}
 {field('Number of lots')}
-{field('Lot status','Raw, mapped, entitled, or permits in hand')}
+{field('Lot status','Raw land, tentative map, final map, entitled, or permits in hand')}
 {field('Estimated public impact fees ($)')}
 </div>
 <h3 style='margin-top:18px'>Check what you can attach today</h3>
