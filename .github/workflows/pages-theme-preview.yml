@@ -1,8 +1,14 @@
-name: Publish themed site to GitHub Pages
+name: Publish themed site to gh-pages
 
-# Publishes ONLY 05_WEBSITE/theme_insite_ca/ — the insite-ca.org-themed copy of
-# the site. Nothing else in the repository is uploaded, so the program package
-# (evidence register, red-team memo, build log, quarantine) is never served.
+# Keeps the gh-pages branch in sync with 05_WEBSITE/theme_insite_ca/, the
+# insite-ca.org-themed copy of the site. GitHub Pages serves that branch.
+#
+# This pushes to a branch rather than using actions/deploy-pages because the
+# repository's Pages source is "Deploy from a branch". deploy-pages only works
+# when the source is "GitHub Actions", and would fail on every run here.
+#
+# Only the themed website folder is published. The rest of the program package
+# (evidence register, red-team memo, build log, quarantine) is never uploaded.
 
 on:
   push:
@@ -13,27 +19,22 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: publish-gh-pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Stage the site
         # Copy the themed folder only, minus the QC screenshots and the build
-        # notes, which are internal and add ~12 MB to the upload.
+        # notes, which are internal and add ~12 MB to the branch.
         run: |
           mkdir -p _site
           cp -r 05_WEBSITE/theme_insite_ca/. _site/
@@ -42,16 +43,16 @@ jobs:
           echo "Publishing $(find _site -type f | wc -l) files:"
           find _site -type f | sort
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Push to gh-pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd _site
+          git init -q
+          git checkout -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Publish themed site from ${GITHUB_SHA:0:7}"
+          git push -f "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          echo "Published to gh-pages. Live at https://obviouslyobvi.github.io/Insite/"
