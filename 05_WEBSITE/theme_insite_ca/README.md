@@ -21,6 +21,13 @@ treatment.
 Links between pages are all relative, so the folder works opened straight from disk
 (`file://`) or served from any static host. There are no CDN dependencies.
 
+## The logo is not themed
+
+The INSITE mark keeps its own navy `#1A3E6C`, green `#8DB87A`, and grey tagline exactly as
+in the original. It is brand identity, not site chrome. The build skips every `<svg>`
+element wholesale, so all 11 logo instances are byte-identical to the originals and no
+future palette change can reach them.
+
 ## Theme source
 
 Tokens were lifted verbatim from `https://insite-ca.org/assets/styles-BOjQD-ta.css`
@@ -29,6 +36,8 @@ falls back to system UI fonts; this copy self-hosts Inter instead, which keeps t
 offline-capable and renders the intended typeface consistently.
 
 ## Color mapping
+
+Applied to site chrome only — never inside the logo.
 
 | Role | Original site | insite-ca.org token | New value |
 |---|---|---|---|
@@ -40,8 +49,8 @@ offline-capable and renders the intended typeface consistently.
 | Warning rule | `#B45309` | `--chart-1` | `#F05100` |
 | Pre-launch notice bar | `#7A4A12` | `--foreground` | `#101828` |
 
-The logo mark was recolored to the same palette (tiles `#101828`, accent tiles `#0964F8`)
-so it sits correctly against the new theme.
+The `--navy` and `--green` variable names are kept so the diff against the original stays
+readable; only their values changed.
 
 ## Presentation changes
 
