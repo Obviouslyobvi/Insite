@@ -83,7 +83,7 @@ This package is the foundation of the appraisal (performed under the program's a
 | Required document | Provided | Comments |
 |---|---|---|
 | Development impact fee schedule | ☐ | |
-| School fee schedule (collected for burden analysis; school fees are not financed at launch) | ☐ | |
+| School fee schedule (collected for burden analysis; school fees are not paid by the program at launch) | ☐ | |
 | Utility connection fees | ☐ | |
 | Park fees | ☐ | |
 | Traffic impact fees | ☐ | |
