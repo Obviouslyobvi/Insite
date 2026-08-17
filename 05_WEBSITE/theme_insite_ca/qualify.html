@@ -206,14 +206,14 @@ footer a{color:var(--primary)}
 <section id="calc">
   <div class="wrap">
     <div class="kicker">Underwriting methodology</div>
-    <h2>How INSITE sizes per-parcel financing.</h2>
-    <p class="lede">Two constraints drive every underwriting decision: the finished lot value of the home being built, and the total annual property tax burden the parcel can carry. Together they cap how much fee financing a parcel can support.</p>
+    <h2>How INSITE sizes the amount per parcel.</h2>
+    <p class="lede">Two constraints drive every underwriting decision: the finished lot value of the home being built, and the total annual property tax burden the parcel can carry. Together they cap how much of the fees a parcel can support.</p>
     <div class="grid g2" style="margin-top:24px">
       <div class="card">
         <div class="kicker" style="margin-bottom:6px">Constraint 01</div>
         <h3 style="margin:0 0 8px 0">Finished lot value</h3>
-        <p style="font-size:14.5px;margin:0 0 10px 0">The finished lot is typically worth <b>20% to 30%</b> of the finished home value. A $1,000,000 home implies a finished lot value between $200,000 and $300,000. That lot value is the collateral floor the financing is sized against.</p>
-        <p style="font-size:14.5px;margin:0">Once the finished lot value is determined, the available financing is sized at <b>one quarter (25%)</b> of that lot value.</p>
+        <p style="font-size:14.5px;margin:0 0 10px 0">The finished lot is typically worth <b>20% to 30%</b> of the finished home value. A $1,000,000 home implies a finished lot value between $200,000 and $300,000. That lot value is the collateral floor the amount is sized against.</p>
+        <p style="font-size:14.5px;margin:0">Once the finished lot value is determined, the amount available is sized at <b>one quarter (25%)</b> of that lot value.</p>
       </div>
       <div class="card">
         <div class="kicker" style="margin-bottom:6px">Constraint 02</div>
@@ -221,11 +221,11 @@ footer a{color:var(--primary)}
         <p style="font-size:14.5px;margin:0">The combined annual property tax burden, meaning the general 1.125% ad valorem, any existing assessments, and the new INSITE assessment, should not exceed <b>2% of home value</b> per year. INSITE underwrites the new assessment to a rule of thumb of <b>0.50%</b>, leaving headroom under the cap.</p>
       </div>
     </div>
-    <p class="src" style="margin-top:14px;text-align:center">After Constraint 01 and Constraint 02 are both calculated, the <b>lesser of the two</b> amounts is the financing available per parcel.</p>
+    <p class="src" style="margin-top:14px;text-align:center">After Constraint 01 and Constraint 02 are both calculated, the <b>lesser of the two</b> amounts is the amount available per parcel.</p>
 
     <div class="kicker" style="margin-top:42px">Per-parcel calculator</div>
-    <h2>Estimate financing capacity per parcel.</h2>
-    <p class="lede">Plug in your project assumptions. The calculator applies both the finished-lot-value collateral floor and the 2% total tax cap to size the supportable per-parcel principal.</p>
+    <h2>Estimate the amount available per parcel.</h2>
+    <p class="lede">Plug in your project assumptions. The calculator applies both the finished-lot-value collateral floor and the 2% total tax cap to size the supportable amount per parcel.</p>
     <div class="calc" style="margin-top:20px">
       <div class="grid g2">
         <div>
@@ -245,19 +245,19 @@ footer a{color:var(--primary)}
         <div>
           <h3 style="margin:0 0 12px 0">Results</h3>
           <div class="res" style="border-top:1px solid var(--line)">
-            <div class="kicker" style="margin-bottom:4px">Financing per parcel</div>
+            <div class="kicker" style="margin-bottom:4px">Fees paid per parcel</div>
             <div class="big" id="c_perparcel">$0</div>
             <div class="sub">Lesser of Constraint 01 and Constraint 02.</div>
           </div>
           <div class="res" style="border-top:1px solid var(--line);margin-top:14px">
-            <div class="kicker" style="margin-bottom:4px">Total project financing</div>
+            <div class="kicker" style="margin-bottom:4px">Total for the project</div>
             <div class="big" id="c_total">$0</div>
             <div class="sub" id="c_totalsub">Across 0 parcels.</div>
           </div>
           <table style="width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px;background:#fff;border:1px solid var(--line)">
             <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Finished lot value</b><br/><span style="color:var(--slate);font-size:12px" id="c_lotnote">23% of finished home value</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_lotvalue">$0</td></tr>
-            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Lot-based financing (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c1">$0</td></tr>
-            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Tax-supported financing</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c2">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Lot-based amount (25% of lot)</b><br/><span style="color:var(--slate);font-size:12px">Constraint 01</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c1">$0</td></tr>
+            <tr><td style="padding:10px 14px;border-bottom:1px solid var(--line)"><b>Tax-supported amount</b><br/><span style="color:var(--slate);font-size:12px">Constraint 02, 0.50% assessment, 30 years</span></td><td style="padding:10px 14px;border-bottom:1px solid var(--line);text-align:right;font-weight:bold;white-space:nowrap" id="c_c2">$0</td></tr>
             <tr><td style="padding:10px 14px"><b>Annual assessment per parcel</b><br/><span style="color:var(--slate);font-size:12px" id="c_annualnote">Amortized over 30 years</span></td><td style="padding:10px 14px;text-align:right;font-weight:bold;white-space:nowrap" id="c_annual">$0</td></tr>
           </table>
           <p class="src" style="margin-top:12px">Illustrative only. Final sizing depends on issuer policy, market conditions, debt-service coverage, and reserve requirements.</p>
@@ -273,8 +273,8 @@ footer a{color:var(--primary)}
 <div class='kicker'>The fine print, in plain words</div>
 <h2>Two things to know before you apply.</h2>
 <div class='honest'><b>Ownership.</b> You need legal title, contractual authority, or the written consent of every required property owner. If you're in escrow, that can work; tell us where you stand.</div>
-<div class='honest'><b>Qualification is not a commitment.</b> Qualifying means your project passes the program's review and goes to the public agency. Final participation depends on agency approval, completion of the required legal proceedings, satisfaction of financing requirements, and availability of capital. Nobody can promise you the money before those happen, and anyone who does is selling you something.</div>
-<div class='note warn'>What can be financed: eligible public development impact fees, plus certain acquisition and incidental financing costs where the CFD formation documents, the public agency, and applicable law allow it. School facilities fees are excluded at program launch.</div>
+<div class='honest'><b>Qualification is not a commitment.</b> Qualifying means your project passes the program's review and goes to the public agency. Final participation depends on agency approval, completion of the required legal proceedings, satisfaction of program requirements, and availability of capital. Nobody can promise you the money before those happen, and anyone who does is selling you something.</div>
+<div class='note warn'>What gets paid: eligible public development impact fees, plus certain acquisition and incidental costs where the CFD formation documents, the public agency, and applicable law allow it. School facilities fees are excluded at program launch.</div>
 <p class='punch'>Clear the three numbers, fit a project type, own your dirt. That's qualification.</p>
 <p><a class='btn alt' href='developer_application.html'>Apply now</a> &nbsp; <a class='btn' href='developers.html'>Back to the developer page</a></p>
 </div></section>
@@ -312,8 +312,8 @@ function render(){
     '. Constraint 01 = 25% of that lot value = '+money(c1)+
     '. Constraint 02 = the present value of an annual assessment set at 0.50% of home value ('+money(home*ASSESS)+
     ' per year), amortized at 5.75% over 30 years, an annuity factor of '+AF.toFixed(5)+', which is '+money(c2)+
-    '. Financing per parcel is the lesser of the two = '+money(per)+
-    '. Total project = per parcel x parcels. Annual assessment = financing per parcel / the annuity factor = '+money(annual)+
+    '. The amount per parcel is the lesser of the two = '+money(per)+
+    '. Total project = per parcel x parcels. Annual assessment = the amount per parcel / the annuity factor = '+money(annual)+
     '. Rounding to whole dollars.';
   document.getElementById('c_annualnote').textContent=
     (home>0?(annual/home*100).toFixed(3)+'% of home value, ':'')+'5.75% amortized over 30 years';
