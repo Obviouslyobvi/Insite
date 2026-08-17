@@ -13,7 +13,7 @@ INS-011, the Program Whitepaper: the flagship document that explains the entire 
 ## Defaults applied, because the question batch is still open
 
 1. **Built fresh, not salvaged.** The quarantined draft found during verification is ignored. If Dennis prefers salvage, this fresh version becomes the benchmark to compare against, so nothing is wasted.
-2. **The word "School" is dropped from the program name.** It reads "INSITE Development Impact Fee Financing Program" throughout. School fees appear once, explicitly excluded at launch. One find-and-replace restores the word if Dennis overrules.
+2. **The word "School" is dropped from the program name.** It reads "INSITE Development Impact Fee Payment Program" throughout. School fees appear once, explicitly excluded at launch. One find-and-replace restores the word if Dennis overrules.
 3. **The pilot is described generically:** a small finished-lot subdivision in the Sacramento area. No lot count, no city name, no dates, until Dennis clears specifics.
 4. **The company is HGF Management Company** everywhere. If a new legal entity is chosen, it is one swap and a rebuild.
 5. **Consultant seats are labeled "selection in progress."** No firm names appear until Dennis picks them.

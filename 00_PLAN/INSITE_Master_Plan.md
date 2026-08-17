@@ -1,6 +1,6 @@
 # INSITE(TM) Master Build Plan
 
-**Development Impact & Public Improvement Fee Financing Program**
+**Development Impact & Public Improvement Fee Payment Program**
 
 | | |
 |---|---|

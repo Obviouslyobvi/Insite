@@ -20,7 +20,7 @@ All 158 candidates were rerun against the .org registry of record (Public Intere
 
 ## How they were judged
 
-Five tests, in order of weight: does it sound credible to a city finance director and a bank (institutional weight); does it make sense standing next to "Development Impact Fee Financing Program" (clarity); does it survive being said once over the phone (spelling); does it collide with anyone (screened at the knowledge level, with web checks on the top three); and does it travel beyond California (breadth).
+Five tests, in order of weight: does it sound credible to a city finance director and a bank (institutional weight); does it make sense standing next to "Development Impact Fee Payment Program" (clarity); does it survive being said once over the phone (spelling); does it collide with anyone (screened at the knowledge level, with web checks on the top three); and does it travel beyond California (breadth).
 
 ## Tier one: present these to Dennis
 

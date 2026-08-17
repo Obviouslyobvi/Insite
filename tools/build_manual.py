@@ -67,7 +67,7 @@ def title_logo_svg():
             +f"<text x='170' y='300' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-weight='bold' font-size='64' letter-spacing='6' fill='{MARK_NAVY}'>INSITE</text>"
             +f"<text x='295' y='252' font-family='Helvetica,Arial,sans-serif' font-size='18' fill='{MARK_NAVY}'>&#8482;</text>"
             +f"<text x='170' y='334' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='{TAGLINE_GRAY}'>DEVELOPMENT IMPACT &amp;</text>"
-            +f"<text x='170' y='356' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='{TAGLINE_GRAY}'>SCHOOL FEE FINANCING PROGRAM</text>"
+            +f"<text x='170' y='356' text-anchor='middle' font-family='Helvetica,Arial,sans-serif' font-size='15' letter-spacing='1.5' fill='{TAGLINE_GRAY}'>SCHOOL FEE PAYMENT PROGRAM</text>"
             +"</svg>")
 
 def field(label, note=""):

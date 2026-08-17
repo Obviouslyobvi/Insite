@@ -1,6 +1,6 @@
 # INS-008: Program Whitepaper
 
-**INSITE(TM) Development Impact Fee Financing Program**
+**INSITE(TM) Development Impact Fee Payment Program**
 **Land-secured financing of development impact fees and public improvements for small residential subdivisions in California**
 
 Prepared for Dennis Lanni | HGF Management Company | July 2026 | Pre-launch draft v1.1, placeholder edition

@@ -1,6 +1,6 @@
 # INS-201: Developer Data Package Checklist
 
-**INSITE(TM) Development Impact Fee Financing Program**
+**INSITE(TM) Development Impact Fee Payment Program**
 **The complete submission required before an appraisal assignment is initiated.**
 
 Program Administrator: HGF Management Company | July 2026 | Form version 1.0

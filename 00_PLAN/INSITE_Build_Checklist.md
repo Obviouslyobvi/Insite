@@ -124,7 +124,7 @@ Updated: July 9, 2026 (rev 2: map corrections)
 ## Open items needing Dennis's input [!] (will also appear in the Build Log question batch)
 - [!] Q1 Trademark: proceed with INSITE pending counsel clearance, or clear alternates first?
 - [!] Q2 Domain preference among available options (insiteprogram.com / insitecalifornia.com / insitecfd.com)?
-- [!] Q3 Public naming: "Development Impact & School Fee Financing Program" vs. dropping "School" until school fees are in scope (materials currently drop it)?
+- [!] Q3 Public naming: "Development Impact & School Fee Payment Program" vs. dropping "School" until school fees are in scope (materials currently drop it)?
 - [!] Q4 Pilot facts for external use: can the 27-lot City of Sacramento project be described publicly, and at what specificity?
 - [!] Q5 Entity on external materials: HGF Management Company LLC as-is, or pending NV/CA entity decision?
 - [!] Q6 Consultant selection (INS-005): shortlist and interview the special tax consultant and tax roll administrator (criteria in INS-005), select bond counsel, and confirm the named advisor role and one-page bios for the credibility bench

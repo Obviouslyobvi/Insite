@@ -1,4 +1,4 @@
-# INSITE(TM) Development Impact Fee Financing Program: the build package
+# INSITE(TM) Development Impact Fee Payment Program: the build package
 
 Administered by HGF Management Company | Prepared for Dennis Lanni | July 2026 | Pre-launch
 

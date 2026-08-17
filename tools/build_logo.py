@@ -89,7 +89,7 @@ def lockup_svg(reversed_edition=False):
     return (
         '<svg width="1560" height="360" xmlns="http://www.w3.org/2000/svg" '
         'viewBox="0 0 1560 360" font-family="Helvetica,Arial,sans-serif" '
-        'role="img" aria-label="INSITE Development Impact Fee Financing Program">'
+        'role="img" aria-label="INSITE Development Impact Fee Payment Program">'
         + bg
         + grid(x0, y0, cell, gap, cell_navy, cell_green, stroke)
         + f'<text x="{tx}" y="212" fill="{word}" font-size="132" font-weight="bold" '
@@ -100,8 +100,8 @@ def lockup_svg(reversed_edition=False):
           f'font-weight="bold" textLength="330" lengthAdjust="spacingAndGlyphs">'
           f'DEVELOPMENT IMPACT &amp;</text>'
         + f'<text x="975" y="222" fill="{tag}" font-size="42" letter-spacing="3" '
-          f'font-weight="bold" textLength="560" lengthAdjust="spacingAndGlyphs">'
-          f'SCHOOL FEE FINANCING PROGRAM</text>'
+          f'font-weight="bold" textLength="520" lengthAdjust="spacingAndGlyphs">'
+          f'SCHOOL FEE PAYMENT PROGRAM</text>'
         + "</svg>"
     )
 
