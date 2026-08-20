@@ -158,18 +158,27 @@ site looked like on that date, and useful as a reference for the old page copy.
 
 ---
 
-## Three things left open
+## Decided: the public site does not link to the portal
 
-**No link to the app from the static site yet.** A "Developer Login" item was tried in the
-site nav and backed out: the nav is already at capacity at 1440 px, and a seventh item wraps
-it to a second row, growing the sticky header from 86 px to 145 px on every page. The pages
-are byte-identical to the published site again.
+Developers reach it at `app.insite-ca.org` directly. All 11 pages stay byte-identical to
+what is published at github.io, and no nav copy changes.
 
-Placing it needs a decision. The footer is the natural home and matches wanting it
-understated, but only 5 of the 11 pages carry a `<footer>` element today — `index`,
-`developers`, `investors`, `qualify`, `qualify2` — so putting it there either covers those
-five only, or means adding a footer to the other six. The alternative is shortening an
-existing nav label to make room.
+A "Developer Login" nav item was tried and backed out. The nav has no slack: measured at
+1440 px, the header is 86 px tall, and a seventh item wraps it to a second row at 145 px on
+every page. If this is revisited, these are the combinations that were measured to fit:
+
+| Change | Header height |
+|---|---|
+| "Fee Estimator" → "Fees", add **Login** | 86 px — fits |
+| "Do I Qualify?" → "Qualify", add **Login** | 86 px — fits |
+| Both shortened, add **Developer Login** | 86 px — fits |
+| Labels unchanged, add **Developer Login** | 145 px — wraps |
+
+A footer link is the other route, and needs no nav copy change, but only 5 of the 11 pages
+carry a `<footer>` element today — `index`, `developers`, `investors`, `qualify`,
+`qualify2` — so it would either cover those five or mean adding a footer to the other six.
+
+## Two things left open
 
 **Routes that move.** Anything pointing at the old apex paths needs its link updated to the
 `app.` subdomain — `/login`, `/admin-login`, `/portal`, `/admin`, `/apply`, `/apply/success`,
