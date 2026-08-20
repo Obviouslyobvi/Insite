@@ -76,6 +76,31 @@ TXT value.
 
 ---
 
+## Where things stand — 2026-08-20
+
+Step numbering changed partway through when downtime stopped being a constraint, so track
+progress by this list rather than by the numbers below.
+
+**Done**
+
+- Lovable app source pushed to its own GitHub repository
+- `hello@insite-ca.org` mail routing resolved separately
+- `app.insite-ca.org` added to the **existing** project (`assess-mint-hub`), A record and
+  `_lovable.app` TXT in place at name.com, verified and SSL issued
+
+  It currently 302s to `insite-ca.org`, because the apex is still the project's primary
+  domain. Expected, not a fault. It clears when the apex is removed — see the redirect check
+  in Step 3.
+
+**Not started**
+
+- The **second** Lovable project, holding the static site. This is the gate: nothing else
+  should happen until its `*.lovable.app` preview renders correctly.
+- Supabase redirect allowlist (`https://app.insite-ca.org/**`) — can be done any time
+- The cutover itself
+
+---
+
 ## The one rule that still holds
 
 Downtime is acceptable, so the steps below run in a single sitting rather than waiting for
@@ -92,6 +117,9 @@ open-ended one. Steps 1 and 2 change nothing live, so there is no cost to doing 
 ## Step 1 — Build the new site (nothing live changes)
 
 Touches no DNS and no existing project. Can be done at any time, including right now.
+
+This is a **second, separate Lovable project**, alongside the existing `assess-mint-hub`
+one. The app stays where it is; this new project exists only to serve the static site.
 
 1. Create a second Lovable project, on a paid plan — custom domains are not available on
    the free tier.
