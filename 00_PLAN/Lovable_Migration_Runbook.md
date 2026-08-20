@@ -1,92 +1,65 @@
-# Replacing insite-ca.org with the static site — runbook
+# insite-ca.org — putting the static site on the front door, keeping the app
 
-**Prepared** 2026-08-20
+**Prepared** 2026-08-20 · **Approach:** subdomain split
 
-Goal, in your words: back up what Lovable is hosting, store the backup, delete it from
-Lovable, and put the site from <https://obviouslyobvi.github.io/Insite/> there instead,
-keeping the domain.
+The static site from <https://obviouslyobvi.github.io/Insite/> takes over `insite-ca.org`.
+The existing Lovable app moves to `app.insite-ca.org` and keeps running.
 
-The domain part is easier than expected. The backup part has a hole in it that has to be
-closed before anything gets deleted. Both are explained below.
-
----
-
-## Read this first: what the existing backup does and does not cover
-
-`10_ARCHIVE/insite-ca.org_2026-08-19/` holds 33 files — every public page plus the
-compiled JS/CSS bundle. It is committed and pushed to GitHub, so it is stored off the
-Lovable platform. That much is done.
-
-It is a copy of the **public front end only**. It is not a restorable backup. Four things
-are not in it, and none of them can be captured from outside the platform:
-
-| Not backed up | Where it lives | Recoverable after deletion? |
+| Address | Serves | Lovable project |
 |---|---|---|
-| The Supabase database | Supabase project | **No** |
-| Server-function source | Lovable project | **No** |
-| The editable app source | Lovable project | **No** |
-| Environment secrets (Supabase keys, Airtable creds) | Lovable project settings | **No** |
+| `insite-ca.org`, `www.insite-ca.org` | the new static site | **new** project |
+| `app.insite-ca.org` | developer portal, admin pipeline, tax roll | **existing** project, untouched |
 
-The database is the one that matters. Read out of the shipped bundle, Supabase currently
-holds developer accounts and sessions, the admins table, project submissions, uploaded
-documents, parcels, the ten-stage pipeline, and the Annual Levy Submission records — the
-county tax roll module. Deleting the Lovable project does not by itself delete the
-Supabase project, but it deletes the only application that knows how to read any of it.
+Nothing is deleted. Nothing is rewritten. No database migration, and no security audit —
+the app keeps enforcing its own permissions exactly as it does today.
 
-**So: the site being replaced is not only a marketing site.** Swapping in the static pages
-retires the developer portal, the operations console, the pipeline and the levy module.
-The static site has no equivalent of any of them — its `portal.html` is a gate page with
-no form, no auth and no database behind it.
-
-If that is the intent, fine — this runbook does it. If any of that data or workflow is
-still in use, export it before Step 4, because Step 4 is the irreversible one.
+The cost is that the existing Lovable project stays on a paid plan. That is the trade being
+made, and it buys away every irreversible step in the alternative.
 
 ---
 
-## Step 1 — Close the backup gap
+## Why this beats deleting the app
 
-Only you can do these; they are all behind logins I have no access to.
+Reading the code the live site ships to every browser: the browser never touches the
+database. Not one query. It uses Supabase for sign-in only — `getUser`, `getSession`,
+`onAuthStateChange`, `signOut`.
 
-1. **Export the Supabase database.** Supabase dashboard → your project → Database →
-   Backups, or from a terminal:
-   ```bash
-   supabase db dump -f insite_supabase_2026-08-20.sql --db-url "<connection string>"
-   ```
-   This is the irreplaceable one.
-2. **Get the Lovable app source out.** In the Lovable project: GitHub → Create Repository.
-   That pushes the full editable source to a repo you own, which is the only real backup of
-   the app. Do this **before** deleting — the project is the only copy today.
-3. **Export the Airtable base** behind `/apply` (Airtable → base → Download CSV).
-4. **Copy the environment variables** out of Lovable project settings into your password
-   manager. Supabase URL and keys at minimum.
+Everything else goes through a server function:
 
-Store 1, 3 and 4 somewhere durable. Committing them to this repo is **not** appropriate —
-the SQL dump holds personal data and the env file holds live secrets. A password manager or
-an encrypted drive.
+```js
+const m = r({method:"POST"})
+  .middleware([e])                                 // permission check
+  .handler(a("5995bb8d490f91cfcfaa07e86a6227b3..."));  // logic, server-side
+```
 
----
+That hash is a pointer to code that runs on Lovable's server and was never sent to the
+browser. It is not in `10_ARCHIVE/`, and it cannot be recovered from outside the platform.
+The same is true for submissions, documents, parcels, pipeline stages and the levy module.
 
-## Step 2 — Stand the replacement up first, before deleting anything
+So the app's working half exists in exactly one place. Keeping the project keeps it.
 
-Do not delete, then rebuild. Build the new one alongside, confirm it works, then cut over.
-
-1. Create a new Lovable project.
-2. Connect it to GitHub so it has a repo.
-3. Push the contents of `05_WEBSITE/lovable_site/` into that repo — that folder is this
-   site already packaged with the build config Lovable needs. Its README explains the
-   layout. The build is verified: 11 pages, all links and assets resolving, Inter loading,
-   no console errors, no overflow at 1440 px and 390 px.
-4. Confirm the site works on the project's own `*.lovable.app` preview URL.
-
-Nothing has changed on the live domain at this point, and nothing is deleted.
+It also sidesteps a live hazard. Because permissions are enforced in those server functions,
+the database's own Row Level Security may well be permissive — it never needed to be strict,
+since nothing could reach the database except the server. Wiring static pages directly to
+Supabase without auditing every table first would publish developer records, uploaded
+documents, the admins table and the levy data to anyone who views source. This approach
+never goes near that.
 
 ---
 
-## Step 3 — Move the domain
+## Why `app.` and not `portal.`
 
-The good news: **the DNS records do not need to change.**
+`portal.insite-ca.org` is available, but it collides. The static site already ships
+`portal.html`, and that page is the **Investor Portal** — "Access for capital partners under
+review". The Lovable app's `/portal` is the **Developer Portal** — My Projects, submissions.
 
-Current state, confirmed by lookup on 2026-08-20:
+Two different audiences, one word. Use `app.` and the ambiguity never arises.
+
+---
+
+## Current DNS
+
+Confirmed by lookup, 2026-08-20. Records are held at **name.com**, not by Lovable.
 
 | Record | Value |
 |---|---|
@@ -94,67 +67,116 @@ Current state, confirmed by lookup on 2026-08-20:
 | `www.insite-ca.org` A | `185.158.133.1` |
 | `_lovable.insite-ca.org` TXT | `lovable_verify=8defd88a602bf6d23e4b504c076e24c733619a3e8711e36dbbb5fcaf923673c0` |
 | AAAA | none — good, Lovable requires none |
-| MX | **none** (see the note at the end) |
-| Nameservers | `ns1hwy` / `ns2fln` / `ns3fqs` / `ns4jnz.name.com` |
+| MX | none (see the loose end at the bottom) |
 
-`185.158.133.1` is Lovable's shared edge IP, not an address specific to your project, and
-the records are held at name.com rather than by Lovable. So the A records stay exactly as
-they are, and deleting the project does not touch them.
-
-What has to change is the **domain attachment inside Lovable**, and Lovable will not let the
-same domain sit on two projects at once. That forces this order:
-
-1. Old project → Settings → Domains → remove `insite-ca.org` (and `www`).
-2. New project → Settings → Domains → add `insite-ca.org` (and `www`).
-3. Lovable will issue a **new** `_lovable` TXT verification value. Replace the existing TXT
-   record at name.com with the new one — the value above belongs to the old project and will
-   not verify the new one.
-4. Wait for verification and SSL issuance.
-
-There is a short window between 1 and 4 where the domain serves nothing. It is the only
-unavoidable downtime in the whole exercise, so do this at a quiet hour.
-
-**The new project must be on a paid Lovable plan.** Custom domains are not available on the
-free plan; a free project cannot hold `insite-ca.org` at all.
+`185.158.133.1` is Lovable's **shared** edge IP — every Lovable site resolves there. It is
+not specific to your project, which is why the apex A records never have to change. What
+decides which project answers is the domain attachment inside Lovable, plus the `_lovable`
+TXT value.
 
 ---
 
-## Step 4 — Delete the old project
+## Step 1 — Give the app its new address first
 
-Only once Step 1 is genuinely done and Step 3 is verified serving the new site.
+Do this before touching the apex. The app gains `app.insite-ca.org` while still serving
+`insite-ca.org`, so it is never unreachable.
 
-Lovable project → Settings → Delete project.
+1. Existing Lovable project → Settings → Domains → add `app.insite-ca.org`.
+2. At name.com, add the records Lovable shows you:
+   - **A** record, host `app`, value `185.158.133.1`
+   - **TXT** record, host `_lovable.app`, value the `lovable_verify=...` string Lovable
+     generates for this subdomain — a new one, not the value in the table above
+3. Wait for verification and SSL.
+4. Load `https://app.insite-ca.org`, sign in, confirm the portal works.
 
-This is the irreversible step. After it, the app source, the server functions and the
-secrets are gone. The Supabase project survives unless you delete it separately — leave it
-alone until you are sure you will not need the data.
+Do not continue until that sign-in succeeds.
 
 ---
 
-## What breaks on cutover, and what to do about it
+## Step 2 — Build the new site, still without touching the apex
 
-The two sites do not share URLs. These live paths stop existing:
+1. Create a second Lovable project, on a paid plan.
+2. Connect it to GitHub so it has a repo.
+3. Push the contents of `05_WEBSITE/lovable_site/` into that repo. That folder is the site
+   already packaged with the build config Lovable needs; its README covers the layout.
+   Verified: 11 pages, every link and asset resolving, Inter loading, no console errors, no
+   overflow at 1440 px and 390 px.
+4. Confirm it works on the project's own `*.lovable.app` preview URL.
 
-| Live path today | After the swap |
-|---|---|
-| `/methodology` | gone — nearest is `/fee_estimator.html` |
-| `/apply` | gone — nearest is `/developer_application.html` |
-| `/apply/success` | gone, no equivalent |
-| `/contact` | gone, no equivalent |
-| `/login`, `/admin-login` | gone, no equivalent |
-| `/portal` | **different meaning** — `/portal.html` is the investor gate page, not the developer portal |
-| `/admin`, `/admin/tax-roll`, `/admin/notifications` | gone, no equivalent |
+Still nothing changed on the live domain.
 
-Anything linking to those — bookmarks, email signatures, documents, the Airtable form's
-confirmation — will 404. Worth a redirect pass afterwards if any of them were circulated.
+---
 
-The `/portal` collision is the one that will confuse people rather than just 404: the same
-URL will start serving a page aimed at a completely different audience.
+## Step 3 — Hand the apex over
 
-## One loose end found while checking DNS
+Lovable will not hold the same domain on two projects, so the old project has to let go
+before the new one can take it. This is the only step with downtime, and it only affects the
+apex — `app.insite-ca.org` keeps serving throughout.
 
-There are **no MX records** on insite-ca.org. The live contact page publishes
-`hello@insite-ca.org`, but nothing at this domain is set up to receive mail there. Either it
-was never wired up, or it forwards through a service that does not require MX at the apex.
-Nothing in this migration causes it and nothing here fixes it, but it is worth knowing
-before you make a contact address prominent on the new site.
+1. **Old** project → Settings → Domains → remove `insite-ca.org` and `www.insite-ca.org`.
+   Leave `app.insite-ca.org` in place.
+2. **New** project → Settings → Domains → add `insite-ca.org` and `www.insite-ca.org`.
+3. Replace the `_lovable.insite-ca.org` TXT value at name.com with the one the new project
+   generates. The old value belongs to the old project and will not verify the new one.
+4. Leave both apex A records exactly as they are.
+5. Wait for verification and SSL, then load `https://insite-ca.org`.
+
+Pick a quiet hour. Between 1 and 5 the front door serves nothing.
+
+---
+
+## Step 4 — Check it over
+
+- `insite-ca.org` and `www.insite-ca.org` serve the new static site
+- `app.insite-ca.org` still signs in and loads the portal
+- the Airtable form on `/developer_application.html` loads — the one thing that could not be
+  verified from the sandbox
+- run the calculators on `index.html`, `fee_estimator.html` and `tey_calculator.html`
+
+---
+
+## Backups — still worth doing, just no longer urgent
+
+Nothing here deletes anything, so none of this is now load-bearing. It is ordinary hygiene,
+and the first item is the one to actually do.
+
+1. **Push the Lovable app to GitHub.** In the existing project: GitHub → Create Repository.
+   One click, no effect on the live site, and it turns the app source from
+   single-copy-inside-a-vendor into something you hold. Worth doing today regardless of any
+   of the above.
+2. **Export the Supabase database** — dashboard → Database → Backups, or
+   `supabase db dump -f insite_supabase_2026-08-20.sql --db-url "<connection string>"`.
+   Project ref `diictbhvwszujxplobsz`.
+3. **Export the Airtable base** behind the application form.
+4. **Copy the environment variables** out of Lovable settings into a password manager.
+
+Do not commit 2 or 4 to this repository. The dump holds personal data; the env file holds
+live credentials.
+
+`10_ARCHIVE/insite-ca.org_2026-08-19/` stays as-is: a faithful record of what the public
+site looked like on that date, and useful as a reference for the old page copy.
+
+---
+
+## Three things left open
+
+**No link to the app from the static site yet.** A "Developer Login" item was tried in the
+site nav and backed out: the nav is already at capacity at 1440 px, and a seventh item wraps
+it to a second row, growing the sticky header from 86 px to 145 px on every page. The pages
+are byte-identical to the published site again.
+
+Placing it needs a decision. The footer is the natural home and matches wanting it
+understated, but only 5 of the 11 pages carry a `<footer>` element today — `index`,
+`developers`, `investors`, `qualify`, `qualify2` — so putting it there either covers those
+five only, or means adding a footer to the other six. The alternative is shortening an
+existing nav label to make room.
+
+**Routes that move.** Anything pointing at the old apex paths needs its link updated to the
+`app.` subdomain — `/login`, `/admin-login`, `/portal`, `/admin`, `/apply`, `/apply/success`,
+`/contact`, `/methodology`. They will 404 on the apex after cutover, because the static site
+does not use those paths. Check email signatures, the Airtable form's confirmation message,
+and any circulated documents.
+
+**No MX records.** The old contact page publishes `hello@insite-ca.org`, but nothing at this
+domain is set up to receive mail there. Not caused by this migration and not fixed by it,
+but worth settling before putting a contact address on the new site.
