@@ -97,9 +97,12 @@ progress by this list rather than by the numbers below.
   `1e2a0d3`). Step 1 below describes what was actually done, which differs from the
   original packaging plan.
 
+- Verified live at `https://happy-public-view.lovable.app`: `/` 301s to `/index.html`, all
+  11 pages and all 6 assets return 200, and the served HTML is byte-identical to the
+  GitHub Pages source. The gate before cutover is passed.
+
 **Not started**
 
-- Confirming the pushed site on the new project's `*.lovable.app` URL — the remaining gate
 - Supabase redirect allowlist (`https://app.insite-ca.org/**`) — can be done any time
 - The cutover itself
 
