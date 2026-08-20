@@ -1,0 +1,1 @@
+const N=(1-Math.pow(1.0575,-30))/.0575,r=.005*N;function a(s,e){const n=Number(s),t=Number(e);if(!Number.isFinite(n)||n<=0)return null;const o=n*r,T=Math.min(n*.2*.25,o),c=Math.min(n*.3*.25,o),_=Number.isFinite(t)&&t>0;return{perParcelLow:T,perParcelHigh:c,totalLow:_?T*t:null,totalHigh:_?c*t:null,parcels:_?t:null}}export{a as f};
