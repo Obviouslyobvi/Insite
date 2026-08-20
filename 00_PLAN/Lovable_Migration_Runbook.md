@@ -87,9 +87,37 @@ Do this before touching the apex. The app gains `app.insite-ca.org` while still 
    - **TXT** record, host `_lovable.app`, value the `lovable_verify=...` string Lovable
      generates for this subdomain — a new one, not the value in the table above
 3. Wait for verification and SSL.
-4. Load `https://app.insite-ca.org`, sign in, confirm the portal works.
+4. **Update Supabase's auth URLs before testing sign-in** — see below.
+5. Load `https://app.insite-ca.org`, sign in, confirm the portal works.
+6. Test a **password reset** as well as a normal sign-in. It uses a different path and is
+   the one that breaks if step 4 was missed.
 
-Do not continue until that sign-in succeeds.
+Do not continue until both succeed.
+
+### Step 4 in detail — the one that will bite
+
+The app builds its auth redirect URLs from `window.location.origin`. Read out of the
+bundle: 23 uses of `redirectTo`, 5 of `emailRedirectTo`, and **no hardcoded domain
+anywhere**. So the app itself adapts to the new address with no code change.
+
+Supabase does not. It keeps its own allowlist and rejects any redirect URL not on it,
+silently falling back to whatever **Site URL** is set to. Today that is almost certainly
+`https://insite-ca.org`.
+
+Leave it that way and the failure is nastier than an outright error. Sign-in may look fine,
+then every password reset and email confirmation link drops the user on `insite-ca.org` —
+which by then is the **static site**, with no portal and no session. It reads as "the
+reset link is broken" and the cause is nowhere near where it appears.
+
+In the Supabase dashboard → **Authentication → URL Configuration**:
+
+| Setting | Set to |
+|---|---|
+| Site URL | `https://app.insite-ca.org` |
+| Redirect URLs | add `https://app.insite-ca.org/**` |
+
+Keep `https://insite-ca.org/**` on the redirect allowlist until Step 3 is done and verified,
+so sessions in flight during the cutover still land somewhere valid. Remove it afterwards.
 
 ---
 
@@ -129,9 +157,13 @@ Pick a quiet hour. Between 1 and 5 the front door serves nothing.
 
 - `insite-ca.org` and `www.insite-ca.org` serve the new static site
 - `app.insite-ca.org` still signs in and loads the portal
+- a **password reset** email lands back on `app.insite-ca.org`, not on the static site
 - the Airtable form on `/developer_application.html` loads — the one thing that could not be
   verified from the sandbox
 - run the calculators on `index.html`, `fee_estimator.html` and `tey_calculator.html`
+
+Then tidy up: remove `https://insite-ca.org/**` from the Supabase redirect allowlist, now
+that nothing should be redirecting there.
 
 ---
 
