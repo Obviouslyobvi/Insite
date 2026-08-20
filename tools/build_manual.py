@@ -82,8 +82,8 @@ NAV_SVG = """<svg width='179' height='46' viewBox='-26 -18 906 220' xmlns='http:
 
 NAV_LINKS=[("index.html","Home"),
            ("developers.html","Developers"),
-           ("qualify.html","Do I Qualify?"),
            ("fee_estimator.html","Fee Estimator"),
+           ("qualify.html","Do I Qualify?"),
            ("developer_application.html","Apply"),
            ("manual.html","Manual")]
 
