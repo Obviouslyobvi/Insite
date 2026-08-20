@@ -76,87 +76,102 @@ TXT value.
 
 ---
 
-## Step 1 — Give the app its new address first
+## The one rule that still holds
 
-Do this before touching the apex. The app gains `app.insite-ca.org` while still serving
-`insite-ca.org`, so it is never unreachable.
+Downtime is acceptable, so the steps below run in a single sitting rather than waiting for
+each address to settle before starting the next.
 
-1. Existing Lovable project → Settings → Domains → add `app.insite-ca.org`.
-2. At name.com, add the records Lovable shows you:
-   - **A** record, host `app`, value `185.158.133.1`
-   - **TXT** record, host `_lovable.app`, value the `lovable_verify=...` string Lovable
-     generates for this subdomain — a new one, not the value in the table above
-3. Wait for verification and SSL.
-4. **Update Supabase's auth URLs before testing sign-in** — see below.
-5. Load `https://app.insite-ca.org`, sign in, confirm the portal works.
-6. Test a **password reset** as well as a normal sign-in. It uses a different path and is
-   the one that breaks if step 4 was missed.
-
-Do not continue until both succeed.
-
-### Step 4 in detail — the one that will bite
-
-The app builds its auth redirect URLs from `window.location.origin`. Read out of the
-bundle: 23 uses of `redirectTo`, 5 of `emailRedirectTo`, and **no hardcoded domain
-anywhere**. So the app itself adapts to the new address with no code change.
-
-Supabase does not. It keeps its own allowlist and rejects any redirect URL not on it,
-silently falling back to whatever **Site URL** is set to. Today that is almost certainly
-`https://insite-ca.org`.
-
-Leave it that way and the failure is nastier than an outright error. Sign-in may look fine,
-then every password reset and email confirmation link drops the user on `insite-ca.org` —
-which by then is the **static site**, with no portal and no session. It reads as "the
-reset link is broken" and the cause is nowhere near where it appears.
-
-In the Supabase dashboard → **Authentication → URL Configuration**:
-
-| Setting | Set to |
-|---|---|
-| Site URL | `https://app.insite-ca.org` |
-| Redirect URLs | add `https://app.insite-ca.org/**` |
-
-Keep `https://insite-ca.org/**` on the redirect allowlist until Step 3 is done and verified,
-so sessions in flight during the cutover still land somewhere valid. Remove it afterwards.
+One constraint survives that relaxation, and it is not about downtime: **do not release the
+apex until the new site is built and confirmed working on its own `*.lovable.app` URL.**
+Release it first and the domain points at nothing while you have no verified target to hand
+it to — a paid-plan block or a rejected verification then turns a planned outage into an
+open-ended one. Steps 1 and 2 change nothing live, so there is no cost to doing them first.
 
 ---
 
-## Step 2 — Build the new site, still without touching the apex
+## Step 1 — Build the new site (nothing live changes)
 
-1. Create a second Lovable project, on a paid plan.
+Touches no DNS and no existing project. Can be done at any time, including right now.
+
+1. Create a second Lovable project, on a paid plan — custom domains are not available on
+   the free tier.
 2. Connect it to GitHub so it has a repo.
 3. Push the contents of `05_WEBSITE/lovable_site/` into that repo. That folder is the site
    already packaged with the build config Lovable needs; its README covers the layout.
    Verified: 11 pages, every link and asset resolving, Inter loading, no console errors, no
    overflow at 1440 px and 390 px.
-4. Confirm it works on the project's own `*.lovable.app` preview URL.
+4. Open the project's `*.lovable.app` preview URL and click through the pages.
 
-Still nothing changed on the live domain.
-
----
-
-## Step 3 — Hand the apex over
-
-Lovable will not hold the same domain on two projects, so the old project has to let go
-before the new one can take it. This is the only step with downtime, and it only affects the
-apex — `app.insite-ca.org` keeps serving throughout.
-
-1. **Old** project → Settings → Domains → remove `insite-ca.org` and `www.insite-ca.org`.
-   Leave `app.insite-ca.org` in place.
-2. **New** project → Settings → Domains → add `insite-ca.org` and `www.insite-ca.org`.
-3. Replace the `_lovable.insite-ca.org` TXT value at name.com with the one the new project
-   generates. The old value belongs to the old project and will not verify the new one.
-4. Leave both apex A records exactly as they are.
-5. Wait for verification and SSL, then load `https://insite-ca.org`.
-
-Pick a quiet hour. Between 1 and 5 the front door serves nothing.
+Do not start Step 3 until that preview looks right.
 
 ---
 
-## Step 4 — Check it over
+## Step 2 — Widen the Supabase allowlist (nothing live changes)
+
+Additive only. The app keeps working exactly as it does now.
+
+In the Supabase dashboard → **Authentication → URL Configuration**, add
+`https://app.insite-ca.org/**` to **Redirect URLs**. Leave `https://insite-ca.org/**` in
+place and leave **Site URL** alone for now — both are still in use until the switchover.
+
+### Why this matters more than it looks
+
+The app builds its auth redirect URLs from `window.location.origin`. Read out of the
+bundle: 23 uses of `redirectTo`, 5 of `emailRedirectTo`, and **no hardcoded domain
+anywhere**. So the app adapts to a new address on its own, with no code change.
+
+Supabase does not. It keeps its own allowlist, rejects any redirect URL not on it, and
+falls back silently to whatever **Site URL** says.
+
+Miss this and the failure is nastier than an outright error. Sign-in looks fine, then every
+password reset and email confirmation link drops the user on `insite-ca.org` — by then the
+static site, with no portal and no session. It reads as "the reset link is broken", and the
+cause is nowhere near where it appears.
+
+---
+
+## Step 3 — The switchover (the site is down through this)
+
+All of it in one sitting. Order within the step does not matter much now, but this sequence
+means the least waiting.
+
+**In Lovable, old project** → Settings → Domains:
+1. Add `app.insite-ca.org`. Note the `lovable_verify=...` value it generates.
+2. Remove `insite-ca.org` and `www.insite-ca.org`.
+
+**In Lovable, new project** → Settings → Domains:
+3. Add `insite-ca.org` and `www.insite-ca.org`. Note the new `lovable_verify=...` value.
+
+**At name.com** → DNS records:
+4. **Add** an A record — host `app`, value `185.158.133.1`.
+5. **Add** a TXT record — host `_lovable.app`, value the string from (1).
+6. **Replace** the existing `_lovable` TXT value with the string from (3). The current
+   value belongs to the old project and will not verify the new one.
+7. **Leave both apex A records alone.** They already point at the right place.
+
+Host fields at name.com are relative — enter `app`, not `app.insite-ca.org`.
+
+The two verification records live at different hostnames — `_lovable.insite-ca.org` and
+`_lovable.app.insite-ca.org` — so they do not collide.
+
+8. Wait for both projects to verify and issue SSL. Minutes usually, up to an hour.
+
+---
+
+## Step 4 — Point Supabase at the new home
+
+Once `app.insite-ca.org` loads, go back to **Authentication → URL Configuration** and set
+**Site URL** to `https://app.insite-ca.org`.
+
+Then sign in, and run **one password reset**. The plain sign-in path does not exercise the
+redirect allowlist; the reset does. That is the test that actually proves Step 2 worked.
+
+---
+
+## Step 5 — Check it over
 
 - `insite-ca.org` and `www.insite-ca.org` serve the new static site
-- `app.insite-ca.org` still signs in and loads the portal
+- `app.insite-ca.org` signs in and loads the portal
 - a **password reset** email lands back on `app.insite-ca.org`, not on the static site
 - the Airtable form on `/developer_application.html` loads — the one thing that could not be
   verified from the sandbox
