@@ -121,8 +121,14 @@ Touches no DNS and no existing project. Can be done at any time, including right
 This is a **second, separate Lovable project**, alongside the existing `assess-mint-hub`
 one. The app stays where it is; this new project exists only to serve the static site.
 
-1. Create a second Lovable project, on a paid plan — custom domains are not available on
-   the free tier.
+1. Create a second Lovable project.
+
+   This does **not** mean a second subscription. Lovable bills per account, not per
+   project: one paid plan covers the whole account, and custom domains are a plan-level
+   feature rather than a per-project purchase. The metered resource is credits, which are
+   spent on AI editing — this project is pushed from GitHub and never edited in Lovable, so
+   it burns effectively none. Lovable's docs do not publish a cap on custom domains per
+   plan; two is unlikely to approach one, but it is undocumented rather than confirmed.
 2. Connect it to GitHub so it has a repo.
 3. Push the contents of `05_WEBSITE/lovable_site/` into that repo. That folder is the site
    already packaged with the build config Lovable needs; its README covers the layout.
@@ -277,6 +283,28 @@ every page. If this is revisited, these are the combinations that were measured 
 A footer link is the other route, and needs no nav copy change, but only 5 of the 11 pages
 carry a `<footer>` element today — `index`, `developers`, `investors`, `qualify`,
 `qualify2` — so it would either cover those five or mean adding a footer to the other six.
+
+## Unrelated, and more urgent than any of the above: the repo is public
+
+`github.com/Obviouslyobvi/Insite` is readable without a login. Verified 2026-08-20 — all
+returned 200 unauthenticated:
+
+- `00_PLAN/Payment_Summary_2026-07-29.md`
+- `00_PLAN/Whats_Missing.md`
+- `00_PLAN/HANDOFF.md`
+- `01_EVIDENCE/Claims_Register.md`
+- `07_BUILDLOG/Quarantine_Audit.md`
+
+`08_REDTEAM/Kill_Memo.md` is in the same tree.
+
+The gh-pages workflow deliberately excludes the evidence register, red-team memo, build log
+and quarantine from what it publishes to the website branch. That precaution is moot while
+the repository itself is public: everything on `master` is readable regardless.
+
+Not changed here, because it is a judgement call with a side effect. Making the repository
+private stops GitHub Pages serving `obviouslyobvi.github.io/Insite` unless the account is on
+a plan that allows Pages from private repositories. If the static site has moved to Lovable
+by then, that no longer matters — which makes the cutover the natural moment to close this.
 
 ## Two things left open
 
