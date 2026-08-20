@@ -101,10 +101,21 @@ progress by this list rather than by the numbers below.
   11 pages and all 6 assets return 200, and the served HTML is byte-identical to the
   GitHub Pages source. The gate before cutover is passed.
 
-**Not started**
+- **The cutover is done — 2026-08-20, verified live.** `insite-ca.org` serves the static
+  site: `/` 301s to `/index.html`, all 11 pages and all 6 assets return 200, served HTML
+  byte-identical to source, `www` 302s to the apex. The domain moved via Lovable's own
+  "Move and connect" dialog, which handled the release-and-claim in one action and updated
+  the `_lovable` TXT verification. `app.insite-ca.org` self-promoted to primary on the old
+  project and serves the portal directly — `/`, `/login`, `/portal` all 200, no redirect.
 
-- Supabase redirect allowlist (`https://app.insite-ca.org/**`) — can be done any time
-- The cutover itself
+**Remaining**
+
+- Test a real sign-in and a **password reset** on `app.insite-ca.org` — the reset email
+  must land back on `app.`, not the apex. Supabase dashboard access is unavailable, so if
+  the reset misroutes, the fix lives in the app project's backend settings inside Lovable.
+- Post-cutover tidy-up: see `Link_Map.md` for the two investors.html links that must be
+  relocalized **before** making the Insite repo private; then retire the gh-pages workflow
+  and consider repo visibility.
 
 ---
 
