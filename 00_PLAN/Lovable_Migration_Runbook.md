@@ -156,6 +156,30 @@ The two verification records live at different hostnames — `_lovable.insite-ca
 
 8. Wait for both projects to verify and issue SSL. Minutes usually, up to an hour.
 
+### Then check the redirect cleared
+
+Lovable marks one domain per project as **primary** — the starred one in Settings → Domains
+— and 302s every other domain on that project to it. While the old project held both, this
+was live and harmless:
+
+```
+https://app.insite-ca.org/  →  302  →  https://insite-ca.org/
+```
+
+Once the apex is removed, `app.insite-ca.org` is the only domain left on that project and
+should become primary on its own. Confirm it rather than assume it:
+
+```bash
+curl -sI https://app.insite-ca.org/ | head -1     # want: HTTP/2 200, not 302
+```
+
+A 302 still pointing at `insite-ca.org` after the apex is gone means the portal is bouncing
+visitors to the static site. Fix it by starring `app.insite-ca.org` as primary in the old
+project's domain settings.
+
+Do not star `app.` *before* removing the apex — that flips the redirect the other way and
+sends the live site to the subdomain early.
+
 ---
 
 ## Step 4 — Point Supabase at the new home
@@ -171,6 +195,7 @@ redirect allowlist; the reset does. That is the test that actually proves Step 2
 ## Step 5 — Check it over
 
 - `insite-ca.org` and `www.insite-ca.org` serve the new static site
+- `app.insite-ca.org` returns **200, not a 302** — see the redirect check in Step 3
 - `app.insite-ca.org` signs in and loads the portal
 - a **password reset** email lands back on `app.insite-ca.org`, not on the static site
 - the Airtable form on `/developer_application.html` loads — the one thing that could not be
