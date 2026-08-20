@@ -92,10 +92,14 @@ progress by this list rather than by the numbers below.
   domain. Expected, not a fault. It clears when the apex is removed — see the redirect check
   in Step 3.
 
+- The **second** Lovable project exists, connected to
+  `github.com/Obviouslyobvi/insite-public-pages`, and the site is pushed (commit
+  `1e2a0d3`). Step 1 below describes what was actually done, which differs from the
+  original packaging plan.
+
 **Not started**
 
-- The **second** Lovable project, holding the static site. This is the gate: nothing else
-  should happen until its `*.lovable.app` preview renders correctly.
+- Confirming the pushed site on the new project's `*.lovable.app` URL — the remaining gate
 - Supabase redirect allowlist (`https://app.insite-ca.org/**`) — can be done any time
 - The cutover itself
 
@@ -130,11 +134,31 @@ one. The app stays where it is; this new project exists only to serve the static
    it burns effectively none. Lovable's docs do not publish a cap on custom domains per
    plan; two is unlikely to approach one, but it is undocumented rather than confirmed.
 2. Connect it to GitHub so it has a repo.
-3. Push the contents of `05_WEBSITE/lovable_site/` into that repo. That folder is the site
-   already packaged with the build config Lovable needs; its README covers the layout.
-   Verified: 11 pages, every link and asset resolving, Inter loading, no console errors, no
-   overflow at 1440 px and 390 px.
-4. Open the project's `*.lovable.app` preview URL and click through the pages.
+3. Get the site into that repo — **done, and done differently than first planned.**
+
+   The original plan was to replace the repo contents with `05_WEBSITE/lovable_site/`, the
+   standalone Vite package. On inspection, Lovable's GitHub connect had scaffolded a full
+   TanStack Start app and stamped the project's template into `.lovable/project.json` —
+   the same machinery its build pipeline is keyed to. Gutting that risked a fight with the
+   deploy side that could not be tested from outside.
+
+   What shipped instead, in `Obviouslyobvi/insite-public-pages` commit `1e2a0d3`:
+   - the scaffold left intact, so Lovable's pipeline and editor keep working;
+   - all 11 pages, 4 diagrams, the Inter font and manual.pdf placed in `public/`, which is
+     served verbatim at the site root — byte-identical to the GitHub Pages copy, no build
+     step touching the pages at all;
+   - one source change: the index route 301s `/` to `/index.html`, where every internal
+     link on the site already points.
+
+   Verified against a local build and dev server: all 19 files carried into the build
+   output unchanged; `/` redirects 301; all 11 pages and all 6 assets return 200 with the
+   expected titles.
+
+   `05_WEBSITE/lovable_site/` remains in this repository as the standalone fallback — if
+   Lovable's pipeline ever objects to serving from `public/`, that package is the verified
+   plan B, at the cost of leaving Lovable's template.
+4. Open the project's `*.lovable.app` preview URL and click through the pages. A **Publish**
+   click in Lovable may be needed before the `*.lovable.app` URL reflects the push.
 
 Do not start Step 3 until that preview looks right.
 
