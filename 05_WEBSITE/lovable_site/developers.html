@@ -1,4 +1,4 @@
-<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><link rel='preconnect' href='https://airtable.com'/><link rel='preconnect' href='https://static.airtable.com' crossorigin/><link rel='dns-prefetch' href='https://airtable.com'/><link rel='dns-prefetch' href='https://static.airtable.com'/><title>INSITE Developer Application</title><style>
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>INSITE for Developers</title><style>
 :root{--navy:#101828;--green:#0964f8;--slate:#57657a;--light:#f5f8fb;--ink:#101828;--line:#e2e8f0}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -9,7 +9,6 @@ header{background:#fff;position:sticky;top:0;z-index:20;border-bottom:2px solid 
 .navlinks{display:flex;flex-wrap:wrap;gap:4px 18px;padding:14px 0}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
 section{padding:58px 0}
-.hero + section{padding-top:34px}
 h1{font-size:clamp(28px,4.6vw,44px);line-height:1.14;color:var(--navy);margin:0 0 14px 0}
 h2{font-size:clamp(21px,3vw,28px);color:var(--navy);margin:0 0 6px 0}
 h3{font-size:17px;color:var(--navy);margin:0 0 6px 0}
@@ -73,13 +72,6 @@ footer a{color:var(--green)}
 .navlinks{float:right;display:flex;flex-wrap:wrap;gap:4px 18px;padding:14px 0}
 .navlinks a{color:var(--navy);text-decoration:none;font-size:14px;letter-spacing:.3px}
 .navlinks a:hover{color:var(--green)}
-.embedwrap{position:relative;width:100%;height:1880px;border:1px solid var(--line);background:#fff}
-.airtable-embed{display:block;width:100%;height:100%;border:0;position:relative;z-index:2}
-.embedload{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:120px;text-align:center;background:#fff}
-.embedload .spin{width:26px;height:26px;border:3px solid var(--line);border-top-color:var(--green);border-radius:50%;animation:sp 900ms linear infinite;margin-bottom:14px}
-@keyframes sp{to{transform:rotate(360deg)}}
-@media(max-width:820px){.embedwrap{height:1900px}}
-@media(max-width:520px){.embedwrap{height:1990px}}
 .step{display:flex;gap:16px;margin:0 0 22px 0}
 .stepnum{flex:0 0 40px;height:40px;background:var(--navy);color:#fff;font-weight:bold;display:flex;align-items:center;justify-content:center;font-size:18px}
 .punch{font-family:Georgia,'Times New Roman',serif;font-size:clamp(17px,2.2vw,21px);color:var(--navy);border-left:4px solid var(--green);padding:10px 16px;margin:14px 0;background:var(--light)}
@@ -200,17 +192,29 @@ footer a{color:var(--primary)}
   <div class="nav">
     <a href="index.html" style="display:flex;align-items:center;gap:12px">
       <svg width="380" height="37" style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 36 1366 134" role="img" aria-label="INSITE - Development Impact and School Fee Financing Program"><rect x="19.0" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="151.4" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="184.5" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="19.0" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="151.4" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="184.5" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="19.0" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="85.2" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="151.4" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="184.5" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="19.0" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="152.6" y="142.7" width="21.1" height="21.1" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="2.4"/><rect x="185.7" y="142.7" width="21.1" height="21.1" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="2.4"/><text x="239.66" y="146" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="115.914" letter-spacing="6" textLength="410.87" lengthAdjust="spacingAndGlyphs" fill="#1A3E6C">INSITE</text><text x="643.6" y="91" font-family="Helvetica,Arial,sans-serif" font-size="37.333" textLength="37.24" lengthAdjust="spacingAndGlyphs" fill="#1A3E6C">&#8482;</text><rect x="717" y="65" width="2" height="80" fill="#1D273F"/><text x="762.99" y="102" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="36.672" letter-spacing="1.5" textLength="430.04" lengthAdjust="spacingAndGlyphs" fill="#949897">DEVELOPMENT IMPACT &amp;</text><text x="763.0" y="146" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="35.157" letter-spacing="1.5" textLength="588.03" lengthAdjust="spacingAndGlyphs" fill="#949897">SCHOOL FEE FINANCING PROGRAM</text></svg>
-    </a><div class='navlinks'><a href='index.html'>Home</a><a href='developers.html'>Developers</a><a href='fee_estimator.html'>Fee Estimator</a><a href='qualify.html'>Do I Qualify?</a><a href='developer_application.html' style='color:var(--green);font-weight:bold'>Apply</a><a href='manual.html'>Manual</a></div></div>
+    </a><div class='navlinks'><a href='index.html'>Home</a><a href='developers.html' style='color:var(--green);font-weight:bold'>Developers</a><a href='fee_estimator.html'>Fee Estimator</a><a href='qualify.html'>Do I Qualify?</a><a href='developer_application.html'>Apply</a><a href='manual.html'>Manual</a></div></div>
 </header>
-<div class='hero'><div class='wrap' style='padding:52px 22px 40px'>
-<div class='kicker'>DEVELOPER APPLICATION · FORM INS-201 · PRE-LAUNCH</div>
-<h1>Start your application.</h1>
-<p class='lede'>Ten minutes, one form, straight to the program team. Fill in the project basics and attach what you have; missing items don't stop the application, we collect the rest during underwriting.</p>
+<div class='hero'><div class='wrap' style='padding:54px 22px'>
+<div class='kicker'>FOR DEVELOPERS · 1 TO 50 LOTS · PRE-LAUNCH</div>
+<h1>Your impact fees, paid at the permit counter.</h1>
+<p class='lede'>INSITE pays your project's development impact fees from a note secured by a small special tax on your own lots, collected with the property tax bill. The structure big master-planned communities have used for decades, sized for small subdivisions.</p>
+<div class='punch'>It's not a loan to you. It's a line on the property tax bill.</div>
+<div class='punch'>You never repay the principal. The lots do.</div>
+<div class='punch'>Your cash stays in your pocket at the permit counter.</div>
+<p><a class='btn' href='developer_application.html'>Start an application</a> &nbsp; <a class='btn alt' href='fee_estimator.html'>Estimate your fees</a></p>
 </div></div>
-<section><div class='wrap'>
-<div class='embedwrap'>
-  <div class='embedload'><div class='spin'></div><div style='font-size:15px;color:var(--navy);font-weight:bold'>Loading the application form</div><div style='font-size:13px;color:var(--slate);margin-top:6px;max-width:44ch'>The form is hosted by Airtable and takes a few seconds to open. If it does not appear, use the link below.</div></div>
-  <iframe class='airtable-embed' src='https://airtable.com/embed/appVwwLQvMkhsebB1/pagZn2Nzm5ouvnuqW/form' frameborder='0' onmousewheel='' width='100%' title='INSITE developer application form' style='background:transparent'></iframe>
-</div>
-<p style='font-size:13.5px;color:#57657a'>Form not loading? <a href='https://airtable.com/appVwwLQvMkhsebB1/pagZn2Nzm5ouvnuqW/form' target='_blank' rel='noopener'>Open the application in a new tab</a>.</p>
-</div></section>
+<div class='wrap' style='padding:44px 22px'>
+<h2>How it works, start to finish</h2>
+<div class='step'><div class='stepnum'>1</div><div><h3>Check eligibility</h3><p>Residential subdivisions in a participating California jurisdiction, finished or near-finished lots, amount capped at 25 percent of the lots' appraised value, minimum size set at screening. School fees excluded at launch.</p></div></div>
+<div class='step'><div class='stepnum'>2</div><div><h3>Submit one data package</h3><p>Title report, tract or parcel maps, project budget, your jurisdiction's posted fee schedule, entitlement status, entity documents. One submission, one yes-or-no screening answer.</p></div></div>
+<div class='step'><div class='stepnum'>3</div><div><h3>Underwriting</h3><p>An independent MAI appraiser values your lots to State Treasurer (CDIAC) standards, and the amount cannot exceed 25 percent of that value. The projected tax on a finished home is benchmarked against the two-percent-of-value policy used by the state's largest issuer.</p></div></div>
+<div class='step'><div class='stepnum'>4</div><div><h3>Join by signature</h3><p>Your parcels annex into the master district with your written consent as landowner. No public hearing, no election, no campaign: paperwork and a recording (Government Code 53339.3, 53339.7).</p></div></div>
+<div class='step'><div class='stepnum'>5</div><div><h3>Funding at closing</h3><p>Note proceeds pay your eligible impact fees directly, and the deal's costs are paid alongside them, so your day-one cash is zero. The costs, both rolled into the note: an origination fee set as a percentage of the amount paid, stated on your term sheet, plus hard costs targeted at $5,000 to $30,000 (a founder estimate, pending vendor quotes).</p></div></div>
+<div class='step'><div class='stepnum'>6</div><div><h3>Build and sell</h3><p>While you hold a lot, its annual special tax is a carrying cost on the county tax bill. When a home sells, the obligation transfers to the buyer with standard Mello-Roos disclosure in escrow, and buyer protections are fixed in the recorded formula.</p></div></div>
+<div class='honest'><h3>What it is not</h3><p>This is not a loan to you. You never sign a personal guarantee, and nobody ever sends you a bill to pay the money back. Instead, each lot picks up a small yearly charge on its property tax bill, and that charge pays the money back over time. It is not free: you pay the deal's setup costs, and any lot you still own pays its yearly charge until it sells. It does not work everywhere: your city or county has to be signed up first. And no number is final until you have a signed term sheet in your hand.</p></div>
+</div><footer>
+  <div class="wrap">
+    <p>INSITE&#8482; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. Nothing on this page is an offer to sell, or a solicitation of an offer to buy, any security.</p>
+    <p>Sources current as of July 2026. This page is self-contained: it loads no external assets, sets no cookies, and runs no trackers or analytics.</p>
+  </div>
+</footer><div style="text-align:center;padding:30px 0"><a href="developer_application.html" style="display:inline-block;background:#0964f8;color:#fff;text-decoration:none;padding:14px 26px;font-size:16px">Apply Now</a></div></body></html>

@@ -1,0 +1,156 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Tax-Equivalent Yield Calculator</title><style>
+*{box-sizing:border-box}body{font-family:Helvetica,Arial,sans-serif;color:#101828;margin:0;font-size:15px;line-height:1.5;background:#fff}
+.band{background:#fff;color:var(--ink,#101828);padding:18px 4%;border-bottom:2px solid #101828}.band img{height:44px;display:block}.band .sub{color:#57657a;letter-spacing:2px;font-size:12px;margin-top:8px}
+.wrap{max-width:900px;margin:0 auto;padding:22px 4% 40px}
+h1{color:#101828;font-size:26px;margin:6px 0 4px}h2{color:#101828;font-size:17px;border-bottom:2px solid #0964f8;padding-bottom:3px;margin:26px 0 10px}
+.note{color:#57657a;font-size:13px}
+table{border-collapse:collapse;width:100%;margin:10px 0}th{background:#f5f8fb;color:#101828;border-bottom:2px solid #101828;text-align:left;padding:8px;font-size:13px}
+td{border-bottom:1px solid #e2e8f0;padding:7px 8px;font-size:14px}tr:nth-child(even) td{background:#f5f8fb}
+input[type=number],select{padding:7px;border:1px solid #e2e8f0;border-radius:4px;font-size:14px;width:140px}
+select{width:auto;max-width:100%}
+.big{background:#f5f8fb;border-left:4px solid #0964f8;padding:14px 16px;margin:14px 0}
+.big b{color:#101828;font-size:22px}
+.tag{color:#57657a;font-size:12px}
+.dis{color:#57657a;font-size:11.5px;border-top:1px solid #e2e8f0;margin-top:30px;padding-top:10px}
+a{color:#101828}
+.row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;margin:8px 0}
+.f label{display:block;font-weight:bold;font-size:13px;color:#101828;margin-bottom:3px}
+</style>
+<style>
+/* ============================================================
+   INSITE theme layer - palette + typography from insite-ca.org
+   Tokens copied from that site's stylesheet; layout unchanged.
+   ============================================================ */
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;
+  font-display:swap;src:url("fonts/inter-latin-var.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,
+  U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --radius:.75rem;
+  --background:#fff;      --foreground:#101828;
+  --card:#fff;            --card-foreground:#101828;
+  --primary:#0964f8;      --primary-foreground:#fff;
+  --secondary:#f5f8fb;    --secondary-foreground:#101828;
+  --muted:#f5f8fb;        --muted-foreground:#57657a;
+  --accent:#0964f8;       --accent-foreground:#fff;
+  --destructive:#e40014;  --destructive-foreground:#fff;
+  --border:#e2e8f0;       --input:#e2e8f0;  --ring:#0964f8;
+  --font-sans:"Inter",ui-sans-serif,system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,monospace;
+}
+
+/* ---- typography: Inter everywhere, no serif (matches reference) ---- */
+body,input,select,textarea,button{font-family:var(--font-sans)}
+body{-webkit-font-smoothing:antialiased;color:var(--foreground);background:var(--background)}
+.lede,.punch,.hero p,.close .also,.ex .l{font-family:var(--font-sans)}
+h1,h2,h3,.ttitle{letter-spacing:-.02em;font-weight:700}
+h1{letter-spacing:-.03em}
+.kicker,.qa .num,.step .sn{letter-spacing:.12em;font-weight:600}
+.lede,.hero p{color:var(--muted-foreground)}
+a{color:var(--primary)}
+
+/* ---- nav: sticky translucent bar with a hairline, per reference ---- */
+header,.mnav{background:color-mix(in srgb,var(--background) 80%,transparent);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border)}
+.navlinks a,.mnavlinks a,.nav a{font-weight:500;letter-spacing:0;
+  padding:6px 10px;border-radius:calc(var(--radius) - 4px);transition:background .15s,color .15s}
+.navlinks a:hover,.mnavlinks a:hover,.nav a:hover{background:var(--secondary);color:var(--foreground)}
+
+/* ---- buttons: rounded, medium weight, subtle hover ---- */
+.btn,.printbtn{border-radius:calc(var(--radius) - 4px);font-weight:500;letter-spacing:0;
+  border:0;transition:opacity .15s,background .15s}
+.btn{background:var(--foreground);color:var(--background)}
+.btn.alt{background:var(--primary);color:var(--primary-foreground)}
+.printbtn{background:var(--primary);color:var(--primary-foreground)}
+.btn:hover,.printbtn:hover{filter:none;opacity:.9}
+/* inline-styled "Apply Now" anchors carry no .btn class - theme them by shape */
+a[style*="display:inline-block"][style*="background"]{
+  border-radius:calc(var(--radius) - 4px);font-weight:500;transition:opacity .15s}
+a[style*="display:inline-block"][style*="background"]:hover{opacity:.9}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+/* ---- cards & panels: uniform hairline + radius, no heavy top rules ---- */
+.card,.stat,.step,.col,.res,.calc,.honest,.bill,.out,.embedwrap,.faq details{
+  border:1px solid var(--border);border-radius:var(--radius)}
+.card,.stat,.step,.col,.res{background:var(--card)}
+.calc,.out{background:var(--secondary)}
+.note{border:1px solid var(--border);border-left:3px solid var(--primary);
+  border-radius:calc(var(--radius) - 2px);background:var(--secondary)}
+.warn{border-left-color:#f05100}
+.big{border-left:3px solid var(--primary);border-radius:calc(var(--radius) - 2px)}
+/* .big is a plain headline figure inside .res - keep the callout rule off it */
+.res .big{border-left:0;border-radius:0;padding-left:0;background:none}
+.ex,.punch{border-left:3px solid var(--primary)}
+.honest{border-left:3px solid var(--foreground)}
+.res h3{border-bottom:1px solid var(--border)}
+.statnum,.res .big,.big b{letter-spacing:-.02em}
+.statlab,.res .sub,.src,.tag,.note,.dis{color:var(--muted-foreground)}
+
+/* ---- tables: hairline grid, tinted header, clipped corners ---- */
+table{border-collapse:separate;border-spacing:0;border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden}
+th{background:var(--secondary);color:var(--foreground);font-weight:600;
+  border-bottom:1px solid var(--border)}
+td{border:0;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:0}
+tr:nth-child(even) td{background:var(--secondary)}
+
+/* ---- form controls ---- */
+input[type=text],input[type=email],input[type=number],select,textarea,.field input{
+  border:1px solid var(--input);border-radius:calc(var(--radius) - 4px);
+  background:var(--background);color:var(--foreground);transition:border-color .15s,box-shadow .15s}
+input:focus,select:focus,textarea:focus{border-color:var(--ring);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--ring) 20%,transparent);outline:none}
+label,.field label,.f label{font-weight:600;color:var(--foreground)}
+
+/* ---- step counters & annexation grid ---- */
+.step:before,.stepnum{background:var(--primary);color:var(--primary-foreground);font-weight:600}
+.stepnum{border-radius:calc(var(--radius) - 4px)}
+.anx .cell{border-radius:4px}
+
+/* ---- bands, footer, misc surfaces ---- */
+.band{background:var(--secondary);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.example,.hero,.qa,.effort{border-color:var(--border)}
+footer{border-top:1px solid var(--border);color:var(--muted-foreground);background:var(--background)}
+footer a{color:var(--primary)}
+.prelaunch{background:var(--foreground);color:var(--background);font-weight:500;letter-spacing:0}
+.dis{background:var(--secondary);border-top:1px solid var(--border)}
+</style>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin-var.woff2" crossorigin/></head><body>
+<div class='band'><a href='index.html' style='text-decoration:none'><svg width="346" height="34" style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 36 1366 134" role="img" aria-label="INSITE - Development Impact and School Fee Financing Program"><rect x="19.0" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="151.4" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="184.5" y="41.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="19.0" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="74.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="151.4" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="184.5" y="74.5" width="23.5" height="23.5" fill="#8DB87A"/><rect x="19.0" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="85.2" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="108.0" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="151.4" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="184.5" y="108.0" width="23.5" height="23.5" fill="#8DB87A"/><rect x="19.0" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="52.1" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="85.2" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="118.3" y="141.5" width="23.5" height="23.5" fill="#1A3E6C"/><rect x="152.6" y="142.7" width="21.1" height="21.1" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="2.4"/><rect x="185.7" y="142.7" width="21.1" height="21.1" fill="#ECF4FC" stroke="#1A3E6C" stroke-width="2.4"/><text x="239.66" y="146" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="115.914" letter-spacing="6" textLength="410.87" lengthAdjust="spacingAndGlyphs" fill="#1A3E6C">INSITE</text><text x="643.6" y="91" font-family="Helvetica,Arial,sans-serif" font-size="37.333" textLength="37.24" lengthAdjust="spacingAndGlyphs" fill="#1A3E6C">&#8482;</text><rect x="717" y="65" width="2" height="80" fill="#1D273F"/><text x="762.99" y="102" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="36.672" letter-spacing="1.5" textLength="430.04" lengthAdjust="spacingAndGlyphs" fill="#949897">DEVELOPMENT IMPACT &amp;</text><text x="763.0" y="146" font-family="Helvetica,Arial,sans-serif" font-weight="bold" font-size="35.157" letter-spacing="1.5" textLength="588.03" lengthAdjust="spacingAndGlyphs" fill="#949897">SCHOOL FEE FINANCING PROGRAM</text></svg></a><div style='display:flex;flex-wrap:wrap;gap:4px 18px;padding:10px 0 2px 0'><a href='index.html' style='color:var(--navy);text-decoration:none;font-size:14px'>Home</a><a href='developers.html' style='color:var(--navy);text-decoration:none;font-size:14px'>Developers</a><a href='fee_estimator.html' style='color:var(--navy);text-decoration:none;font-size:14px'>Fee Estimator</a><a href='qualify.html' style='color:var(--navy);text-decoration:none;font-size:14px'>Do I Qualify?</a><a href='developer_application.html' style='color:var(--green);text-decoration:none;font-size:14px'>Apply</a><a href='manual.html' style='color:var(--navy);text-decoration:none;font-size:14px'>Manual</a></div><div class='sub'>TAX-EQUIVALENT YIELD CALCULATOR &nbsp;&#183;&nbsp; FOR INVESTORS &nbsp;&#183;&nbsp; EDUCATIONAL TOOL</div></div>
+<div class='wrap'>
+<h1>What a tax-exempt yield is worth in taxable terms.</h1>
+<p class='note'>Interest on qualifying municipal securities is exempt from federal income tax, and for California residents holding California issues, from state income tax as well. This tool converts a tax-exempt yield into the taxable yield an investor would need to match it after tax, using the additive combined-rate convention common to major fund calculators.</p>
+<h2>Your inputs</h2>
+<div class='row'>
+<div class='f'><label for='y'>Tax-exempt yield (%)</label><input type='number' id='y' value='4.00' step='0.05' min='0' oninput='calc()'/></div>
+<div class='f'><label for='fed'>Federal marginal rate</label><select id='fed' onchange='calc()'>
+<option>10</option><option>12</option><option>22</option><option>24</option><option>32</option><option selected>35</option><option>37</option></select></div>
+<div class='f'><label for='ca'>California marginal rate</label><select id='ca' onchange='calc()'>
+<option>0</option><option>1</option><option>2</option><option>4</option><option>6</option><option>8</option><option selected>9.3</option><option>10.3</option><option>11.3</option><option>12.3</option><option>13.3</option></select></div>
+</div>
+<div class='row'>
+<div class='f'><label><input type='checkbox' id='niit' checked onchange='calc()'/> Add 3.8% net investment income tax</label></div>
+<div class='f'><label><input type='checkbox' id='instate' checked onchange='calc()'/> California resident holding a California issue (state exemption applies)</label></div>
+</div>
+<div class='big' id='out'></div>
+<h2>The same yield across brackets</h2>
+<table id='grid'><tr><th>Federal bracket</th><th>Combined rate</th><th>Tax-equivalent yield</th></tr></table>
+<p class='note'>Method: combined rate = federal + state (when the state exemption applies) + net investment income tax (when selected); tax-equivalent yield = tax-exempt yield &divide; (1 &minus; combined rate). This is the simplified additive convention; individual circumstances (deduction limits, AMT, phase-outs) change real results. For the fee comparison and the carry math, use the <a href='index.html#how'>program calculator</a>, or return to the <a href='index.html'>INSITE program page</a>.</p>
+<div class='dis'>INSITE&trade; is a pre-launch program concept administered by HGF Management Company. This material is not an offer of financing, legal advice, or investment advice. Program structure, eligibility, costs, and pricing are subject to issuer approval, bond counsel review, and program underwriting. Figures identified as targets or estimates are the founder's working numbers, not commitments. This calculator is educational only and is not tax advice; consult your tax adviser.</div>
+</div>
+<script>
+function v(id){return Number(document.getElementById(id).value)||0}
+function on(id){return document.getElementById(id).checked}
+function fmt(x){return x.toFixed(2)+'%'}
+function combined(fed){let c=fed/100+(on('niit')?0.038:0)+(on('instate')?v('ca')/100:0);return Math.min(c,0.95)}
+function calc(){const y=v('y'),c=combined(v('fed')),tey=y/(1-c);
+document.getElementById('out').innerHTML=`A <b>${fmt(y)}</b> tax-exempt yield &asymp; <b>${fmt(tey)}</b> taxable&nbsp;&nbsp;<span class='tag'>combined rate ${(c*100).toFixed(1)}%</span>`;
+const g=document.getElementById('grid');while(g.rows.length>1)g.deleteRow(1);
+[22,24,32,35,37].forEach(f=>{const cc=combined(f);const r=g.insertRow(-1);
+r.innerHTML=`<td>${f}%</td><td>${(cc*100).toFixed(1)}%</td><td><b>${fmt(y/(1-cc))}</b></td>`;});}
+calc();
+</script></body></html>
