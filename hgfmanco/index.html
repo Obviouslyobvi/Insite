@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HGF Management Company</title>
+<meta name="description" content="HGF Management Company is a specialized asset manager and program administrator for complex financial and real estate debt, based in Granite Bay, California.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  color-scheme:light dark;
+  --ground:#ECEAE5;
+  --ground-2:#E2DFD8;
+  --surface:#F6F5F1;
+  --ink:#17191C;
+  --ink-2:#474B51;
+  --ink-3:#767A81;
+  --line:#CDC9C0;
+  --line-2:#B9B4AA;
+  --green:#1F4D3C;
+  --green-2:#2D6B54;
+  --green-tint:#DBE6DF;
+  --ochre:#8F6227;
+  --ochre-tint:#EDE3D1;
+  --cell-idle:#D8D4CB;
+  --error:#B23A2E;
+  --shadow:0 1px 0 rgba(23,25,28,.06), 0 12px 32px -18px rgba(23,25,28,.35);
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --max:1240px;
+  --pad:clamp(20px,5vw,64px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#141618;
+    --ground-2:#1B1E21;
+    --surface:#202428;
+    --ink:#E9E6DF;
+    --ink-2:#B7B3AB;
+    --ink-3:#868A90;
+    --line:#33373C;
+    --line-2:#454A50;
+    --green:#83BC9E;
+    --green-2:#5E9C7D;
+    --green-tint:#1B2C25;
+    --ochre:#D6A768;
+    --ochre-tint:#33291A;
+    --cell-idle:#2C3035;
+    --error:#E9877B;
+    --shadow:0 1px 0 rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#141618;
+  --ground-2:#1B1E21;
+  --surface:#202428;
+  --ink:#E9E6DF;
+  --ink-2:#B7B3AB;
+  --ink-3:#868A90;
+  --line:#33373C;
+  --line-2:#454A50;
+  --green:#83BC9E;
+  --green-2:#5E9C7D;
+  --green-tint:#1B2C25;
+  --ochre:#D6A768;
+  --ochre-tint:#33291A;
+  --cell-idle:#2C3035;
+  --error:#E9877B;
+  --shadow:0 1px 0 rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
+}
+
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(40px,6vw,76px);font-variation-settings:"opsz" 72}
+h2{font-size:clamp(32px,4vw,52px);font-variation-settings:"opsz" 60}
+h3{font-size:clamp(22px,2.2vw,28px);font-variation-settings:"opsz" 36}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{
+  font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)
+}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lede{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--ink-2);max-width:62ch}
+.measure{max-width:64ch}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+section{padding:clamp(72px,9vw,120px) 0}
+[id]{scroll-margin-top:84px}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:14px 22px;border-radius:2px;
+  font-family:var(--body);font-size:15px;font-weight:600;letter-spacing:.01em;
+  text-decoration:none;border:1px solid transparent;cursor:pointer;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease
+}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-primary{background:var(--green);color:var(--ground);border-color:var(--green)}
+.btn-primary:hover{background:var(--green-2);border-color:var(--green-2)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-1px)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line)
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none}
+.brand .mark{font-family:var(--display);font-size:26px;font-weight:500;letter-spacing:.06em;line-height:1}
+.brand .mark em{font-style:italic;font-weight:400;color:var(--green);margin-left:.18em}
+.brand .co{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-2);padding:6px 0;border-bottom:1px solid transparent}
+.nav-links a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.nav .btn{padding:10px 16px;font-size:13px}
+.nav-toggle{display:none;background:none;border:1px solid var(--line-2);border-radius:2px;padding:8px 10px;color:var(--ink);cursor:pointer}
+.nav-toggle svg{width:18px;height:18px;display:block}
+@media (max-width:860px){
+  .nav-links,.nav .btn-ghost{display:none}
+  .nav-toggle{display:block}
+  .nav.open .nav-links{
+    display:flex;flex-direction:column;gap:0;
+    position:absolute;left:0;right:0;top:68px;
+    background:var(--ground);border-bottom:1px solid var(--line);padding:8px var(--pad) 16px
+  }
+  .nav.open .nav-links a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(56px,7vw,96px) 0 clamp(64px,8vw,104px)}
+.hero .grid{
+  display:grid;grid-template-columns:4fr 3fr;gap:clamp(32px,6vw,88px);align-items:center
+}
+.hero h1{margin:18px 0 22px}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--green)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero .note{margin-top:22px;font-size:13px;color:var(--ink-3)}
+.ledger{
+  background:var(--surface);border:1px solid var(--line);border-radius:3px;
+  padding:22px;box-shadow:var(--shadow)
+}
+.ledger-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
+.ledger-head .eyebrow{color:var(--ink-2)}
+.ledger-head .mono{font-size:12px;color:var(--ink-3)}
+.cells{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;aspect-ratio:1}
+.cell{
+  border-radius:2px;background:var(--cell-idle);
+  transition:background .6s ease,transform .6s ease
+}
+.cell[data-s="d"]{background:var(--ochre)}
+.cell[data-s="w"]{background:var(--ochre-tint);outline:1px solid var(--ochre);outline-offset:-1px}
+.cell[data-s="r"]{background:var(--green)}
+.legend{display:flex;flex-wrap:wrap;gap:16px 22px;margin-top:18px;font-size:13px;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.legend i.d{background:var(--ochre)}
+.legend i.w{background:var(--ochre-tint);outline:1px solid var(--ochre);outline-offset:-1px}
+.legend i.r{background:var(--green)}
+.legend i.i{background:var(--cell-idle)}
+.ledger-foot{margin-top:14px;font-size:12px;color:var(--ink-3);line-height:1.4}
+@media (max-width:900px){
+  .hero .grid{grid-template-columns:1fr}
+  .ledger{max-width:440px}
+}
+
+/* ---------- stats ---------- */
+.stats{background:var(--ground-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:0}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:32px 24px 30px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat .n{font-family:var(--display);font-size:clamp(40px,4.4vw,58px);line-height:1;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat .n small{font-size:.55em;color:var(--ink-3);margin-left:2px}
+.stat .l{margin-top:10px;font-size:14px;color:var(--ink-2);max-width:22ch;line-height:1.4}
+@media (max-width:900px){
+  .stats .row{grid-template-columns:1fr 1fr}
+  .stat{padding:26px 20px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+}
+
+/* ---------- story ---------- */
+.story .grid{display:grid;grid-template-columns:3fr 4fr;gap:clamp(32px,6vw,96px)}
+.story h2{margin:14px 0 0}
+.scene{
+  font-family:var(--display);font-size:clamp(21px,2.1vw,27px);line-height:1.4;font-weight:400;
+  font-variation-settings:"opsz" 24;
+  padding-left:22px;border-left:2px solid var(--ochre);color:var(--ink);max-width:36ch
+}
+.story .turn{margin-top:36px;color:var(--ink-2);max-width:60ch}
+.story .turn strong{color:var(--ink);font-weight:600}
+.services{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0}
+.services li{
+  display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:baseline;
+  padding:16px 0;border-top:1px solid var(--line);font-size:17px
+}
+.services li:last-child{border-bottom:1px solid var(--line)}
+.services .k{font-family:var(--mono);font-size:12px;color:var(--green);letter-spacing:.08em}
+@media (max-width:900px){.story .grid{grid-template-columns:1fr}}
+
+/* ---------- portfolios ---------- */
+.port{background:var(--ground-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.port .head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.port .head h2{margin-top:14px}
+.port .head p{max-width:46ch;color:var(--ink-2)}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.sheet{
+  background:var(--surface);border:1px solid var(--line);border-radius:3px;
+  padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;box-shadow:var(--shadow)
+}
+.sheet .tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.sheet .tag i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.sheet.perf .tag{color:var(--green)} .sheet.perf .tag i{background:var(--green)}
+.sheet.dist .tag{color:var(--ochre)} .sheet.dist .tag i{background:var(--ochre)}
+.sheet h3{margin:14px 0 14px}
+.sheet p{color:var(--ink-2);flex:1}
+.terms{margin:28px 0 0;padding:0;list-style:none}
+.terms li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.terms .t{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.terms .v{font-family:var(--mono);font-size:16px;font-weight:500}
+.terms .v small{font-family:var(--body);font-size:12px;color:var(--ink-3);font-weight:500;margin-left:6px}
+@media (max-width:820px){.book{grid-template-columns:1fr}}
+
+/* ---------- approach ---------- */
+.approach h2{margin-top:14px}
+.approach h2 .dot{color:var(--green)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:48px}
+.pillar{border-top:2px solid var(--ink);padding-top:22px}
+.pillar h3{margin-bottom:12px}
+.pillar p{color:var(--ink-2)}
+.pillar p+p{margin-top:12px}
+@media (max-width:820px){.pillars{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- team ---------- */
+.team{background:var(--ground-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.team .head{margin-bottom:40px}
+.team h2{margin-top:14px}
+.team .head p{max-width:56ch;color:var(--ink-2);margin-top:16px}
+.people{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.person{background:var(--ground-2);padding:24px 22px 26px;display:flex;flex-direction:column;gap:6px;min-height:200px;transition:background .2s ease}
+.person:hover{background:var(--surface)}
+.person .name{font-family:var(--display);font-size:24px;font-weight:500;line-height:1.1;font-variation-settings:"opsz" 30}
+.person .role{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.person .bio{font-size:14px;color:var(--ink-2);margin-top:8px;line-height:1.5}
+@media (max-width:1000px){.people{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.people{grid-template-columns:1fr}.person{min-height:0}}
+
+/* ---------- contact ---------- */
+.contact .grid{display:grid;grid-template-columns:3fr 4fr;gap:clamp(32px,6vw,96px)}
+.contact h2{margin-top:14px}
+.contact .intro{margin-top:18px;color:var(--ink-2);max-width:48ch}
+.notice{
+  margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-left:3px solid var(--ochre);
+  background:var(--surface);border-radius:3px;font-size:15px;color:var(--ink-2)
+}
+.notice strong{color:var(--ink);font-weight:600}
+.notice a{color:var(--ink)}
+.details{margin:32px 0 0;padding:0;list-style:none;display:grid;gap:18px}
+.details li{display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:15px}
+.details .t{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding-top:3px}
+.details a{text-decoration:none;border-bottom:1px solid var(--line-2)}
+.details a:hover{border-bottom-color:var(--ink)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:clamp(22px,3vw,36px);box-shadow:var(--shadow)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.field input,.field select,.field textarea{
+  font:inherit;font-size:16px;color:var(--ink);background:var(--ground);
+  border:1px solid var(--line-2);border-radius:2px;padding:12px 14px;width:100%;
+  transition:border-color .15s ease
+}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 22%,transparent)}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--error)}
+.field .err{display:none;font-size:13px;color:var(--error)}
+.field.invalid .err{display:block}
+form .foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:6px}
+form .foot small{font-size:13px;color:var(--ink-3);max-width:40ch;line-height:1.4}
+.success{display:none;padding:22px 24px;border:1px solid var(--green);background:var(--green-tint);border-radius:3px}
+.success h3{margin-bottom:8px}
+.success p{color:var(--ink-2)}
+.success a{color:var(--ink)}
+form.sent .fields{display:none}
+form.sent .success{display:block}
+@media (max-width:900px){.contact .grid{grid-template-columns:1fr}}
+@media (max-width:560px){.f-row{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--ink-3)}
+footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline}
+footer .disc{margin-top:22px;max-width:90ch;line-height:1.55}
+footer .disc+.disc{margin-top:10px}
+footer a{color:var(--ink-2)}
+footer .theme{
+  display:inline-flex;gap:8px;align-items:center;background:none;border:1px solid var(--line);
+  color:var(--ink-2);font:inherit;font-size:12px;padding:6px 10px;border-radius:2px;cursor:pointer
+}
+footer .theme:hover{border-color:var(--ink)}
+
+/* ---------- motion ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .rise{opacity:0;transform:translateY(10px);animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+  .rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.16s}.rise.d3{animation-delay:.24s}.rise.d4{animation-delay:.34s}
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="HGF Management Company, home">
+      <span class="mark">HG<em>F</em></span>
+      <span class="co">Management Company</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#work">What we do</a></li>
+        <li><a href="#portfolios">Portfolios</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-ghost" href="https://loanassistant.stackerhq.com/borrowerportal" target="_blank" rel="noopener">Borrower portal
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 5h14M2 9h14M2 13h14"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow rise">Granite Bay, California &middot; NMLS 2766187</p>
+      <h1 class="rise d1">Complex debt, managed from acquisition to <em>disposition.</em></h1>
+      <p class="lede rise d2">HGF Management Company is a specialized asset manager and program administrator focused on complex financial and real estate debt. We combine deep experience, disciplined execution, and creative problem-solving to move challenging opportunities forward.</p>
+      <div class="cta rise d3">
+        <a class="btn btn-primary" href="#contact">Talk to the team
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#portfolios">See the two portfolios</a>
+      </div>
+      <p class="note rise d4">Turning complexity into opportunity since the firm&rsquo;s origins in distressed real estate in 2002.</p>
+    </div>
+
+    <div class="ledger rise d2" aria-label="Illustration of a loan workout cycle">
+      <div class="ledger-head">
+        <span class="eyebrow">Workout cycle</span>
+        <span class="mono" id="ledger-count">64 positions</span>
+      </div>
+      <div class="cells" id="cells" aria-hidden="true"></div>
+      <div class="legend" aria-hidden="true">
+        <span><i class="d"></i>Non-performing</span>
+        <span><i class="w"></i>In workout</span>
+        <span><i class="r"></i>Resolved</span>
+        <span><i class="i"></i>Performing</span>
+      </div>
+      <p class="ledger-foot">An illustration of how a book moves through recovery. Not portfolio data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap row">
+    <div class="stat">
+      <div class="n">$35<small>M</small></div>
+      <div class="l">of loans under management, concentrated in California and Florida</div>
+    </div>
+    <div class="stat">
+      <div class="n">2019</div>
+      <div class="l">managing external investor portfolios since</div>
+    </div>
+    <div class="stat">
+      <div class="n">50<small>%</small></div>
+      <div class="l">maximum loan-to-value on performing debt</div>
+    </div>
+    <div class="stat">
+      <div class="n">70<small>%</small></div>
+      <div class="l">maximum acquisition loan-to-value on distressed debt</div>
+    </div>
+  </div>
+</div>
+
+<!-- STORY / WHAT WE DO -->
+<section class="story" id="work">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">When a loan stops performing</p>
+      <h2>Rarely a simple story.</h2>
+      <p class="scene" style="margin-top:28px">It is the sixteenth. The grace period ended yesterday. You are at the kitchen table with the servicer&rsquo;s statement open, and the payment column on one of your notes reads zero for the second month. The borrower&rsquo;s phone goes to voicemail. Your shoulders have crept up toward your ears, and you realize you have read the same line four times.</p>
+      <p class="turn">Loans that miss are seldom clean. There is a bankruptcy filing, a title cloud, a junior lien, a borrower who wants to pay and cannot, or a property that needs work before it can carry itself. <strong>A standard playbook stalls here.</strong> Every asset and program has its own story, and rarely a simple one.</p>
+    </div>
+    <div>
+      <p class="eyebrow">What we do</p>
+      <h2 style="margin-top:14px">Experience meets execution.</h2>
+      <p class="turn" style="margin-top:20px">HGF manages loans from acquisition to disposition, with an emphasis on the recovery of non-performing loans. Our multidisciplinary team looks beyond the numbers to understand the full picture, develop practical strategies, and manage each engagement with care and purpose.</p>
+      <ul class="services">
+        <li><span class="k">AM</span><span>Specialized debt asset management</span></li>
+        <li><span class="k">PA</span><span>Program and portfolio administration</span></li>
+        <li><span class="k">FA</span><span>Financial analysis and reporting</span></li>
+        <li><span class="k">AR</span><span>Asset strategy and resolution</span></li>
+        <li><span class="k">CO</span><span>Compliance, legal, and real estate coordination</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIOS -->
+<section class="port" id="portfolios">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow">Debt portfolios</p>
+        <h2>Two books. Two disciplines.</h2>
+      </div>
+      <p>Performing debt is bought for steady, monthly cash flow at conservative leverage. Distressed debt is bought at a discount and resolved event by event. The firm runs both.</p>
+    </div>
+    <div class="book">
+      <article class="sheet perf">
+        <span class="tag"><i></i>Performing debt</span>
+        <h3>Overlooked because it is small, structured, or inefficiently traded.</h3>
+        <p>HGF specializes in acquiring and managing performing debt opportunities that are often overlooked because of complexity, specialized structures, smaller transaction sizes, or inefficient market segments.</p>
+        <ul class="terms">
+          <li><span class="t">Loan-to-value</span><span class="v">50%<small>max</small></span></li>
+          <li><span class="t">Payment schedule</span><span class="v">Monthly</span></li>
+        </ul>
+      </article>
+      <article class="sheet dist">
+        <span class="tag"><i></i>Distressed debt</span>
+        <h3>Bought for the probability of recovery, not the headline yield.</h3>
+        <p>HGF invests in distressed mortgages, focusing on opportunities with a high probability of delivering above-average returns while minimizing the risk. Resolution comes through loan workouts, restructurings, and asset resolution strategies.</p>
+        <ul class="terms">
+          <li><span class="t">Acquisition loan-to-value</span><span class="v">70%<small>max</small></span></li>
+          <li><span class="t">Payment schedule</span><span class="v">Event-based</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach" id="approach">
+  <div class="wrap">
+    <p class="eyebrow">How we work</p>
+    <h2>Clear thinking<span class="dot">.</span> Smart solutions<span class="dot">.</span> Better outcomes<span class="dot">.</span></h2>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Clear thinking</h3>
+        <p>We look beyond the numbers to understand the full picture: the borrower, the collateral, the liens, the court calendar, and the exit.</p>
+        <p>The team spans loan servicing, judicial and non-judicial foreclosure, bankruptcy, forensic underwriting, creditor&rsquo;s rights, and real estate redevelopment.</p>
+      </div>
+      <div class="pillar">
+        <h3>Smart solutions</h3>
+        <p>Practical strategies for assets and programs that require more than a standard playbook: workouts, restructurings, and asset resolution matched to each loan&rsquo;s facts.</p>
+        <p>Borrowers get personalized guidance through every stage of a loan. A loan brought current is often the cleanest resolution there is.</p>
+      </div>
+      <div class="pillar">
+        <h3>Better outcomes</h3>
+        <p>A thoughtful, hands-on approach, managed with care and purpose from the day a loan is acquired to the day it is resolved.</p>
+        <p>Financial analysis and reporting, plus compliance, legal, and real estate coordination, for the portfolios and programs the firm administers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">The people</p>
+      <h2>A recovery team, not a trading desk.</h2>
+      <p>Eight people across operations, recovery, legal coordination, and real estate. The firm&rsquo;s roots go back to a real estate investment company founded in 2002 to work distressed properties, which grew into HGF.</p>
+    </div>
+    <ul class="people">
+      <li class="person">
+        <span class="role">Managing Principal</span>
+        <span class="name">Dennis Lanni</span>
+        <p class="bio">Began his career in 1998 as a stock options market maker and co-founded HGF&rsquo;s predecessor in 2002. Oversees operations and leads the recovery team. University of Texas at Austin.</p>
+      </li>
+      <li class="person">
+        <span class="role">Chief Operating Officer</span>
+        <span class="name">Shannon Winford</span>
+        <p class="bio">More than 15 years in loan servicing, bankruptcy, foreclosure law, and forensic loan underwriting across judicial and non-judicial states. UC Davis.</p>
+      </li>
+      <li class="person">
+        <span class="role">REO Asset Manager</span>
+        <span class="name">Clark Whitten</span>
+        <p class="bio">More than 30 years in real estate acquisition, asset management, and redevelopment, including housing initiatives for Sacramento County and work with Bechtel and Kosmont.</p>
+      </li>
+      <li class="person">
+        <span class="role">Recovery Asset Manager</span>
+        <span class="name">Nick Hawryluk</span>
+        <p class="bio">Mechanical engineer by training, 25 years in software, and 12 years acquiring and resolving distressed mortgages.</p>
+      </li>
+      <li class="person">
+        <span class="role">Recovery Asset Manager</span>
+        <span class="name">Arturo Ochoa</span>
+        <p class="bio">15 years in real estate asset management spanning originations, REO, sales, and servicing at major financial institutions.</p>
+      </li>
+      <li class="person">
+        <span class="role">Recovery Asset Manager</span>
+        <span class="name">Adrian Petersen</span>
+        <p class="bio">A client-first approach to the mortgage industry, pairing a head for numbers with personalized borrower guidance.</p>
+      </li>
+      <li class="person">
+        <span class="role">Legal &amp; Asset Management Coordinator</span>
+        <span class="name">Caroline Boyce</span>
+        <p class="bio">More than 11 years as a paralegal in creditor&rsquo;s rights and judgment enforcement, with deep foreclosure experience in judicial and non-judicial processes.</p>
+      </li>
+      <li class="person">
+        <span class="role">Mortgage Operations Manager</span>
+        <span class="name">Holly Overby</span>
+        <p class="bio">More than six years in the mortgage industry, known for attention to detail and personalized support through every stage of a loan.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Bring us the loan nobody else wants to work.</h2>
+      <p class="intro">Investors, note holders, and referral partners can reach the team directly. Borrowers with an HGF-managed loan should use the borrower portal.</p>
+      <div class="notice">
+        <strong>Investor note.</strong> All HGF debt funds are currently closed. To be contacted about future openings, write to <a href="mailto:investor_relations@hgfmgmt.com">investor_relations@hgfmgmt.com</a>.
+      </div>
+      <ul class="details">
+        <li><span class="t">Office</span><span>5530 Douglas Blvd. Suite 130<br>Granite Bay, CA 95746</span></li>
+        <li><span class="t">Phone</span><span><a href="tel:+19162519196">916.251.9196</a></span></li>
+        <li><span class="t">Email</span><span><a href="mailto:info@HGFmgmt.com">info@HGFmgmt.com</a></span></li>
+        <li><span class="t">Borrowers</span><span><a href="https://loanassistant.stackerhq.com/borrowerportal" target="_blank" rel="noopener">Borrower portal</a></span></li>
+      </ul>
+    </div>
+
+    <form id="contact-form" novalidate>
+      <div class="fields">
+        <div class="f-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <span class="err">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="who">I am</label>
+          <select id="who" name="who" required>
+            <option value="">Select one</option>
+            <option>An investor</option>
+            <option>A note holder or lender</option>
+            <option>A broker or referral partner</option>
+            <option>A borrower</option>
+            <option>Something else</option>
+          </select>
+          <span class="err">Please tell us who you are.</span>
+        </div>
+        <div class="field">
+          <label for="msg">What are you working with?</label>
+          <textarea id="msg" name="msg" required placeholder="Loan type, state, balance, and where it stands."></textarea>
+          <span class="err">Please add a short description.</span>
+        </div>
+        <div class="foot">
+          <button class="btn btn-primary" type="submit">Send to HGF
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </button>
+          <small>Opens a pre-filled email to info@HGFmgmt.com in your mail app. Nothing is stored on this page.</small>
+        </div>
+      </div>
+      <div class="success" role="status">
+        <h3>Your email is ready to send.</h3>
+        <p>Your mail app should have opened with the message filled in. If it did not, email <a href="mailto:info@HGFmgmt.com">info@HGFmgmt.com</a> directly or call <a href="tel:+19162519196">916.251.9196</a>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <span><strong style="color:var(--ink);font-family:var(--display);font-size:16px;letter-spacing:.04em">HGF Management Company</strong> &nbsp;&middot;&nbsp; NMLS 2766187 &nbsp;&middot;&nbsp; <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener">NMLS Consumer Access</a></span>
+      <button class="theme" type="button" id="theme-toggle" aria-label="Toggle light and dark theme">
+        <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 1a7 7 0 1 0 0 14V1z"/><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/></svg>
+        <span>Theme</span>
+      </button>
+    </div>
+    <p class="disc">Nothing on this page is an offer to sell or a solicitation of an offer to buy any security, nor is it legal, tax, or investment advice. Loan-to-value limits describe acquisition criteria, not a guarantee of any outcome. Figures are as published by HGF Management Company.</p>
+    <p class="disc">&copy; <span id="year">2026</span> HGF Management Company. 5530 Douglas Blvd. Suite 130, Granite Bay, CA 95746.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* nav toggle */
+  var nav=document.querySelector('.nav'),tog=document.querySelector('.nav-toggle');
+  tog.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    tog.setAttribute('aria-expanded',open?'true':'false');
+    tog.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');tog.setAttribute('aria-expanded','false');});});
+
+  /* theme toggle */
+  var root=document.documentElement,tb=document.getElementById('theme-toggle');
+  try{var saved=localStorage.getItem('hgf-theme');if(saved==='dark'||saved==='light'){root.setAttribute('data-theme',saved);}}catch(e){}
+  tb.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var sysDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var isDark=cur?cur==='dark':sysDark;
+    var next=isDark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('hgf-theme',next);}catch(e){}
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  /* workout cycle grid: 64 positions, a fixed starting book, advancing over time */
+  var grid=document.getElementById('cells'),count=document.getElementById('ledger-count');
+  var start='iiddiiwi'+'diiiidii'+'iwdiidii'+'iiidiiwd'+'diiiiidi'+'iidwiiii'+'iiiidiid'+'widiiiii';
+  var cells=[];
+  for(var i=0;i<64;i++){var c=document.createElement('div');c.className='cell';if(start[i]!=='i')c.setAttribute('data-s',start[i]);grid.appendChild(c);cells.push(c);}
+  function tally(){var n=0;cells.forEach(function(c){if(c.getAttribute('data-s')==='r')n++;});count.textContent=n?n+' of 64 resolved':'64 positions';}
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){
+    var steps=[];
+    for(var k=0;k<64;k++){var s=cells[k].getAttribute('data-s');if(s==='d')steps.push([k,'w'],[k,'r']);else if(s==='w')steps.push([k,'r']);}
+    /* interleave so workouts and resolutions alternate across the book */
+    steps.sort(function(a,b){return (a[1]==='w'?0:1)-(b[1]==='w'?0:1)||a[0]-b[0];});
+    var i2=0;
+    setTimeout(function tick(){
+      if(i2>=steps.length){return;}
+      var st=steps[i2++];cells[st[0]].setAttribute('data-s',st[1]);tally();
+      setTimeout(tick,i2<steps.length?900+Math.floor(i2*7)%500:0);
+    },1400);
+  }
+  tally();
+
+  /* contact form: validate, then hand off to the visitor's mail app */
+  var form=document.getElementById('contact-form');
+  function fieldOf(el){return el.closest('.field');}
+  function validate(){
+    var ok=true;
+    ['name','email','who','msg'].forEach(function(id){
+      var el=document.getElementById(id),f=fieldOf(el),v=el.value.trim(),good=v.length>0;
+      if(id==='email')good=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+      f.classList.toggle('invalid',!good);
+      if(!good)ok=false;
+    });
+    return ok;
+  }
+  form.querySelectorAll('input,select,textarea').forEach(function(el){el.addEventListener('input',function(){if(fieldOf(el).classList.contains('invalid'))validate();});});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!validate()){var first=form.querySelector('.invalid input,.invalid select,.invalid textarea');if(first)first.focus();return;}
+    var name=document.getElementById('name').value.trim(),email=document.getElementById('email').value.trim(),who=document.getElementById('who').value,msg=document.getElementById('msg').value.trim();
+    var subject='Website inquiry from '+name+' ('+who+')';
+    var body=msg+'\n\n'+name+'\n'+email+'\n'+who;
+    window.location.href='mailto:info@HGFmgmt.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    form.classList.add('sent');
+  });
+})();
+</script>
+</body>
+</html>
