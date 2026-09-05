@@ -5,77 +5,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HGF Management Company</title>
 <meta name="description" content="HGF Management Company is a specialized asset manager and program administrator for complex financial and real estate debt, based in Granite Bay, California.">
+<link rel="icon" type="image/png" href="assets/hgf-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- tokens (light only, keyed to the HGF logo) ---------- */
 :root{
-  color-scheme:light dark;
-  --ground:#ECEAE5;
-  --ground-2:#E2DFD8;
-  --surface:#F6F5F1;
-  --ink:#17191C;
-  --ink-2:#474B51;
-  --ink-3:#767A81;
-  --line:#CDC9C0;
-  --line-2:#B9B4AA;
-  --green:#1F4D3C;
-  --green-2:#2D6B54;
-  --green-tint:#DBE6DF;
-  --ochre:#8F6227;
-  --ochre-tint:#EDE3D1;
-  --cell-idle:#D8D4CB;
+  color-scheme:light;
+  --ground:#F4F4F1;
+  --ground-2:#EAEAE6;
+  --surface:#FFFFFF;
+  --ink:#26262D;
+  --ink-2:#48464D;
+  --ink-3:#7A7982;
+  --line:#D9D9D3;
+  --line-2:#BEBEB7;
+  --blue:#04498B;
+  --blue-2:#0A5CAB;
+  --blue-tint:#E4ECF5;
+  --blue-faint:#EFF3F8;
+  --amber:#9A6A2E;
+  --amber-tint:#F3EADB;
   --error:#B23A2E;
-  --shadow:0 1px 0 rgba(23,25,28,.06), 0 12px 32px -18px rgba(23,25,28,.35);
+  --shadow:0 1px 0 rgba(38,38,45,.05), 0 14px 34px -20px rgba(4,73,139,.28);
   --display:"Newsreader",Georgia,"Times New Roman",serif;
   --body:"Archivo","Helvetica Neue",Arial,sans-serif;
   --mono:"IBM Plex Mono","SFMono-Regular",Menlo,Consolas,monospace;
   --max:1240px;
   --pad:clamp(20px,5vw,64px);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#141618;
-    --ground-2:#1B1E21;
-    --surface:#202428;
-    --ink:#E9E6DF;
-    --ink-2:#B7B3AB;
-    --ink-3:#868A90;
-    --line:#33373C;
-    --line-2:#454A50;
-    --green:#83BC9E;
-    --green-2:#5E9C7D;
-    --green-tint:#1B2C25;
-    --ochre:#D6A768;
-    --ochre-tint:#33291A;
-    --cell-idle:#2C3035;
-    --error:#E9877B;
-    --shadow:0 1px 0 rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#141618;
-  --ground-2:#1B1E21;
-  --surface:#202428;
-  --ink:#E9E6DF;
-  --ink-2:#B7B3AB;
-  --ink-3:#868A90;
-  --line:#33373C;
-  --line-2:#454A50;
-  --green:#83BC9E;
-  --green-2:#5E9C7D;
-  --green-tint:#1B2C25;
-  --ochre:#D6A768;
-  --ochre-tint:#33291A;
-  --cell-idle:#2C3035;
-  --error:#E9877B;
-  --shadow:0 1px 0 rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.8);
-}
 
 /* ---------- base ---------- */
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;background:var(--ground)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{
   margin:0;
@@ -95,16 +58,12 @@ h2{font-size:clamp(32px,4vw,52px);font-variation-settings:"opsz" 60}
 h3{font-size:clamp(22px,2.2vw,28px);font-variation-settings:"opsz" 36}
 p{margin:0}
 .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-.eyebrow{
-  font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)
-}
+.eyebrow{font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
 .lede{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--ink-2);max-width:62ch}
-.measure{max-width:64ch}
-:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
 section{padding:clamp(72px,9vw,120px) 0}
-[id]{scroll-margin-top:84px}
-.rule{border:0;border-top:1px solid var(--line);margin:0}
+[id]{scroll-margin-top:88px}
 
 /* buttons */
 .btn{
@@ -115,35 +74,34 @@ section{padding:clamp(72px,9vw,120px) 0}
   transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease
 }
 .btn svg{width:16px;height:16px;flex:none}
-.btn-primary{background:var(--green);color:var(--ground);border-color:var(--green)}
-.btn-primary:hover{background:var(--green-2);border-color:var(--green-2)}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn-primary:hover{background:var(--blue-2);border-color:var(--blue-2)}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
-.btn-ghost:hover{border-color:var(--ink);transform:translateY(-1px)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-1px)}
 
 /* ---------- nav ---------- */
 .nav{
   position:sticky;top:0;z-index:20;
-  background:color-mix(in srgb,var(--ground) 88%,transparent);
+  background:rgba(244,244,241,.9);
   backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line)
 }
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
-.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none}
-.brand .mark{font-family:var(--display);font-size:26px;font-weight:500;letter-spacing:.06em;line-height:1}
-.brand .mark em{font-style:italic;font-weight:400;color:var(--green);margin-left:.18em}
-.brand .co{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
+.brand{display:flex;align-items:center;text-decoration:none;flex:none}
+.brand img{height:40px;width:auto}
 .nav-links{display:flex;gap:28px;list-style:none;margin:0;padding:0}
 .nav-links a{font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-2);padding:6px 0;border-bottom:1px solid transparent}
-.nav-links a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.nav-links a:hover{color:var(--blue);border-bottom-color:var(--blue)}
 .nav .btn{padding:10px 16px;font-size:13px}
 .nav-toggle{display:none;background:none;border:1px solid var(--line-2);border-radius:2px;padding:8px 10px;color:var(--ink);cursor:pointer}
 .nav-toggle svg{width:18px;height:18px;display:block}
-@media (max-width:860px){
+@media (max-width:960px){
   .nav-links,.nav .btn-ghost{display:none}
   .nav-toggle{display:block}
+  .brand img{height:32px}
   .nav.open .nav-links{
     display:flex;flex-direction:column;gap:0;
-    position:absolute;left:0;right:0;top:68px;
+    position:absolute;left:0;right:0;top:72px;
     background:var(--ground);border-bottom:1px solid var(--line);padding:8px var(--pad) 16px
   }
   .nav.open .nav-links a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
@@ -151,39 +109,49 @@ section{padding:clamp(72px,9vw,120px) 0}
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(56px,7vw,96px) 0 clamp(64px,8vw,104px)}
-.hero .grid{
-  display:grid;grid-template-columns:4fr 3fr;gap:clamp(32px,6vw,88px);align-items:center
-}
+.hero .grid{display:grid;grid-template-columns:4fr 3fr;gap:clamp(32px,6vw,88px);align-items:center}
 .hero h1{margin:18px 0 22px}
-.hero h1 em{font-style:italic;font-weight:400;color:var(--green)}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--blue)}
 .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .hero .note{margin-top:22px;font-size:13px;color:var(--ink-3)}
-.ledger{
+
+/* the route: six stages from acquisition to disposition */
+.route{
+  margin:0;
   background:var(--surface);border:1px solid var(--line);border-radius:3px;
-  padding:22px;box-shadow:var(--shadow)
+  padding:22px 22px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden
 }
-.ledger-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
-.ledger-head .eyebrow{color:var(--ink-2)}
-.ledger-head .mono{font-size:12px;color:var(--ink-3)}
-.cells{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;aspect-ratio:1}
-.cell{
-  border-radius:2px;background:var(--cell-idle);
-  transition:background .6s ease,transform .6s ease
+.route::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(var(--blue-faint) 1px,transparent 1px),linear-gradient(90deg,var(--blue-faint) 1px,transparent 1px);
+  background-size:26px 26px;background-position:11px 11px;opacity:.9
 }
-.cell[data-s="d"]{background:var(--ochre)}
-.cell[data-s="w"]{background:var(--ochre-tint);outline:1px solid var(--ochre);outline-offset:-1px}
-.cell[data-s="r"]{background:var(--green)}
-.legend{display:flex;flex-wrap:wrap;gap:16px 22px;margin-top:18px;font-size:13px;color:var(--ink-2)}
-.legend span{display:inline-flex;align-items:center;gap:8px}
-.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
-.legend i.d{background:var(--ochre)}
-.legend i.w{background:var(--ochre-tint);outline:1px solid var(--ochre);outline-offset:-1px}
-.legend i.r{background:var(--green)}
-.legend i.i{background:var(--cell-idle)}
-.ledger-foot{margin-top:14px;font-size:12px;color:var(--ink-3);line-height:1.4}
-@media (max-width:900px){
+.route>*{position:relative}
+.route-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+.route-head .eyebrow{color:var(--ink-2)}
+.route-head .mono{font-size:12px;color:var(--ink-3)}
+.route svg{width:100%;height:auto;display:block}
+.route .path{fill:none;stroke:var(--blue);stroke-width:9;stroke-linecap:square;stroke-linejoin:miter}
+.route .node{fill:var(--surface);stroke:var(--blue);stroke-width:4}
+.route .node.end{fill:var(--blue)}
+.route .lbl{font-family:var(--body);font-size:21px;font-weight:600;fill:var(--ink);letter-spacing:.01em}
+.route .num{font-family:var(--mono);font-size:13px;fill:var(--ink-3);letter-spacing:.08em}
+.route-foot{margin-top:10px;font-size:12px;color:var(--ink-3);line-height:1.4}
+@media (prefers-reduced-motion:no-preference){
+  .route .path{stroke-dasharray:1700;stroke-dashoffset:1700;animation:draw 2.6s cubic-bezier(.4,0,.2,1) .5s forwards}
+  .route .stage{opacity:0;animation:fadein .5s ease forwards}
+  .route .stage:nth-child(1){animation-delay:.5s}
+  .route .stage:nth-child(2){animation-delay:1.0s}
+  .route .stage:nth-child(3){animation-delay:1.4s}
+  .route .stage:nth-child(4){animation-delay:1.9s}
+  .route .stage:nth-child(5){animation-delay:2.3s}
+  .route .stage:nth-child(6){animation-delay:2.9s}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fadein{to{opacity:1}}
+}
+@media (max-width:960px){
   .hero .grid{grid-template-columns:1fr}
-  .ledger{max-width:440px}
+  .route{max-width:520px}
 }
 
 /* ---------- stats ---------- */
@@ -191,7 +159,7 @@ section{padding:clamp(72px,9vw,120px) 0}
 .stats .row{display:grid;grid-template-columns:repeat(4,1fr)}
 .stat{padding:32px 24px 30px;border-left:1px solid var(--line)}
 .stat:first-child{border-left:0;padding-left:0}
-.stat .n{font-family:var(--display);font-size:clamp(40px,4.4vw,58px);line-height:1;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat .n{font-family:var(--display);font-size:clamp(40px,4.4vw,58px);line-height:1;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--blue)}
 .stat .n small{font-size:.55em;color:var(--ink-3);margin-left:2px}
 .stat .l{margin-top:10px;font-size:14px;color:var(--ink-2);max-width:22ch;line-height:1.4}
 @media (max-width:900px){
@@ -207,17 +175,14 @@ section{padding:clamp(72px,9vw,120px) 0}
 .scene{
   font-family:var(--display);font-size:clamp(21px,2.1vw,27px);line-height:1.4;font-weight:400;
   font-variation-settings:"opsz" 24;
-  padding-left:22px;border-left:2px solid var(--ochre);color:var(--ink);max-width:36ch
+  padding-left:22px;border-left:2px solid var(--amber);color:var(--ink);max-width:36ch
 }
 .story .turn{margin-top:36px;color:var(--ink-2);max-width:60ch}
 .story .turn strong{color:var(--ink);font-weight:600}
 .services{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:0}
-.services li{
-  display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:baseline;
-  padding:16px 0;border-top:1px solid var(--line);font-size:17px
-}
+.services li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:baseline;padding:16px 0;border-top:1px solid var(--line);font-size:17px}
 .services li:last-child{border-bottom:1px solid var(--line)}
-.services .k{font-family:var(--mono);font-size:12px;color:var(--green);letter-spacing:.08em}
+.services .k{font-family:var(--mono);font-size:12px;color:var(--blue);letter-spacing:.08em}
 @media (max-width:900px){.story .grid{grid-template-columns:1fr}}
 
 /* ---------- portfolios ---------- */
@@ -226,14 +191,11 @@ section{padding:clamp(72px,9vw,120px) 0}
 .port .head h2{margin-top:14px}
 .port .head p{max-width:46ch;color:var(--ink-2)}
 .book{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.sheet{
-  background:var(--surface);border:1px solid var(--line);border-radius:3px;
-  padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;box-shadow:var(--shadow)
-}
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;box-shadow:var(--shadow)}
 .sheet .tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
 .sheet .tag i{width:10px;height:10px;border-radius:2px;display:inline-block}
-.sheet.perf .tag{color:var(--green)} .sheet.perf .tag i{background:var(--green)}
-.sheet.dist .tag{color:var(--ochre)} .sheet.dist .tag i{background:var(--ochre)}
+.sheet.perf .tag{color:var(--blue)} .sheet.perf .tag i{background:var(--blue)}
+.sheet.dist .tag{color:var(--amber)} .sheet.dist .tag i{background:var(--amber)}
 .sheet h3{margin:14px 0 14px}
 .sheet p{color:var(--ink-2);flex:1}
 .terms{margin:28px 0 0;padding:0;list-style:none}
@@ -245,9 +207,9 @@ section{padding:clamp(72px,9vw,120px) 0}
 
 /* ---------- approach ---------- */
 .approach h2{margin-top:14px}
-.approach h2 .dot{color:var(--green)}
+.approach h2 .dot{color:var(--blue)}
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:48px}
-.pillar{border-top:2px solid var(--ink);padding-top:22px}
+.pillar{border-top:2px solid var(--blue);padding-top:22px}
 .pillar h3{margin-bottom:12px}
 .pillar p{color:var(--ink-2)}
 .pillar p+p{margin-top:12px}
@@ -262,7 +224,7 @@ section{padding:clamp(72px,9vw,120px) 0}
 .person{background:var(--ground-2);padding:24px 22px 26px;display:flex;flex-direction:column;gap:6px;min-height:200px;transition:background .2s ease}
 .person:hover{background:var(--surface)}
 .person .name{font-family:var(--display);font-size:24px;font-weight:500;line-height:1.1;font-variation-settings:"opsz" 30}
-.person .role{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
+.person .role{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
 .person .bio{font-size:14px;color:var(--ink-2);margin-top:8px;line-height:1.5}
 @media (max-width:1000px){.people{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.people{grid-template-columns:1fr}.person{min-height:0}}
@@ -271,34 +233,27 @@ section{padding:clamp(72px,9vw,120px) 0}
 .contact .grid{display:grid;grid-template-columns:3fr 4fr;gap:clamp(32px,6vw,96px)}
 .contact h2{margin-top:14px}
 .contact .intro{margin-top:18px;color:var(--ink-2);max-width:48ch}
-.notice{
-  margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-left:3px solid var(--ochre);
-  background:var(--surface);border-radius:3px;font-size:15px;color:var(--ink-2)
-}
+.notice{margin-top:28px;padding:18px 20px;border:1px solid var(--line);border-left:3px solid var(--amber);background:var(--surface);border-radius:3px;font-size:15px;color:var(--ink-2)}
 .notice strong{color:var(--ink);font-weight:600}
 .notice a{color:var(--ink)}
 .details{margin:32px 0 0;padding:0;list-style:none;display:grid;gap:18px}
 .details li{display:grid;grid-template-columns:96px 1fr;gap:12px;font-size:15px}
 .details .t{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:600;padding-top:3px}
 .details a{text-decoration:none;border-bottom:1px solid var(--line-2)}
-.details a:hover{border-bottom-color:var(--ink)}
+.details a:hover{border-bottom-color:var(--blue);color:var(--blue)}
 form{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:clamp(22px,3vw,36px);box-shadow:var(--shadow)}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
 .field label{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
-.field input,.field select,.field textarea{
-  font:inherit;font-size:16px;color:var(--ink);background:var(--ground);
-  border:1px solid var(--line-2);border-radius:2px;padding:12px 14px;width:100%;
-  transition:border-color .15s ease
-}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--ground);border:1px solid var(--line-2);border-radius:2px;padding:12px 14px;width:100%;transition:border-color .15s ease}
 .field textarea{min-height:130px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px color-mix(in srgb,var(--green) 22%,transparent)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(4,73,139,.18)}
 .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--error)}
 .field .err{display:none;font-size:13px;color:var(--error)}
 .field.invalid .err{display:block}
 form .foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:6px}
 form .foot small{font-size:13px;color:var(--ink-3);max-width:40ch;line-height:1.4}
-.success{display:none;padding:22px 24px;border:1px solid var(--green);background:var(--green-tint);border-radius:3px}
+.success{display:none;padding:22px 24px;border:1px solid var(--blue);background:var(--blue-tint);border-radius:3px}
 .success h3{margin-bottom:8px}
 .success p{color:var(--ink-2)}
 .success a{color:var(--ink)}
@@ -308,16 +263,14 @@ form.sent .success{display:block}
 @media (max-width:560px){.f-row{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */
-footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--ink-3)}
-footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline}
+footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--ink-3);background:var(--ground)}
+footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .fbrand{display:flex;align-items:center;gap:14px;color:var(--ink-2)}
+footer .fbrand img{height:36px;width:auto}
+footer .fbrand b{font-weight:600;color:var(--ink)}
 footer .disc{margin-top:22px;max-width:90ch;line-height:1.55}
 footer .disc+.disc{margin-top:10px}
 footer a{color:var(--ink-2)}
-footer .theme{
-  display:inline-flex;gap:8px;align-items:center;background:none;border:1px solid var(--line);
-  color:var(--ink-2);font:inherit;font-size:12px;padding:6px 10px;border-radius:2px;cursor:pointer
-}
-footer .theme:hover{border-color:var(--ink)}
 
 /* ---------- motion ---------- */
 @media (prefers-reduced-motion:no-preference){
@@ -332,11 +285,10 @@ footer .theme:hover{border-color:var(--ink)}
 <header class="nav" id="top">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="HGF Management Company, home">
-      <span class="mark">HG<em>F</em></span>
-      <span class="co">Management Company</span>
+      <img src="assets/hgf-logo.png" alt="HGF Management Company" width="1400" height="260">
     </a>
     <nav aria-label="Primary">
-      <ul class="nav-links">
+      <ul class="nav-links" id="menu">
         <li><a href="#work">What we do</a></li>
         <li><a href="#portfolios">Portfolios</a></li>
         <li><a href="#approach">Approach</a></li>
@@ -371,20 +323,48 @@ footer .theme:hover{border-color:var(--ink)}
       <p class="note rise d4">Turning complexity into opportunity since the firm&rsquo;s origins in distressed real estate in 2002.</p>
     </div>
 
-    <div class="ledger rise d2" aria-label="Illustration of a loan workout cycle">
-      <div class="ledger-head">
-        <span class="eyebrow">Workout cycle</span>
-        <span class="mono" id="ledger-count">64 positions</span>
+    <figure class="route rise d2" aria-label="The six stages HGF manages a loan through, from acquisition to disposition">
+      <div class="route-head">
+        <span class="eyebrow">The route</span>
+        <span class="mono">06 stages</span>
       </div>
-      <div class="cells" id="cells" aria-hidden="true"></div>
-      <div class="legend" aria-hidden="true">
-        <span><i class="d"></i>Non-performing</span>
-        <span><i class="w"></i>In workout</span>
-        <span><i class="r"></i>Resolved</span>
-        <span><i class="i"></i>Performing</span>
-      </div>
-      <p class="ledger-foot">An illustration of how a book moves through recovery. Not portfolio data.</p>
-    </div>
+      <svg viewBox="0 0 520 400" role="img" aria-hidden="true">
+        <path class="path" d="M60 78 H460 V200 H60 V322 H460"/>
+        <g class="stages">
+          <g class="stage">
+            <circle class="node" cx="60" cy="78" r="12"/>
+            <text class="num" x="48" y="42">01</text>
+            <text class="lbl" x="48" y="60">Acquisition</text>
+          </g>
+          <g class="stage">
+            <circle class="node" cx="460" cy="78" r="12"/>
+            <text class="num" x="472" y="42" text-anchor="end">02</text>
+            <text class="lbl" x="472" y="60" text-anchor="end">Analysis</text>
+          </g>
+          <g class="stage">
+            <circle class="node" cx="460" cy="200" r="12"/>
+            <text class="num" x="472" y="232" text-anchor="end">03</text>
+            <text class="lbl" x="472" y="250" text-anchor="end">Strategy</text>
+          </g>
+          <g class="stage">
+            <circle class="node" cx="60" cy="200" r="12"/>
+            <text class="num" x="48" y="160">04</text>
+            <text class="lbl" x="48" y="178">Workout</text>
+          </g>
+          <g class="stage">
+            <circle class="node" cx="60" cy="322" r="12"/>
+            <text class="num" x="48" y="354">05</text>
+            <text class="lbl" x="48" y="372">Resolution</text>
+          </g>
+          <g class="stage">
+            <circle class="node end" cx="460" cy="322" r="12"/>
+            <text class="num" x="472" y="354" text-anchor="end">06</text>
+            <text class="lbl" x="472" y="372" text-anchor="end">Disposition</text>
+          </g>
+        </g>
+      </svg>
+      <figcaption class="route-foot">How HGF manages a loan, from the day it is acquired to the day it is resolved.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -614,14 +594,14 @@ footer .theme:hover{border-color:var(--ink)}
 <footer>
   <div class="wrap">
     <div class="top">
-      <span><strong style="color:var(--ink);font-family:var(--display);font-size:16px;letter-spacing:.04em">HGF Management Company</strong> &nbsp;&middot;&nbsp; NMLS 2766187 &nbsp;&middot;&nbsp; <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener">NMLS Consumer Access</a></span>
-      <button class="theme" type="button" id="theme-toggle" aria-label="Toggle light and dark theme">
-        <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 1a7 7 0 1 0 0 14V1z"/><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/></svg>
-        <span>Theme</span>
-      </button>
+      <div class="fbrand">
+        <img src="assets/hgf-mark.png" alt="" width="400" height="398">
+        <span><b>HGF Management Company</b><br>NMLS 2766187 &nbsp;&middot;&nbsp; <a href="https://www.nmlsconsumeraccess.org/" target="_blank" rel="noopener">NMLS Consumer Access</a></span>
+      </div>
+      <span class="mono">5530 Douglas Blvd. Suite 130, Granite Bay, CA 95746</span>
     </div>
     <p class="disc">Nothing on this page is an offer to sell or a solicitation of an offer to buy any security, nor is it legal, tax, or investment advice. Loan-to-value limits describe acquisition criteria, not a guarantee of any outcome. Figures are as published by HGF Management Company.</p>
-    <p class="disc">&copy; <span id="year">2026</span> HGF Management Company. 5530 Douglas Blvd. Suite 130, Granite Bay, CA 95746.</p>
+    <p class="disc">&copy; <span id="year">2026</span> HGF Management Company.</p>
   </div>
 </footer>
 
@@ -636,40 +616,7 @@ footer .theme:hover{border-color:var(--ink)}
   });
   document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');tog.setAttribute('aria-expanded','false');});});
 
-  /* theme toggle */
-  var root=document.documentElement,tb=document.getElementById('theme-toggle');
-  try{var saved=localStorage.getItem('hgf-theme');if(saved==='dark'||saved==='light'){root.setAttribute('data-theme',saved);}}catch(e){}
-  tb.addEventListener('click',function(){
-    var cur=root.getAttribute('data-theme');
-    var sysDark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var isDark=cur?cur==='dark':sysDark;
-    var next=isDark?'light':'dark';
-    root.setAttribute('data-theme',next);
-    try{localStorage.setItem('hgf-theme',next);}catch(e){}
-  });
-
   document.getElementById('year').textContent=new Date().getFullYear();
-
-  /* workout cycle grid: 64 positions, a fixed starting book, advancing over time */
-  var grid=document.getElementById('cells'),count=document.getElementById('ledger-count');
-  var start='iiddiiwi'+'diiiidii'+'iwdiidii'+'iiidiiwd'+'diiiiidi'+'iidwiiii'+'iiiidiid'+'widiiiii';
-  var cells=[];
-  for(var i=0;i<64;i++){var c=document.createElement('div');c.className='cell';if(start[i]!=='i')c.setAttribute('data-s',start[i]);grid.appendChild(c);cells.push(c);}
-  function tally(){var n=0;cells.forEach(function(c){if(c.getAttribute('data-s')==='r')n++;});count.textContent=n?n+' of 64 resolved':'64 positions';}
-  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!reduce){
-    var steps=[];
-    for(var k=0;k<64;k++){var s=cells[k].getAttribute('data-s');if(s==='d')steps.push([k,'w'],[k,'r']);else if(s==='w')steps.push([k,'r']);}
-    /* interleave so workouts and resolutions alternate across the book */
-    steps.sort(function(a,b){return (a[1]==='w'?0:1)-(b[1]==='w'?0:1)||a[0]-b[0];});
-    var i2=0;
-    setTimeout(function tick(){
-      if(i2>=steps.length){return;}
-      var st=steps[i2++];cells[st[0]].setAttribute('data-s',st[1]);tally();
-      setTimeout(tick,i2<steps.length?900+Math.floor(i2*7)%500:0);
-    },1400);
-  }
-  tally();
 
   /* contact form: validate, then hand off to the visitor's mail app */
   var form=document.getElementById('contact-form');
